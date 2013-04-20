@@ -1,0 +1,3 @@
+[submodule "lua/lp8/wesnoth-lp8"]
+	path = lua/lp8/wesnoth-lp8
+	url = git@github.com:8573/wesnoth-lp8.git
