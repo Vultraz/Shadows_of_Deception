@@ -1,0 +1,75 @@
+--------
+PLOTNOTES. Please DO NOT READ this file unless you are helping me with the campaign or want MASSIVE spoilers. As in, the whole plot revealed to you.
+---------
+
+Time period:
+------------
+* E1: 1081YW 
+* E2: 1090, 1091 (When Elynia returns)
+
+Scenario structure:
+-------------------
+E1:
+---
+* S0   (Descry)             : [CUTSCENE] Niryone's camp is attacked by some enemies. Rhyan is wounded, but does not feel pain, and healing magic only hurts him
+* S1   (Investigations)     : Niryone and Elynia begin to retrace their steps and investigate a town. They receive accounts of strange activity on behalf of the leaders.
+* S2   (Sword and Cipher)   : Suspicious, they infiltrate his office, and find a key and a message relating to a group traveling north.
+* S3   (Duplicates)         : The group heads to intercept this group. They find the real leader of the town unconscious. The head of the party flees.
+* S4   (Pursuit)            : They pursue and capture him. Through interrogation, the human reveals his destination, one in orcish territory, and origin, Mizenwyn's town
+* S5.1 (Ambush in Wesmere)  : Niryone and Elynia head towards Wesmere forest for help. They are ambushed by some silent warriors wearing masks. Fake Rhyan is killed
+* S5.2 (Change of Plans)    : [CUTSCENE] Niryone meets with the Ka'lian. They decline her requests for help. Scene cuts to Mizenwyn being informed of Niryone's actions 
+* S6   (Awakening - Part 1) : Rhyan escapes from prison, finds Galamor
+* S7   (Fleeing the Swarm)  : Rhyan and Galamor find a dwarf with an important message, and help him return to his main force. Bat swarm appears
+* S8.1 (Reunion)            : Rhyan leads some dwarves against an attacking Northguard(?) force. Elynia and Niryone appear in battle
+* S8.2 (Revelation)         : [CUTSCENE] Meeting with dwarven and orc leaders, and Niryone, Elynia, Galamor, and Rhyan
+* S9A  (Descent)            : Descending deeper into dungeon from S6
+* S9B  (Awakening - Part 2) : Find prisoners
+* S10  (Glyn's Forest)      : Breather scenario. The group journeys towards Weldyn, and confront some bandits in Glyn's Forest
+* S11  (Return to Weldyn)   : Battle against fake Mizenwyn
+* S12  (Return of the King) : [CUTSCENE] The king returns to the throne, only to reveal he is Mizenwyn in disguise
+
+E2:
+---
+* S0 (A Plan is Made)        : [CUTSCENE] 9 years later. The Ka'lian wants Niryone to assassinate Mizenwyn. She accepts
+* S1 (River of Blood)        : Niryone and co cross the Great River at the Ford of Abez. Niryone is forced to kill Rhyan
+* S2 (The Northern Front)    : Galamor is leading a force of Dwarves and Orcs against Mizenwyn's minions as a distraction for Niryone
+* S3 (Infiltration)          : They find and enter a back entrance to the royal palace
+* S4 (Proximus)              : Navigate the palace
+* S5 (A Final Confrontation) : Boss fight with Mizenwyn
+* S6 (Epilogue)              : [CUTSCENE] Elynia volunteers to destroy the SoF, then bribes the crafters not to and erases their memories before reporting it destroyed
+
+Plot summary:
+-------------
+Mizenwyn sees the state of the empire, and decides take it over, out of personal desire for power and hubris. He begins capturing, with the help of his undead, a few minor officials in the kingdom, slowly working his way up the chain of command, eventually corrupting noblemen within Weldyn itself. However, there is a slip. Niryone becomes suspicious due to the Rhayn's (Niryone and Elynia's traveling companion) inability to feel pain and his avoidance of healing magic. She and Elynia retrace their steps, investigate, gradually gather more and more info, eventually almost seeing Mizenwyn's full plot. 
+
+Niryone goes to the Ka'lian in Wesmere for help. On the way, they are ambused by some silent masked warriors. In the process, fake Rhyan is destroyed. When the group finally reaches the Ka'lain, they decline on grounds of not enough solid evidence and the fact that they have their hands full with a random necromancer and his pirate/bandit allies attacking western Aethenwood, for reasons undisclosed.
+
+Mizenwyn realizes Niryone and co could expose him before he has secured his place on the throne. He cannot kill her, or he will have the entire elvish civilization after him. He cannot capture her, as she a powerful elvish sorceress with power to rival his own.
+
+Instead, he captures the king. The economy is failing, popular opinion of the crown is divided, and now the king has disappeared. Other rebellious lords (other than Mizenwyn, that is) see their chance at dominion. And so sparks a civil war, with the crown forces (some of which are doppelgangers) and the remaining loyal lords on one side, and each rebel lord on his own side (except those that are doppelgangers, which are presumably working together in secret).
+
+Mizenwyn then casts a spell on himself, to disguise himself as the king, and casts a spell on an apprentice to make him appear to be Mizenwyn. He tells his minions to hide the real king until the time comes, then kill him. Mizenwyn then travels to the cave system in the Heart Mountains where the rest of his prisoners are being kept, and waits. He deliberately lets Niryone continue to discover his original plot of invading Wledyn while civil war was in force and taking the throne. 
+
+Rhyan then escapes prison, after finally having woken from a magic-induced coma. On his way out, he finds Galamor. They leave the cave, and assist a wandering dwarf back to his main force. They are attacked by a band of masked warriors, and are forced to retaliate.
+
+Meanwhile, Niryone has been traveling North on a lead she had found. This leads her smack dab into the middle of the conflict between the orcs and dwarves. She and Elynia help drive them back, after which they hold a meeting with an allied orcish chieftain from the Northern Alliance, Galamor, Rhyan, and the leader of the dwarves Rhyan helped. They realize Mizenwyn is keeping his prisoners in the very facility Rhyan and Galamor escaped from. They return to free the rest.
+
+After Niryone and co find and free the prisoners, including the disguised Mizenwyn, they hurry back to Weldyn and attempt to stop Mizenwyn's double from taking the throne. They succeed, and place who they consider to be the real King back on the throne. However, he is actually Mizenwyn in disguise, a fact which he then reveals.
+
+Nine years later, Mizenwyn finally poses enough of a threat to the civilizations of the Great Continent that the Ka'lian and Northern Alliance want him eliminated. They choose Niryone and her band to do the job as a way for them to atone for their massive mistake. The Northern Alliance agrees to skirmish the northern border of the Empire to allow Niryone and co to infiltrate the palace undetected. She accepts.
+
+Galamor is one of the leaders of the skirmishing troops. This job he does well, attracting more and more of Wesnoth's military to attack him and his allies, which results in few to oppose Niryone's group as they cross the Ford of Abez. Unfortunately, here Rhyan is struck by a wayward spell, and transforms into a hideous facsimile of himself. Niryone is forced to kill him, much to Elynia's dismay. Though she does not harbor her old feeling for him, he still meant a lot to him, and she is greatly upset at his death.
+
+Eventually, Niryone's group manages to infiltrate the palace and navigate to Mizenwyn's location. An epic battle commences between Mizenwyn, Niryone, and Elynia. In the process, Niryone is mortally wounded. She tells Elynia with her last breath to use the SoF against their enemies. Elynia then manages to grab the SoF from Mizenwyn's hand, and use it to finally kill him. The First Empire of Wesnoth is dissolved, and Mizenwyn's minions executed. An impromptu Council of War orders the SoF destroyed. Elynia agrees to do so, and takes it deep into Knalga to have it disassembled. However, she changes her mind, and instead bribes the crafters to graft it to Niryone's staff in place of the jewel already there. She then casts an amnesia spell on them, and returns to Weldyn a year later, reporting her mission accomplished.
+
+
+Character Bios:
+---------------
+* Rhyan
+--------
+17, a young hunter that travels with Elynia and Niryone. He asks to travel with them after saving Elynia from a large pack of wild wolves that caught her by surprise. 
+Though he is a son of a small lord, he doesn't want the responsibility of sitting in political office, and would rather spend his time hunting and roaming. Elynia is strongly attracted to him, but it is unknown if the feelings are reciprocated.
+
+* Galamor
+---------
+A dwarvish pricne who got on Mizenwyn's bad side a few mounts prior to the campaign begins. He was thrown in the same cave system Rhyan would be thrown in months later. He has an irrational fear of spiders, and is bitter as a result, since he can never escape his fear. Rhyan rescues him, and he agrees to help him. Later on, he learns to be be less bitter.

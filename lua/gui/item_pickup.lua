@@ -1,0 +1,87 @@
+--#textdomain wesnoth-NX-RPG
+
+---
+-- This brings up a dialog where the player has 3 choices:
+-- * USE: Apply the item's effect, and add to inventory if effect_type = continuous
+-- * TAKE: Add item to inventory. No effect is applied
+-- * LEAVE: Do nothing
+--
+-- [pick_up_item]
+--     id=must be unique
+--     name= _ "string"
+--     image=path/to/image.png
+--     description= _ "translatable string"
+--     effect_type=use either "single" or "continuous"
+--     event=the name of the event to to fire if you USE or TAKE the item
+--     [usable_if]
+--         ... The item will only be usable if this condition is matched ...
+--     [/usable_if]
+--     [command]
+--         ... Code to exceute when item is used
+--     [/command]
+--     [removal_command]
+--         ... Code to be executed if item is being unequiped.
+--             Only applies if effect_type = continuous
+--     [/removal_command]
+-- [/pick_up_item]
+---
+
+local dialog = nxrequire "gui/dialogs/item_pickup"
+local buttons = dialog.buttons
+dialog = dialog.dialog
+
+--This dialogue pops up when you move to pick up an item
+function wml_actions.pick_up_item(cfg)
+	cfg = helper.shallow_parsed(cfg)
+
+	local unit = wesnoth.get_variable "unit"
+	local vars = helper.get_child(unit, "variables")
+
+	local function item_preshow()
+		-- Set all widget starting values
+		wesnoth.set_dialog_value ( cfg.name, "item_name" )
+		wesnoth.set_dialog_value ( cfg.image or "", "image_name" )
+		wesnoth.set_dialog_value ( cfg.description, "item_description" )
+
+		-- Disable the use button if necessary
+		wesnoth.set_dialog_active(wesnoth.eval_conditional(helper.get_child(cfg, "usable_if") or {}), "use_button")
+	end
+
+	local button = wesnoth.show_dialog(dialog, item_preshow)
+
+	local function set_item_vars(activate)
+		local item = helper.get_child(vars, "item", cfg.id)
+
+		if item then
+			item.quantity = (item.quantity or 0) + 1
+		else
+			if activate then
+				cfg.active = true
+			end
+			table.insert(vars, {"item", cfg})
+		end
+
+		wesnoth.put_unit(unit)
+	end
+
+	local function clean_up_item()
+		if cfg.event then
+			wesnoth.fire_event(cfg.event)
+		end
+		items.remove(
+			wesnoth.current.event_context.x1, wesnoth.current.event_context.y1)
+	end
+
+	if button == buttons.use or button == -1 then
+		if cfg.effect_type == "continuous" then
+			set_item_vars('and activate item')
+		end
+		wml_actions.command(helper.get_child(cfg, "command"))
+		clean_up_item()
+	end
+
+	if button == buttons.take then
+		set_item_vars()
+		clean_up_item()
+	end
+end

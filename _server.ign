@@ -1,0 +1,10 @@
+.*
+.*/
+*~*
+*.swp
+*.pbl
+*.ign
+_info.cfg
+maint-mode.cfg
+notes/
+
