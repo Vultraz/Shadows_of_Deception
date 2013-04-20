@@ -1,220 +1,199 @@
+NX-RPG/Revenge from the Shadows: Changelog
+==========================================
 
-0.3.0+svn
-==============================================================================
+Version 0.3.0+dev
+-----------------
+* General
+  * Dropped support for 1.11.1 and below
+  * Removed Nightmare difficulty
+  * Made character units cost no upkeep
+  * Fixed an issue causing savefile corruption
+  * Removed Character Development
+ 
+* Scenarios
+  * Removed Norethial and Althugor
+  * E1S0
+    * New cutscene scenario
+  * E1S6
+    * This scenario was formally E1S1
+    * Reworked scenario and map for cleaner, simpler gameplay.
+	* Improved dialog
+	* Some balancing changes
+  * E1S7
+    * This scenario was formally E1S2
+    * New scenario
 
-General
-------------------------------------------------------------------------------
-* Dropped support for 1.11.1 and below.
-* Removed Nightmare difficulty.
-* Made character units cost no upkeep.
-* Fixed an issue causing savefile corruption.
-* Added a custom theme, identical to the default, but with a panel for mana.
-
-Scenarios
-------------------------------------------------------------------------------
-* Removed Norethial. Her character will be replaced by Niryone and Elynia.
-* E1S0: New cutscene scenario.
-* E1S1: Reworked scenario and map for cleaner, simpler gameplay.
-  * Improved dialog.
-  * Some balancing changes.
-* E1S3: New scenario.
-
-Lua
-------------------------------------------------------------------------------
-* Huge overhaul and bigfixing of lua code, both to the GUI and custom tags.
-
-Graphics
-------------------------------------------------------------------------------
-* Fixed duplicate terrain IDs.
-* Fixed missing image in traits column in character development.
-* Removed Campfire custom terrain (it’s mainline in 1.11).
-* Fixed bug where walls were drawn over gate corners (ported from AtS).
-* New or updated unit graphics: Northguard Nightshaft.
-
-0.3.0
-==============================================================================
-
-Scenarios
-------------------------------------------------------------------------------
-* E1S1
-  * Fixed some incorrect event filters.
-  * Fixed wrong side positions (for sides 2 and 3).
-  * Fixed some grammar issues.
-  * Fixed possible bug where the gates might not be unlocked if both units
-    were found before the lockpick.
-  * Fixed a bug that causes the locked gates to continuously respawn.
-  * Balancing: reduced enemy starting gold and keep size.
-* E1S2
-  * Fixed an 'unknown unit' error.
-  * Prevented the scenario from ending when all enemies are dead, but before
-    the swarm.
-
-Lua
-------------------------------------------------------------------------------
-* Fixed a bug where it was possible to infinitely pick up an item with the
-  quantity addition acting up each time.
-* Fixed [unlock_gates] using the wrong SUF for the catch-all locked gated
-  filter.
-* GUI
-  * Fixed a bug that appeared when opening the inventory when another allied
-    hero unit was adjacent.
-  * Completed help dialog and added 2 topic for it (so far).
-
-WML
-------------------------------------------------------------------------------
-* Made locked gates actually remove when killed.
-* Made game scroll to and float some text over locked gates when they get
-  unlocked.
-* Fixed a bug where error appear when a unit who hadn't picked up an item
-  killed an enemy unit.
-
-Sound Effects
-------------------------------------------------------------------------------
-* Added new thunder sounds, each with a near and far variation.
-* Added two new wind sounds.
-* Added three new rain variations - two for indoors (soft and loud) and one
-  outdoors variation.
-
-0.2.9
-==============================================================================
-
-Scenarios
-------------------------------------------------------------------------------
-* E1S1
-  * Redesigned the corridor at the beginning, plus some other misc map tweaks.
-  * Improved some dialog.
-  * Make shroud clear in a straighter line when the first gates are knocked
-    down.
-  * Made use of some of the new custom WML tags.
-  * Made use of locked gate terrains.
-* E1S2
-  * Fixed a bug where the sound source didn't play.
-
-Lua
-------------------------------------------------------------------------------
-* Fixed some translatability issues.
-* Fixed an error in [check_inventory] that appeared every time you killed a
-  unit.
-* Allowed [check_inventory]'s filter to fallback to 'id = $unit.id' if no
-  [filter] tag is found.
-* Allowed [check_inventory] to set the var 'has_(item)' and exit if no [then]
-  tag is found.
-* Fixed a bug that caused [add_status_icon] to fail when used.
-* Split [add_status_icon] into two functions: an internal lua function for
-  access in lua files and a wml_actions frontend for use in WML files.
-* New WML tags: [setup_gates], [unlock_gates]. The former is a replacement for
-  {DOOR_TILES_TO_UNITS}, the latter converts locked gates to regular gates.
-* GUI
-  * Fixed some errors that prevented the character development dialog from
-    opening.
-  * The character development dialog now sets a trait for the selected class
-    and trait and sets the selected alignment when exiting via the 'Done'
-    button.
-  * Used a unit's name for strings using said value that are displayed to the
-    player instead of unit.id.
-  * Unlocked the new character development dialog. This replaces the old
-    system, and has different class choices.
-
-Graphics
-------------------------------------------------------------------------------
-* Terrains
-  * New or updated terrains: Fake Shroud, Locked Gate, Stone Floor.
-  * New terrain graphics macro: {TRANSITION_OVERLAY_L}.
-
-WML
-------------------------------------------------------------------------------
-* General macro updates and additions.
-* Killed the {INITIATE_SCEN_VARS} stuff.
-* Updated the gettext-helper file (mainline-strings.cfg).
-* Fixed a bug that causes pre processor errors when a macro from
-  mainline-strings.cfg is used in a editor-loaded file.
-
-0.2.8a
-==============================================================================
-
-Music
-------------------------------------------------------------------------------
-* Changed the name of the music pack addon to 'NX-Music' for consistency.
-
-0.2.8
-==============================================================================
-
-Scenarios
-------------------------------------------------------------------------------
-* P1S1 - Awakening:
-  * Some misc fixes and balancing.
-  * Updated map.
-  * Better dialog.
-* P1S2 - Unknown Land: New scenario.
-
-WML
-------------------------------------------------------------------------------
-* General macro updates.
-* Added a maintainer mode.
-* Made wmllint run (almost) clean on the add-on.
-* Added a mainline-strings.cfg file.
-* Made {RECALL_(CHARACTER)} macros actually work.
-* RPG systems.
-  * Improved item pickup code.
-  * Improved character development code to go alone with the new dialog.
-  * Made {SHOP_LABELS} work.
-  * Added base for quests.
-
-Lua
-------------------------------------------------------------------------------
-* Worked some bugs out of the [check_for_character] function.
-* New WML tags: [check_inventory], [add_status_icon].
-* GUI
-  * Updated inventory dialog.
-  * Added new character development dialog (still locked).
-  * Added new nx help dialog (still needs help topics).
-
-Sound Effects
-------------------------------------------------------------------------------
-* Added gate hit and die/fall sounds
-
-Music
-------------------------------------------------------------------------------
-* Moved the music to a separate addon, NX_Music, for faster upload and
-  download times. The addon is an optional dependency. This makes it easier
-  for people with slower Internet speeds to download this campaign. All
-  changelog entries related to music henceforth relate to said NX_Music addon.
-* Added new tracks:
-  * Snowfall (from AtS).
-  * The High King's March (from AtS).
-  * Zhaytee Tragedy (from TEG).
-  * Land of Adventure (from ABI)
-
-Graphics
-------------------------------------------------------------------------------
-* Fixed ugly border around impassible mountains when rain is in use.
-* Updated the custom TOD images for the rainy schedule.
-* Made rainy schedule use a slightly darker lighting than the normal schedule.
-* Removed/relocated lots of images.
-* Added light rain variant images and code, and raindrop images (no code yet).
-* Various updated images for the shop, etc. Also removed unnecessary ones.
-* Terrain
-  * Allowed overlays on Dark Castles and Keeps.
-  * Made Dark Castles transition nicely with other terrains.
-  * Fixed bug where Volcanic Abyss terrain didn't display correctly.
+* Lua
+  * Huge overhaul and bigfixing of lua code, both to the GUI and custom tags
+	
+* Graphics
+  * Fixed duplicate terrain IDs
+  * Fixed missing image in traits column in character development
+  * Removed Campfire custom terrain (it's mainline in 1.11)
+  * Fixed bug where walls were drawn over gate corners (ported from AtS)
+  
 * Units
-  * Added unit image for Gates. This fixes an "Image not found" error that
-    appeared when the were selected.
-  * New or updated unit graphics: Leech, Skeleton Rider, Bone Knight,
-    Death Baron, Northguard Fighter, Northguard Warrior,
-    Northguard Deathblade, Northguard Archer, Northguard Silverbow.
+  * New or updated unit graphics: Northguard Nightshaft, Elvish Spellbinder,
+    Villager
+  * Added WML for more Northguard units
 
-Units
-------------------------------------------------------------------------------
-* Made Rhyan a trapper
-* New units: Leech, Skeleton Rider, Bone Knight, and Death Baron, (from IftU) 
-  Northguard Fighter, Northguard Warrior, Northguard Deathblade (custom).
+Version 0.3.0
+-------------
+* Scenarios
+  * E1S1
+    * Fixed some incorrect event filters
+    * Fixed wrong side positions (for sides 2 and 3)
+    * Fixed some grammar issues
+    * Fixed possible bug where the gates might not be unlocked if both units were found
+      before the lockpick
+    * Fixed a bug that causes the locked gates to continuously respawn
+    * Balancing: reduced enemy starting gold and keep size
+  * E1S2
+    * Fixed an 'unknown unit' error
+    * Prevented the scenario from ending when all enemies are dead, but before the swarm
 
-0.2.5
-==============================================================================
-Too much to record - total revamp of everything.
+* Lua
+  * Fixed a bug where it was possible to infinitely pick up an item with the quantity
+    addition acting up each time
+  * Fixed [unlock_gates] using the wrong SUF for the catch-all locked gated filter
+  * GUI
+    * Fixed a bug that appeared when opening the inventory when another allied hero unit
+      was adjacent
+    * Completed help dialog and added 2 topic for it (so far)
 
-0.0.5-0.1.9
-==============================================================================
-Too much to record - initial work on NX/RftS.
+* Code
+  * Made locked gates actually remove when killed
+  * Made game scroll to and float some text over locked gates when they get unlocked
+  * Fixed a bug where error appear when a unit who hadn't picked up an item killed
+    an enemy unit
 
+* Sound Effects
+  * Added new thunder sounds, each with a near and far variation
+  * Added two new wind sounds
+  * Added three new rain variations - two for indoors (soft and loud) and one outdoors
+    variation
+
+Version 0.2.9
+-------------
+* Scenarios
+  * E1S1
+    * Redesigned the corridor at the beginning, plus some other misc map tweaks
+    * Improved some dialog
+    * Make shroud clear in a straighter line when the first gates are knocked down
+    * Made use of some of the new custom WML tags
+    * Made use of locked gate terrains
+  * E1S2
+    * Fixed a bug where the sound source didn't play
+
+* Lua
+  * Fixed some translatability issues
+  * Fixed an error in [check_inventory] that appeared every time you killed a unit
+  * Allowed [check_inventory]'s filter to fallback to 'id = $unit.id' if no [filter] tag
+    is found
+  * Allowed [check_inventory] to set the var 'has_(item)' and exit if no [then] tag
+    is found
+  * Fixed a bug that caused [add_status_icon] to fail when used
+  * Split [add_status_icon] into two functions: an internal lua function for access in lua 
+    files and a wml_actions frontend for use in WML files
+  * New WML tags: [setup_gates], [unlock_gates]. The former is a replacement for
+    {DOOR_TILES_TO_UNITS}, the latter converts locked gates to regular gates
+  * GUI
+    * Fixed some errors that prevented the character development dialog from opening
+    * The character development dialog now sets a trait for the selected class and trait
+      and sets the selected alignment when exiting via the 'Done' button
+    * Used a unit's name for strings using said value that are displayed to the player
+      instead of unit.id
+    * Unlocked the new character development dialog. This replaces the old system, and
+      has different class choices
+
+* Graphics
+  * Terrains
+    * New or updated terrains: Fake Shroud, Locked Gate, Stone Floor
+    * New terrain graphics macro: {TRANSITION_OVERLAY_L}
+
+* General code
+  * General macro updates and additions
+  * Killed the {INITIATE_SCEN_VARS} stuff
+  * Updated the gettext-helper file (mainline-strings.cfg)
+  * Fixed a bug that causes pre processor errors when a macro from mainline-strings.cfg
+    is used in a editor-loaded file
+
+Version 0.2.8a
+--------------
+* Music
+  * Changed the name of the music pack addon to 'NX-Music' for consistency
+
+Version 0.2.8
+-----------------
+* Scenarios
+  * P1S1 - Awakening:
+    * Some misc fixes and balancing
+    * Updated map
+    * Better dialog
+  * P1S2 - Unknown Land
+    * New scenario
+
+* General Code
+  * General macro updates
+  * Added a maintainer mode
+  * Made wmllint run (almost) clean on the add-on
+  * Added a mainline-strings.cfg file
+  * Made {RECALL_(CHARACTER)} macros actually work.
+  * RPG systems
+    * Improved item pickup code
+    * Improved character development code to go alone with the new dialog
+    * Made {SHOP_LABELS} work
+    * Added base for quests
+
+* Lua
+  * Worked some bugs out of the [check_for_character] function
+  * New WML tags: [check_inventory], [add_status_icon]
+  * GUI
+    * Updated inventory dialog
+    * Added new character development dialog (still locked)
+    * Added new nx help dialog (still needs help topics)
+
+* Sound Effects
+  * Added gate hit and die/fall sounds
+
+* Music
+  * Moved the music to a separate addon, NX_Music, for faster upload and download times.
+    The addon is an optional dependency. This makes it easier for people with slower
+    internet speeds to download this campaign. All changelog entries related to music
+    henceforth relate to said NX_Music addon.
+  * Added new tracks:
+    * Snowfall (from AtS)
+    * The High King's March (from AtS)
+    * Zhaytee Tragedy (from TEG)
+    * Land of Adventure (from ABI)
+
+* Graphics
+  * Fixed ugly border around impassible mountains when rain is in use
+  * Updated the custom TOD images for the rainy schedule
+  * Made rainy schedule use a slightly darker lighting than the normal schedule
+  * Removed/relocated lots of images
+  * Added light rain variant images and code, and raindrop images (no code yet)
+  * Various updated images for the shop, etc. Also removed unnecessary ones.
+  * Terrain
+    * Allowed overlays on Dark Castles and Keeps
+    * Made Dark Castles transition nicely with other terrains
+    * Fixed bug where Volcanic Abyss terrain didn't display correctly
+  * Units
+    * Added unit image for Gates. This fixes an "Image not found" error that appeared 
+      when the were selected.
+    * New or updated unit graphics: Leech, Skeleton Rider, Bone Knight, and Death Baron,
+      Northguard Fighter, Northguard Warrior, Northguard Deathblade, Northguard Archer,
+      Northguard Silverbow
+
+* Units
+  * Made Rhyan a trapper
+  * New units: Leech, Skeleton Rider, Bone Knight, and Death Baron, (from IftU) 
+    Northguard Fighter, Northguard Warrior, Northguard Deathblade (custom)
+
+Version 0.2.5
+-------------
+* Too much to record - total revamp of everything
+
+Version 0.0.5-0.1.9
+-------------------
+* Too much to record - initial work on NX/RftS
