@@ -1,12 +1,14 @@
 
 return {
 	{	name = "General", text = [[
-Many elements of this campaign differ from standard Wesnoth. Many of these elements are derived from the SurvivalXtreme (SX) add-on; if you have played that, some differences may be familiar. If you aren’t sure if I’ve implemented something differently, look here; this should explain.
+Many elements of this campaign differ from standard Wesnoth. If you aren’t sure if I’ve implemented something differently, look here; this should explain.
 
 Tips:
 • Read the objectives — there may be special win conditions.
 • Don’t try to eradicate all the enemies — they may be respawning.
-• Explore — there may be hidden areas.]]
+• Explore — there may be hidden areas.
+
+NOTE: A game screen resolution of 800x600 or greater is recommended. Some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under Preferences → Display.]]
 	};
 }
 
