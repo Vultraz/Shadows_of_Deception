@@ -1,0 +1,20 @@
+List of art assets that need to be created
+-------------------------------------------
+
+Unit sprites
+------------
+
+E1
+--
+Rhyan
+Mizenwyn (Real)
+King of Wesnoth
+King of Wesnoth (Injured)
+Galamor
+
+E2
+Niryone (Injured)
+Rhyan (Older)
+Elynia (Shyde)
+Elynia (Shyde) w/ wings
+Elynia (Shyde) w/wings and SoF
