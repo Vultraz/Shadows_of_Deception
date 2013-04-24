@@ -10,6 +10,7 @@ function wml_actions.inventory_controller(cfg)
 	local adjacent_units = wesnoth.get_variable(
 		"units_adjacent_to_unit_using_inventory") or {}
 	local selected_recipient = 1
+	local selected_row = 1
 	local page_count = 0
 	local var, inv_list_data, button, continue
 	local command_list = {}
@@ -62,6 +63,8 @@ function wml_actions.inventory_controller(cfg)
 
 			return
 		end
+
+		selected_row = i
 		refresh_use_button_text(i)
 		wesnoth.set_dialog_value(i, "details_pages")
 	end
@@ -139,7 +142,7 @@ function wml_actions.inventory_controller(cfg)
 		-- Sets initial values of stuff
 		print_item_list()
 
-		wesnoth.set_dialog_value(1, "inventory_list")
+		wesnoth.set_dialog_value(selected_row, "inventory_list")
 		select_from_inventory()
 
 		-- TODO: remove these after their recpective functions have been coded
