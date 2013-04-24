@@ -104,7 +104,6 @@ function wml_actions.inventory_controller(cfg)
 				item_var.active = true
 			end
 
-			wesnoth.put_unit(unit)
 			table.insert(command_list,(helper.get_child(list_item, "command")))
 		else
 			wesnoth.set_dialog_value(
@@ -114,10 +113,10 @@ function wml_actions.inventory_controller(cfg)
 				item_var.active = false
 			end
 
-			wesnoth.put_unit(unit)
 			table.insert(command_list,(helper.get_child(list_item, "removal_command")))
 		end
 
+		wesnoth.put_unit(unit)
 		refresh_use_button_text(i)
 	end
 	
