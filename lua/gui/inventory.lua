@@ -37,11 +37,11 @@ function wml_actions.inventory_controller(cfg)
 		local item = inv_list_data[index]
 
 		if item.active and item.effect_type == "continuous" then
-			wesnoth.set_dialog_value("Unequip Item", "use_button")
+			wesnoth.set_dialog_value(_"Unequip Item", "use_button")
 		elseif not item.active and item.effect_type == "continuous" then
-			wesnoth.set_dialog_value("Equip Item", "use_button")
+			wesnoth.set_dialog_value(_"Equip Item", "use_button")
 		else
-			wesnoth.set_dialog_value("Use Item", "use_button")
+			wesnoth.set_dialog_value(_"Use Item", "use_button")
 		end
 
 		wesnoth.set_dialog_active(
