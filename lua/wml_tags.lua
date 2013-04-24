@@ -227,3 +227,18 @@ function wml_actions.fade_out_music(cfg)
 	set_music_volume(100)
 end
 
+-- Override lp8 [remove_object].
+-- Default [filter]x,y=$x1,$y1.
+do
+	local old, f, c = wml_actions.remove_object, {'filter',{}}
+	function wml_actions.remove_object(cfg)
+		if not helper.get_child(cfg, 'filter') then
+			c = wesnoth.current.event_context
+			f[2].x, f[2].y = c.x1, c.y1
+			cfg = helper.literal(cfg)
+			cfg[#cfg+1] = f
+		end
+		old(cfg)
+	end
+end
+
