@@ -109,9 +109,7 @@ function wml_actions.inventory_controller(cfg)
 			wesnoth.set_dialog_value(
 				list_item.image, "inventory_list", i, "list_image")
 
-			if list_item.effect_type == "continuous" then
-				item_var.active = false
-			end
+			item_var.active = false
 
 			table.insert(command_list,(helper.get_child(list_item, "removal_command")))
 		end
