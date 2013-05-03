@@ -122,7 +122,7 @@ function wml_actions.inventory_controller(cfg)
 		wesnoth.put_unit(unit)
 		refresh_use_button_text(i)
 	end
-	
+
 	-- Preshow function
 	local function inventory_preshow()
 		-- List for units
@@ -157,7 +157,7 @@ function wml_actions.inventory_controller(cfg)
 			and wesnoth.show_dialog(dialogs.normal, inventory_preshow)
 			or wesnoth.show_dialog(dialogs.empty)
 	until not keepGoing()
-	
+
 	for i = 1, #command_list do
 		wml_actions.command(command_list[i])
 	end
