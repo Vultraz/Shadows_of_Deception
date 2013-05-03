@@ -6,7 +6,6 @@ Unit sprites
 
 E1
 --
-Rhyan
 Mizenwyn (Real)
 King of Wesnoth
 King of Wesnoth (Injured)
