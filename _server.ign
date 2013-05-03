@@ -1,5 +1,6 @@
 .*
 .*/
+.git*
 *~*
 *.swp
 *.pbl
@@ -7,4 +8,3 @@
 _info.cfg
 maint-mode.cfg
 notes/
-
