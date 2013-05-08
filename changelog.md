@@ -1,41 +1,45 @@
-NX-RPG/Revenge from the Shadows: Changelog
+NX-RPG/Shadows of Deception: Changelog
 ==========================================
 
-Version 0.3.0+dev
+Version 0.4.0+dev
 -----------------
 * General
+  * Gave campaign a new official name: Shadows of Deception
   * Dropped support for 1.11.1 and below
   * Removed Nightmare difficulty
   * Made character units cost no upkeep
-  * Fixed an issue causing savefile corruption
+  * Fixed an issue in E1S7 causing savefile corruption
   * Removed Character Development
- 
-* Scenarios
   * Removed Norethial and Althugor
+
+* Scenarios
   * E1S0
     * New cutscene scenario
-  * E1S6
-    * This scenario was formally E1S1
+  * E1S6 (This scenario was formally E1S1)
     * Reworked scenario and map for cleaner, simpler gameplay.
 	* Improved dialog
 	* Some balancing changes
-  * E1S7
-    * This scenario was formally E1S2
-    * New scenario
+  * E1S7 (This scenario was formally E1S3)
+    * New scenario 
 
 * Lua
   * Huge overhaul and bigfixing of lua code, both to the GUI and custom tags
-	
+  * Added 8680's wesnoth-lp8 lua pack as a git submodule
+
 * Graphics
   * Fixed duplicate terrain IDs
   * Fixed missing image in traits column in character development
   * Removed Campfire custom terrain (it's mainline in 1.11)
+  * Removed Glowing Dark Flagstone terrain
   * Fixed bug where walls were drawn over gate corners (ported from AtS)
-  
+  * New or updated unit graphics: Rhyan, Mizenwyn (Armored)
+  * Removed show weather images
+
 * Units
-  * New or updated unit graphics: Northguard Nightshaft, Elvish Spellbinder,
+  * New units: Northguard Nightshaft, Elvish Spellbinder, Elvish Apprentice, 
     Villager
   * Added WML for more Northguard units
+  * Force a shroud/fog refresh whenever a gate is destroyed.
 
 Version 0.3.0
 -------------
