@@ -1,5 +1,6 @@
+=======================================
 NX-RPG/Shadows of Deception: Changelog
-==========================================
+=======================================
 
 Version 0.4.0+dev
 -----------------
@@ -8,7 +9,7 @@ Version 0.4.0+dev
   * Dropped support for 1.11.1 and below
   * Removed Nightmare difficulty
   * Made character units cost no upkeep
-  * Fixed an issue in E1S7 causing savefile corruption
+  * Fixed an issue in E1S6 causing savefile corruption
   * Removed Character Development
   * Removed Norethial and Althugor
 
@@ -17,28 +18,27 @@ Version 0.4.0+dev
     * New cutscene scenario
   * E1S6 (This scenario was formally E1S1)
     * Reworked scenario and map for cleaner, simpler gameplay.
-	* Improved dialog
-	* Some balancing changes
+    * Improved dialog
+    * Some balancing changes
   * E1S7 (This scenario was formally E1S3)
     * New scenario 
 
 * Lua
-  * Huge overhaul and bigfixing of lua code, both to the GUI and custom tags
+  * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
   * Added 8680's wesnoth-lp8 lua pack as a git submodule
 
 * Graphics
   * Fixed duplicate terrain IDs
-  * Fixed missing image in traits column in character development
   * Removed Campfire custom terrain (it's mainline in 1.11)
   * Removed Glowing Dark Flagstone terrain
   * Fixed bug where walls were drawn over gate corners (ported from AtS)
-  * New or updated unit graphics: Rhyan, Mizenwyn (Armored)
+  * New or updated unit graphics: Mizenwyn (Armored), Villager
   * Removed show weather images
 
 * Units
-  * New units: Northguard Nightshaft, Elvish Spellbinder, Elvish Apprentice, 
-    Villager
-  * Added WML for more Northguard units
+  * New units: Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
+    Elvish Spellbinder, Elvish Apprentice, Wanderer
+  * Minor balancing changes
   * Force a shroud/fog refresh whenever a gate is destroyed.
 
 Version 0.3.0
