@@ -1,7 +1,8 @@
 --#textdomain wesnoth-NX-RPG
 
 ---
--- This brings up a dialog where the player has 3 choices:
+-- This brings up a dialog when a unit moves to pick up an item.
+-- There are 3 choices:
 -- * USE: Apply the item's effect, and add to inventory if effect_type = continuous
 -- * TAKE: Add item to inventory. No effect is applied
 -- * LEAVE: Do nothing
@@ -30,7 +31,6 @@ local dialog = nxrequire "gui/dialogs/item_pickup"
 local buttons = dialog.buttons
 dialog = dialog.dialog
 
---This dialogue pops up when you move to pick up an item
 function wml_actions.pick_up_item(cfg)
 	cfg = helper.shallow_parsed(cfg)
 
