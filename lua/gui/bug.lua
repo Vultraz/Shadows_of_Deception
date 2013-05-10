@@ -14,7 +14,10 @@
 --     [/condition]
 -- [/bug]
 ---
-function wesnoth.wml_actions.bug(cfg)
+
+local dialogs = nxrequire "gui/dialogs/bug"
+
+function wml_actions.bug(cfg)
 	local cond = helper.get_child(cfg, "condition")
 
 	if cond and not wesnoth.eval_conditional(cond) then
@@ -33,105 +36,7 @@ function wesnoth.wml_actions.bug(cfg)
 		message = "[NX] BUG: " .. log_notice
 	})
 
-	local alert_dialog = {
-		maximum_width = 640,
-		maximum_height = 400,
-		T.helptip { id="tooltip_large" }, -- mandatory field
-		T.tooltip { id="tooltip_large" }, -- mandatory field
-		T.grid { -- Title, will be the object name
-			T.row {
-				T.column {
-					horizontal_alignment = "left",
-					grow_factor = 1, -- this one makes the title bigger and golden
-					border = "all",
-					border_size = 5,
-					T.label { definition = "title", id = "title", wrap = true }
-				}
-			},
-			T.row {
-				T.column {
-					vertical_alignment = "center",
-					horizontal_alignment = "center",
-					border = "all",
-					border_size = 5,
-					T.label { id = "message", wrap = true }
-				}
-			},
-			T.row {
-				T.column {
-					horizontal_grow = true,
-					T.grid {
-						T.row {
-							T.column {
-								horizontal_alignment = "left",
-								border = "all",
-								border_size = 5,
-								grow_factor = 1,
-								T.button { id = "details" }
-							},
-							T.column {
-								horizontal_alignment = "right",
-								border = "all",
-								border_size = 5,
-								T.button { id = "ok", return_value = 1 }
-							},
-							T.column {
-								horizontal_alignment = "right",
-								border = "all",
-								border_size = 5,
-								T.button { id = "quit", return_value = 2 }
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
 	local function show_details()
-		local dialog = {
-			maximum_width = 640,
-			maximum_height = 400,
-			T.helptip { id="tooltip_large" },
-			T.tooltip { id="tooltip_large" },
-			T.grid {
-				T.row {
-					T.column {
-						horizontal_alignment = "left",
-						grow_factor = 1,
-						border = "all",
-						border_size = 5,
-						T.label { definition = "title", id = "title", wrap = true }
-					}
-				},
-				T.row {
-					T.column {
-						horizontal_alignment = "left",
-						border = "all",
-						border_size = 5,
-						T.label { id = "message", wrap = true }
-					}
-				},
-				T.row {
-					T.column {
-						vertical_alignment = "center",
-						horizontal_grow = "true",
-						border = "all",
-						border_size = 5,
-						T.scroll_label { id = "wml", vertical_scrollbar_mode = "always" }
-					},
-				},
-				T.row {
-					T.column {
-						horizontal_alignment = "right",
-						border = "all",
-						border_size = 5,
-						T.button { id = "ok" }
-					}
-				}
-			}
-		}
-
 		local cap = _ "Details"
 		local msg = _ "The following WML condition was unexpectedly reached:"
 
@@ -139,7 +44,7 @@ function wesnoth.wml_actions.bug(cfg)
 		_ = wesnoth.textdomain "wesnoth"
 		local ok = _ "Close"
 
-		wesnoth.show_dialog(dialog, function()
+		wesnoth.show_dialog(dialogs.dialog, function()
 			wesnoth.set_dialog_canvas(1, {
 				T.rectangle {
 					x = 0,
@@ -185,7 +90,7 @@ function wesnoth.wml_actions.bug(cfg)
 		wesnoth.set_dialog_callback(show_details, "details")
 	end
 
-	if wesnoth.show_dialog(alert_dialog, preshow, nil) == 2 then
+	if wesnoth.show_dialog(dialogs.alert_dialog, preshow, nil) == 2 then
 		wesnoth.fire("endlevel", {
 			result = "defeat",
 			linger_mode = false
