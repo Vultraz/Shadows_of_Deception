@@ -34,6 +34,7 @@ Version 0.4.0+dev
   * Fixed bug where walls were drawn over gate corners (ported from AtS)
   * New or updated unit graphics: Mizenwyn (Armored), Villager
   * Removed show weather images
+  * New Fairy and Northguard race iconss
 
 * Units
   * New units: Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
