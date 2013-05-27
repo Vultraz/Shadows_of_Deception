@@ -78,17 +78,6 @@ local main_window = {
 								id = "help_text_pages",
 								T.page_definition {
 									T.row {
-										T.column {
-											border = "all",
-											border_size = 5,
-											horizontal_alignment = "left",
-											T.label {
-												definition = "title",
-												id = "topic_name"
-											}
-										}
-									},
-									T.row {
 										grow_factor = 1,
 										T.column {
 											border = "all",

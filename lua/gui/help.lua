@@ -25,8 +25,6 @@ local function preshow()
 		wesnoth.set_dialog_value(
 			h.name, "topic_list", i, "topic_list_name")
 		wesnoth.set_dialog_value(
-			h.name, "help_text_pages", i, "topic_name")
-		wesnoth.set_dialog_value(
 			h.text, "help_text_pages", i, "topic_text")
 	end
 
