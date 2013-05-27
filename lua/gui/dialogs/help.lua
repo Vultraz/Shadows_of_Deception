@@ -55,7 +55,7 @@ local main_window = {
 				horizontal_alignment = "left",
 				T.label {
 					definition = "title",
-					label = "Help Topics"
+					label = _ "Help Topics"
 				}
 			}
 		},
