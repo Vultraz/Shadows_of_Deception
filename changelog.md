@@ -27,6 +27,9 @@ Version 0.4.0+dev
   * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
   * Added 8680's wesnoth-lp8 lua pack as a git submodule
 
+* Sound and Music
+  * Added new track: "Lunar Cage" by AngeloB
+
 * Graphics
   * Fixed duplicate terrain IDs
   * Removed Campfire custom terrain (it's mainline in 1.11)
@@ -40,7 +43,7 @@ Version 0.4.0+dev
   * New units: Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
     Elvish Spellbinder, Elvish Apprentice, Wanderer
   * Minor balancing changes
-  * Force a shroud/fog refresh whenever a gate is destroyed.
+  * Force a shroud/fog refresh whenever an enemy is destroyed.
 
 Version 0.3.0
 -------------
