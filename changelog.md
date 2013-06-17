@@ -16,6 +16,8 @@ Version 0.4.0+dev
 * Scenarios
   * E1S0
     * New cutscene scenario
+  * E1S3
+    * New scenario
   * E1S6 (This scenario was formally E1S1)
     * Reworked scenario and map for cleaner, simpler gameplay.
     * Improved dialog
@@ -29,6 +31,7 @@ Version 0.4.0+dev
 
 * Sound and Music
   * Added new track: "Lunar Cage" by AngeloB
+  * Added new track: "Gathering Storm" by Blake Ewing (Ewing)
 
 * Graphics
   * Fixed duplicate terrain IDs
@@ -41,7 +44,7 @@ Version 0.4.0+dev
 
 * Units
   * New units: Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
-    Elvish Spellbinder, Elvish Apprentice, Wanderer
+    Elvish Spellbinder, Elvish Apprentice, Wanderer, Caravan
   * Minor balancing changes
   * Force a shroud/fog refresh whenever an enemy is destroyed.
 
