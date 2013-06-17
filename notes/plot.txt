@@ -14,7 +14,7 @@ E1:
 * S0   (Descry)             : [CUTSCENE] Niryone's camp is attacked by some enemies. Rhyan is wounded, but does not feel pain, and healing magic only hurts him
 * S1   (Investigations)     : Niryone and Elynia begin to retrace their steps and investigate a town. They receive accounts of strange activity on behalf of the leaders.
 * S2   (Sword and Cipher)   : Suspicious, they infiltrate his office, and find a key and a message relating to a group traveling north.
-* S3   (Duplicates)         : The group heads to intercept this group. They find the real leader of the town unconscious. The head of the party flees.
+* S3   (Gathering Storm)    : The group heads to intercept this group. They find the real leader of the town unconscious. The head of the party flees.
 * S4   (Pursuit)            : They pursue and capture him. Through interrogation, the human reveals his destination, one in orcish territory, and origin, Mizenwyn's town
 * S5.1 (Ambush in Wesmere)  : Niryone and Elynia head towards Wesmere forest for help. They are ambushed by some silent warriors wearing masks. Fake Rhyan is killed
 * S5.2 (Change of Plans)    : [CUTSCENE] Niryone meets with the Ka'lian. They decline her requests for help. Scene cuts to Mizenwyn being informed of Niryone's actions 
