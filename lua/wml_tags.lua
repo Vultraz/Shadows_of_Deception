@@ -227,8 +227,10 @@ function wml_actions.fade_out_music(cfg)
 	set_music_volume(100)
 end
 
+---
 -- Override lp8 [remove_object].
 -- Default [filter]x,y=$x1,$y1.
+---
 do
 	local old, f, c = wml_actions.remove_object, {'filter',{}}
 	function wml_actions.remove_object(cfg)
@@ -243,7 +245,9 @@ do
 end
 
 ---
--- Deactivates side so it will not appear or gain gold
+-- Deactivates specified sides
+-- This removes the sides from the map and side list and stores them
+-- in a variable
 ---
 function wesnoth.wml_actions.deactivate_and_serialize_sides(cfg)
 	local variable = cfg.variable or "sides"
@@ -274,7 +278,8 @@ function wesnoth.wml_actions.deactivate_and_serialize_sides(cfg)
 end
 
 ---
--- Reactivates side so it will appear and gain gold
+-- Reactivates sides
+-- Re-initializes sides from specified variable
 ---
 function wesnoth.wml_actions.unserialize_and_activate_sides(cfg)
 	local variable = cfg.variable or helper.wml_error("[unserialize_and_activate_sides]: Missing variable!")
