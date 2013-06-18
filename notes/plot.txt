@@ -11,12 +11,12 @@ Scenario structure:
 -------------------
 E1:
 ---
-* S0   (Descry)             : [CUTSCENE] Niryone's camp is attacked by some enemies. Rhyan is wounded, but does not feel pain, and healing magic only hurts him
-* S1   (Investigations)     : Niryone and Elynia begin to retrace their steps and investigate a town. They receive accounts of strange activity on behalf of the leaders.
+* S0   (Descry)             : [CUTSCENE] Niryone and Elynia discover the Rhyan with their party is an impersonator. After a brief confrontation, Niryone destroys him.
+* S1   (Investigations)     : Niryone and Elynia enter the town they were outside of. They receive accounts of strange activity on behalf of the leaders.
 * S2   (Sword and Cipher)   : Suspicious, they infiltrate his office, and find a key and a message relating to a group traveling north.
 * S3   (Gathering Storm)    : The group heads to intercept this group. They find the real leader of the town unconscious. The head of the party flees.
 * S4   (Pursuit)            : They pursue and capture him. Through interrogation, the human reveals his destination, one in orcish territory, and origin, Mizenwyn's town
-* S5.1 (Ambush in Wesmere)  : Niryone and Elynia head towards Wesmere forest for help. They are ambushed by some silent warriors wearing masks. Fake Rhyan is killed
+* S5.1 (Ambush in Wesmere)  : Niryone and Elynia head towards Wesmere forest and the Ka'lian for help. They are ambushed by the Northguard.
 * S5.2 (Change of Plans)    : [CUTSCENE] Niryone meets with the Ka'lian. They decline her requests for help. Scene cuts to Mizenwyn being informed of Niryone's actions 
 * S6   (Awakening - Part 1) : Rhyan escapes from prison, finds Galamor
 * S7   (Fleeing the Swarm)  : Rhyan and Galamor find a dwarf with an important message, and help him return to his main force. Bat swarm appears
@@ -40,7 +40,7 @@ E2:
 
 Plot summary:
 -------------
-Mizenwyn sees the state of the empire, and decides take it over, out of personal desire for power and hubris. He begins capturing, with the help of his undead, a few minor officials in the kingdom, slowly working his way up the chain of command, eventually corrupting noblemen within Weldyn itself. However, there is a slip. Niryone becomes suspicious due to the Rhayn's (Niryone and Elynia's traveling companion) inability to feel pain and his avoidance of healing magic. She and Elynia retrace their steps, investigate, gradually gather more and more info, eventually almost seeing Mizenwyn's full plot. 
+Mizenwyn sees the state of the empire, and decides take it over, out of personal desire for power and hubris. He begins capturing, with the help of his undead, a few minor officials in the kingdom, slowly working his way up the chain of command, eventually corrupting noblemen within Weldyn itself. However, there is a slip. Niryone becomes suspicious due to the Rhayn's (Niryone and Elynia's traveling companion) reaction to healing magic. She realizes he is an impersonator, and destroys him. She and Elynia then investigate, gradually gather more and more info, eventually almost seeing Mizenwyn's full plot. 
 
 Niryone goes to the Ka'lian in Wesmere for help. On the way, they are ambused by some silent masked warriors. In the process, fake Rhyan is destroyed. When the group finally reaches the Ka'lain, they decline on grounds of not enough solid evidence and the fact that they have their hands full with a random necromancer and his pirate/bandit allies attacking western Aethenwood, for reasons undisclosed.
 
