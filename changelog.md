@@ -18,6 +18,8 @@ Version 0.4.0+dev
     * New cutscene scenario
   * E1S3
     * New scenario
+  * E1S4
+    * New scenario
   * E1S6 (This scenario was formally E1S1)
     * Reworked scenario and map for cleaner, simpler gameplay.
     * Improved dialog
@@ -28,6 +30,7 @@ Version 0.4.0+dev
 * Lua
   * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
   * Added 8680's wesnoth-lp8 lua pack as a git submodule
+  * Added a bunch of new custom WML tags
 
 * Sound and Music
   * Added new track: "Lunar Cage" by AngeloB
