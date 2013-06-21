@@ -2,15 +2,15 @@ border_size=1
 usage=map
 
 Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu
-Xu, Uu, Uu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Xu, Qxu, Uu, Uu, Rb, Uu, Uue, Qxu, Xu, Xu, Qxu, Qxu
-Xu, Xu, Uu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Uu^Uf, Uu, Xu, Uu, Rb, Rb, Uue, Uue, Xu, Xu, Xu, Qxu
-Xu, Xu, Xu, Uu, Uu, Xu, Qxu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Uu^Uf, Re, Rb, Xu, Xu, Xu, Urb, Urb, Xu, Xu, Xu, Xu
+Xu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Xu, Qxu, Uu, Uu, Rb, Uu, Uue, Qxu, Xu, Xu, Qxu, Qxu
+Xu, Xu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Uu^Uf, Uu, Xu, Uu, Rb, Rb, Uue, Uue, Xu, Xu, Xu, Qxu
+Xu, Xu, Xu, Qxu, Qxu, Xu, Qxu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Uu^Uf, Re, Rb, Xu, Xu, Xu, Urb, Urb, Xu, Xu, Xu, Xu
 Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Uh^Uf, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Xu, Xu, Xu, Xu, Urb, Uu, Xu, Xu, Xu
 Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Uh^Dr, Uh^Uf, Uh, Xu, Ur, Ur, Ur, Uu, Xu, Xu, Ur, Xu, Uu, Xu, Xu, Cud, Cud^Es, Xu
 Xu, Xu, Xu, Xu, Xu, Qxu, Xu, Uh, Uh^Uf, Uu, Uue, Uu, Uue, Uu, Uu, Xu, Ur, Ur, Uu, Uu, Uue^Es, Uu, Cud, Cud, Cud, Xu
 Xu, Xu, Uu, Xu, Xu, Xu, Uh, Uu, Uu, Uu, Wwf, Uue, Urb, Uu^Uf, Uu, Ur, Uue, Uue, Qxe, Uu, Ur, Uu, Cud, 2 Kud, Xu, Xu
 Xu, Xu, Uh^Uf, Uu^Uf, Uue, Uh, Ur, Uu, Uu, Uu, Uue^Es, Wwf, Uu, Uue, Uh, Uue, Qxe, Qxe, Qxe, Qxe, Ur, Uue, Cud, Cud, Xu, Xu
-Uh, Uh^Uf, Uh, Uue^Uf, Uue, Urb, Uu, Ur, Uu, Re, Uue, Uue, Uu, Uh, Uh^Uf, Wwf, Wog, Qxu, Qxu, Qxe, Xu, Xu, Xu, Xu, Xu, Xu
-Uu, Uh, 1 Urb, Uu, Uue, Urb, Uu, Rb^Es, Rb, Rb, Uh^Uf, Uh^Uf, Uh^Uf, Uh^Uf, Uu, Wwf, Qxe, Qxu, Qxu, Qxe, Qxe, Qxe, Qxe, Xu, Xu, Xu
-Ur, Uue, Uu, Uu, Uu, Uu, Uu, Uu, Xu, Uu, Xu, Uu^Uf, Qxe, Qxe, Qxe, Qxe, Qxe, Qxu, Xu, Qxu, Xu, Qxu, Xu, Xu, Xu, Xu
+Uh, Uh^Uf, Uh^Cov, Uue^Uf, Uue, Urb, Uu, Ur, Uu, Re, Uue, Uue, Uu, Uh, Uh^Uf, Wwf, Wog, Qxu, Qxu, Qxe, Xu, Xu, Xu, Xu, Xu, Xu
+Uu, Uh^Cov, 1 Urb^Kov, Uu^Cov, Uue, Urb, Uu, Rb^Es, Rb, Rb, Uh^Uf, Uh^Uf, Uh^Uf, Uh^Uf, Uu, Wwf, Qxe, Qxu, Qxu, Qxe, Qxe, Qxe, Qxe, Xu, Xu, Xu
+Uu, Uue^Cov, Uu^Cov, Uu^Cov, Uu, Uu, Uu, Uu, Xu, Uu, Xu, Uu^Uf, Qxe, Qxe, Qxe, Qxe, Qxe, Qxu, Xu, Qxu, Xu, Qxu, Xu, Xu, Xu, Xu
 Uu, Uu, Uu, Uh, Uh, Uh, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
