@@ -1,6 +1,7 @@
+--#textdomain wesnoth-NX-RPG
 
 return {
-	{	name = "General", text = [[
+	{	name = "General", text = _ [[
 Many elements of this campaign differ from standard Wesnoth. If you aren’t sure if I’ve implemented something differently, look here; this should explain.
 
 Tips:
