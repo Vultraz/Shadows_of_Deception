@@ -1,3 +1,4 @@
+--#textdomain wesnoth-NX-RPG
 
 local buttons = {
 	close = 1;
@@ -66,14 +67,12 @@ local main_window = {
 					T.row {
 						grow_factor = 1,
 						T.column {
-							grow_factor = 1,
 							border = "all",
 							border_size = 5,
 							vertical_alignment = "top",
 							topic_list
 						},
 						T.column {
-							grow_factor = 1,
 							T.multi_page {
 								id = "help_text_pages",
 								T.page_definition {
