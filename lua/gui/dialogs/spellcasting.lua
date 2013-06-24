@@ -167,7 +167,7 @@ local empty_spell_window = {
 				border = "all",
 				border_size = 5,
 				T.image {
-					label = "icons/inv_icon.png"
+					label = "icons/casting_icon.png"
 				}
 			},
 			T.column {
