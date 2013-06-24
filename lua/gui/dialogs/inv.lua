@@ -1,3 +1,4 @@
+--#textdomain wesnoth-NX-RPG
 
 local buttons = {
 	use = 4;
@@ -20,27 +21,24 @@ local item_list = T.listbox {
 						T.row {
 							grow_factor = 1,
 							T.column {
-								grow_factor = 1,
 								border = "all",
 								border_size = 5,
-								horizontal_grow = true,
+								horizontal_alignment = "left",
 								T.image {
 									id = "list_image",
 									linked_group = "image"
 								}
 							},
 							T.column {
-								grow_factor = 1,
 								border = "all",
 								border_size = 5,
-								horizontal_grow = true,
+								horizontal_alignment = "left",
 								T.label {
 									id = "list_name",
 									linked_group = "name"
 								}
 							},
 							T.column {
-								grow_factor = 1,
 								border = "all",
 								border_size = 5,
 								horizontal_alignment = "center",
@@ -63,7 +61,6 @@ local details_panel_pages = T.multi_page {
 		T.row {
 			grow_factor = 1,
 			T.column {
-				grow_factor = 1,
 				border = "all",
 				border_size = 5,
 				horizontal_alignment = "left",
@@ -77,7 +74,6 @@ local details_panel_pages = T.multi_page {
 		T.row {
 			grow_factor = 1,
 			T.column {
-				grow_factor = 1,
 				border = "all",
 				border_size = 5,
 				horizontal_alignment = "left",
@@ -106,7 +102,6 @@ local main_window = {
 		T.row {
 			grow_factor = 1,
 			T.column {
-				grow_factor = 1,
 				border = "all",
 				border_size = 5,
 				horizontal_alignment = "left",
@@ -124,7 +119,6 @@ local main_window = {
 				T.grid {
 					T.row {
 						T.column {
-							grow_factor = 1,
 							border = "all",
 							border_size = 5,
 							horizontal_grow = true,
@@ -132,7 +126,6 @@ local main_window = {
 							item_list
 						},
 						T.column {
-							grow_factor = 1,
 							T.image {
 								id = "unit_image"
 							}
@@ -141,7 +134,6 @@ local main_window = {
 					T.row {
 						grow_factor = 1,
 						T.column {
-							grow_factor = 1,
 							horizontal_grow = true,
 							vertical_alignment = "top",
 							details_panel_pages
@@ -216,7 +208,6 @@ local empty_inv_window = {
 		T.row {
 			grow_factor = 1,
 			T.column {
-				grow_factor = 1,
 				border = "all",
 				border_size = 5,
 				T.image {
@@ -224,7 +215,6 @@ local empty_inv_window = {
 				}
 			},
 			T.column {
-				grow_factor = 1,
 				border = "all",
 				border_size = 5,
 				vertical_alignment = "center",
