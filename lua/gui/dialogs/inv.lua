@@ -211,7 +211,7 @@ local empty_inv_window = {
 				border = "all",
 				border_size = 5,
 				T.image {
-					label = "icons/inv_icon.png"
+					label = "icons/icon_inv.png"
 				}
 			},
 			T.column {
