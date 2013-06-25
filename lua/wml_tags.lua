@@ -249,7 +249,7 @@ end
 -- This removes the sides from the map and side list and stores them
 -- in a variable
 ---
-function wesnoth.wml_actions.deactivate_and_serialize_sides(cfg)
+function wml_actions.deactivate_and_serialize_sides(cfg)
 	local variable = cfg.variable or "sides"
 	local array_index = 0
 
@@ -281,7 +281,7 @@ end
 -- Reactivates sides
 -- Re-initializes sides from specified variable
 ---
-function wesnoth.wml_actions.unserialize_and_activate_sides(cfg)
+function wml_actions.unserialize_and_activate_sides(cfg)
 	local variable = cfg.variable or helper.wml_error("[unserialize_and_activate_sides]: Missing variable!")
 
 	local data_set = helper.get_variable_array(variable)
@@ -312,7 +312,7 @@ end
 --     variable="location"
 -- [/simplify_location_filter]
 ---
-function wesnoth.wml_actions.simplify_location_filter(cfg)
+function wml_actions.simplify_location_filter(cfg)
 	local var = cfg.variable or "location"
 	local locs = wesnoth.get_locations(cfg)
 	local xstr, ystr = "", ""
