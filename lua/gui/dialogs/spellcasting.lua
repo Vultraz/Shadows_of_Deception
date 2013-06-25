@@ -1,3 +1,4 @@
+--#textdomain wesnoth-NX-RPG
 
 local buttons = {
 	cast = 2;
@@ -34,6 +35,13 @@ local spell_list = T.listbox {
 									id = "spell_name",
 									linked_group = "name"
 								}
+							},
+							T.column {
+								border = "all",
+								border_size = 5,
+								T.spacer {
+									width = 5
+								}
 							}
 						}
 					}
@@ -59,19 +67,6 @@ local spell_details_pages = T.multi_page {
 				}
 			}
 		},
-		T.row {
-			grow_factor = 1,
-			T.column {
-				border = "all",
-				border_size = 5,
-				horizontal_alignment = "left",
-				vertical_alignment = "top",
-				T.scroll_label {
-					id = "spell_details",
-					wrap = true
-				}
-			}
-		}
 	}
 }
 
@@ -103,16 +98,17 @@ local main_window = {
 			T.column {
 				T.grid {
 					T.row {
+						grow_factor = 1,
 						T.column {
 							border = "all",
 							border_size = 5,
-							horizontal_grow = "true",
+							horizontal_grow = true,
 							spell_list
 						},
 						T.column {
 							border = "all",
 							border_size = 5,
-							horizontal_grow = "true",
+							horizontal_grow = true,
 							spell_details_pages
 						}
 					}
@@ -122,12 +118,14 @@ local main_window = {
 		T.row {
 			grow_factor = 1,
 			T.column {
+				horizontal_alignment = "right",
 				T.grid {
 					T.row {
+						grow_factor = 1,
 						T.column {
 							border = "all",
 							border_size = 5,
-							horizontal_grow = "true",
+							horizontal_alignment = "right",
 							T.button {
 								id = "cast_button",
 								return_value = buttons.cast,
@@ -137,7 +135,7 @@ local main_window = {
 						T.column {
 							border = "all",
 							border_size = 5,
-							horizontal_grow = "true",
+							horizontal_alignment = "right",
 							T.button {
 								id = "ok_button",
 								return_value = buttons.exit,
