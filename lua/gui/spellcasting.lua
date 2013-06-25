@@ -45,8 +45,8 @@ function wml_actions.spellcasting_controller(cfg)
 		local list_spell = spell_list_data[i]
 		local loc_filter = helper.get_child(list_spell, "target_filter")
 		local effect = helper.get_child(list_spell, "spell_effect")
-		local pre_event = string.format("%s%s", cfg.id, "_pre_event")
-		local post_event = string.format("%s%s", cfg.id, "_post_event")
+		local pre_event = string.format("%s%s", list_spell.id, "_pre_event")
+		local post_event = string.format("%s%s", list_spell.id, "_post_event")
 
 		for i, loc in ipairs(wesnoth.get_locations(loc_filter)) do
 			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
@@ -54,17 +54,18 @@ function wml_actions.spellcasting_controller(cfg)
 
 		wml_actions.set_menu_item {
 			id = "spell_trigger",
-			description = _"Cast " .. list_spell.name,
+			description = _"Cast " .. list_spell.name .. " Spell",
 			image = "icons/menu-casting.png",
 			{"filter_location", loc_filter},
 			{"command", {
 				{"clear_menu_item", {id = "spell_trigger"}},
 				{"remove_item", {image = "misc/goal-highlight.png"}},
-				{"set_variable", {name = "bind_target", value = "$unit.id"}},
+				{"set_variable", {name = "spell_target.x", value = "$x1"}},
+				{"set_variable", {name = "spell_target.y", value = "$y1"}},
 				{"fire_event", {name = pre_event}},
 				{"command", effect},
 				{"fire_event", {name = post_event}},
-				{"clear_variable", {name = "bind_target"}}
+				{"clear_variable", {name = "spell_target"}}
 			}
 		}}
 	end
