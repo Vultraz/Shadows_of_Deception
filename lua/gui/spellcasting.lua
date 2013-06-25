@@ -56,9 +56,9 @@ function wml_actions.spellcasting_controller(cfg)
 			image = "icons/menu-casting.png",
 			{"filter_location", loc_filter},
 			{"command", {
-				{"command", effect},
 				{"clear_menu_item", {id = "spell_trigger"}},
-				{"remove_item", {image = "misc/goal-highlight.png"}}
+				{"remove_item", {image = "misc/goal-highlight.png"}},
+				{"command", effect}
 			}
 		}}
 	end
