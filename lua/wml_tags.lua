@@ -332,3 +332,15 @@ function wesnoth.wml_actions.simplify_location_filter(cfg)
 	wesnoth.set_variable(var .. ".x", xstr)
 	wesnoth.set_variable(var .. ".y", ystr)
 end
+
+---
+-- Inserts the data for a spell into the unit's variable.spell table
+--
+function wml_actions.learn_spell(cfg)
+	local unit = wesnoth.get_units({id = cfg.unit})[1].__cfg
+	local var = helper.get_child(unit, "variables")
+
+	table.insert(var, {"spell", cfg})
+
+	wesnoth.put_unit(unit)
+end
