@@ -45,6 +45,8 @@ function wml_actions.spellcasting_controller(cfg)
 		local list_spell = spell_list_data[i]
 		local loc_filter = helper.get_child(list_spell, "target_filter")
 		local effect = helper.get_child(list_spell, "spell_effect")
+		local pre_event = string.format("%s%s", cfg.id, "pre_event")
+		local post_event = string.format("%s%s", cfg.id, "post_event")
 
 		for i, loc in ipairs(wesnoth.get_locations(loc_filter)) do
 			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
@@ -58,7 +60,9 @@ function wml_actions.spellcasting_controller(cfg)
 			{"command", {
 				{"clear_menu_item", {id = "spell_trigger"}},
 				{"remove_item", {image = "misc/goal-highlight.png"}},
-				{"command", effect}
+				{"fire_event", {name = pre_event}},
+				{"command", effect},
+				{"fire_event", {name = post_event}}
 			}
 		}}
 	end
