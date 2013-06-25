@@ -37,27 +37,46 @@ function wml_actions.spellcasting_controller(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 	end
 
+	-- Applies the effect of the spell
+	-- Overlays are placed over every location a potential target for the spell
+	-- A menu item that shows on all of these hexes. Using it triggers the spell
+	local function cast_spell()
+		local i = wesnoth.get_dialog_value("spell_list")
+		local list_spell = spell_list_data[i]
+		local loc_filter = helper.get_child(list_spell, "target_filter")
+		local effect = helper.get_child(list_spell, "spell_effect")
+
+		for i, loc in ipairs(wesnoth.get_locations(loc_filter)) do
+			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
+		end
+
+		wml_actions.set_menu_item {
+			id = "spell_trigger",
+			description = _"Cast " .. list_spell.name,
+			image = "icons/menu-casting.png",
+			{"filter_location", loc_filter},
+			{"command", {
+				{"command", effect},
+				{"clear_menu_item", {id = "spell_trigger"}},
+				{"remove_item", {image = "misc/goal-highlight.png"}}
+			}
+		}}
+	end
+
 	local function spellcast_preshow()		
 		wesnoth.set_dialog_callback(select_spell, "spell_list")
+		wesnoth.set_dialog_callback(cast_spell, "cast_button")
 
 		-- Sets initial values
 		print_spell_list()
-		
-		wesnoth.set_dialog_value(1, "inventory_list")
+
+		wesnoth.set_dialog_value(1, "spell_list")
 		select_spell()
-	end
-
-	local function spellcast_postshow()
-		local i = wesnoth.get_dialog_value("spell_list")
-
-		for i, loc in ipairs(wesnoth.get_locations(spell_list_data[i].target_filter)) do
-			item.place_image(loc.x, loc.y, "misc/goal-highlight.png")
-		end
 	end
 
 	if not next(spell_list_data) then
 		wesnoth.show_dialog(dialogs.empty)
 	else
-		wesnoth.show_dialog(dialogs.normal, spellcast_preshow, spellcast_postshow)
+		wesnoth.show_dialog(dialogs.normal, spellcast_preshow)
 	end 
 end
