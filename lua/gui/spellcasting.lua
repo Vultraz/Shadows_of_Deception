@@ -60,9 +60,11 @@ function wml_actions.spellcasting_controller(cfg)
 			{"command", {
 				{"clear_menu_item", {id = "spell_trigger"}},
 				{"remove_item", {image = "misc/goal-highlight.png"}},
+				{"set_variable", {name = "bind_target", value = "$unit.id"}},
 				{"fire_event", {name = pre_event}},
 				{"command", effect},
-				{"fire_event", {name = post_event}}
+				{"fire_event", {name = post_event}},
+				{"clear_variable", {name = "bind_target"}}
 			}
 		}}
 	end
