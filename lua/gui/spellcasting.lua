@@ -37,21 +37,27 @@ function wml_actions.spellcasting_controller(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 	end
 
-	-- Show details and potential targets for the spell's effect
-	local function show_spell_options()
-	end
+	local function spellcast_preshow()		
+		wesnoth.set_dialog_callback(select_spell, "spell_list")
 
-	-- Preshow function
-	local function spellcast_preshow()
-		-- Prints list of spells
+		-- Sets initial values
 		print_spell_list()
 		
-		wesnoth.set_dialog_callback(select_spell, "spell_list")
+		wesnoth.set_dialog_value(1, "inventory_list")
+		select_spell()
 	end
 
-	if spell_list_data == nil then
+	local function spellcast_postshow()
+		local i = wesnoth.get_dialog_value("spell_list")
+
+		for i, loc in ipairs(wesnoth.get_locations(spell_list_data[i].target_filter)) do
+			item.place_image(loc.x, loc.y, "misc/goal-highlight.png")
+		end
+	end
+
+	if not next(spell_list_data) then
 		wesnoth.show_dialog(dialogs.empty)
 	else
-		wesnoth.show_dialog(dialogs.normal, spellcast_preshow)
+		wesnoth.show_dialog(dialogs.normal, spellcast_preshow, spellcast_postshow)
 	end 
 end
