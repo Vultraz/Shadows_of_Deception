@@ -17,9 +17,5 @@ function wml_actions.check_for_character(cfg)
 			unit_def.placement = 'leader'
 			wml_actions.unit(unit_def)
 		end
-
-		--if not wesnoth.get_variable(entry.id .. ".class") then
-		--	wesnoth.fire_event("herodevel")
-		--end
 	end
 end
