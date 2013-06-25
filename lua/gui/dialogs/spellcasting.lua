@@ -7,7 +7,8 @@ local buttons = {
 
 local spell_list = T.listbox {
 	id = "spell_list",
-	vertical_scrollbar_mode = "auto",
+	vertical_scrollbar_mode = "always",
+	horizontal_scrollbar_mode = "never",
 	T.list_definition {
 		T.row {
 			T.column {
@@ -59,11 +60,10 @@ local spell_details_pages = T.multi_page {
 			T.column {
 				border = "all",
 				border_size = 5,
-				horizontal_alignment = "left",
-				vertical_alignment = "top",
-				T.scroll_label {
+				horizontal_grow = true,
+				T.label {
 					id = "details_description",
-					wrap = true
+					wrap = true,
 				}
 			}
 		},
@@ -72,7 +72,7 @@ local spell_details_pages = T.multi_page {
 
 local main_window = {
 	maximum_height = 700,
-	maximum_width = 850,
+	maximum_width = 500,
 
 	T.helptip { id = "tooltip_large" }, -- mandatory field
 	T.tooltip { id = "tooltip_large" }, -- mandatory field
@@ -108,7 +108,7 @@ local main_window = {
 						T.column {
 							border = "all",
 							border_size = 5,
-							horizontal_grow = true,
+							horizontal_alignment = "left",
 							spell_details_pages
 						}
 					}
