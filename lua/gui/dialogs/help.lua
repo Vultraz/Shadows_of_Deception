@@ -31,6 +31,13 @@ local topic_list = T.listbox {
 									id = "topic_list_name",
 									linked_group = "names"
 								}
+							},
+							T.column {
+								border = "all",
+								border_size = 5,
+								T.spacer {
+									width = 5
+								}
 							}
 						}
 					}
