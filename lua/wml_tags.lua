@@ -340,7 +340,7 @@ function wml_actions.learn_spell(cfg)
 	local unit = wesnoth.get_units({id = cfg.unit})[1].__cfg
 	local var = helper.get_child(unit, "variables")
 
-	table.insert(var, {"spell", cfg})
+	table.insert(var, {"spell", helper.literal(cfg)})
 
 	wesnoth.put_unit(unit)
 end
