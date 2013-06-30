@@ -18,24 +18,22 @@ end
 
 ---
 -- Checks every unit matching the SUF's inventory for an certain item.
--- Sets a WML variable if a matching item is found.
+-- Returns true if a matching item is found.
 -- If no [filter] is found, the filter will be all side 1 hero units
 --
--- [check_inventory]
+-- [has_item]
 --     [filter][/filter]
 --     item=id
--- [/check_inventory]
+-- [/has_item]
 ---
-function wml_actions.check_inventory(cfg)
+function wml_actions.has_item(cfg)
 	local filter = helper.get_child(cfg, "filter") or { side = 1, role = "hero" }
 
 	for i, u in ipairs(wesnoth.get_units(filter)) do
 		if helper.get_child(u.variables.__cfg, "item", cfg.item) then
-			wesnoth.set_variable("has_" .. cfg.item, true)
-			return
+			return true
 		end
 	end
-	wesnoth.set_variable("has_" .. cfg.item, false)
 end
 
 ---
