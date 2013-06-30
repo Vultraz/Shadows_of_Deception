@@ -47,7 +47,7 @@ Version 0.4.0+dev
 
 * Units
   * New units: Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
-    Elvish Spellbinder, Elvish Apprentice, Wanderer, Caravan
+    Elvish Spellbinder, Elvish Apprentice, Wanderer, Caravan, Dwarvish Outcast
   * Minor balancing changes
   * Force a shroud/fog refresh whenever an enemy is destroyed.
 
