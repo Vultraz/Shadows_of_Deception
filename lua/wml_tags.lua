@@ -21,12 +21,12 @@ end
 -- Returns true if a matching item is found.
 -- If no [filter] is found, the filter will be all side 1 hero units
 --
--- [has_item]
+-- [have_item]
 --     [filter][/filter]
 --     item=id
--- [/has_item]
+-- [/have_item]
 ---
-function wml_actions.has_item(cfg)
+function wml_actions.have_item(cfg)
 	local filter = helper.get_child(cfg, "filter") or { side = 1, role = "hero" }
 
 	for i, u in ipairs(wesnoth.get_units(filter)) do
