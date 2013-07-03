@@ -9,11 +9,21 @@ E1
 Mizenwyn (Real)
 King of Wesnoth
 King of Wesnoth (Injured)
-Galamor
+Caravan
 
 E2
+--
 Niryone (Injured)
 Rhyan (Older)
+Rhyan (Injure)
 Elynia (Shyde)
 Elynia (Shyde) w/ wings
 Elynia (Shyde) w/wings and SoF
+Mizwnwyn (Injured)
+
+Terrain Art
+-----------
+Iterior terrain art in general
+
+- Most needed: wooden walls
+- Secondary: general interior furnishings
