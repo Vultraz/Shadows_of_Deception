@@ -121,7 +121,7 @@ function alpha_print(text, size, alpha)
 	wml_actions.redraw({})
 end
 
-function wml_actions.intro_text(cfg)
+function wml_actions.interim_text(cfg)
 	local title = cfg.title
 	local text = cfg.body
 	local duration = cfg.duration
