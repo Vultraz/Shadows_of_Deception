@@ -1,3 +1,4 @@
+--#textdomain wesnoth-NX-RPG
 
 local buttons = {
 	use = 1;
