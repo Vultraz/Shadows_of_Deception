@@ -342,3 +342,18 @@ function wml_actions.learn_spell(cfg)
 
 	wesnoth.put_unit(unit)
 end
+
+---
+-- Creates a unit that's initially hidden from view as if [hide_unit]
+-- was used on it.
+--
+-- This is necessary since [unit] followed by [hide_unit] allows the unit
+-- to be displayed for an instant.
+--
+-- The syntax is identical to [unit].
+---
+function wesnoth.wml_actions.hidden_unit(cfg)
+	local u = wesnoth.create_unit(cfg)
+	u.hidden = true
+	wesnoth.put_unit(u)
+end
