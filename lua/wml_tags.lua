@@ -352,7 +352,7 @@ end
 --
 -- The syntax is identical to [unit].
 ---
-function wesnoth.wml_actions.hidden_unit(cfg)
+function wml_actions.hidden_unit(cfg)
 	local u = wesnoth.create_unit(cfg)
 	u.hidden = true
 	wesnoth.put_unit(u)
