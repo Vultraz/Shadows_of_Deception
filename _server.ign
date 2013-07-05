@@ -1,6 +1,7 @@
 .*
 .*/
 .git*
+.DS_Store
 *~*
 *.swp
 *.pbl
