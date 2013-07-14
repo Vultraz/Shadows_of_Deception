@@ -13,7 +13,7 @@ E1:
 ---
 * S0   (Descry)             : [CUTSCENE] Niryone and Elynia discover the Rhyan with their party is an impersonator. After a brief confrontation, Niryone destroys him.
 * S1   (??)                 : Niryone and Elynia head to Elensefar to consult a seer friend of hers. They help the leader repel a bandit attack.
-* S2   (??)                 : On the seer's word, they head North to talk to the dwarves
+* S2   (??)                 : On the seer's word, they head North to talk to the dwarves. They tell them of a caravan traveling north.
 * S3   (Gathering Storm)    : The group heads to intercept this group. They find the real leader of the town unconscious. The head of the party flees.
 * S4   (Pursuit)            : They pursue and capture him. Through interrogation, the human reveals his destination, one in orcish territory, and origin, Mizenwyn's town
 * S5.1 (Ambush in Wesmere)  : Niryone and Elynia head towards Wesmere forest and the Ka'lian for help. They are ambushed by the Northguard.
