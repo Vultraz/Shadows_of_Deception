@@ -16,6 +16,8 @@ Version 0.4.0+dev
 * Scenarios
   * E1S0
     * New cutscene scenario
+  * E1S1
+    * New scenario
   * E1S3
     * New scenario
   * E1S4
