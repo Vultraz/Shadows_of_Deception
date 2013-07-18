@@ -43,6 +43,10 @@ function wml_actions.pick_up_item(cfg)
 		wesnoth.set_dialog_value ( cfg.image or "", "image_name" )
 		wesnoth.set_dialog_value ( cfg.description, "item_description" )
 
+		if cfg.effect_type == "continuous" then
+			wesnoth.set_dialog_value(_"Equip", "use_button")
+		end
+
 		-- Disable the use button if necessary
 		wesnoth.set_dialog_active(wesnoth.eval_conditional(helper.get_child(cfg, "usable_if") or {}), "use_button")
 	end
