@@ -6,7 +6,7 @@ Version 0.4.0+dev
 -----------------
 * General
   * Gave campaign a new official name: Shadows of Deception
-  * Dropped support for 1.11.1 and below
+  * Dropped support for 1.11.4 and below
   * Removed Nightmare difficulty
   * Made character units cost no upkeep
   * Fixed an issue in E1S6 causing savefile corruption
@@ -18,6 +18,8 @@ Version 0.4.0+dev
     * New cutscene scenario
   * E1S1
     * New scenario
+  * E1S2
+    * New Scenario
   * E1S3
     * New scenario
   * E1S4
@@ -34,7 +36,7 @@ Version 0.4.0+dev
 * Lua
   * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
   * Added 8680's wesnoth-lp8 lua pack as a git submodule
-  * Added a bunch of new custom WML tags
+  * Added several of new custom WML tags
 
 * Sound and Music
   * Added new track: "Lunar Cage" by AngeloB
@@ -42,17 +44,18 @@ Version 0.4.0+dev
 
 * Graphics
   * Fixed duplicate terrain IDs
-  * Removed Campfire custom terrain (it's mainline in 1.11)
-  * Removed Glowing Dark Flagstone terrain
   * Fixed bug where walls were drawn over gate corners (ported from AtS)
   * New or updated unit graphics: Villager
   * Removed show weather images
   * New Fairy and Northguard race iconss
+  * Terrain
+    * New terrains: Carpet, City, City Arsenal, Earthy Rockbound Cave
+    * Removed terrains: Campfire (mainline in 1.11), Glowing Dark Flagstone
 
 * Units
   * New units: Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
     Elvish Spellbinder, Elvish Apprentice, Wanderer, Caravan, Dwarvish Outcast,
-    Shadow Regent
+    Shadow Regent, Dwarvish Miner
   * Minor balancing changes
   * Force a shroud/fog refresh whenever an enemy is destroyed.
 
