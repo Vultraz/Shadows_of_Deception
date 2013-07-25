@@ -19,7 +19,7 @@ function wml_actions.inventory_controller(cfg)
 	-- Syncs weapon data with the table and sorts it
 	local function sync_and_sort_items()
 		for i, attack in pairs(lp8.get_children(unit, 'attack')) do
-			if valid_attacks[attack.name] and not (helper.get_child(var, "item", attack.name) or nil) then
+			if valid_attacks[attack.name] and not helper.get_child(var, "item", attack.name) then
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
 
 				-- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
