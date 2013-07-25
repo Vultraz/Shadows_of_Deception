@@ -2,6 +2,7 @@
 
 local dialogs = nxrequire "gui/dialogs/inv"
 local buttons = dialogs.buttons
+local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dagger = 1, crossbow = 1, hammer = 1, javelin = 1, lance = 1, spear = 1, staff = 1}; 
 
 -- This brings up the custom inventory control window
 function wml_actions.inventory_controller(cfg)
@@ -14,7 +15,6 @@ function wml_actions.inventory_controller(cfg)
 	local page_count = 0
 	local var, inv_list_data, button, continue
 	local command_list = {}
-	local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dagger = 1, crossbow = 1, hammer = 1, javelin = 1, lance = 1, spear = 1, staff = 1}; 
 
 	-- Syncs weapon data with the table and sorts it
 	local function sync_and_sort_items()
