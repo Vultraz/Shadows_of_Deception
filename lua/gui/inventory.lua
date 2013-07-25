@@ -14,8 +14,33 @@ function wml_actions.inventory_controller(cfg)
 	local page_count = 0
 	local var, inv_list_data, button, continue
 	local command_list = {}
+	local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dagger = 1, crossbow = 1, hammer = 1, javelin = 1, lance = 1, spear = 1, staff = 1}; 
 
-	-- Prints item list.
+	-- Syncs weapon data with the table and sorts it
+	local function sync_and_sort_items()
+		for i, attack in pairs(lp8.get_children(unit, 'attack')) do
+			if valid_attacks[attack.name] and not (helper.get_child(var, "item", attack.name) or nil) then
+				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
+
+				-- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
+				table.insert(inv_list_data, { id = attack.name, name = attack.description, image = attack.icon, description = descrip, effect_type = "continuous", active = true,
+					{ "command", { "object", { silent = true, duration = "forever",
+						{ "effect", { apply_to = "new_attack",
+							{ "attack", attack } }
+						} } }
+					},
+					{ "removal_command", { "object", { silent = true, duration = "forever",
+						{ "effect", { apply_to = "remove_attack", range = attack.range, name = attack.name } } } }
+					}
+				})
+			end
+		end
+
+		-- Sorts the table alphabetacally by the name keys' value
+		table.sort(inv_list_data, function(a,b) return a.name < b.name end)
+	end
+
+	-- Prints item list
 	local function print_item_list()
 		for i, item in ipairs(inv_list_data) do
 			if item.active then
@@ -89,18 +114,22 @@ function wml_actions.inventory_controller(cfg)
 		button = buttons.use
 		continue = true
 
+		-- If item is not active...
 		if not list_item.active then
+			-- ... and if it's single-use, decrease quantity by 1
 			if list_item.effect_type == "single" then
 				item_var.quantity = (list_item.quantity or 1) - 1
 
 				wesnoth.set_dialog_value(
 					list_item.quantity, "inventory_list", i, "list_quantity")
 
+				-- Delete item if you now have none of it
 				if list_item.quantity == 0 then
 					lp8.remove_subtag(var, "item", i)
 				end
 			end
 
+			-- ... and if it's continuous-use, activate it
 			if list_item.effect_type == "continuous" then
 				wesnoth.set_dialog_value(
 					list_item.image
@@ -110,6 +139,9 @@ function wml_actions.inventory_controller(cfg)
 			end
 
 			table.insert(command_list,(helper.get_child(list_item, "command")))
+
+		-- But if it was already active, therefor it was a continuous-use item
+		-- So just deactivate it
 		else
 			wesnoth.set_dialog_value(
 				list_item.image, "inventory_list", i, "list_image")
@@ -119,11 +151,9 @@ function wml_actions.inventory_controller(cfg)
 			table.insert(command_list,(helper.get_child(list_item, "removal_command")))
 		end
 
-		wesnoth.put_unit(unit)
 		refresh_use_button_text(i)
 	end
 
-	-- Preshow function
 	local function inventory_preshow()
 		-- List for units
 		if units_adjacent_to_unit_using_inventory then
@@ -151,12 +181,17 @@ function wml_actions.inventory_controller(cfg)
 	end
 
 	repeat
+		-- Keep all tables and main variables up to date
 		var = helper.get_child(unit, "variables")
 		inv_list_data = lp8.get_children(var, "item")
+		sync_and_sort_items() -- Adds weapons to inv_list_data and sorts it alphabetacally
 		button = next(inv_list_data)
 			and wesnoth.show_dialog(dialogs.normal, inventory_preshow)
 			or wesnoth.show_dialog(dialogs.empty)
 	until not keepGoing()
+
+	-- Resyncs the local lua tables with the actual unit
+	wesnoth.put_unit(unit)
 
 	for i = 1, #command_list do
 		wml_actions.command(command_list[i])
