@@ -108,8 +108,11 @@ function wml_actions.inventory_controller(cfg)
 	-- Handles using an item
 	local function use_item()
 		local i = wesnoth.get_dialog_value("inventory_list")
-		local item_var = lp8.get_child(var, "item", i)
 		local list_item = inv_list_data[i]
+		local function item_filter(tag)
+			return var[1] == 'item' and var[2].id == list_item.id
+		end
+		local item_var = lp8.get_child(var, item_filter)
 
 		button = buttons.use
 		continue = true
@@ -125,7 +128,7 @@ function wml_actions.inventory_controller(cfg)
 
 				-- Delete item if you now have none of it
 				if list_item.quantity == 0 then
-					lp8.remove_subtag(var, "item", i)
+					lp8.remove_subtag(var, item_filter)
 				end
 			end
 
