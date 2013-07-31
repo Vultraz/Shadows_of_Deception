@@ -24,6 +24,8 @@ Version 0.4.0+dev
     * New scenario
   * E1S4
     * New scenario
+  * E1S5.1
+    * New scenario
   * E1S5.2
     * New cutscene scenario
   * E1S6 (This scenario was formally E1S1)
@@ -47,15 +49,15 @@ Version 0.4.0+dev
   * Fixed bug where walls were drawn over gate corners (ported from AtS)
   * New or updated unit graphics: Villager
   * Removed show weather images
-  * New Fairy and Northguard race iconss
+  * New Northguard race icons
   * Terrain
     * New terrains: Carpet, City, City Arsenal, Earthy Rockbound Cave
     * Removed terrains: Campfire (mainline in 1.11), Glowing Dark Flagstone
 
 * Units
-  * New units: Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
-    Elvish Spellbinder, Elvish Apprentice, Wanderer, Caravan, Dwarvish Outcast,
-    Shadow Regent, Dwarvish Miner
+  * New units: Caravan, Dwarvish Miner, Dwarvish Outcast, Elvish Spellbinder, 
+    Elvish Apprentice, Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
+    Northguard Direwolf, Shadow Regent, Wanderer
   * Minor balancing changes
   * Force a shroud/fog refresh whenever an enemy is destroyed.
 
