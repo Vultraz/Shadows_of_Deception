@@ -34,8 +34,9 @@ Players who install NX-RPG via Git must install lp8 manually. If you install
 NX-RPG via Git, you should either:
 
 * Install lp8 via Battle for Wesnoth’s add-ons manager, or…
-* Clone lp8’s Git repository (which is also [on GitHub] [5]) into the same
-  directory into which you cloned NX-RPG’s Git repository.
+* Clone lp8’s Git repository (which is also [on GitHub] [5]), and create a
+  symbolic link to its `8680s_Lua_Pack` directory in the same directory into
+  which you cloned NX-RPG’s Git repository.
 
 [5]: <https://github.com/8573/wesnoth-lp8>
 
