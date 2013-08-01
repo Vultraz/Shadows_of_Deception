@@ -43,6 +43,8 @@ Version 0.4.0+dev
 * Sound and Music
   * Added new track: "Lunar Cage" by AngeloB
   * Added new track: "Gathering Storm" by Blake Ewing (Ewing)
+  * Added new track: "Ambuscade" by Mattias Westlund (West)
+  * Added new track: "Through the Gates" Mattias Westlund (West)
 
 * Graphics
   * Fixed duplicate terrain IDs
