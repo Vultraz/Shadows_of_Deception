@@ -23,7 +23,12 @@ function wml_actions.inventory_controller(cfg)
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
 
 				-- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
-				table.insert(inv_list_data, { id = attack.name, name = attack.description, image = attack.icon, description = descrip, effect_type = "continuous", active = true,
+				table.insert(inv_list_data, { 
+					id = attack.name,
+					name = attack.description,
+					image = attack.icon or string.format("attacks/%s.png", attack.name),
+					description = descrip, effect_type = "continuous",
+					active = true,
 					{ "command", { "object", { silent = true, duration = "forever",
 						{ "effect", { apply_to = "new_attack",
 							{ "attack", attack } }
@@ -37,7 +42,7 @@ function wml_actions.inventory_controller(cfg)
 		end
 
 		-- Sorts the table alphabetacally by the name keys' value
-		table.sort(inv_list_data, function(a,b) return a.name < b.name end)
+		table.sort(inv_list_data, function(a,b) return tostring(a.name) < tostring(b.name) end)
 	end
 
 	-- Prints item list
@@ -113,7 +118,7 @@ function wml_actions.inventory_controller(cfg)
 			return var[1] == 'item' and var[2].id == list_item.id
 		end
 		local item_var = lp8.get_child(var, item_filter)
-
+		debug_utils.dbms(item_var)
 		button = buttons.use
 		continue = true
 
