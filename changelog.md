@@ -37,7 +37,7 @@ Version 0.4.0+dev
 
 * Lua
   * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
-  * Added 8680's wesnoth-lp8 lua pack as a git submodule
+  * Made use of many functions from 8680's lua pack
   * Added several of new custom WML tags
 
 * Sound and Music
