@@ -118,7 +118,7 @@ function wml_actions.inventory_controller(cfg)
 			return var[1] == 'item' and var[2].id == list_item.id
 		end
 		local item_var = lp8.get_child(var, item_filter)
-		debug_utils.dbms(item_var)
+
 		button = buttons.use
 		continue = true
 
