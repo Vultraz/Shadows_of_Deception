@@ -116,7 +116,9 @@ function decrease_cooldown_time()
 		unit = unit.__cfg
 
 		for spell in lp8.children(helper.get_child(unit, 'variables'), 'spell') do
-			spell.cooldown_remaining = spell.cooldown_remaining - 1
+			if spell.cooldown_remaining > 0 then
+				spell.cooldown_remaining = spell.cooldown_remaining - 1
+			end
 		end
 
 		wesnoth.put_unit(unit)
