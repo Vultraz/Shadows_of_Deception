@@ -23,6 +23,7 @@ function wml_actions.spellcasting_controller(cfg)
 	-- Sets values for the details panel widgets
 	local function select_spell()
 		local i = wesnoth.get_dialog_value("spell_list")
+		local spell = spell_list_data[i]
 
 		if i > page_count or page_count == 0 then
 			wesnoth.fire("wml_message", {
@@ -35,6 +36,9 @@ function wml_actions.spellcasting_controller(cfg)
 
 		selected_row = i
 		wesnoth.set_dialog_value(i, "details_pages")
+
+		-- Disables the Cast button if the spell is still in cooldown
+		wesnoth.set_dialog_active(wesnoth.eval_conditional(spell.cooldown_remaining == 0), "cast_button")
 	end
 
 	-- Applies the effect of the spell
@@ -65,6 +69,7 @@ function wml_actions.spellcasting_controller(cfg)
 				{"fire_event", {name = pre_event}},
 				{"command", effect},
 				{"fire_event", {name = post_event}},
+				{"set_variable", {name = string.format("$unit.variables.spells[%i]", i), value = list_spell.cooldown_time or 0}},
 				{"clear_variable", {name = "spell_target"}}
 			}
 		}}
