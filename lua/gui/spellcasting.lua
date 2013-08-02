@@ -16,6 +16,11 @@ function wml_actions.spellcasting_controller(cfg)
 			wesnoth.set_dialog_value(spell.name, "spell_list", i, "spell_name")
 			wesnoth.set_dialog_value(spell.description, "details_pages", i, "details_description")
 
+			-- Ses notice of there are no valid targets
+			if not wesnoth.eval_conditional { { "have_unit", spell.target_filter } } then
+				wesnoth.set_dialog_value(_"No valid targets for this spell.", "details_pages", i, "details_validity_notice")
+			end
+
 			page_count = i
 		end
 	end
@@ -37,8 +42,10 @@ function wml_actions.spellcasting_controller(cfg)
 		selected_row = i
 		wesnoth.set_dialog_value(i, "details_pages")
 
-		-- Disables the Cast button if the spell is still in cooldown
-		wesnoth.set_dialog_active(wesnoth.eval_conditional(spell.cooldown_remaining == 0), "cast_button")
+		-- Disables the Cast button if the spell is still in cooldown or is there are no valid targets
+		if not spell.cooldown_remaining == 0 or wesnoth.eval_conditional { { "have_unit", spell.target_filter } } then
+			wesnoth.set_dialog_active(false, "cast_button")
+		end
 	end
 
 	-- Applies the effect of the spell
