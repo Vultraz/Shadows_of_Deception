@@ -75,7 +75,20 @@ local spell_details_pages = T.multi_page {
 				horizontal_grow = true,
 				vertical_alignment = "bottom",
 				T.label {
-					id = "details_validity_notice",
+					id = "details_notice_validity",
+					wrap = true,
+				}
+			}
+		},
+		T.row {
+			grow_factor = 1,
+			T.column {
+				border = "all",
+				border_size = 5,
+				horizontal_grow = true,
+				vertical_alignment = "bottom",
+				T.label {
+					id = "details_notice_cooling",
 					wrap = true,
 				}
 			}

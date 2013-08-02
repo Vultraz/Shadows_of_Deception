@@ -16,10 +16,14 @@ function wml_actions.spellcasting_controller(cfg)
 			wesnoth.set_dialog_value(spell.name, "spell_list", i, "spell_name")
 			wesnoth.set_dialog_value(spell.description, "details_pages", i, "details_description")
 
-			-- Ses notice of there are no valid targets
+			-- Sets notice of there are no valid targets
+			if not wesnoth.eval_conditional { {'have_unit', helper.get_child(helper.get_child(spell, 'target_filter'), 'filter')} } then
+				wesnoth.set_dialog_value(_"No valid targets for this spell.", "details_pages", i, "details_notice_validity")
+			end
 
-			if not 	wesnoth.eval_conditional { {'have_unit', helper.get_child(helper.get_child(spell, 'target_filter'), 'filter')} } then
-				wesnoth.set_dialog_value(_"No valid targets for this spell.", "details_pages", i, "details_validity_notice")
+			-- Sets notice if the spellis still cooling
+			if not spell.cooldown_remaining == 0 then
+				wesnoth.set_dialog_value(_"This spell is cooling down.", "details_pages", i, "details_notice_cooling")
 			end
 
 			page_count = i
