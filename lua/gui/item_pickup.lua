@@ -47,8 +47,13 @@ function wml_actions.pick_up_item(cfg)
 			wesnoth.set_dialog_value(_"Equip", "use_button")
 		end
 
-		-- Disable the use button if necessary
-		wesnoth.set_dialog_active(wesnoth.eval_conditional(helper.get_child(cfg, "usable_if") or {}), "use_button")
+		-- Disable the use button if necessary (the item cannot be uses on the specific loc or the wrong unit has it)
+		wesnoth.set_dialog_active(wesnoth.eval_conditional (helper.get_child(cfg, "usable_if") or {}), "use_button")
+
+		if not wesnoth.eval_conditional { { "have_unit", helper.get_child(cfg, "usable_by") } } then
+			wesnoth.set_dialog_active(false, "use_button")
+			wesnoth.set_dialog_active(false, "take_button")
+		end
 	end
 
 	local button = wesnoth.show_dialog(dialog, item_preshow)
