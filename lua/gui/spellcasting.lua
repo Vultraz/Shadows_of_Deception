@@ -12,6 +12,7 @@ function wml_actions.spellcasting_controller(cfg)
 	-- Prints list of spells the current unit has learned
 	local function print_spell_list()
 		for i, spell in ipairs(spell_list_data) do
+
 			wesnoth.set_dialog_value(spell.image, "spell_list", i, "spell_image")
 			wesnoth.set_dialog_value(spell.name, "spell_list", i, "spell_name")
 			wesnoth.set_dialog_value(spell.description, "details_pages", i, "details_description")
@@ -21,8 +22,8 @@ function wml_actions.spellcasting_controller(cfg)
 				wesnoth.set_dialog_value(_"No valid targets for this spell.", "details_pages", i, "details_notice_validity")
 			end
 
-			-- Sets notice if the spellis still cooling
-			if not spell.cooldown_remaining == 0 then
+			-- Sets notice if the spell is still cooling
+			if spell.cooldown_remaining ~= 0 then
 				wesnoth.set_dialog_value(_"This spell is cooling down.", "details_pages", i, "details_notice_cooling")
 			end
 
@@ -48,7 +49,7 @@ function wml_actions.spellcasting_controller(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 
 		-- Disables the Cast button if the spell is still in cooldown or is there are no valid targets
-		if not spell.cooldown_remaining == 0 or not wesnoth.eval_conditional { {'have_unit', helper.get_child(helper.get_child(spell, 'target_filter'), 'filter')} } then
+		if spell.cooldown_remaining ~= 0 or not wesnoth.eval_conditional { {'have_unit', helper.get_child(helper.get_child(spell, 'target_filter'), 'filter')} } then
 			wesnoth.set_dialog_active(false, "cast_button")
 		end
 	end
@@ -59,10 +60,13 @@ function wml_actions.spellcasting_controller(cfg)
 	local function cast_spell()
 		local i = wesnoth.get_dialog_value("spell_list")
 		local list_spell = spell_list_data[i]
+		local spell_var = lp8.get_child(var, "spell", i)
 		local loc_filter = helper.get_child(list_spell, "target_filter")
 		local effect = helper.get_child(list_spell, "spell_effect")
 		local pre_event = string.format("%s%s", list_spell.id, "_pre_event")
 		local post_event = string.format("%s%s", list_spell.id, "_post_event")
+
+		spell_var.cooldown_remaining = list_spell.cooldown_time
 
 		for i, loc in ipairs(wesnoth.get_locations(loc_filter)) do
 			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
@@ -81,10 +85,11 @@ function wml_actions.spellcasting_controller(cfg)
 				{"fire_event", {name = pre_event}},
 				{"command", effect},
 				{"fire_event", {name = post_event}},
-				{"set_variable", {name = string.format("$unit.variables.spells[%i]", i), value = list_spell.cooldown_time or 0}},
 				{"clear_variable", {name = "spell_target"}}
 			}
 		}}
+		
+		wesnoth.put_unit(unit)
 	end
 
 	local function spellcast_preshow()		
@@ -104,3 +109,22 @@ function wml_actions.spellcasting_controller(cfg)
 		wesnoth.show_dialog(dialogs.normal, spellcast_preshow)
 	end 
 end
+
+-- Decreases the cooldown time every turn
+function decrease_cooldown_time()
+	for unit in lp8.values(wesnoth.get_units {id = 'Niryone, Elynia'}) do
+		unit = unit.__cfg
+
+		for spell in lp8.children(helper.get_child(unit, 'variables'), 'spell') do
+			spell.cooldown_remaining = spell.cooldown_remaining - 1
+		end
+
+		wesnoth.put_unit(unit)
+	end
+end
+
+wml_actions.event({
+	name = "side 1 turn",
+	first_time_only = false,
+	{'lua', {code='decrease_cooldown_time()'}}
+}) 
