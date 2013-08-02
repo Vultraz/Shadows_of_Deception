@@ -335,14 +335,14 @@ end
 -- Inserts the data for a spell into the unit's variable.spell table
 --
 function wml_actions.learn_spell(cfg)
-	cfg = helper.shallow_parsed(cfg)
+	cfg = helper.literal(cfg)
 
 	local unit = wesnoth.get_units({id = cfg.unit})[1].__cfg
 	local var = helper.get_child(unit, "variables")
 
 	cfg.cooldown_remaining = 0
 
-	table.insert(var, {"spell", helper.literal(cfg)})
+	table.insert(var, {"spell", cfg})
 
 	wesnoth.put_unit(unit)
 end
