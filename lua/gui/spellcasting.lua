@@ -19,7 +19,7 @@ function wml_actions.spellcasting_controller(cfg)
 
 			-- Sets notice of there are no valid targets
 			if not wesnoth.eval_conditional { {'have_unit', helper.get_child(helper.get_child(spell, 'target_filter'), 'filter')} } then
-				wesnoth.set_dialog_value(_"No valid targets for this spell.", "details_pages", i, "details_notice_validity")
+				wesnoth.set_dialog_value(_"No valid targets for this spell", "details_pages", i, "details_notice_validity")
 			end
 
 			-- Sets notice if the spell is still cooling
