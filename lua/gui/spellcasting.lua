@@ -24,7 +24,13 @@ function wml_actions.spellcasting_controller(cfg)
 
 			-- Sets notice if the spell is still cooling
 			if spell.cooldown_remaining ~= 0 then
-				wesnoth.set_dialog_value(_"This spell is cooling down.", "details_pages", i, "details_notice_cooling")
+				local turnstext = _"turns remaining"
+
+				if spell.cooldown_remaining == 1 then 
+					turnstext = _"turn remaining"
+				end
+
+				wesnoth.set_dialog_value(string.format("%s\n(%i %s)", _"This spell is cooling down", tostring(spell.cooldown_remaining), turnstext), "details_pages", i, "details_notice_cooling")
 			end
 
 			page_count = i
