@@ -115,7 +115,7 @@ function wml_actions.inventory_controller(cfg)
 		local i = wesnoth.get_dialog_value("inventory_list")
 		local list_item = inv_list_data[i]
 		local function item_filter(tag)
-			return var[1] == 'item' and var[2].id == list_item.id
+			return tag[1] == 'item' and tag[2].id == list_item.id
 		end
 		local item_var = lp8.get_child(var, item_filter)
 
