@@ -9,6 +9,7 @@ T = helper.set_wml_tag_metatable {}
 for _, module in ipairs {
 	'wml';
 	'modifications';
+	'table';
 } do
 	lp8.import(module)
 end
