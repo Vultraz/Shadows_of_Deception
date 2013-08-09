@@ -6,7 +6,7 @@ local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dag
 
 -- This brings up the custom inventory control window
 function wml_actions.inventory_controller(cfg)
-	local unit = wesnoth.get_variable "unit"
+	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	local which_category_belongs_to_what_unit = {}
 	local adjacent_units = wesnoth.get_variable(
 		"units_adjacent_to_unit_using_inventory") or {}
@@ -17,32 +17,30 @@ function wml_actions.inventory_controller(cfg)
 	local command_list = {}
 
 	-- Syncs weapon data with the table and sorts it
-	local function sync_and_sort_items()
+	local function sync_weapons_to_items()
 		for i, attack in pairs(lp8.get_children(unit, 'attack')) do
 			if valid_attacks[attack.name] and not helper.get_child(var, "item", attack.name) then
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
 
-				-- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
-				table.insert(inv_list_data, { 
+				table.insert(var, {"item", {
 					id = attack.name,
-					name = attack.description,
+					name = attack.description, -- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
 					image = attack.icon or string.format("attacks/%s.png", attack.name),
-					description = descrip, effect_type = "continuous",
+					description = descrip,
+					effect_type = "continuous",
 					active = true,
-					{ "command", { "object", { silent = true, duration = "forever",
-						{ "effect", { apply_to = "new_attack",
-							{ "attack", attack } }
-						} } }
-					},
-					{ "removal_command", { "object", { silent = true, duration = "forever",
+					{ "command", { { "object", { silent = true, duration = "forever",
+						{'effect', lp8.copyTable(attack, {apply_to = 'new_attack'})}
+						} }
+					} },
+					{ "removal_command", { { "object", { silent = true, duration = "forever",
 						{ "effect", { apply_to = "remove_attack", range = attack.range, name = attack.name } } } }
-					}
-				})
+					} }
+				} })
 			end
 		end
 
-		-- Sorts the table alphabetacally by the name keys' value
-		table.sort(inv_list_data, function(a,b) return tostring(a.name) < tostring(b.name) end)
+		wesnoth.put_unit(unit)
 	end
 
 	-- Prints item list
@@ -134,6 +132,8 @@ function wml_actions.inventory_controller(cfg)
 				-- Delete item if you now have none of it
 				if list_item.quantity == 0 then
 					lp8.remove_subtag(var, item_filter)
+
+					selected_row = selected_row - 1
 				end
 			end
 
@@ -148,7 +148,7 @@ function wml_actions.inventory_controller(cfg)
 
 			table.insert(command_list,(helper.get_child(list_item, "command")))
 
-		-- But if it was already active, therefor it was a continuous-use item
+		-- But if it was already active, therefore it was a continuous-use item
 		-- So just deactivate it
 		else
 			wesnoth.set_dialog_value(
@@ -183,7 +183,7 @@ function wml_actions.inventory_controller(cfg)
 		wesnoth.set_dialog_value(selected_row, "inventory_list")
 		select_from_inventory()
 
-		-- TODO: remove these after their recpective functions have been coded
+		-- TODO: remove these after their respective functions have been coded
 		wesnoth.set_dialog_active(false, "give_button")
 		wesnoth.set_dialog_active(false, "drop_button")
 	end
@@ -191,8 +191,12 @@ function wml_actions.inventory_controller(cfg)
 	repeat
 		-- Keep all tables and main variables up to date
 		var = helper.get_child(unit, "variables")
+
+		sync_weapons_to_items() -- Adds weapons to inv_list_data and sorts it alphabetically
+
 		inv_list_data = lp8.get_children(var, "item")
-		sync_and_sort_items() -- Adds weapons to inv_list_data and sorts it alphabetacally
+		table.sort(inv_list_data, function(a,b) return tostring(a.name) < tostring(b.name) end)
+
 		button = next(inv_list_data)
 			and wesnoth.show_dialog(dialogs.normal, inventory_preshow)
 			or wesnoth.show_dialog(dialogs.empty)
