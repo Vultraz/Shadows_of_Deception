@@ -34,7 +34,7 @@ function wml_actions.inventory_controller(cfg)
 						} }
 					} },
 					{ "removal_command", { { "object", { silent = true, duration = "forever",
-						{ "effect", { apply_to = "remove_attack", range = attack.range, name = attack.name } } } }
+						{ "effect", { apply_to = "remove_attacks", range = attack.range, name = attack.name } } } }
 					} }
 				} })
 			end
