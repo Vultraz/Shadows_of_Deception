@@ -3,8 +3,8 @@
 ---
 -- This brings up a dialog when a unit moves to pick up an item.
 -- There are 3 choices:
--- * USE: Apply the item's effect, and add to inventory if effect_type = continuous
--- * TAKE: Add item to inventory. No effect is applied
+-- * USE:   Apply the item's effect, and add to inventory if effect_type = continuous
+-- * TAKE:  Add item to inventory. No effect is applied
 -- * LEAVE: Do nothing
 --
 -- [pick_up_item]
@@ -14,11 +14,15 @@
 --     description= _ "translatable string"
 --     effect_type=use either "single" or "continuous"
 --     event=the name of the event to to fire if you USE or TAKE the item
+--     [usuable_by]
+--         ... SUF: The item will only be able to be used or taken if the primary
+--             unit matches this filter
+--     [/usuable_by]
 --     [usable_if]
 --         ... The item will only be usable if this condition is matched ...
 --     [/usable_if]
 --     [command]
---         ... Code to exceute when item is used
+--         ... Code to execute when item is used
 --     [/command]
 --     [removal_command]
 --         ... Code to be executed if item is being unequiped.
