@@ -82,7 +82,7 @@ function wml_actions.spellcasting_controller(cfg)
 
 		wml_actions.set_menu_item {
 			id = "spell_trigger",
-			description = _"Cast " .. list_spell.name .. " Spell",
+			description = _"Cast Spell: " .. list_spell.name,
 			image = "icons/menu-casting.png",
 			{"filter_location", loc_filter},
 			{"command", {
