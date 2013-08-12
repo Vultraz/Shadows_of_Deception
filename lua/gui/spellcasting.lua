@@ -30,7 +30,7 @@ function wml_actions.spellcasting_controller(cfg)
 					turnstext = _"turn remaining"
 				end
 
-				wesnoth.set_dialog_value(string.format("%s\n(%i %s)", _"This spell is cooling down", tostring(spell.cooldown_remaining), turnstext), "details_pages", i, "details_notice_cooling")
+				wesnoth.set_dialog_value(string.format("%s\n(%i %s)", _"This spell is cooling down", spell.cooldown_remaining, turnstext), "details_pages", i, "details_notice_cooling")
 			end
 
 			page_count = i
