@@ -84,7 +84,7 @@ function wml_actions.spellcasting_controller(cfg)
 			id = "spell_trigger",
 			description = _"Cast Spell: " .. list_spell.name,
 			image = "icons/menu-casting.png",
-			{"filter_location", loc_filter},
+			{"filter_location", loc_filter.__parsed},
 			{"command", {
 				{"clear_menu_item", {id = "spell_trigger"}},
 				{"remove_item", {image = "misc/goal-highlight.png"}},
