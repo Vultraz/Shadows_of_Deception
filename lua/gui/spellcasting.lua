@@ -71,8 +71,8 @@ function wml_actions.spellcasting_controller(cfg)
 		local spell_var = lp8.get_child(var, "spell", i)
 		local loc_filter = helper.get_child(list_spell, "target_filter")
 		local effect = helper.get_child(list_spell, "spell_effect")
-		local pre_event = string.format("%s_pre_event", tostring(list_spell.id))
-		local post_event = string.format("%s_post_event", tostring(list_spell.id))
+		local pre_event = string.format("%s_pre_event", list_spell.id)
+		local post_event = string.format("%s_post_event", list_spell.id)
 
 		spell_var.cooldown_remaining = list_spell.cooldown_time
 
