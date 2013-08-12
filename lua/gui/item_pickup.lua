@@ -38,7 +38,7 @@ dialog = dialog.dialog
 function wml_actions.pick_up_item(cfg)
 	cfg = helper.shallow_parsed(cfg)
 
-	local unit = wesnoth.get_variable "unit"
+	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	local vars = helper.get_child(unit, "variables")
 
 	local function item_preshow()

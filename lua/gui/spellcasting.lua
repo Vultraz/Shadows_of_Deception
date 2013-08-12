@@ -4,7 +4,7 @@ local dialogs = nxrequire "gui/dialogs/spellcasting"
 local buttons = dialogs.buttons
 
 function wml_actions.spellcasting_controller(cfg)
-	local unit = wesnoth.get_variable "unit"
+	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	local var = helper.get_child(unit, "variables")
 	local spell_list_data = lp8.get_children(var, "spell")
 	local page_count
