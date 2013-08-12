@@ -18,7 +18,7 @@ function wml_actions.spellcasting_controller(cfg)
 			wesnoth.set_dialog_value(spell.description, "details_pages", i, "details_description")
 
 			-- Sets notice of there are no valid targets
-			if not wesnoth.eval_conditional { {'have_unit', helper.get_child(helper.get_child(spell, 'target_filter'), 'filter')} } then
+			if not wesnoth.eval_conditional { {'have_location', helper.get_child(spell, 'target_filter')} } then
 				wesnoth.set_dialog_value(_"No valid targets for this spell", "details_pages", i, "details_notice_validity")
 			end
 
