@@ -55,7 +55,7 @@ function wml_actions.spellcasting_controller(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 
 		-- Disables the Cast button if the spell is still in cooldown or is there are no valid targets
-		if spell.cooldown_remaining ~= 0 or not wesnoth.eval_conditional { {'have_unit', helper.get_child(helper.get_child(spell, 'target_filter'), 'filter')} } then
+		if spell.cooldown_remaining ~= 0 or not wesnoth.eval_conditional { {'have_location', helper.get_child(spell, 'target_filter')} } then
 			wesnoth.set_dialog_active(false, "cast_button")
 		else
 			wesnoth.set_dialog_active(true, "cast_button")
