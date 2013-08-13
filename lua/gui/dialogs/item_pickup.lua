@@ -46,6 +46,24 @@ local item_dialog = {
 								wrap = true
 							}
 						}
+					},
+					T.row {
+						T.column {
+							border = "all",
+							border_size = 5,
+							T.spacer {
+								definition = "default"
+							}
+						},
+						T.column {
+							border = "all",
+							border_size = 5,
+							horizontal_alignment = "left",
+							T.label {
+								id = "cannot_use_warning",
+								wrap = true
+							}
+						}
 					}
 				}
 			}
