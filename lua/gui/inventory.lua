@@ -133,7 +133,9 @@ function wml_actions.inventory_controller(cfg)
 				if list_item.quantity == 0 then
 					lp8.remove_subtag(var, item_filter)
 
-					selected_row = selected_row - 1
+					if selected_row == page_count then
+						selected_row = selected_row - 1
+					end
 				end
 			end
 
