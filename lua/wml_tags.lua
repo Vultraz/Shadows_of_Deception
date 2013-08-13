@@ -100,7 +100,7 @@ end
 -- Displays text mid-screen for a specified time, then fades it out
 -- [intro_text]
 --     title:         Title displayed  
---     body:          Text displayed
+--     text:          Text displayed
 --     duration:      Duration of the text after fade-in and before fade-out animations, in milliseconds
 -- [/intro_text]
 ---
@@ -123,7 +123,7 @@ end
 
 function wml_actions.interim_text(cfg)
 	local title = cfg.title
-	local text = cfg.body
+	local text = cfg.text
 	local duration = cfg.duration
 	--local fade_duration = cfg.fade_duration
 
