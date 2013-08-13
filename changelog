@@ -38,7 +38,8 @@ Version 0.4.0+dev
 * Lua
   * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
   * Made use of many functions from 8680's lua pack
-  * Added several of new custom WML tags
+  * Added several new custom WML tags
+  * New Spellcasting system
 
 * Sound and Music
   * Added new track: "Lunar Cage" by AngeloB
@@ -51,7 +52,7 @@ Version 0.4.0+dev
   * Fixed bug where walls were drawn over gate corners (ported from AtS)
   * New or updated unit graphics: Villager
   * Removed show weather images
-  * New Northguard race icons
+  * New Northguard race icons for the editor's unit tool
   * Terrain
     * New terrains: Carpet, City, City Arsenal, Earthy Rockbound Cave
     * Removed terrains: Campfire (mainline in 1.11), Glowing Dark Flagstone
@@ -61,7 +62,7 @@ Version 0.4.0+dev
     Elvish Apprentice, Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
     Northguard Direwolf, Shadow Regent, Wanderer
   * Minor balancing changes
-  * Force a shroud/fog refresh whenever an enemy is destroyed.
+  * Force a shroud/fog refresh whenever a gate is destroyed.
 
 Version 0.3.0
 -------------
