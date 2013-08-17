@@ -32,8 +32,6 @@ Version 0.4.0+dev
     * Reworked scenario and map for cleaner, simpler gameplay.
     * Improved dialog
     * Some balancing changes
-  * E1S7 (This scenario was formally E1S3)
-    * New scenario 
 
 * Lua
   * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
