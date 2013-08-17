@@ -2,8 +2,8 @@
 NX-RPG/Shadows of Deception: Changelog
 =======================================
 
-Version 0.4.0+dev
------------------
+Version 0.5.0
+-------------
 * General
   * Gave campaign a new official name: Shadows of Deception
   * Dropped support for 1.11.4 and below
@@ -43,7 +43,8 @@ Version 0.4.0+dev
   * Added new track: "Lunar Cage" by AngeloB
   * Added new track: "Gathering Storm" by Blake Ewing (Ewing)
   * Added new track: "Ambuscade" by Mattias Westlund (West)
-  * Added new track: "Through the Gates" Mattias Westlund (West)
+  * Added new track: "Through the Gates" by Mattias Westlund (West)
+  * Added new track: "Frantic Sketch" by TreizeCouleurs
 
 * Graphics
   * Fixed duplicate terrain IDs
