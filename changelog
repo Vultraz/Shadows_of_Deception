@@ -4,6 +4,13 @@ NX-RPG/Shadows of Deception: Changelog
 
 Version 0.5.0+dev
 -----------------
+* General
+  * Displayed the music pack's name as "SoD Music" as opposed to "NX-Music"
+    in the campaign menu music note
+
+* Scenarios
+  * E1S3
+    * Increased turn limit  
 
 Version 0.5.0
 -------------
