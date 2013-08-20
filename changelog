@@ -12,6 +12,9 @@ Version 0.5.0+dev
   * E1S3
     * Increased turn limit  
 
+* Lua
+  * Fixed an accidental broken implementation of [store_direction]
+
 Version 0.5.0
 -------------
 * General
