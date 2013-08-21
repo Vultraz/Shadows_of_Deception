@@ -21,7 +21,6 @@ end
 for _, script in ipairs {
 	'debug';
 	'theme';
-	'direction';
 	'wml_tags';
 	'gui/main';
 } do
