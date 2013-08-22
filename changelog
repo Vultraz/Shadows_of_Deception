@@ -13,7 +13,10 @@ Version 0.5.0+dev
     * Made side 2's leader passive
   * E1S3 - Gathering Storm
     * Increased turn limit
-    * Various improvements to ai behavior and gameplay
+    * Increased difficulty
+    * Many improvements to ai behavior
+    * Fixed several issues that could caused events to fire at the wrong time
+    * Some aesthetic map tweaks
 
 * Lua
   * Fixed an accidental broken implementation of [store_direction]
