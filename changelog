@@ -4,6 +4,10 @@ NX-RPG/Shadows of Deception: Changelog
 
 Version 0.5.1+dev
 -----------------
+* Scenarios
+  * E1S5.1 - Ambush in Wesmere
+   * Fixed a typo preventing the orcs from ever giving you their troops as
+     allies at scenario victory
 
 Version 0.5.1
 -------------
