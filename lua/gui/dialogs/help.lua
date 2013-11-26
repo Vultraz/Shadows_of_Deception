@@ -91,7 +91,6 @@ local main_window = {
 											vertical_grow = true,
 											T.scroll_label {
 												id = "topic_text",
-												wrap = true
 											}
 										}
 									}

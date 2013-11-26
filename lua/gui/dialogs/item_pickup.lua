@@ -43,7 +43,6 @@ local item_dialog = {
 							horizontal_alignment = "left",
 							T.scroll_label {
 								id = "item_description",
-								wrap = true
 							}
 						}
 					},

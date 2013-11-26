@@ -80,7 +80,6 @@ local details_panel_pages = T.multi_page {
 				vertical_alignment = "top",
 				T.scroll_label {
 					id = "details_description",
-					wrap = true
 				}
 			}
 		}
