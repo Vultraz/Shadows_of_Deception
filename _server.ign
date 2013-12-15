@@ -6,6 +6,7 @@
 *.swp
 *.pbl
 *.ign
+*.map.cfg
 _info.cfg
 maint-mode.cfg
 notes/

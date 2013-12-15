@@ -2,6 +2,7 @@
 *~*
 *.swp
 *.pbl
+*.map.cfg
 .DS_Store
 _info.cfg
 maint-mode.cfg
