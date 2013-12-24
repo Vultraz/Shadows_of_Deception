@@ -8,6 +8,10 @@ Version 0.5.1+dev
   * E1S5.1 - Ambush in Wesmere
    * Fixed a typo preventing the orcs from ever giving you their troops as
      allies at scenario victory
+	 
+* Lua
+  * Mitigated an issue with [fade_out_music] briefly playing a short burst
+    of the previous track before the switch to a new one
 
 Version 0.5.1
 -------------
