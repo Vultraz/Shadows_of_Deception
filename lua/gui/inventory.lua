@@ -164,6 +164,12 @@ function wml_actions.inventory_controller(cfg)
 		refresh_use_button_text(i)
 	end
 
+	local function give_item()
+	end
+
+	local function drop_item()
+	end
+
 	local function inventory_preshow()
 		-- List for units
 		if units_adjacent_to_unit_using_inventory then
@@ -178,6 +184,8 @@ function wml_actions.inventory_controller(cfg)
 
 		wesnoth.set_dialog_callback(select_from_inventory, "inventory_list")
 		wesnoth.set_dialog_callback(use_item, "use_button")
+		wesnoth.set_dialog_callback(give_item, "give_button")
+		wesnoth.set_dialog_callback(drop_item, "drop_button")
 
 		-- Sets initial values of stuff
 		print_item_list()
