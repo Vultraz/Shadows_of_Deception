@@ -1,0 +1,15 @@
+=================================
+NX-RPG/Shadows of Deception: TODO
+=================================
+
+HIGH PRIOROTY
+--------------
+
+* The following scenarios need redesign or improvement:
+  * E1S3 - Map and scenario design can be improved
+  * E1S4 - Map design can be improved
+  * E1S5 - Needs to be longer/harder
+  
+* The Northguard need to be expanded and improved upon
+
+* AMLAs for the main characters
