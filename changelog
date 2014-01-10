@@ -10,6 +10,7 @@ Version 0.5.1+dev
   * E1S5.1 - Ambush in Wesmere
     * Fixed a typo preventing the orcs from ever giving you their troops as
       allies at scenario victory
+    * Update Micro AI syntax for 1.11.8 and later
 	 
 * Lua
   * Mitigated an issue with [fade_out_music] briefly playing a short burst
