@@ -14,7 +14,7 @@ if lp8 ~= nil then
 		'modifications';
 		'table';
 	} do
-		lp8.import(module)
+		lp8.require(module)
 	end
 else
 	wesnoth.wml_actions.event {
