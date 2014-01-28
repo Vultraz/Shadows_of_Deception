@@ -52,10 +52,13 @@ function wml_actions.inventory_controller(cfg)
 				wesnoth.set_dialog_value(item.image, "inventory_list", i, "list_image")
 			end
 
-			wesnoth.set_dialog_value(item.name, "inventory_list", i, "list_name")
+			wesnoth.set_dialog_value("<b>" .. item.name .. "</b>", "inventory_list", i, "list_name")
+			wesnoth.set_dialog_markup(true,                        "inventory_list", i, "list_name")
+
 			wesnoth.set_dialog_value(item.name, "details_pages", i, "details_name")
 			wesnoth.set_dialog_value(item.quantity or 1, "inventory_list", i, "list_quantity")
-			wesnoth.set_dialog_value(item.description, "details_pages", i, "details_description")
+			wesnoth.set_dialog_value("<i>" .. item.description .. "</i>", "details_pages", i, "details_description")
+			wesnoth.set_dialog_markup(true,                               "details_pages", i, "details_description")
 
 			page_count = i
 		end
