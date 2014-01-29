@@ -16,6 +16,10 @@ Version 0.5.1+dev
   * Mitigated an issue with [fade_out_music] briefly playing a short burst
     of the previous track before the switch to a new one
 
+* Graphics
+  * New or updated unit graphics: Northguard Fighter, Northguard Warrior, 
+    Northguard Deathblade
+
 Version 0.5.1
 -------------
 * General
@@ -37,9 +41,6 @@ Version 0.5.1
   * Fixed an accidental broken implementation of [store_direction]
   * Prevent [hidden_unit] from clobbering clobbering existing 
     on-map units (ported from AtS)
-
-* Graphics
-  * New or updated unit graphics: Northguard Warrior, Northguard Deathblade
 
 Version 0.5.0
 -------------
