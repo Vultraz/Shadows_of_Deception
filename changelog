@@ -7,6 +7,7 @@ Version 0.5.1+dev
 * Scenarios
   * E1S2
     * Update Micro AI syntax for 1.11.8 and later
+    * Allowed the Mind Control spell to restore full movement
   * E1S5.1 - Ambush in Wesmere
     * Fixed a typo preventing the orcs from ever giving you their troops as
       allies at scenario victory
