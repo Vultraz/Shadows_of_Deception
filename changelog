@@ -21,6 +21,10 @@ Version 0.5.1+dev
   * New or updated unit graphics: Northguard Fighter, Northguard Warrior, 
     Northguard Deathblade
 
+* User interface:
+  * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
+    later.
+
 Version 0.5.1
 -------------
 * General
