@@ -5,14 +5,16 @@ NX-RPG/Shadows of Deception: Changelog
 Version 0.5.1+dev
 -----------------
 * Scenarios
-  * E1S2
+  * E1S2 - Dwarvish Trail
     * Update Micro AI syntax for 1.11.8 and later
     * Allowed the Mind Control spell to restore full movement
   * E1S5.1 - Ambush in Wesmere
     * Fixed a typo preventing the orcs from ever giving you their troops as
       allies at scenario victory
     * Update Micro AI syntax for 1.11.8 and later
-	 
+  * E1S5.2 - Change of Plans
+    * Some dialog tweaks
+
 * Lua
   * Mitigated an issue with [fade_out_music] briefly playing a short burst
     of the previous track before the switch to a new one
