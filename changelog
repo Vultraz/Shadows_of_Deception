@@ -22,6 +22,7 @@ Version 0.5.1+dev
 * Graphics
   * New or updated unit graphics: Northguard Fighter, Northguard Warrior, 
     Northguard Deathblade
+  * Removed blank ellipse images. Units can now use ellipse=none
 
 * User interface:
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
