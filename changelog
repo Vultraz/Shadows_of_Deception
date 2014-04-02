@@ -8,6 +8,7 @@ Version 0.5.1+dev
   * E1S2 - Dwarvish Trail
     * Update Micro AI syntax for 1.11.8 and later
     * Allowed the Mind Control spell to restore full movement
+    * Use goto MAI for moving Dalen to the bridge
   * E1S5.1 - Ambush in Wesmere
     * Fixed a typo preventing the orcs from ever giving you their troops as
       allies at scenario victory
