@@ -1,31 +1,39 @@
 border_size=1
 usage=map
 
-Ss, Xu, Ss, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
-Xu, Ss, Xu, Ss, Wwg, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Wwf^Uf, Qxu, Wwf, Uh^Dr, Uh, Uh, Uu, Xu, Xu, Xu, Uu, Xu, Uh, Uh, Uh^Em, Uh^Dr, Uh, Xu, Xu, Xu
-Xu, Xu, Uue^Uf, Uue, Re^Em, Wwg, Uu, Uu, Uu, Qxu, Qxu, Qxu, Ss, Ss, Wwf, Uue^Em, Uue, Uue, Rb^Es, Rb, Uu, Uu, Re, Uu, Re, Uh, Rd, Uu, Uue, Uh, Uu, Xu
-Xu, Xu, Uh^Uf, Uu, Xu, Xu, Qxu, Uu, Uue, Uu^Es, Re, Re, Re^Em, Re^Em, Re, Uue, Re, Re, Uu, Rb, Uu, Re, Uue, Rd, Re^Es, Rd^Es, Urb, Uue, Uue, Rb^Es, Uu, Xu
-Xu, Uh, Re^Es, Uue, Xu, Qxu, Qxu, Uu, Urb, Uue, Uh, Ur, Uh, Uu, Xu, Uue, Xu, Uu, Xu, Xu, Xu, Uue, Uue, Uue, Re, Urb, Urb^Cov, Uue, Uue, Rb, Xu, Xu
-Xu, Uh, Rd, Uue, Uu, Xu, Uue, Ur, Uu, Uu, Uh, Uh, Xu, Uh, Xu, Xu, Xu, Uu^Dr, Uu, Xu, Xu, Uu, Uue, Rb, Re^Es, Uu^Cov, Re^Cov, 2 Uu^Kov, Uue, Uu, Xu, Xu
-Xu, Xu, Uh, Uh, Xu, Re, Uue, Ur, Uh^Dr, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Urb, Xu, Uu, Xu, Uu, Uue, Re^Emf, Re^Cov, Uu^Uf, Uu^Cov, Uh^Cov, Uue, Xu, Xu
-Xu, Xu, Xu, Xu, Xu, Rb, Wwf, Uue, Rb, Uh, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Urb, Xu, Uu, Xu, Xu, Qxu, Uu^Uf, Qxu, Uh^Cov, Uh, Uh, Xu, Xu
-Xu, Xu, Qxe, Xu, Uh^Dr, Uue, Wwf, Wwf^Em, Rr, Ur, Uu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu^Bp|, Qxu, Uh, Xu, Xu
-Xu, Xu, Qxe, Uh, Uh, Uue, Re, Uue, Uue, Ur^Es, Ur, Uu, Uue, Uh^Uf, Uh^Uf, Qxu, Qxu, Xu, Rb, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu^Bp|, Qxu, Qxu, Xu, Xu
-Xu, Qxu, Qxe, Uue, Uue, Uue, Rd^Em, Uu, Xu, Uu, Xu, Uue, Uu, Uue, Re, Qxu, Qxu, Uue, Xu, Rb, Uu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Uh
-Xu, Qxu, Qxu, Qxe, Uh^Uf, Uue^Uf, Rd^Uf, Xu, Xu, Xu, Cud, Xu, Ur, Re, Re, Uu, Uu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu^Bp\, Qxu, Uu, Uu
-Xu, Qxu, Qxu, Qxu, Qxu, Uh^Uf, Xu, Xu, Xu, Cud, Cud, Uu, Uu, Ur, Rd, Uu, Uu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Uu, Urb, Urb
-Xu, Xu, Xu, Qxu, Xu, Qxu, Xu, Xu, Xu, 3 Kud, Cud, Cud, Uu, Uu, Uue, Rd, Ur, Rd, Ur, Uu, Uu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Xu, Uu
-Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Xu, Xu, Cud, Cud, Cud, Rb, Uue, Xu, Uue, Uue, Rr, Uu, Rb, Uu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
+Xu, Xuc, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Uu, Uu, Ur, Rb, Uu, Xu, Wwf, Xu, Xu, Wog, Wog, Wwg, Wwf, Uh, Uu^Vud, Rb^Uf, Rr, Rb^Em, Rb^Uf, Xu, Xu
+Xu, Xu, Uu, Qxu, Uu, Qxu, Uu, Qxu, Uh, Xu, Uh, Uh, Urb, Uu, Re, Urb, Uu^Uf, Xue, Wwg, Wwg, Wwg, Wwg, Wwg, Xu, Xu, Uu^Uf, Rb^Uf, Rr, Rb, Rb^Uf, Uh, Uh
+Xu, Xu, Xu, Uu, Xu, Uu, Uu, Xu, Uh, Uu^Uf, Uu^Vu, Urb, Re, Re, Uu, Uu, Xu, Xu, Wwg, Wwg, Wwg, Wwg, Xue, Xu, Xu, Uu^Uf, Uu^Uf, Uu, Rb^Uf, Re^Uf, Uu^Vud, Xu
+Xu, Xu, Xu, Xu, Uu, Uu, Qxu, Xu, Uu^Uf, Uu^Uf, Uu, Uu, Re^Em, Uu, Uh, Qxu, Qxu, Xue, Xue, Wwg, Xue, Wwg, Xue, Xu, Uu^Uf, Uh, Rr, Rb, Rb^Uf, Uu^Uf, Xu, Xu
+Xu, Xu, Xu, Uu, Urb, Uu, Xu, Qxu, Uu, Uu, Uue, Re, Uue, Uue, Uh, Qxu, Qxu, Uu, Wwg, Xue, Wwg, Xue, Xu, Xu, Uu^Uf, Rb^Uf, Rb^Em, Rb, Uh, Rb^Uf, Uu^Uf, Xu
+Xu, Xu, Xu, Uu, Uu, Uu, Xu, Qxu, Qxu, Uu, Re^Es, Uue, Uue, Uue^Uf, Uue^Uf, Uh, Qxu, Uu, Uu, Wwg, Xue, Xue, Xu, Xu, Rb, Rr, Rr, Uh, Xu, Uu^Uf, Xu, Xu
+Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxe, Uue^Uf, Re, Re, Uue, Uu, Cud, Uu^Uf, Uu^Uf, Uu, Rb, Wwg, Xu, Xu, Uu^Uf, Uu^Vu, Rb, Xu, Xu, Xu, Xu, Xu, Uh, Xu
+Xu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Cud, Re, Uue, Uue, Uue, 2 Kud, Cud, Xu, Xu, Uu, Rb, Uu^Vu, Xu, Xu, Rb^Uf, Rb, Rb^Em, Xu, Xu, Xu, Xu, Uh, Urb, Uh
+Ss, Xu, Ss, Xu, Xu, Qxu, Qxu, Uu, Cud, Qxu, Uh, Re, Re, Uue, Uh, Qxu, Qxu, Uh, Uu, Uu, Xu, Re^Uf, Rb^Uf, Rb, Uu, Uu^Uf, Cud, Xu, Urb, Urb, Xu, Uh
+Xu, Ss, Xu, Ss, Wwg, Xu, Qxu, Qxu, Qxu, Uu^Uf, Qxu, Uu, Uu, Re^Uf, Wwf, Uh, Uh, Uh, Uu, Uu, Uu, Re^Uf, Uu, Rr, Uh, Uu^Uf, Uh^Em, Kud, Cud, Xu, Xu, Xu
+Xu, Xu, Uue^Uf, Uue, Re^Em, Wwg, Uu, Uu, Uu, Qxu, Qxu, Qxu, Ss, Uu, Wwf, Uue^Em, Uue, Uue, Rb^Es, Rb, Uu, Uu, Re, Uu, Re, Uh, Rd, Uu, Uue, Xu, Uu, Xu
+Xu, Xu, Uh^Uf, Uu, Xu, Xu, Qxu, Uu, Uue, Uu^Es, Rb, Rb, Uu, Uu, Rb^Em, Uue, Re, Re, Uu, Rb, Uu, Re, Uue, Rd, Re^Es, Rd^Es, Urb, Uue, Uue, Rb^Es, Uu, Xu
+Xu, Uh, Re^Es, Uue, Xu, Qxu, Qxu, Uu, Urb, Uue, Uh, Ur, Uh, Uu, Xu, Rb, Xu, Uu, Xu, Xu, Xu, Uue, Uue, Uue, Re, Urb, Urb, Uue, Uue, Rb, Xu, Xu
+Xu, Uh, Rd, Uue, Uu, Xu, Uue, Ur, Uu, Uu, Uh, Uh, Xu, Uh, Xu, Xu, Uu, Uu^Dr, Uu, Xu, Xu, Uu, Uue, Rb, Re^Es, Uu, Uu, Uu, Uu, Uu, Xu, Xu
+Xu, Xu, Uh, Uh, Xu, Re, Uue, Ur, Uh^Dr, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Xu, Urb, Xu, Uu, Xu, Uu, Uue, Re^Emf, Uu, Uu, Uu, Uh, Uue, Xu, Xu
+Xu, Xu, Xu, Xu, Xu, Rb, Wwf, Uue, Rb, Uh, Xu, Xu, Xu, Xu, Xu, Qxu, Uu, Qxu, Qxu, Urb, Xu, Uu, Xu, Xu, Qxu, Uu^Uf, Qxu, Uh, Uh, Uh, Xu, Xu
+Xu, Xu, Qxe, Xu, Uh^Dr, Uue, Wwf, Wwf^Em, Rr, Ur, Uu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Uh, Xu, Xu
+Xu, Xu, Qxe, Uh, Uh, Uue, Re, Uue, Uue, Ur^Es, Ur, Uu, Uue, Uh^Uf, Uh^Uf, Qxu, Qxu, Xu, Rb, Xu, Xu, Xu, Xu, Xu, Uu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Xu
+Xu, Qxu, Qxe, Uue, Uue, Uue, Rd^Em, Uu, Xu, Uu, Xu, Uue, Uu, Uue, Rb, Qxu, Qxu, Uue, Xu, Rb, Uu, Xu, Xu, Xu, Uu, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Uh
+Xu, Qxu, Qxu, Qxe, Uh^Uf, Uue^Uf, Rd^Uf, Xu, Xu, Xu, Cud, Xu, Ur, Re, Re, Uu, Uu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Uu, Uu, Qxu, Qxu, Qxu, Qxu, Uu, Uu
+Xu, Qxu, Qxu, Qxu, Qxu, Uh^Uf, Xu, Xu, Xu, Cud, Cud, Uu, Uu, Ur, Re, Uu, Uu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Xu, Xu, Qxu, Qxu, Uu, Urb, Urb
+Xu, Xu, Xu, Qxu, Xu, Qxu, Xu, Xu, Xu, 3 Kud, Cud, Cud, Uu, Uu, Uue, Re, Ur, Rd, Ur, Uu, Uu, Xu, Xu, Xu, Uu, Xu, Xu, Xu, Xu, Uu, Xu, Uu
+Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Xu, Xu, Cud, Cud, Cud, Rb, Uue, Xu, Uue, Uue, Rr, Uu, Rb, Uu, Xu, Xu, Uu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Qxu, Qxu, Xu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Xu, Qxu, Qxu^Bs|, Qxu^Bs|, Qxu^Bs|, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Xu, Qxu, Uu, Urb, Re, Uu, Uue, Qxu, Xu, Xu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Xu, Uu^Uf, Uu, Re, Uu, Rd, Re, Uue, Uue, Xu, Xu, Xu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu
-Xu, Xu, Xu, Qxu, Qxu, Xu, Qxu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Uu^Uf, Re, Rb, Xu, Xu, Xu, Urb, Urb, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
-Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Uh^Uf, Xu, Xu, Xu, Xu, Xu, Xu, Urb, Uu, Xu, Xu, Xu, Xu, Re, Re, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
-Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Qxu, Uh^Dr, Uh^Uf, Uh, Xu, Ur, Xu, Ur, Uu, Xu, Xu, Re, Xu, Uue, Rd, Rd, Uh, Uh^Dr, Xu, Xu, Xu, Xu, Xu, Ur, Ur
-Xu, Xu, Xu, Xu, Xu, Qxu, Xu, Uh, Uh^Uf, Uu, Uue, Uu, Uue, Uu, Uu, Uu, Ur, Re, Uu, Uu, Uue^Es, Uue, Re, Re, Uh, Xu, Xu, Xu, Xu, Uue, Ur, Xu
-Xu, Xu, Uu, Xu, Xu, Xu, Uh, Uu, Uu, Uu, Wwf, Uue, Urb, Uu^Uf, Uu, Ur, Uue, Uue, Qxe, Uu, Ur, Uue^Uf, Uue^Uf, Rd, Xu, Xu, Xu, Xu, Xu, Ur, Xu, Xu
-Xu, Xu, Uh^Uf, Uu^Uf, Uue, Uh, Ur, Uu, Ur, Ur, Uue^Es, Wwf, Rr, Uue, Uh, Uue, Qxe, Qxe, Qxe, Qxe, Uh, Uh^Uf, Uh^Uf, Uue, Xu, Xu, Xu, Xu, Ur, Uh, Qxu, Xu
-Uu, Rb^Uf, Rb, Uue^Uf, Uue, Urb, Uu, Ur, Re, Re, Uue, Uue, Uu, Uh, Uh^Uf, Wwf, Wog, Qxu, Qxu, Qxe, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Ur, Uh, Qxu, Xu
-Ur, Rb, 1 Urb, Uu, Uue, Urb, Uue, Rd^Es, Rd, Rd, Uh^Uf, Uh^Uf, Uh^Uf, Uh^Uf, Uu, Wwf, Qxe, Qxu, Qxu, Qxe, Qxe, Qxe, Qxe, Xu, Xu, Xu, Ur, Uue, Ur, Qxu, Qxu, Qxu
-Ur, Uue, Uu, Ur, Uu, Uu, Uu, Uue, Xu, Uue, Xu, Uu^Uf, Qxe, Qxe, Qxe, Qxe, Qxe, Qxu, Xu, Qxu, Xu, Qxu, Uue, Uue, Uu, Uu, Uu, Ur, Qxu, Qxu, Qxu, Qxu
-Uu, Uu, Uu, Uh, Uh, Uh, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Ur, Uh, Uh, Uh, Uh, Qxu, Qxu, Qxu, Qxu
+Xu, Xu, Xu, Qxu, Qxu, Xu, Qxu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Uu^Uf, Re, Rb, Qxu, Qxu, Qxu, Urb, Urb, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
+Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Uh^Uf, Xu, Xu, Xu, Xu, Xu, Xu, Urb, Uu, Cud, Kud, Qxu, Qxu, Re, Re, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
+Xu, Xu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Uh^Dr, Uh^Uf, Uh, Xu, Uu, Xu, Rb, Rb, Uu, Qxu, Rb^Es, Qxu, Uue, Rd, Rd, Uh, Uh^Dr, Xu, Xu, Xu, Xu, Xu, Uu, Uu
+Xu, Xu, Qxu, Xu, Xu, Qxu, Xu, Uh, Uh^Uf, Uu, Uu, Uu, Uh, Uu, Uu, Re, Re, Rb, Uu, Uu, Uue^Es, Uue, Re^Uf, Re, Uh^Uf, Xu, Xu, Xu, Xu, Uue, Uu, Uu
+Xu, Xu, Uu, Xu, Xu, Xu, Uh, Uu, Uue, Uu, Wwf^Uf, Qxu, Qxu, Uh, Rb, Uu, Uue, Uue, Qxe, Uu, Re, Uue, Uue^Uf, Re^Uf, Xu, Xu, Xu, Xu, Xu, Uu, Xu, Xu
+Xu, Xu, Uh^Uf, Uu^Uf, Uue, Uh, Uue, Uu, Uue, Uue, Uue, Wwf^Uf, Rb, Rb, Uh, Uue, Qxe, Qxe, Qxe, Qxe, Uh, Uh^Uf, Uh^Uf, Uue^Uf, Xu, Xu, Xu, Xu, Uu, Uh, Qxu, Xu
+Uu, Rb^Uf, Rb, Uue^Uf, Uue, Uue, Uue, Uue, Re, Re, Uue, Uue, Uu, Uh, Uh^Uf, Wwf, Wog, Qxu, Qxu, Qxe, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Uh, Qxu, Xu
+Ur, Rb, 1 Uue, Uue, Re, Re, Uue, Re, Uu, Uu, Uh^Uf, Uh^Uf, Uh^Uf, Uh^Uf, Uh, Wwf, Qxe, Qxu, Qxu, Uue, Qxe, Qxe, Qxe, Xu, Xu, Xu, Uu, Uue, Uu, Qxu, Qxu, Qxu
+Ur, Uue, Uu, Re, Uu, Uu, Uu, Uue, Xu, Uu, Xu, Uu^Uf, Qxe, Qxe, Qxe, Qxe, Re, Re, Uue, Uue, Xu, Qxu, Uu, Uue, Uu, Uu, Uu, Uu, Qxu, Qxu, Qxu, Qxu
+Uu, Uu, Uu, Uh, Uh, Uh, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Xu, Xu, Xu, Xu, Xu, Xu, Uu, Uu, Uh, Uh, Uh, Uh, Qxu, Qxu, Qxu, Qxu
