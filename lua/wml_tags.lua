@@ -153,7 +153,7 @@ function wml_actions.interim_text(cfg)
 end
 
 ---
--- Hack to immedualely remove any [print] text from screen,
+-- Hack to immediately remove any [print] text from screen,
 -- regardless of the previous message's duration
 ---
 function wml_actions.clear_print()
