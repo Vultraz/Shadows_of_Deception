@@ -480,7 +480,7 @@ end
 --     facing= ... direction ...
 -- [/set_facing]
 ---
-function wesnoth.wml_actions.set_facing(cfg)
+function wml_actions.set_facing(cfg)
 	local suf = helper.get_child(cfg, "filter") or
 		helper.wml_error("[set_facing] Missing unit filter")
 
