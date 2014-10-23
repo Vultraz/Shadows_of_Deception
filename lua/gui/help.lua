@@ -1,4 +1,4 @@
---#textdomain wesnoth-NX-RPG
+--#textdomain wesnoth-Shadows_of_Deception
 
 local dialog, data, page_count =
 	nxrequire 'gui/dialogs/help', nxrequire 'data/help'
