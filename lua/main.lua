@@ -24,6 +24,7 @@ end
 for _, script in ipairs {
 	'debug';
 	'theme';
+	'hex';
 	'wml_tags';
 	'gui/main';
 } do
