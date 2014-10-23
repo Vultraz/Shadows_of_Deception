@@ -1,4 +1,4 @@
--- #textdomain wesnoth-Shadows_of_Deception
+-- #textdomain wesnoth-NX-RPG
 
 ---
 -- Displays an error message on a popup dialog.
@@ -61,8 +61,8 @@ function wml_actions.bug(cfg)
 	end
 
 	local function preshow()
-		-- #textdomain wesnoth-Shadows_of_Deception
-		local _ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
+		-- #textdomain wesnoth-NX-RPG
+		local _ = wesnoth.textdomain "wesnoth-NX-RPG"
 		local msg = _ "An inconsistency has been detected, and the scenario might not continue working as originally intended."
 		msg = msg .. "\n\n" .. _ "Please report this to the campaign maintainer!"
 

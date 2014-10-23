@@ -1,4 +1,4 @@
---#textdomain wesnoth-Shadows_of_Deception
+--#textdomain wesnoth-NX-RPG
 
 ---
 -- Adds a gui indicator like those for slow and poison to the displayed unit.

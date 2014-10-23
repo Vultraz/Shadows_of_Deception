@@ -1,4 +1,4 @@
---#textdomain wesnoth-Shadows_of_Deception
+--#textdomain wesnoth-NX-RPG
 
 ---
 -- This brings up a dialog when a unit moves to pick up an item.

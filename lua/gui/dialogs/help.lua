@@ -1,4 +1,4 @@
---#textdomain wesnoth-Shadows_of_Deception
+--#textdomain wesnoth-NX-RPG
 
 local buttons = {
 	close = 1;

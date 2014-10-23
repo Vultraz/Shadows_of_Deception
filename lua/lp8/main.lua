@@ -25,7 +25,7 @@ else
 			message = tostring(
 _ "You appear to not have 8680’s Lua Pack installed. 8680’s Lua Pack is required for this campaign to run."
 				) .. "\n\n" .. tostring(nxconfig.git and
-_ "Seeing as you are running this campaign from a Git repository, you should read and follow the <i>readme.md</i> file, which can also be found at &lt;https://github.com/Vultraz/Shadows_of_Deception#readme&gt;."
+_ "Seeing as you are running this campaign from a Git repository, you should read and follow the <i>readme.md</i> file, which can also be found at &lt;https://github.com/Vultraz/NX-RPG#readme&gt;."
 					or
 _ "Please install 8680’s Lua Pack from Battle for Wesnoth’s official add-ons servers, via Battle for Wesnoth’s built-in add-ons manager, which can be accessed via the “Add-ons Manager” button in the main menu."
 				);

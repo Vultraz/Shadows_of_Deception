@@ -1,6 +1,6 @@
 -- NX global configuration for Lua.
 
-_ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
+_ = wesnoth.textdomain 'wesnoth-NX-RPG'
 wml_actions = wesnoth.wml_actions
 helper = wesnoth.require 'lua/helper.lua'
 items = wesnoth.require 'lua/wml/items.lua'
@@ -18,7 +18,7 @@ nxconfig = lp8.new_table()
 -- #endif
 
 function nxrequire(script)
-	return wesnoth.require('~add-ons/Shadows_of_Deception/lua/' .. script .. '.lua')
+	return wesnoth.require('~add-ons/NX-RPG/lua/' .. script .. '.lua')
 end
 
 for _, script in ipairs {
