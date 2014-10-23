@@ -13,7 +13,7 @@
 --     image=path/to/image.png
 --     description= _ "translatable string"
 --     effect_type=use either "single" or "continuous"
---     event=the name of the event to to fire if you USE or TAKE the item
+--     event=the name of the event to fire if you USE or TAKE the item
 --     [usuable_by]
 --         ... SUF: The item will only be able to be used or taken if the primary
 --             unit matches this filter
