@@ -6,10 +6,10 @@ Many elements of this campaign differ from standard Wesnoth. If you aren’t sur
 
 <b>Tips:</b>
 • Read the objectives — there may be special win conditions.
-• Don’t try to eradicate all the enemies — they may be respawning.
+• Don’t try to eradicate all enemies — they may be respawning.
 • Explore — there may be hidden areas.
 
-<b>NOTE:</b> A game screen resolution of 800x600 or greater is recommended. Some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under Preferences → Display.]]
+<b>NOTE:</b> A game screen resolution of 800x600 or greater is recommended. Additionally, some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under Preferences → Display.]]
 	};
 	{	name = "<b>Spellcasting</b>", text = _ [[
 Units with magical abilities (such as Elynia and Niryone) are able to cast spells. Each has a list of spells they have learned, accessible from the <i>"Spells"</i> right click menu.
