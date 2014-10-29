@@ -10,6 +10,7 @@ Version 0.5.2+dev
 
 * Units
   * Use human names for the Northguard
+  * Fixed Northguard Silverbow advancing to itself
 
 Version 0.5.2
 -------------
