@@ -3,6 +3,7 @@
 *.swp
 *.pbl
 *.map.cfg
+Thumbs.db
 .DS_Store
 _info.cfg
 maint-mode.cfg
