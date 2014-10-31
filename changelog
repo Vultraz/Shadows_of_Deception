@@ -12,6 +12,11 @@ Version 0.5.2+dev
   * E1S4 - Pursuit
     * New map
     * Completely revamped gameplay
+  * E1S5.2 - Change of Plans
+    * Improved presentation
+
+* Graphics
+  * Removed terrains: Dark Tiled Floor, Dark Castle, Dark Keep
 
 * Units
   * Use human names for the Northguard
