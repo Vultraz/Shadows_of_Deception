@@ -98,11 +98,11 @@ end
 
 ---
 -- Displays text mid-screen for a specified time, then fades it out
--- [intro_text]
+-- [interim_text]
 --     title:         Title displayed  
 --     text:          Text displayed
 --     duration:      Duration of the text after fade-in and before fade-out animations, in milliseconds
--- [/intro_text]
+-- [/interim_text]
 ---
 function alpha_print(text, size, alpha)
 	local c = helper.round(255 * alpha)
