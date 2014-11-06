@@ -200,7 +200,7 @@ local empty_spell_window = {
 				vertical_alignment = "center",
 				horizontal_alignment = "center",
 				T.label {
-					label = _"You do not have any spells learned."
+					label = _"This unit has not mastered any spells."
 				}
 			}
 		}
