@@ -31,6 +31,10 @@ Version 0.5.2+dev
   * Fixed Northguard Silverbow advancing to itself
   * Added 'Northguard' prefix to all applicable units type names
 
+* User interface:
+  * Custom terrain editor group name displayed as 'Shadows of Deception'
+    instead of 'NX-RPG'
+
 Version 0.5.2
 -------------
 * Scenarios
