@@ -31,7 +31,7 @@ Version 0.5.2+dev
   * Fixed Northguard Silverbow advancing to itself
   * Added 'Northguard' prefix to all applicable units type names
 
-* User interface:
+* User interface
   * Custom terrain editor group name displayed as 'Shadows of Deception'
     instead of 'NX-RPG'
 
@@ -58,7 +58,7 @@ Version 0.5.2
     Northguard Deathblade
   * Removed blank ellipse images. Units can now use ellipse=none
 
-* User interface:
+* User interface
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
     later.
 
