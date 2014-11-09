@@ -10,19 +10,21 @@ Version 0.5.2+dev
 * Scenarios
   * E1S0 - Descry
     * New original map
-    * Various text and cinematic improvements
+    * Various dialog and cinematic improvements
   * E1S1 - Seer and Outlaw
     * Various aesthetic tweaks to the map, including redrawn keep areas
       for sides 2 and 3
-    * Improved the intro
+    * Improved intro
     * Balancing changes:
       * Reduced size of all keeps for fewer recruits per turn
       * Reduced enemy AI gold
   * E1S3 - Gathering Storm
     * New map
+    * Made side 3 orcish and shuffled allegiances, along with general
+      gameplay and dialog improvements
   * E1S4 - Pursuit
     * New map
-    * Completely revamped gameplay
+    * Completely revamped gameplay and dialog
   * E1S5.2 - Change of Plans
     * Improved presentation
 
