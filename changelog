@@ -1,27 +1,25 @@
-=======================================
-NX-RPG/Shadows of Deception: Changelog
-=======================================
+===============================
+Shadows of Deception: Changelog
+===============================
 
 Version 0.5.2+dev
 -----------------
-* General
-  * Rhaen has been renamed to Dravar
-
 * Scenarios
+  * Rhaen has been renamed Dravar
   * E1S0 - Descry
     * New original map
     * Various dialog and cinematic improvements
-  * E1S1 - Seer and Outlaw
-    * Various aesthetic tweaks to the map, including redrawn keep areas
-      for sides 2 and 3
-    * Improved intro
-    * Balancing changes:
+  * E1S1 - Seer and Outlaw:
+    * Various aesthetic and presentation improvements
+    * Balancing changes
       * Reduced size of all keeps for fewer recruits per turn
       * Reduced enemy AI gold
   * E1S3 - Gathering Storm
     * New map
-    * Made side 3 orcish and shuffled allegiances, along with general
-      gameplay and dialog improvements
+    * Some gameplay changes were made to go along with the new map, the most
+      drastic being side 3 is now comprised of orcs as opposed to trolls, and
+      side allegiances have been changed somewhat
+	* Improved dialog
   * E1S4 - Pursuit
     * New map
     * Completely revamped gameplay and dialog
@@ -32,6 +30,7 @@ Version 0.5.2+dev
   * Removed terrains: Dark Tiled Floor, Dark Castle, Dark Keep
   * New terrains: Lamppost
   * New or updated unit graphics: Northguard Nightshaft
+  * Removed many unused images
 
 * Units
   * Use human names for the Northguard
