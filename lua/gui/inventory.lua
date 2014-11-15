@@ -5,7 +5,7 @@ local buttons = dialogs.buttons
 local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dagger = 1, crossbow = 1, hammer = 1, javelin = 1, lance = 1, spear = 1, staff = 1}; 
 
 -- This brings up the custom inventory control window
-function wml_actions.inventory_controller(cfg)
+function wml_actions.show_inventory(cfg)
 	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	local which_category_belongs_to_what_unit = {}
 	local adjacent_units = wesnoth.get_variable(

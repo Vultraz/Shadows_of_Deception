@@ -7,7 +7,7 @@
 -- * TAKE:  Add item to inventory. No effect is applied
 -- * LEAVE: Do nothing
 --
--- [pick_up_item]
+-- [take_item]
 --     id=must be unique
 --     name= _ "string"
 --     image=path/to/image.png
@@ -28,14 +28,14 @@
 --         ... Code to be executed if item is being unequiped.
 --             Only applies if effect_type = continuous
 --     [/removal_command]
--- [/pick_up_item]
+-- [/take_item]
 ---
 
 local dialog = nxrequire "gui/dialogs/item_pickup"
 local buttons = dialog.buttons
 dialog = dialog.dialog
 
-function wml_actions.pick_up_item(cfg)
+function wml_actions.take_item(cfg)
 	cfg = helper.shallow_parsed(cfg)
 
 	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
