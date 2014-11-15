@@ -4,9 +4,6 @@ Shadows of Deception: Changelog
 
 Version 0.5.2+dev
 -----------------
-* General
-  * Imported new lua-based spawner code from AtS
-
 * Scenarios
   * Rhaen has been renamed Dravar
   * E1S0 - Descry
@@ -28,6 +25,11 @@ Version 0.5.2+dev
     * Completely revamped gameplay and dialog
   * E1S5.2 - Change of Plans
     * Improved presentation
+
+* Lua
+  * Imported new lua-based spawner code from AtS
+  * Renamed several custom WML tags for clarity
+  * [take_item] no longer needs an 'event' key. The item id will be used in absentia
 
 * Graphics
   * Removed terrains: Dark Tiled Floor, Dark Castle, Dark Keep
