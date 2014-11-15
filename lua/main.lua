@@ -25,6 +25,7 @@ for _, script in ipairs {
 	'debug';
 	'theme';
 	'hex';
+	'spawner';
 	'wml_tags';
 	'gui/bug';
 	'gui/help';

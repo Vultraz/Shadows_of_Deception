@@ -4,6 +4,9 @@ Shadows of Deception: Changelog
 
 Version 0.5.2+dev
 -----------------
+* General
+  * Imported new lua-based spawner code from AtS
+
 * Scenarios
   * Rhaen has been renamed Dravar
   * E1S0 - Descry
