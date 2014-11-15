@@ -82,11 +82,13 @@ function wml_actions.pick_up_item(cfg)
 	end
 
 	local function clean_up_item()
-		if cfg.event then
-			wesnoth.fire_event(cfg.event)
-		end
-		items.remove(
-			wesnoth.current.event_context.x1, wesnoth.current.event_context.y1)
+		local event = cfg.event or cfg.id .. "_taken"
+		local loc_x = wesnoth.current.event_context.x1
+		local loc_y = wesnoth.current.event_context.y1
+
+		wesnoth.fire_event(event, loc_x, loc_y)
+
+		items.remove(loc_x, loc_y)
 	end
 
 	if button == buttons.use or button == -1 then
