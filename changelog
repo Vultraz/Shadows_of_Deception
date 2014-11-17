@@ -14,6 +14,10 @@ Version 0.5.2+dev
     * Balancing changes
       * Reduced size of all keeps for fewer recruits per turn
       * Reduced enemy AI gold
+  * E1S2 - Dwarvish Trail
+    * Reworked several areas to alleviate bottleneck and drudgery
+    * Removed final objective to move Anathryis and Dalen to the bridge, which
+      more often than not involves trudging mindlessly across 3/4 of the map
   * E1S3 - Gathering Storm
     * New map
     * Some gameplay changes were made to go along with the new map, the most
