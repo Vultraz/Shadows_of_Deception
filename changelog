@@ -6,6 +6,7 @@ Version 0.5.2+dev
 -----------------
 * Scenarios
   * Rhaen has been renamed Dravar
+  * Fixed a border case where Mind Controlled unit wouldn't be able to attack
   * E1S0 - Descry
     * New original map
     * Various dialog and presentation improvements
