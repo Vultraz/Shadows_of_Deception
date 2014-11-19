@@ -36,6 +36,7 @@ Version 0.5.2+dev
   * Imported new lua-based spawner code from AtS
   * Renamed several custom WML tags for clarity
   * [take_item] no longer needs an 'event' key. The item id will be used in absentia
+  * Fixed 'Cast: [spell]' menus showing up on invalid locations
 
 * Graphics
   * Removed terrains: Dark Tiled Floor, Dark Castle, Dark Keep
