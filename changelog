@@ -8,7 +8,7 @@ Version 0.5.2+dev
   * Rhaen has been renamed Dravar
   * E1S0 - Descry
     * New original map
-    * Various dialog and cinematic improvements
+    * Various dialog and presentation improvements
   * E1S1 - Seer and Outlaw:
     * Various aesthetic and presentation improvements
     * Balancing changes
@@ -18,12 +18,13 @@ Version 0.5.2+dev
     * Reworked several areas to alleviate bottleneck and drudgery
     * Removed final objective to move Anathryis and Dalen to the bridge, which
       more often than not involves trudging mindlessly across 3/4 of the map
+    * Improved persentation of the final cutscene
   * E1S3 - Gathering Storm
     * New map
     * Some gameplay changes were made to go along with the new map, the most
       drastic being side 3 is now comprised of orcs as opposed to trolls, and
       side allegiances have been changed somewhat
-	* Improved dialog
+	* Improved dialog and presentation
   * E1S4 - Pursuit
     * New map
     * Completely revamped gameplay and dialog
