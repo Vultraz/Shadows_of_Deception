@@ -80,7 +80,7 @@ function wml_actions.show_spell_list(cfg)
 		local pre_event = string.format("%s_pre_event", list_spell.id)
 		local post_event = string.format("%s_post_event", list_spell.id)
 
-		spell_var.cooldown_remaining = list_spell.cooldown_time
+		spell_var.cooldown_remaining = list_spell.cooldown_time or 0
 
 		loc_filter = wesnoth.tovconfig(loc_filter)
 
