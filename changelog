@@ -49,6 +49,7 @@ Version 0.5.2+dev
   * Use human names for the Northguard
   * Fixed Northguard Silverbow advancing to itself
   * Added 'Northguard' prefix to all applicable units type names
+  * Port balancing changes for the Leech from AtS
 
 * User interface
   * Custom terrain editor group name displayed as 'Shadows of Deception'
