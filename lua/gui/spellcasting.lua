@@ -82,6 +82,8 @@ function wml_actions.show_spell_list(cfg)
 
 		spell_var.cooldown_remaining = list_spell.cooldown_time
 
+		loc_filter = wesnoth.tovconfig(loc_filter)
+
 		for i, loc in pairs(wesnoth.get_locations(loc_filter)) do
 			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
 		end
