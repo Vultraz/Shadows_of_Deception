@@ -91,7 +91,7 @@ function wml_actions.show_spell_list(cfg)
 		wml_actions.set_menu_item {
 			id = "spell_trigger",
 			description = _"Cast Spell: " .. list_spell.name,
-			image = "icons/menu-casting.png",
+			image = "icons/menu-casting_active.png",
 			{"filter_location", loc_filter},
 			{"command", {
 				{"clear_menu_item", {id = "spell_trigger"}},
