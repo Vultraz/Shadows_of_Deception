@@ -104,3 +104,6 @@ function wml_actions.take_item(cfg)
 		clean_up_item()
 	end
 end
+
+-- Compatibility layer for save games. Remove in 0.5.5
+wml_actions.pick_up_item = wml_actions.take_item
