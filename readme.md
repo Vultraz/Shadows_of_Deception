@@ -19,7 +19,7 @@ be found [on GitHub] [3], into Battle for Wesnoth’s
 
 [2]: <http://www.git-scm.com>
 [3]: <https://github.com/Vultraz/NX-RPG>
-[4]: <http://wiki.wesnoth.org/EditingWesnoth#Where_is_my_user_data_directory.3F>
+[4]: <http://wiki.wesnoth.org/EditingWesnoth#The_user_data_directory>
 
 
 Installing lp8
