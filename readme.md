@@ -13,14 +13,14 @@ Nine years later, and the land is rife with unrest. With the throne of Wesnoth
 held in the grasp of a madman, a small force attempts to right the mistake made
 almost a decade before.
 
-**(Intermediate level, two separate episodes planned, one with 6 scenarios 
+**(Intermediate level, two separate episodes planned, one with 6 scenarios
 playable so far)**
 
 **NOTE:** Some scenarios of this campaign work significantly different from
 normal Wesnoth gameplay. It is especially important to pay close attention to
 the mission objectives and not necessarily try to kill every single enemy,
 especially on shrouded maps, or in places where enemies seem to respawn
-continuously. 
+continuously.
 
 Installing Shadows of Deception
 --------------------------------------------------------------------------------
