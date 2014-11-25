@@ -1,4 +1,4 @@
-NX-RPG: Shadows of Deception
+Shadows of Deception
 ================================================================================
 
 An RPG-ish add-on for the game [Battle for Wesnoth] [1].
@@ -35,12 +35,10 @@ Requirements:
    some scenarios.
 
 Released versions of SoD should be installed from Battle for Wesnoth’s official
-add-ons servers using the main client.
-
-Players who know how to use [Git] [2] and are interested in testing the latest
-(unstable, buggy) version of SoD may clone our Git repository, which is to be
-found [on GitHub] [3], into Battle for Wesnoth’s “[userdata][4]/data/add-ons/”
-directory.
+add-ons servers using the main client. Players who know how to use [Git] [2] and
+are interested in testing the latest (unstable, buggy) version of SoD may clone
+our Git repository, which is to be found [on GitHub] [3],
+into Battle for Wesnoth’s “[userdata][4]/data/add-ons/” directory.
 
 [2]: <http://www.git-scm.com>
 [3]: <https://github.com/Vultraz/NX-RPG>
@@ -53,10 +51,11 @@ you might want to make sure these options are enabled under
 
 Installing lp8
 --------------------------------------------------------------------------------
-NX-RPG: Shadows of Deception requires another Battle for Wesnoth add-on,
-8680’s Lua Pack (internally referred to as “lp8”).
+Shadows of Deception requires another Battle for Wesnoth add-on,
+8680’s Lua Pack (internally referred to as “lp8”). It may be found [on GitHub]
+[5] and on the Battle for wesnoth official add-on server.
 
-A copy of lp8 is included with the released versions of NX-RPG that are made
+A copy of lp8 is included with the released versions of SoD that are made
 available on Battle for Wesnoth’s official add-ons servers.
 
 Players who install soD via Git must install lp8 manually. If you install SoD
@@ -64,10 +63,9 @@ via Git, you should either:
 
 * Install lp8 externally to SoD:
   * Install lp8 via Battle for Wesnoth’s add-ons manager, or…
-  * Clone lp8’s Git repository (which is also [on GitHub] [5]), and create a
-    symbolic link to its `8680s_Lua_Pack` directory in the same directory into
-    which you cloned SoD’s Git repository (the link should also be named
-    `8680s_Lua_Pack`).
+  * Clone lp8’s Git repository, and create a symbolic link to its `8680s_Lua_Pack`
+    directory in the same directory into which you cloned SoD’s Git repository
+	(the link should also be named `8680s_Lua_Pack`).
 * Install lp8 internally to SoD:
   * Clone lp8’s Git repository into SoD’s `lua/lp8` directory, as
     `wesnoth-lp8`, or…
@@ -80,10 +78,18 @@ an internal lp8 installed with both a clone and a symbolic link in `lua/lp8`.
 
 [5]: <https://github.com/8573/wesnoth-lp8>
 
-
 Reporting issues
 --------------------------------------------------------------------------------
 If you encounter any bugs or other problems, you may report them at our [issue
-tracker on GitHub] [6].
+tracker on GitHub] [6] or the dedicated [development topic] [7] on the
+Wesnoth.org forums.
 
 [6]: <https://github.com/Vultraz/NX-RPG/issues>
+[7]: <http://r.wesnoth.org/t35544>
+
+Contacting the author
+--------------------------------------------------------------------------------
+You may contact the author of this campaign via forum PM to vultraz on the
+[Wesnoth.org forums][8] or the IRC channel ##vultcave on chat.freenode.net.
+
+[8]: <http://forums.wesnoth.org/>
