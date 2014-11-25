@@ -44,7 +44,7 @@ Released versions of SoD should be installed from Wesnoth’s official add-ons
 servers using the main client. Players who know how to use [Git] [3] and are
 interested in testing the latest (unstable, buggy) version of SoD may clone the
 Git repository, which is to be found [on GitHub] [4], into Wesnoth’s
-`<user data>/data/add-ons/` directory. See [this page] [5] on the Wesnoth.org
+`<user data>/data/add-ons/` directory. See [this page] [5] on the Wesnoth.org
 wiki for information on locating your user data directory.
 
 A game screen resolution of **800x600 or greater** is recommended. Some
