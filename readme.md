@@ -5,22 +5,52 @@ An RPG-ish add-on for the game [Battle for Wesnoth] [1].
 
 [1]: <https://www.wesnoth.org>
 
+A shadow lengthens across the land; a faceless evil plots to overthrow the
+Empire. No one holds all the pieces. The fate of a kingdom rests in the hands
+of a despairing few, but will they be able to tell friend from foe?
 
-Installing NX-RPG
+Nine years later, and the land is rife with unrest. With the throne of Wesnoth
+held in the grasp of a madman, a small force attempts to right the mistake made
+almost a decade before.
+
+**(Intermediate level, two separate episodes planned, one with 6 scenarios 
+playable so far)**
+
+**NOTE:** Some scenarios of this campaign work significantly different from
+normal Wesnoth gameplay. It is especially important to pay close attention to
+the mission objectives and not necessarily try to kill every single enemy,
+especially on shrouded maps, or in places where enemies seem to respawn
+continuously. 
+
+Installing Shadow of Deception
 --------------------------------------------------------------------------------
-Released versions of NX-RPG should be installed from Battle for Wesnoth’s
-official add-ons servers, via Battle for Wesnoth’s built-in add-ons manager,
-which can be accessed via the “Add-ons Manager” button in the main menu.
+
+ * Requirements
+   * *The Batttle For Wesnoth* 1.12 and later versions or 1.11.11 and later
+      versions of the 1.11 series.
+   * *8680’s Lua Pack*, a resource pack containing several functions made used
+     of by Shadows of Deception. Refer to the *Installing lp8* section below for
+     instructions on installing the pack.
+   * *SoD Music* (optional), a music pack containing additional music played in
+     some scenarios.
+
+Released versions of SoD should be installed from Battle for Wesnoth’s official
+add-ons servers, via Battle for Wesnoth’s built-in add-ons manager, which can
+be accessed via the “Add-ons” button in the main menu.
 
 Players who know how to use [Git] [2] and are interested in testing the latest
-(unstable, buggy) version of NX-RPG may clone our Git repository, which is to
-be found [on GitHub] [3], into Battle for Wesnoth’s
-“[userdata][4]/data/add-ons/” directory.
+(unstable, buggy) version of SoD may clone our Git repository, which is to be
+found [on GitHub] [3], into Battle for Wesnoth’s “[userdata][4]/data/add-ons/”
+directory.
 
 [2]: <http://www.git-scm.com>
 [3]: <https://github.com/Vultraz/NX-RPG>
 [4]: <http://wiki.wesnoth.org/EditingWesnoth#The_user_data_directory>
 
+A game screen resolution of **800x600 or greater** is recommended. Some
+sequences make use of floating labels, halos, and standing unit animations, so
+you might want to make sure these options are enabled under
+**Preferences** → **Display**.
 
 Installing lp8
 --------------------------------------------------------------------------------
@@ -30,17 +60,17 @@ NX-RPG: Shadows of Deception requires another Battle for Wesnoth add-on,
 A copy of lp8 is included with the released versions of NX-RPG that are made
 available on Battle for Wesnoth’s official add-ons servers.
 
-Players who install NX-RPG via Git must install lp8 manually. If you install
-NX-RPG via Git, you should either:
+Players who install soD via Git must install lp8 manually. If you install SoD
+via Git, you should either:
 
-* Install lp8 externally to NX-RPG:
+* Install lp8 externally to SoD:
   * Install lp8 via Battle for Wesnoth’s add-ons manager, or…
   * Clone lp8’s Git repository (which is also [on GitHub] [5]), and create a
     symbolic link to its `8680s_Lua_Pack` directory in the same directory into
-    which you cloned NX-RPG’s Git repository (the link should also be named
+    which you cloned SoD’s Git repository (the link should also be named
     `8680s_Lua_Pack`).
-* Install lp8 internally to NX-RPG:
-  * Clone lp8’s Git repository into NX-RPG’s `lua/lp8` directory, as
+* Install lp8 internally to SoD:
+  * Clone lp8’s Git repository into SoD’s `lua/lp8` directory, as
     `wesnoth-lp8`, or…
   * Clone lp8’s Git repository, and make `lua/lp8/wesnoth-lp8` a symbolic link
     to it.
