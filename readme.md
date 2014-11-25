@@ -22,21 +22,20 @@ the mission objectives and not necessarily try to kill every single enemy,
 especially on shrouded maps, or in places where enemies seem to respawn
 continuously. 
 
-Installing Shadow of Deception
+Installing Shadows of Deception
 --------------------------------------------------------------------------------
 
- * Requirements
-   * *The Batttle For Wesnoth* 1.12 and later versions or 1.11.11 and later
-      versions of the 1.11 series.
-   * *8680’s Lua Pack*, a resource pack containing several functions made used
-     of by Shadows of Deception. Refer to the *Installing lp8* section below for
-     instructions on installing the pack.
-   * *SoD Music* (optional), a music pack containing additional music played in
-     some scenarios.
+Requirements:
+ * *The Batttle For Wesnoth* 1.12 and later versions or 1.11.11 and later
+    versions of the 1.11 series.
+ * *8680’s Lua Pack*, a resource pack containing several functions made used
+   of by SoD. Refer to the *Installing lp8* section below for instructions on
+   installing the pack.
+ * *SoD Music* (optional), a music pack containing additional music played in
+   some scenarios.
 
 Released versions of SoD should be installed from Battle for Wesnoth’s official
-add-ons servers, via Battle for Wesnoth’s built-in add-ons manager, which can
-be accessed via the “Add-ons” button in the main menu.
+add-ons servers using the main client.
 
 Players who know how to use [Git] [2] and are interested in testing the latest
 (unstable, buggy) version of SoD may clone our Git repository, which is to be
