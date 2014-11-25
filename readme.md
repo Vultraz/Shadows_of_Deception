@@ -16,7 +16,7 @@ almost a decade before.
 **(Intermediate level, two separate episodes planned, one with 6 scenarios
 playable so far)**
 
-**NOTE:** Some scenarios of this campaign work significantly different from
+**NOTE:** Some scenarios of this campaign work significantly differently from
 normal Wesnoth gameplay. It is especially important to pay close attention to
 the mission objectives and not necessarily try to kill every single enemy,
 especially on shrouded maps, or in places where enemies seem to respawn
@@ -28,7 +28,7 @@ Installing Shadows of Deception
 Requirements:
  * *The Batttle For Wesnoth* 1.12 and later versions or 1.11.11 and later
     versions of the 1.11 series.
- * *8680’s Lua Pack*, a resource pack containing several functions made used
+ * *8680’s Lua Pack*, a resource pack containing several functions made use
    of by SoD. Refer to the *Installing lp8* section below for instructions on
    installing the pack.
  * *SoD Music* (optional), a music pack containing additional music played in
@@ -53,12 +53,12 @@ Installing lp8
 --------------------------------------------------------------------------------
 Shadows of Deception requires another Battle for Wesnoth add-on,
 8680’s Lua Pack (internally referred to as “lp8”). It may be found [on GitHub]
-[5] and on the Battle for wesnoth official add-on server.
+[5] and on the Battle for Wesnoth official add-on server.
 
 A copy of lp8 is included with the released versions of SoD that are made
 available on Battle for Wesnoth’s official add-ons servers.
 
-Players who install soD via Git must install lp8 manually. If you install SoD
+Players who install SoD via Git must install lp8 manually. If you install SoD
 via Git, you should either:
 
 * Install lp8 externally to SoD:
