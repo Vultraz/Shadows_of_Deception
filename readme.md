@@ -4,7 +4,7 @@ Shadows of Deception
 **Shadows of Deception (SoD)** is an RPG-ish add-on campaign for the game
 [Battle for Wesnoth] [1].
 
-This campaign is an indirect prequal to *Invasion from the Unknown* and *After
+This campaign is an indirect prequel to *Invasion from the Unknown* and *After
 the Storm*, both created by [shadowm/shikadilord] [2].
 
 A shadow lengthens across the land; a faceless evil plots to overthrow the
