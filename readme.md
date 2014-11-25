@@ -36,9 +36,9 @@ Requirements:
 
 Released versions of SoD should be installed from Wesnoth’s official add-ons
 servers using the main client. Players who know how to use [Git] [2] and are
-interested in testing the latest (unstable, buggy) version of SoD may clone the
+interested in testing the latest (unstable, buggy) version of SoD may clone our
 Git repository, which is to be found [on GitHub] [3], into Wesnoth’s
-`[userdata][4]/data/add-ons/` directory.
+“[userdata][4]/data/add-ons/” directory.
 
 [2]: <http://www.git-scm.com>
 [3]: <https://github.com/Vultraz/NX-RPG>
