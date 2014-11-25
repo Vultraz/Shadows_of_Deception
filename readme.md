@@ -1,9 +1,11 @@
 Shadows of Deception
 ================================================================================
 
-An RPG-ish add-on for the game [Battle for Wesnoth] [1].
+**Shadows of Deception (SoD)** is an RPG-ish add-on campaign for the game
+[Battle for Wesnoth] [1].
 
-[1]: <https://www.wesnoth.org>
+This campaign is an indirect prequal to *Invasion from the Unknown* and *After
+the Storm*, both created by [shadowm/shikadilord] [2].
 
 A shadow lengthens across the land; a faceless evil plots to overthrow the
 Empire. No one holds all the pieces. The fate of a kingdom rests in the hands of
@@ -22,6 +24,9 @@ the mission objectives and not necessarily try to kill every single enemy,
 especially on shrouded maps, or in places where enemies seem to respawn
 continuously.
 
+[1]: <https://www.wesnoth.org>
+[2]: <https://github.com/shikadilord>
+
 Installing Shadows of Deception
 --------------------------------------------------------------------------------
 
@@ -35,25 +40,26 @@ Requirements:
    some scenarios.
 
 Released versions of SoD should be installed from Wesnoth’s official add-ons
-servers using the main client. Players who know how to use [Git] [2] and are
+servers using the main client. Players who know how to use [Git] [3] and are
 interested in testing the latest (unstable, buggy) version of SoD may clone the
-Git repository, which is to be found [on GitHub] [3], into Wesnoth’s
-`[userdata][4]/data/add-ons/` directory.
-
-[2]: <http://www.git-scm.com>
-[3]: <https://github.com/Vultraz/NX-RPG>
-[4]: <http://wiki.wesnoth.org/EditingWesnoth#The_user_data_directory>
+Git repository, which is to be found [on GitHub] [4], into Wesnoth’s
+`<user data>/data/add-ons/` directory. See [this page] [5] on the Wesnoth.org
+wiki for information on locating your user data directory.
 
 A game screen resolution of **800x600 or greater** is recommended. Some
 sequences make use of floating labels, halos, and standing unit animations, so
 you might want to make sure these options are enabled under **Preferences** →
 **Display**.
 
+[3]: <http://www.git-scm.com>
+[4]: <https://github.com/Vultraz/NX-RPG>
+[5]: <http://wiki.wesnoth.org/EditingWesnoth#The_user_data_directory>
+
 Installing lp8
 --------------------------------------------------------------------------------
 
 Shadows of Deception requires another Wesnoth add-on, 8680’s Lua Pack
-(internally referred to as “lp8”). It may be found [on GitHub] [5] and on the
+(internally referred to as “lp8”). It may be found [on GitHub] [6] and on the
 official Wesnoth add-ons server.
 
 A copy of lp8 is included with released versions of SoD available on the add-ons
@@ -75,24 +81,24 @@ You can have lp8 installed both externally and internally if you want, but you
 can’t have an external lp8 installed via both the add-ons manager and Git, or an
 internal lp8 installed with both a clone and a symbolic link in `lua/lp8`.
 
-[5]: <https://github.com/8573/wesnoth-lp8>
+[6]: <https://github.com/8573/wesnoth-lp8>
 
 Reporting issues
 --------------------------------------------------------------------------------
 
 If you encounter any bugs or other problems, you may report them at our [issue
-tracker on GitHub] [6] or the dedicated [development topic] [7] on the
+tracker on GitHub] [7] or the dedicated [development topic] [8] on the
 Wesnoth.org forums.
 
-[6]: <https://github.com/Vultraz/NX-RPG/issues>
-[7]: <http://r.wesnoth.org/t35544>
+[7]: <https://github.com/Vultraz/NX-RPG/issues>
+[8]: <http://r.wesnoth.org/t35544>
 
 Contacting the author
 --------------------------------------------------------------------------------
 
 You may contact the author of this campaign via forum PM to vultraz on the
-[Wesnoth.org forums][8] or the IRC channel ##vultcave on chat.freenode.net.
+[Wesnoth.org forums][9] or the IRC channel ##vultcave on chat.freenode.net.
 
-[8]: <http://forums.wesnoth.org/>
+[9]: <http://forums.wesnoth.org/>
 
 <!-- vim: textwidth=80 -->
