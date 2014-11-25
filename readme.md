@@ -26,7 +26,7 @@ Installing Shadows of Deception
 --------------------------------------------------------------------------------
 
 Requirements:
- * *The Batttle For Wesnoth* 1.12 and later versions or 1.11.11 and later
+ * *The Batttle For Wesnoth* version 1.12 and later or 1.11.11 and later
    versions of the 1.11 series.
  * *8680’s Lua Pack*, a resource pack containing several functions made use of
    by SoD. Refer to the *Installing lp8* section below for instructions on
@@ -34,11 +34,11 @@ Requirements:
  * *SoD Music* (optional), a music pack containing additional music played in
    some scenarios.
 
-Released versions of SoD should be installed from Battle for Wesnoth’s official
-add-ons servers using the main client. Players who know how to use [Git] [2] and
-are interested in testing the latest (unstable, buggy) version of SoD may clone
-our Git repository, which is to be found [on GitHub] [3], into Battle for
-Wesnoth’s “[userdata][4]/data/add-ons/” directory.
+Released versions of SoD should be installed from Wesnoth’s official add-ons
+servers using the main client. Players who know how to use [Git] [2] and are
+interested in testing the latest (unstable, buggy) version of SoD may clone our
+Git repository, which is to be found [on GitHub] [3], into Wesnoth’s
+“[userdata][4]/data/add-ons/” directory.
 
 [2]: <http://www.git-scm.com>
 [3]: <https://github.com/Vultraz/NX-RPG>
@@ -51,18 +51,17 @@ you might want to make sure these options are enabled under **Preferences** →
 
 Installing lp8
 --------------------------------------------------------------------------------
-Shadows of Deception requires another Battle for Wesnoth add-on, 8680’s Lua Pack
+
+Shadows of Deception requires another Wesnoth add-on, 8680’s Lua Pack
 (internally referred to as “lp8”). It may be found [on GitHub] [5] and on the
-Battle for Wesnoth official add-on server.
+official Wesnoth add-ons server.
 
-A copy of lp8 is included with the released versions of SoD that are made
-available on Battle for Wesnoth’s official add-ons servers.
-
-Players who install SoD via Git must install lp8 manually. If you install SoD
-via Git, you should either:
+A copy of lp8 is included with released versions of SoD available on the add-ons
+server. However, players who install SoD via Git must install lp8 manually.
+If you install SoD via Git, you should either:
 
 * Install lp8 externally to SoD:
-  * Install lp8 via Battle for Wesnoth’s add-ons manager, or…
+  * Install lp8 via Wesnoth’s add-ons manager, or…
   * Clone lp8’s Git repository, and create a symbolic link to its
     `8680s_Lua_Pack` directory in the same directory into which you cloned SoD’s
     Git repository (the link should also be named `8680s_Lua_Pack`).
@@ -80,6 +79,7 @@ internal lp8 installed with both a clone and a symbolic link in `lua/lp8`.
 
 Reporting issues
 --------------------------------------------------------------------------------
+
 If you encounter any bugs or other problems, you may report them at our [issue
 tracker on GitHub] [6] or the dedicated [development topic] [7] on the
 Wesnoth.org forums.
@@ -89,10 +89,10 @@ Wesnoth.org forums.
 
 Contacting the author
 --------------------------------------------------------------------------------
+
 You may contact the author of this campaign via forum PM to vultraz on the
 [Wesnoth.org forums][8] or the IRC channel ##vultcave on chat.freenode.net.
 
 [8]: <http://forums.wesnoth.org/>
-
 
 <!-- vim: textwidth=80 -->
