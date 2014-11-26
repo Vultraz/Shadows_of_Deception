@@ -127,7 +127,7 @@ function wml_actions.interim_text(cfg)
 	local duration = cfg.duration
 	--local fade_duration = cfg.fade_duration
 
-	if text == nil then
+	if not text then
 		text = ""
 	end
 
@@ -135,7 +135,7 @@ function wml_actions.interim_text(cfg)
 		text = "<span size='larger' weight='bold'>" .. title .. "</span>\n\n" .. text;
 	end
 
-	if duration == nil then
+	if not duration then
 		duration = 5000
 	end
 
@@ -182,7 +182,7 @@ end
 function wml_actions.fade_out_music(cfg)
 	local duration = cfg.duration
 
-	if duration == nil then
+	if not duration then
 		duration = 1000
 	end
 
@@ -380,7 +380,7 @@ function wml_actions.count_units(cfg)
 	local units = wesnoth.get_units(cfg)
 	local varname = cfg.variable or "unit_count"
 
-	if units == nil then
+	if not units then
 		wesnoth.set_variable(varname, 0)
 	else
 		wesnoth.set_variable(varname, #units)
@@ -548,7 +548,7 @@ end
 function wml_actions.highlight_goal(cfg)
 	cfg = helper.literal(cfg)
 
-	if cfg.image == nil then
+	if not cfg.image then
 		cfg.image = "misc/goal-highlight.png"
 	end
 
