@@ -131,7 +131,7 @@ function wml_actions.interim_text(cfg)
 		text = ""
 	end
 
-	if title ~= nil then
+	if title then
 		text = "<span size='larger' weight='bold'>" .. title .. "</span>\n\n" .. text;
 	end
 
