@@ -71,6 +71,7 @@ end
 ---
 function wml_actions.unlock_gates(cfg)
 	local locs = {}
+
 	if cfg.x or cfg.y then
 		locs = wesnoth.get_locations {
 			x = cfg.x,
@@ -91,8 +92,9 @@ function wml_actions.unlock_gates(cfg)
 			side = cfg.side,
 			id = string.format("__locked_gate_X%dY%d", loc[1], loc[2]),
 		})
+
 		wesnoth.scroll_to_tile(loc[1], loc[2])
-		wesnoth.float_label(loc[1], loc[2], "<span color='#e1e119'>Gate unlocked</span>")
+		wesnoth.play_sound("unlock-[1~3].ogg")
 	end
 end
 
