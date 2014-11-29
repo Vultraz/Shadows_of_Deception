@@ -1,9 +1,8 @@
 --#textdomain wesnoth-NX-RPG
 
 local buttons = {
-	use = 4;
-	give = 3;
-	drop = 2;
+	use = 3;
+	give = 2;
 	exit = 1;
 }
 
@@ -160,17 +159,6 @@ local main_window = {
 											id = "give_button",
 											return_value = buttons.give,
 											label = _"Give Item"
-										}
-									}
-								},
-								T.row {
-									T.column {
-										border = "all",
-										border_size = 5,
-										T.button {
-											id = "drop_button",
-											return_value = buttons.drop,
-											label = _"Drop Item"
 										}
 									}
 								},

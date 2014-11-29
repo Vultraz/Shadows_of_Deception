@@ -101,8 +101,7 @@ function wml_actions.show_inventory(cfg)
 
 	local function keepGoing()
 		return button == buttons.use or
-				button == buttons.give or
-				button == buttons.drop or (
+				button == buttons.give or (
 					continue and not (
 						button == buttons.exit or
 						button <= 0
@@ -169,9 +168,6 @@ function wml_actions.show_inventory(cfg)
 	local function give_item()
 	end
 
-	local function drop_item()
-	end
-
 	local function inventory_preshow()
 		-- List for units
 		if units_adjacent_to_unit_using_inventory then
@@ -187,7 +183,6 @@ function wml_actions.show_inventory(cfg)
 		wesnoth.set_dialog_callback(select_from_inventory, "inventory_list")
 		wesnoth.set_dialog_callback(use_item, "use_button")
 		wesnoth.set_dialog_callback(give_item, "give_button")
-		wesnoth.set_dialog_callback(drop_item, "drop_button")
 
 		-- Sets initial values of stuff
 		print_item_list()
@@ -195,9 +190,8 @@ function wml_actions.show_inventory(cfg)
 		wesnoth.set_dialog_value(selected_row, "inventory_list")
 		select_from_inventory()
 
-		-- TODO: remove these after their respective functions have been coded
+		-- TODO: remove this after its function has been coded
 		wesnoth.set_dialog_active(false, "give_button")
-		wesnoth.set_dialog_active(false, "drop_button")
 	end
 
 	repeat
