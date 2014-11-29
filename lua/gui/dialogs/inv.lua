@@ -100,6 +100,14 @@ local main_window = {
 		T.row {
 			grow_factor = 1,
 			T.column {
+				T.spacer {
+					width = 700 -- Force a minimum width since min_width doesn't work
+				}
+			}
+		},
+		T.row {
+			grow_factor = 1,
+			T.column {
 				border = "all",
 				border_size = 5,
 				horizontal_alignment = "left",
@@ -117,6 +125,7 @@ local main_window = {
 				T.grid {
 					T.row {
 						T.column {
+							grow_factor = 1,
 							border = "all",
 							border_size = 5,
 							horizontal_grow = true,
