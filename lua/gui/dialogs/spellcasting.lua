@@ -7,7 +7,6 @@ local buttons = {
 
 local spell_list = T.listbox {
 	id = "spell_list",
-	vertical_scrollbar_mode = "always",
 	horizontal_scrollbar_mode = "never",
 	T.list_definition {
 		T.row {

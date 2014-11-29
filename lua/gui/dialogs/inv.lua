@@ -8,7 +8,6 @@ local buttons = {
 
 local item_list = T.listbox {
 	id = "inventory_list",
-	vertical_scrollbar_mode = "always",
 	T.list_definition {
 		T.row {
 			T.column {
