@@ -167,7 +167,7 @@ function wml_actions.show_inventory(cfg)
 	end
 
 	local function inventory_preshow()
-		wesnoth.set_dialog_value("Inventory — " .. unit.id, "title")
+		wesnoth.set_dialog_value("Inventory — " .. unit.name, "title")
 		wesnoth.set_dialog_value(unit.image .. "~RC(magenta>red)", "unit_image")
 
 		wesnoth.set_dialog_callback(select_from_inventory, "inventory_list")
