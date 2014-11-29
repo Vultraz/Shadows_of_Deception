@@ -85,8 +85,8 @@ local details_panel_pages = T.multi_page {
 }
 
 local main_window = {
-	maximum_height = 700,
-	maximum_width = 850,
+	maximum_height = 500,
+	maximum_width = 700,
 
 	T.helptip { id = "tooltip_large" }, -- mandatory field
 	T.tooltip { id = "tooltip_large" }, -- mandatory field
