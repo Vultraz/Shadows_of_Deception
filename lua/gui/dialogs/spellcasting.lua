@@ -155,7 +155,7 @@ local main_window = {
 							T.button {
 								id = "cast_button",
 								return_value = buttons.cast,
-								label = _"Cast Spell"
+								label = _"Cast"
 							}
 						},
 						T.column {
