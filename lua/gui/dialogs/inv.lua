@@ -147,7 +147,7 @@ local main_window = {
 										T.button {
 											id = "use_button",
 											return_value = buttons.use,
-											label = _"Use Item"
+											label = _"Use"
 										}
 									}
 								},
@@ -158,7 +158,7 @@ local main_window = {
 										T.button {
 											id = "give_button",
 											return_value = buttons.give,
-											label = _"Give Item"
+											label = _"Give"
 										}
 									}
 								},
