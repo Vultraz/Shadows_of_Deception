@@ -114,6 +114,7 @@ local main_window = {
 				horizontal_alignment = "left",
 				T.label {
 					definition = "title",
+					id = "title",
 					label = _"Spellcasting"
 				}
 			}

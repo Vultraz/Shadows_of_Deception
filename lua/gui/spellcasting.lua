@@ -109,6 +109,7 @@ function wml_actions.show_spell_list(cfg)
 	end
 
 	local function spellcast_preshow()
+		wesnoth.set_dialog_value("Spellcasting — " .. unit.name, "title")
 		wesnoth.set_dialog_callback(select_spell, "spell_list")
 		wesnoth.set_dialog_callback(cast_spell, "cast_button")
 
