@@ -4,9 +4,16 @@ Shadows of Deception: Changelog
 
 Version 0.5.3+dev
 -----------------
+* Scenarios
+  * E1S4 - Pursuit
+    * Added cave abiance
+
 * Sound and Music
   * New ambient sounds effects for cave, dungeons, and drips
   * New sound effects for unlock
+
+* Lua
+  * Improved Inventory interface
 
 * Graphics
   * Removed terrains: Shop
