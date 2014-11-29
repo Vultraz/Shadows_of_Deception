@@ -47,7 +47,7 @@ function wml_actions.show_inventory(cfg)
 	local function print_item_list()
 		for i, item in ipairs(inv_list_data) do
 			if item.active then
-				wesnoth.set_dialog_value(item.image .. "~BLIT(misc/active_item_indicator.png,0,0)", "inventory_list", i, "list_image")
+				wesnoth.set_dialog_value(item.image .. "~BLIT(misc/active_item_indicator.png)", "inventory_list", i, "list_image")
 			else
 				wesnoth.set_dialog_value(item.image, "inventory_list", i, "list_image")
 			end
