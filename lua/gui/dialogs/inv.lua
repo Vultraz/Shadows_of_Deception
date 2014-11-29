@@ -100,7 +100,7 @@ local main_window = {
 			grow_factor = 1,
 			T.column {
 				T.spacer {
-					width = 700 -- Force a minimum width since min_width doesn't work
+					width = 650 -- Force a minimum width since min_width doesn't work
 				}
 			}
 		},
