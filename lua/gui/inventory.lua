@@ -50,8 +50,8 @@ function wml_actions.show_inventory(cfg)
 				wesnoth.set_dialog_value(item.image, "inventory_list", i, "list_image")
 			end
 
-			wesnoth.set_dialog_value("<b>" .. item.name .. "</b>", "inventory_list", i, "list_name")
-			wesnoth.set_dialog_markup(true,                        "inventory_list", i, "list_name")
+			wesnoth.set_dialog_value("<span size='large'>" .. item.name .. "</span>", "inventory_list", i, "list_name")
+			wesnoth.set_dialog_markup(true,                                           "inventory_list", i, "list_name")
 
 			wesnoth.set_dialog_value(item.name, "details_pages", i, "details_name")
 			wesnoth.set_dialog_value(item.quantity or 1, "inventory_list", i, "list_quantity")
