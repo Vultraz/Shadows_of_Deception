@@ -57,8 +57,7 @@ function wml_actions.show_inventory(cfg)
 
 			wesnoth.set_dialog_value(item.name, "details_pages", i, "details_name")
 			wesnoth.set_dialog_value(item.quantity or 1, "inventory_list", i, "list_quantity")
-			wesnoth.set_dialog_value("<i>" .. item.description .. "</i>", "details_pages", i, "details_description")
-			wesnoth.set_dialog_markup(true,                               "details_pages", i, "details_description")
+			wesnoth.set_dialog_value(item.description, "details_pages", i, "details_description")
 
 			page_count = i
 		end
