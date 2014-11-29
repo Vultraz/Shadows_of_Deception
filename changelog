@@ -14,6 +14,8 @@ Version 0.5.3+dev
 
 * Lua
   * Improved Inventory interface
+  * Display name of spellcaster or inventory user in the title of the
+    respective dialogs
 
 * Graphics
   * Removed terrains: Shop
