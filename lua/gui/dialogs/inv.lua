@@ -113,6 +113,7 @@ local main_window = {
 				horizontal_alignment = "left",
 				T.label {
 					definition = "title",
+					id = "title",
 					label = _"Inventory"
 				}
 			}
@@ -120,26 +121,29 @@ local main_window = {
 		T.row {
 			grow_factor = 1,
 			T.column {
+				grow_factor = 1,
+				border = "all",
+				border_size = 5,
+				horizontal_grow = true,
+				vertical_grow = true,
+				item_list
+			}
+		},
+		T.row {
+			T.column {
 				horizontal_grow = true,
 				vertical_grow = true,
 				T.grid {
 					T.row {
+						grow_factor = 1,
 						T.column {
-							grow_factor = 1,
 							border = "all",
 							border_size = 5,
-							horizontal_grow = true,
-							vertical_grow = true,
-							item_list
-						},
-						T.column {
+							vertical_alignment = "top",
 							T.image {
 								id = "unit_image"
 							}
-						}
-					},
-					T.row {
-						grow_factor = 1,
+						},
 						T.column {
 							horizontal_grow = true,
 							vertical_alignment = "top",

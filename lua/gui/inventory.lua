@@ -178,7 +178,8 @@ function wml_actions.show_inventory(cfg)
 			wesnoth.set_dialog_active(false, "give_button")
 		end
 
-		wesnoth.set_dialog_value(wesnoth.get_variable("unit.image") .. "~RC(magenta>red)", "unit_image")
+		wesnoth.set_dialog_value(unit.image .. "~RC(magenta>red)", "unit_image")
+		wesnoth.set_dialog_value("Inventory — " .. unit.id, "title")
 
 		wesnoth.set_dialog_callback(select_from_inventory, "inventory_list")
 		wesnoth.set_dialog_callback(use_item, "use_button")
