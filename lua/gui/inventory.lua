@@ -7,9 +7,7 @@ local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dag
 -- This brings up the custom inventory control window
 function wml_actions.show_inventory(cfg)
 	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
-	local which_category_belongs_to_what_unit = {}
-	local adjacent_units = wesnoth.get_variable(
-		"units_adjacent_to_unit_using_inventory") or {}
+	local recipients = wesnoth.get_variable("adjacent_recipients") or nil
 	local selected_recipient = 1
 	local selected_row = 1
 	local page_count = 0
@@ -88,7 +86,7 @@ function wml_actions.show_inventory(cfg)
 		if i > page_count or page_count == 0 then
 			wesnoth.fire("wml_message", {
 				logger = "error",
-				message = "[NX] BUG: invalid inventory_list row number"
+				message = "[SoD] BUG: invalid inventory_list row number"
 			})
 
 			return
@@ -144,7 +142,7 @@ function wml_actions.show_inventory(cfg)
 			if list_item.effect_type == "continuous" then
 				wesnoth.set_dialog_value(
 					list_item.image
-						.. "~BLIT(misc/active_item_indicator.png,0,0)",
+						.. "~BLIT(misc/active_item_indicator.png)",
 					"inventory_list", i, "list_image")
 				item_var.active = true
 			end
@@ -169,17 +167,8 @@ function wml_actions.show_inventory(cfg)
 	end
 
 	local function inventory_preshow()
-		-- List for units
-		if units_adjacent_to_unit_using_inventory then
-			for i = 1, adjacent_units.length do
-				table.insert(which_category_belongs_to_what_unit, { id = adjacent_units[i].id } )
-			end
-		else
-			wesnoth.set_dialog_active(false, "give_button")
-		end
-
-		wesnoth.set_dialog_value(unit.image .. "~RC(magenta>red)", "unit_image")
 		wesnoth.set_dialog_value("Inventory — " .. unit.id, "title")
+		wesnoth.set_dialog_value(unit.image .. "~RC(magenta>red)", "unit_image")
 
 		wesnoth.set_dialog_callback(select_from_inventory, "inventory_list")
 		wesnoth.set_dialog_callback(use_item, "use_button")
@@ -191,8 +180,10 @@ function wml_actions.show_inventory(cfg)
 		wesnoth.set_dialog_value(selected_row, "inventory_list")
 		select_from_inventory()
 
-		-- TODO: remove this after its function has been coded
-		wesnoth.set_dialog_active(false, "give_button")
+		-- Disable Give button if there're no recipients
+		if not recipients then
+			wesnoth.set_dialog_active(false, "give_button")
+		end
 	end
 
 	repeat
