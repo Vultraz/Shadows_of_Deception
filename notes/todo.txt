@@ -6,7 +6,6 @@ HIGH PRIOROTY
 --------------
 
 * The following scenarios need redesign or improvement:
-  * E1S2 - Redo map
   * E1S5 - Needs to be longer/harder
   * E1S6 - Review for possible map changes
 
