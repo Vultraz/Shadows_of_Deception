@@ -19,7 +19,7 @@ E1:
 * S5.1 (Ambush in Wesmere)  : Niryone and Elynia head towards Wesmere forest and the Ka'lian for help. They are ambushed by the Northguard.
 * S5.2 (Change of Plans)    : [CUTSCENE] Niryone meets with the Ka'lian. They decline her requests for help. Scene cuts to Mizenwyn being informed of Niryone's actions 
 * S6   (Awakening - Part 1) : Rhyan escapes from prison, finds Galamor
-* S7   (Fleeing the Swarm)  : Rhyan and Galamor escape prison, and escape the valley they are in. They are aided by a lost dwarvish explorer. A bat swarm appears.
+* S7   (Frozen Tears)       : Rhyan and Galamor escape prison. The former is forced to make a decision that will ultimately result in his death after E1
 * S8.1 (Reunion)            : Rhyan leads some dwarves against an attacking Northguard(?) force. Elynia and Niryone appear in battle
 * S8.2 (Revelations)        : [CUTSCENE] Meeting with dwarven and orc leaders, and Niryone, Elynia, Galamor, and Rhyan
 * S9A  (Descent)            : Descending deeper into dungeon from S6
@@ -31,7 +31,7 @@ E1:
 E2:
 ---
 * S0 (A Plan is Made)        : [CUTSCENE] 9 years later. The Ka'lian wants Niryone to assassinate Mizenwyn. She accepts
-* S1 (River of Blood)        : Niryone and co cross the Great River at the Ford of Abez. Niryone is forced to kill Rhyan
+* S1 (River of Blood)        : Niryone and co cross the Great River at the Ford of Abez
 * S2 (The Northern Front)    : Galamor is leading a force of Dwarves and Orcs against Mizenwyn's minions as a distraction for Niryone
 * S3 (Infiltration)          : They find and enter a back entrance to the royal palace
 * S4 (Proximus)              : Navigate the palace
@@ -58,7 +58,7 @@ After Niryone and co find and free the prisoners, including the disguised Mizenw
 
 Nine years later, Mizenwyn finally poses enough of a threat to the civilizations of the Great Continent that the Ka'lian and Northern Alliance want him eliminated. They choose Niryone and her band to do the job as a way for them to atone for their massive mistake. The Northern Alliance agrees to skirmish the northern border of the Empire to allow Niryone and co to infiltrate the palace undetected. She accepts.
 
-Galamor is one of the leaders of the skirmishing troops. This job he does well, attracting more and more of Wesnoth's military to attack him and his allies, which results in few to oppose Niryone's group as they cross the Ford of Abez. Unfortunately, here Rhyan is struck by a wayward spell, and transforms into a hideous facsimile of himself. Niryone is forced to kill him, much to Elynia's dismay. Though she does not harbor her old feeling for him, he still meant a lot to him, and she is greatly upset at his death.
+Galamor is one of the leaders of the skirmishing troops. This job he does well, attracting more and more of Wesnoth's military to attack him and his allies, which results in few to oppose Niryone's group as they cross the Ford of Abez.
 
 Eventually, Niryone's group manages to infiltrate the palace and navigate to Mizenwyn's location. An epic battle commences between Mizenwyn, Niryone, and Elynia. In the process, Niryone is mortally wounded. She tells Elynia with her last breath to use the SoF against their enemies. Elynia then manages to grab the SoF from Mizenwyn's hand, and use it to finally kill him. The First Empire of Wesnoth is dissolved, and Mizenwyn's minions executed. An impromptu Council of War orders the SoF destroyed. Elynia agrees to do so, and takes it deep into Knalga to have it disassembled. However, she changes her mind, and instead bribes the crafters to graft it to Niryone's staff in place of the jewel already there. She then casts an amnesia spell on them, and returns to Weldyn a year later, reporting her mission accomplished.
 
