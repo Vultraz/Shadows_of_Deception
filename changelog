@@ -23,6 +23,7 @@ Version 0.5.3+dev
 * User Interface
   * Updated the Episode I campaign menu icon
 
+
 Version 0.5.3
 -------------
 * Scenarios
@@ -78,6 +79,7 @@ Version 0.5.3
   * Custom terrain editor group name displayed as 'Shadows of Deception'
     instead of 'NX-RPG'
 
+
 Version 0.5.2
 -------------
 * Scenarios
@@ -105,6 +107,7 @@ Version 0.5.2
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
     later.
 
+
 Version 0.5.1
 -------------
 * General
@@ -126,6 +129,7 @@ Version 0.5.1
   * Fixed an accidental broken implementation of [store_direction]
   * Prevent [hidden_unit] from clobbering clobbering existing 
     on-map units (ported from AtS)
+
 
 Version 0.5.0
 -------------
@@ -188,6 +192,7 @@ Version 0.5.0
   * Minor balancing changes
   * Force a shroud/fog refresh whenever a gate is destroyed.
 
+
 Version 0.3.0
 -------------
 * Scenarios
@@ -223,6 +228,7 @@ Version 0.3.0
   * Added two new wind sounds
   * Added three new rain variations - two for indoors (soft and loud) and one outdoors
     variation
+
 
 Version 0.2.9
 -------------
@@ -269,10 +275,12 @@ Version 0.2.9
   * Fixed a bug that causes pre processor errors when a macro from mainline-strings.cfg
     is used in a editor-loaded file
 
+
 Version 0.2.8a
 --------------
 * Music
   * Changed the name of the music pack addon to 'NX-Music' for consistency
+
 
 Version 0.2.8
 -----------------
@@ -341,9 +349,11 @@ Version 0.2.8
   * New units: Leech, Skeleton Rider, Bone Knight, and Death Baron, (from IftU) 
     Northguard Fighter, Northguard Warrior, Northguard Deathblade (custom)
 
+
 Version 0.2.5
 -------------
 * Too much to record - total revamp of everything
+
 
 Version 0.0.5-0.1.9
 -------------------
