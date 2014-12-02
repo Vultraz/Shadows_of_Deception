@@ -73,38 +73,36 @@ function wml_actions.show_spell_list(cfg)
 	-- A menu item will show on all of these hexes. Using it triggers the spell
 	local function cast_spell()
 		local i = wesnoth.get_dialog_value("spell_list")
-		local list_spell = spell_list_data[i]
-		local spell_var = lp8.get_child(var, "spell", i)
-		local loc_filter = helper.get_child(list_spell, "target_filter")
-		local effect = helper.get_child(list_spell, "spell_effect")
-		local pre_event = string.format("%s_pre_event", list_spell.id)
-		local post_event = string.format("%s_post_event", list_spell.id)
+		local spell = spell_list_data[i]
+		local spell_slf = helper.get_child(spell, "target_filter")
+		local spell_effect = helper.get_child(spell, "spell_effect")
 
-		spell_var.cooldown_remaining = list_spell.cooldown_time or 0
+		spell.cooldown_remaining = spell.cooldown_time or 0
 
-		loc_filter = wesnoth.tovconfig(loc_filter)
+		-- Pass the SLF through tovconfig to make sure var substitution happens correctly
+		spell_slf = wesnoth.tovconfig(spell_slf)
 
-		for i, loc in pairs(wesnoth.get_locations(loc_filter)) do
+		for i, loc in pairs(wesnoth.get_locations(spell_slf)) do
 			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
 		end
 
 		wml_actions.set_menu_item {
 			id = "spell_trigger",
-			description = _"Cast Spell: " .. list_spell.name,
+			description = _"Cast Spell: " .. spell.name,
 			image = "icons/menu-casting_active.png",
-			{"filter_location", loc_filter},
+			{"filter_location", spell_slf},
 			{"command", {
 				{"clear_menu_item", {id = "spell_trigger"}},
 				{"remove_item", {image = "misc/goal-highlight.png"}},
 				{"set_variable", {name = "spell_target.x", value = "$x1"}},
 				{"set_variable", {name = "spell_target.y", value = "$y1"}},
-				{"fire_event", {name = pre_event}},
-				{"command", effect},
-				{"fire_event", {name = post_event}},
+				{"fire_event", {name = spell.id .. "_pre_event"}},
+				{"command", spell_effect},
+				{"fire_event", {name = spell.id .. "_post_event"}},
 				{"clear_variable", {name = "spell_target"}}
 			}
 		}}
-		
+
 		wesnoth.put_unit(unit)
 	end
 
