@@ -1,4 +1,4 @@
---#textdomain wesnoth-NX-RPG
+--#textdomain wesnoth-Shadows_of_Deception
 
 return {
 	{	name = "<b>General</b>", text = _ [[

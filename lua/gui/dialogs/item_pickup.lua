@@ -1,4 +1,4 @@
---#textdomain wesnoth-NX-RPG
+--#textdomain wesnoth-Shadows_of_Deception
 
 local buttons = {
 	use = 1;

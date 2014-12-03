@@ -1,4 +1,4 @@
---#textdomain wesnoth-NX-RPG
+--#textdomain wesnoth-Shadows_of_Deception
 
 ---
 -- Removes the terrain overlay from every hex matching a given SLF.

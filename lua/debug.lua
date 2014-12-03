@@ -1,4 +1,4 @@
---#textdomain wesnoth-NX-RPG
+--#textdomain wesnoth-Shadows_of_Deception
 
 ---
 -- Used to see if a character has been found and developed
