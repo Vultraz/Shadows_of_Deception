@@ -8,7 +8,11 @@ T = helper.set_wml_tag_metatable {}
 --debug_utils = wesnoth.require '~add-ons/Wesnoth_Lua_Pack/debug_utils.lua'
 
 function nxrequire(script)
-	return wesnoth.require('~add-ons/NX-RPG/lua/' .. script .. '.lua')
+	if wesnoth.have_file( "~add-ons/Shadows_of_Deception/_main.cfg" ) then
+		return wesnoth.require('~add-ons/Shadows_of_Deception/lua/' .. script .. '.lua')
+	else
+		return wesnoth.require('~add-ons/NX-RPG/lua/' .. script .. '.lua')
+	end
 end
 
 for _, script in ipairs {
