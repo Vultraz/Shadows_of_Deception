@@ -53,7 +53,7 @@ you might want to make sure these options are enabled under **Preferences** →
 **Display**.
 
 [3]: <http://www.git-scm.com>
-[4]: <https://github.com/Vultraz/NX-RPG>
+[4]: <https://github.com/Vultraz/Shadows_of_Deception>
 [5]: <http://wiki.wesnoth.org/EditingWesnoth#The_user_data_directory>
 
 Installing lp8
@@ -91,7 +91,7 @@ If you encounter any bugs or other problems, you may report them at our [issue
 tracker on GitHub] [7] or the dedicated [development topic] [8] on the
 Wesnoth.org forums.
 
-[7]: <https://github.com/Vultraz/NX-RPG/issues>
+[7]: <https://github.com/Vultraz/Shadows_of_Deception/issues>
 [8]: <http://r.wesnoth.org/t35544>
 
 Contacting the author
