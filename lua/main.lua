@@ -1,6 +1,6 @@
 -- NX global configuration for Lua.
 
-_ = wesnoth.textdomain 'wesnoth-NX-RPG'
+_ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
 wml_actions = wesnoth.wml_actions
 helper = wesnoth.require 'lua/helper.lua'
 items = wesnoth.require 'lua/wml/items.lua'
