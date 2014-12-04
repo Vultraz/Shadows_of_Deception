@@ -54,7 +54,7 @@ function wml_actions.bug(cfg)
 
 	local function preshow()
 		-- #textdomain wesnoth-Shadows_of_Deception
-		local _ = wesnoth.textdomain "wesnoth-NX-RPG"
+		_ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
 		local msg = _ "An inconsistency has been detected, and the scenario might not continue working as originally intended."
 		msg = msg .. "\n\n" .. _ "Please report this to the campaign maintainer!"
 
@@ -72,6 +72,9 @@ function wml_actions.bug(cfg)
 		_ = wesnoth.textdomain "wesnoth"
 		local ok = _ "Continue"
 		local quit = _ "Quit"
+
+		-- #textdomain wesnoth-Shadows_of_Deception
+		_ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
 
 		wesnoth.set_dialog_value(cap, "title")
 		wesnoth.set_dialog_value(msg, "message")
