@@ -1,14 +1,18 @@
-=================================
-NX-RPG/Shadows of Deception: TODO
-=================================
+==================================
+Shadows of Deception: General TODO
+==================================
 
-HIGH PRIOROTY
---------------
-
-* The following scenarios need redesign or improvement:
+* Scenarios
   * E1S5 - Needs to be longer/harder
   * E1S6 - Review for possible map changes
+  * E1S7 - new map and gameplay
 
-* The Northguard need to be expanded and improved upon
+* Graphics
+  * Portrait sets for all main characters
+  * Improve gate graphics
+  * Fix carpet graphics
 
-* AMLAs for the main characters
+* Units
+  * The Northguard need to be expanded and improved upon
+  * Decide whether the 'Alice' unit will be used
+  * AMLAs for the main characters (Niryone, Elynia, Rhyan)
