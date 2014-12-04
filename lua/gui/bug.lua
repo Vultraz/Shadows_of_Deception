@@ -45,14 +45,6 @@ function wml_actions.bug(cfg)
 		local ok = _ "Close"
 
 		wesnoth.show_dialog(dialogs.dialog, function()
-			wesnoth.set_dialog_canvas(1, {
-				T.rectangle {
-					x = 0,
-					y = 0,
-					w = "(width)",
-					h = "(height)",
-					fill_color = "0,0,0,64"
-				} }, "wml")
 			wesnoth.set_dialog_value(cap, "title")
 			wesnoth.set_dialog_value(msg, "message")
 			wesnoth.set_dialog_value(wesnoth.debug(cond), "wml")

@@ -83,7 +83,7 @@ local dialog = {
 				horizontal_grow = "true",
 				border = "all",
 				border_size = 5,
-				T.scroll_label { id = "wml", vertical_scrollbar_mode = "always" }
+				T.scroll_label { id = "wml", definition = "description", vertical_scrollbar_mode = "always" }
 			},
 		},
 		T.row {
