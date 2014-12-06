@@ -145,6 +145,3 @@ wml_actions.event({
 	first_time_only = false,
 	{'lua', {code='decrease_cooldown_time()'}}
 })
-
--- Compatibility layer for save games. Remove in 0.5.5
-wml_actions.spellcasting_controller = wml_actions.show_spell_list

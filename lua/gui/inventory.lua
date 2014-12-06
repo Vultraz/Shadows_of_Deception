@@ -207,6 +207,3 @@ function wml_actions.show_inventory(cfg)
 		wml_actions.command(command_list[i])
 	end
 end
-
--- Compatibility layer for save games. Remove in 0.5.5
-wml_actions.inventory_controller = wml_actions.show_inventory
