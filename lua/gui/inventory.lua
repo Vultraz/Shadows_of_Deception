@@ -1,6 +1,6 @@
 --#textdomain wesnoth-Shadows_of_Deception
 
-local dialogs = sod_require "gui/dialogs/inv"
+local dialogs = nxrequire "gui/dialogs/inv"
 local buttons = dialogs.buttons
 local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dagger = 1, crossbow = 1, hammer = 1, javelin = 1, lance = 1, spear = 1, staff = 1}; 
 

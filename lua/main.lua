@@ -1,4 +1,4 @@
--- Global campaign lua configuration
+-- NX global configuration for Lua.
 
 _ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
 wml_actions = wesnoth.wml_actions
@@ -7,7 +7,7 @@ items = wesnoth.require 'lua/wml/items.lua'
 T = helper.set_wml_tag_metatable {}
 --debug_utils = wesnoth.require '~add-ons/Wesnoth_Lua_Pack/debug_utils.lua'
 
-function sod_require(script)
+function nxrequire(script)
 	if wesnoth.have_file( "~add-ons/Shadows_of_Deception/_main.cfg" ) then
 		return wesnoth.require('~add-ons/Shadows_of_Deception/lua/' .. script .. '.lua')
 	else
@@ -28,5 +28,5 @@ for _, script in ipairs {
 	'gui/spellcasting';
 	'gui/transient_message';
 } do
-	sod_require(script)
+	nxrequire(script)
 end

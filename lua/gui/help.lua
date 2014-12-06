@@ -1,7 +1,7 @@
 --#textdomain wesnoth-Shadows_of_Deception
 
 local dialog, data, page_count =
-	sod_require 'gui/dialogs/help', sod_require 'data/help'
+	nxrequire 'gui/dialogs/help', nxrequire 'data/help'
 
 local function select_topic()
 	local i = wesnoth.get_dialog_value("topic_list")

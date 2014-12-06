@@ -11,7 +11,7 @@
 -- [/transient_message]
 ---
 
-local dialog = sod_require "gui/dialogs/transient_msg"
+local dialog = nxrequire "gui/dialogs/transient_msg"
 
 function wml_actions.transient_message(cfg)
 	local dd = dialog(cfg.image)
