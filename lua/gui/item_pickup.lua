@@ -31,7 +31,7 @@
 -- [/take_item]
 ---
 
-local dialog = nxrequire "gui/dialogs/item_pickup"
+local dialog = sod_require "gui/dialogs/item_pickup"
 local buttons = dialog.buttons
 dialog = dialog.dialog
 

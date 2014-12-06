@@ -15,7 +15,7 @@
 -- [/bug]
 ---
 
-local dialogs = nxrequire "gui/dialogs/bug"
+local dialogs = sod_require "gui/dialogs/bug"
 
 function wml_actions.bug(cfg)
 	local cond = helper.get_child(cfg, "condition")

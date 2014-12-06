@@ -1,6 +1,6 @@
 --#textdomain wesnoth-Shadows_of_Deception
 
-local dialogs = nxrequire "gui/dialogs/spellcasting"
+local dialogs = sod_require "gui/dialogs/spellcasting"
 local buttons = dialogs.buttons
 
 function wml_actions.show_spell_list(cfg)
