@@ -34,7 +34,7 @@ local function preshow()
 	select_topic()
 end
 
-function wml_actions.show_nx_help()
+function wml_actions.show_campaign_help()
 	wesnoth.show_dialog(dialog, preshow)
 end
 
