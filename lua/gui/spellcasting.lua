@@ -51,7 +51,7 @@ function wml_actions.show_spell_list(cfg)
 		if i > page_count or page_count == 0 then
 			wesnoth.fire("wml_message", {
 				logger = "error",
-				message = "[NX] BUG: invalid spell_list row number"
+				message = "[SoD] BUG: invalid spell_list row number"
 			})
 
 			return

@@ -33,7 +33,7 @@ function wml_actions.bug(cfg)
 
 	wesnoth.fire("wml_message", {
 		logger = "error",
-		message = "[NX] BUG: " .. log_notice
+		message = "[SoD] BUG: " .. log_notice
 	})
 
 	local function show_details()

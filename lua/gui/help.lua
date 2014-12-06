@@ -9,7 +9,7 @@ local function select_topic()
 	if i > page_count then
 		wesnoth.fire("wml_message", {
 			logger = "error",
-			message = "[NX] BUG: invalid topic_list row number"
+			message = "[SoD] BUG: invalid topic_list row number"
 		})
 
 		return
