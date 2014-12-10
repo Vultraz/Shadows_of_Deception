@@ -4,11 +4,12 @@ PLOTNOTES. Please DO NOT READ this file unless you are helping me with the campa
 
 Time period:
 ------------
-* E1: 1081YW 
-* E2: 1090, 1091 (When Elynia returns)
+* E1: 1081 YW 
+* E2: 1090 YW (1091 in the final cutscene when Elynia returns with the Sceptre of Fire)
 
-Scenario structure:
--------------------
+
+Scenario structure and general events:
+--------------------------------------
 E1:
 ---
 * S0   (Descry)             : [CUTSCENE] Niryone and Elynia discover the Rhyan with their party is an impersonator. After a brief confrontation, Niryone destroys him.
@@ -38,8 +39,9 @@ E2:
 * S5 (A Final Confrontation) : Boss fight with Mizenwyn
 * S6 (Epilogue)              : [CUTSCENE] Elynia volunteers to destroy the SoF, then bribes the crafters not to and erases their memories before reporting it destroyed
 
-Plot summary:
--------------
+
+Overview plot summary:
+----------------------
 Mizenwyn sees the state of the empire, and decides take it over, out of personal desire for power and hubris. He begins capturing, with the help of his undead, a few minor officials in the kingdom, slowly working his way up the chain of command, eventually corrupting noblemen within Weldyn itself. However, there is a slip. Niryone becomes suspicious due to the Rhayn's (Niryone and Elynia's traveling companion) reaction to healing magic. She realizes he is an impersonator, and destroys him. She and Elynia then investigate, gradually gather more and more info, eventually almost seeing Mizenwyn's full plot. 
 
 Niryone goes to the Ka'lian in Wesmere for help. On the way, they are ambused by some silent masked warriors. When the group finally reaches the Ka'lain, they decline on grounds of not enough solid evidence and the fact that they have their hands full with a random necromancer and his pirate/bandit allies attacking western Aethenwood, for reasons undisclosed.
@@ -68,8 +70,39 @@ Character Bios:
 * Rhyan
 --------
 17, a young hunter that travels with Elynia and Niryone. He asks to travel with them after saving Elynia from a large pack of wild wolves that caught her by surprise. 
-Though he is a son of a small lord, he doesn't want the responsibility of sitting in political office, and would rather spend his time hunting and roaming. Elynia is strongly attracted to him, but it is unknown if the feelings are reciprocated.
+Though he is a son of a small lord, he doesn't want the responsibility of sitting in political office, and would rather spend his time hunting and roaming. Elynia is strongly attracted to him, as is he to her. He is also a good archer of caliber equal to those of the elves.
 
 * Galamor
 ---------
-A dwarvish pricne who got on Mizenwyn's bad side a few mounts prior to the campaign begins. He was thrown in the same cave system Rhyan would be thrown in months later. He has an irrational fear of the dark, and is bitter as a result, since he can never escape his fear, being a dwarf. Rhyan rescues him, and he agrees to help him. Later on, he learns to be be less bitter.
+A dwarvish prince who got on Mizenwyn's bad side a few months prior to the campaign begins. He was thrown in the same cave system Rhyan would be thrown in months later. He has an irrational fear of the dark, and is bitter as a result, since he can never escape his fear, being a dwarf. Rhyan rescues him, and he agrees to help him. Later on, he learns to be be less bitter. He carries an amulet that he's tinkered with, allowing him to summon weak elementals, despite not being a mage or of magical ilk.
+
+
+Possible plot concepts and issues:
+----------------------------------
+1. I'm considering making the person who contacts Rhyan in E1S7 a Wanderer named Camryn. According to shadowmn, the Wanderers are angers of the Seer who have contracts to make sure destiny plays out as it should. However, I'm not sure what Rhyan would be doing that would A. result in his death and acceft Elynia's personal timeline. Again, according to shadowm, several essential events include:
+
+  * The Fall
+  * The arrival of Zhangor
+
+I don't want Rhyan to just die in-episode, so the plan is for him to do something heroic that will result in his death off screen, either between episodes or in some lull. I want him to go on his mission AFTER fake Mizenwyn is put on the throne, however, so somewhere in the 9-year timespan of the First Emipire of Wesnoth. Question is, what? As mentioned before, connecting his plot with some destiny stuff via a Wanderer would be nice, but it might not be optimal. [TO CONSIDER]
+
+There's also the additional complication with there being an around 700 year gap between Elynia's birth (and Rhyan's life) and the Fall itself. Since Elynia is supposed to disocver Rhyan's fate in E2, I'm not sure what he could do to set up events for her timeline centures in advance.
+
+--------------------------------------
+
+2. E1's rushed structure. Rushing a reunion in E1S8 when you just heard of him in E1S6 seems bad in hindsight. The most plausible idea I came up with for a restructure would be:
+
+  * Extend E1 for several more scenarios, giving Rhyan more solo time in the spotlight. The battle for Weldyn against fake Mizenwyn would be moved to E2.
+
+Then comes the question of reuinting them:
+
+  * Reunite them at the end of E1 and have them come up with some excuse to continue
+  * Reunite them in Weldyn during E2.
+ 
+Either way, I think extending E1 to give Rhyan more time to develop as a character it good. [TODO: PENDING PLANS]
+
+--------------------------------------
+
+3. I realized that Niryone really has no reason to continue with the story once Rhyan is found. If we go witht the second reunion option outlined in point 2, that would give Niryone a good excuse to continue to Weldyn. Otherwise, if we go with reunion option 1, why would she? The elves have no interest in a failing human kingdom. Plus, Mizenwyn's plan of sending an imposterof himself to raid Weldyn while he disguises himself as the king would work no matter if Niryone were involved or not. Having her discover him is simply unnecessary distracrion. [TO CONSIDER, LIKELY]
+
+There is a second option however, and that is to give the Ka'lian some sort of interest in Wesnoth and the kingdom. I cannot think of a reasonable explanation for this, so it will likely go unused, but all the same, it's a optiont to consider. [TO CONSIDER, UNLIKELY]
