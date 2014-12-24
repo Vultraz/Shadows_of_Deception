@@ -5,6 +5,8 @@ Shadows of Deception: Changelog
 Version 0.5.3+dev
 -----------------
 * Scenarios
+  * E1S0 - Descry
+    * Prevent hex cursor from drawing during intro
   * E1S4 - Pursuit
     * Added cave ambiance
 
