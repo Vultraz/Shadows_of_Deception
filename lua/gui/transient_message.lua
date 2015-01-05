@@ -14,7 +14,7 @@
 local dialog = nxrequire "gui/dialogs/transient_msg"
 
 function wml_actions.transient_message(cfg)
-	local dd = dialog(cfg.image)
+	local dd = dialog(cfg.image, cfg.caption)
 
 	if cfg.transparent ~= false then
 		dd.definition = "message"

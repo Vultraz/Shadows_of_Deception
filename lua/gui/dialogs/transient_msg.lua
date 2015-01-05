@@ -1,39 +1,5 @@
 
-local image = T.image {
-	id = "image"
-}
-
-local msg_body = T.column {
-	T.grid {
-		T.row {
-			T.column {
-				border = "all",
-				border_size = 5,
-				vertical_alignment = "top",
-				horizontal_alignment = "left",
-				T.label {
-					id = "caption",
-					definition = "title"
-				}
-			}
-		},
-		T.row {
-			T.column {
-				border = "all",
-				border_size = 5,
-				vertical_alignment = "top",
-				horizontal_alignment = "left",
-				T.label {
-					id = "message",
-					definition = "wml_message",
-					wrap = true
-				}
-			}
-		}
-	}
-}
-
-return function(have_image)
+return function(have_image, have_caption)
 	return {
 		maximum_width = 800,
 		maximum_height = 600,
@@ -51,9 +17,39 @@ return function(have_image)
 					border_size = have_image and 5 or 0,
 					horizontal_alignment = "center",
 					vertical_alignment = "center",
-					image
+					T.image {
+						id = "image"
+					}
 				},
-				msg_body
+				T.column {
+					T.grid {
+						T.row {
+							T.column {
+								border = "all",
+								border_size = have_caption and 5 or 0,
+								vertical_alignment = "top",
+								horizontal_alignment = "left",
+								T.label {
+									id = "caption",
+									definition = "title"
+								}
+							}
+						},
+						T.row {
+							T.column {
+								border = "all",
+								border_size = 5,
+								vertical_alignment = "top",
+								horizontal_alignment = "left",
+								T.label {
+									id = "message",
+									definition = "wml_message",
+									wrap = true
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
