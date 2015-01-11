@@ -1,7 +1,7 @@
 --#textdomain wesnoth-Shadows_of_Deception
 
 return {
-	{	name = "<b>General</b>", text = _ [[
+	{	name = "General", text = _ [[
 Many elements of this campaign differ from standard Wesnoth. If you aren’t sure if I’ve implemented something differently, look here; this should explain.
 
 <b>Tips:</b>
@@ -11,7 +11,7 @@ Many elements of this campaign differ from standard Wesnoth. If you aren’t sur
 
 <b>NOTE:</b> A game screen resolution of 800x600 or greater is recommended. Additionally, some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under Preferences → Display.]]
 	};
-	{	name = "<b>Spellcasting</b>", text = _ [[
+	{	name = "Spellcasting", text = _ [[
 Units with magical abilities (such as Elynia and Niryone) are able to cast spells. Each has a list of spells they have learned, accessible from the <i>"Spells"</i> right click menu.
 
 <b>To cast a spell:</b>
