@@ -63,7 +63,7 @@ local main_window = {
 				horizontal_alignment = "left",
 				T.label {
 					definition = "title",
-					label = _ "Help Topics"
+					label = _ "Shadows of Deception Help"
 				}
 			}
 		},
