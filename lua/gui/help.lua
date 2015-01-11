@@ -3,6 +3,8 @@
 local dialog, data, page_count =
 	nxrequire 'gui/dialogs/help', nxrequire 'data/help'
 
+local prev_page = 1 
+
 local function select_topic()
 	local i = wesnoth.get_dialog_value("topic_list")
 
@@ -15,7 +17,13 @@ local function select_topic()
 		return
 	end
 
+	wesnoth.set_dialog_value("icons/menu-book.png",      "topic_list", prev_page,  "topic_list_image")
+	wesnoth.set_dialog_value("icons/menu-book-open.png", "topic_list", i,          "topic_list_image")
+
 	wesnoth.set_dialog_value(i, "help_text_pages")
+
+	-- Keeps a copy of the current page
+	prev_page = i
 end
 
 local function preshow()
