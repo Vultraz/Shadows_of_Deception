@@ -3,17 +3,17 @@
 return {
 	{ name = _ "General", text = _ [[
 Many elements of this campaign differ from standard Wesnoth. If you aren’t sure if I’ve implemented something differently, look here; this should explain.
-
+ 
 <b>Tips:</b>
 • Read the objectives — there may be special win conditions.
 • Don’t try to eradicate all enemies — they may be respawning.
 • Explore — there may be hidden areas.
-
+ 
 <b>NOTE:</b> A game screen resolution of 800x600 or greater is recommended. Additionally, some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under Preferences → Display.]]
 	};
 	{ name = _ "Spellcasting", text = _ [[
 Units with magical abilities (such as Elynia and Niryone) are able to cast spells. Each has a list of spells they have learned, accessible from the <i>“Spells”</i> right click menu.
-
+ 
 <b>To cast a spell:</b>
 • Right click on any unit who has learned spells and select the <i>“Spells”</i> option.
 • Select a spell and click “Cast Spell”. This will create an overlay over any valid potential targets for that spell
@@ -23,12 +23,12 @@ Units with magical abilities (such as Elynia and Niryone) are able to cast spell
 	};
 	{ name = _ "Items", text = _ [[
 During your playthrough, you may encounter certain items you can pick up and add to characters’ inventories. To access a unit’s inventory, right click on them and select the <i>“Inventory”</i> option. You will be presented with a list of items that unit is carrying. Each character’s weapons, such as swords or staffs, will be also be appear as items in the invetory.
-
+ 
 When you pick up an item from the map, you can do two things:
-
+ 
 • Use : If the item is a single-use item such as a potion, you can immediately use it. If it’s an equippable item such as an amulet, this button will say “Equip” instead.
 • Take : Add the item to the relevant character’s inventory for later use.
-
+ 
 Equippable items will henceforth appear in your inventory, even if you equip them immediately. They can be equipped or unequipped from there. Single-use items will also appear in your inventory, provided you did not use them when you picked them up.]]
 	};
 }
