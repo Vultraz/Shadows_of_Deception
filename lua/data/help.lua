@@ -22,7 +22,7 @@ Units with magical abilities (such as Elynia and Niryone) are able to cast spell
 <b>NOTE:</b> Some spells may have limited usage or cooldown time, so be sure to use them wisely.]]
 	};
 	{ name = _ "Items", text = _ [[
-During your playthrough, you may encounter certain items you can pick up and add to characters’ inventories. To access a unit’s inventory, right click on them and select the <i>“Inventory”</i> option. You will be presented with a list of items that unit is carrying. Each character’s weapons, such as swords or staffs, will be also be appear as items in the invetory.
+During your playthrough, you may encounter certain items you can pick up and add to characters’ inventories. To access a unit’s inventory, right click on them and select the <i>“Inventory”</i> option. You will be presented with a list of items that unit is carrying. Each character’s weapons, such as swords or staves, will be also be appear as items in the invetory.
  
 When you pick up an item from the map, you can do two things:
  
