@@ -4,6 +4,9 @@ Shadows of Deception: Changelog
 
 Version 0.5.3+dev
 -----------------
+* General
+  * Added a help section about items
+
 * Scenarios
   * E1S0 - Descry
     * Prevent hex cursor from drawing during intro
