@@ -27,13 +27,12 @@ function wml_actions.show_inventory(cfg)
 					description = descrip,
 					effect_type = "continuous",
 					active = true,
-					{ "command", { { "object", { silent = true, duration = "forever",
-						{'effect', lp8.copyTable(attack, {apply_to = 'new_attack'})}
-						} }
-					} },
-					{ "removal_command", { { "object", { silent = true, duration = "forever",
-						{ "effect", { apply_to = "remove_attacks", range = attack.range, name = attack.name } } } }
-					} }
+					T.command { T.object { silent = true, duration = "forever",
+						{ 'effect', lp8.copyTable(attack, { apply_to = 'new_attack' }) }}
+					},
+					T.removal_command { T.object { silent = true, duration = "forever",
+						T.effect { apply_to = "remove_attacks", range = attack.range, name = attack.name }}
+					}
 				} })
 			end
 		end
