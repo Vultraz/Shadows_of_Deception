@@ -16,7 +16,6 @@ function nxrequire(script)
 end
 
 for _, script in ipairs {
-	'debug';
 	'theme';
 	'hex';
 	'spawner';

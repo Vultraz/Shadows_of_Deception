@@ -562,3 +562,16 @@ function wml_actions.highlight_goal(cfg)
 		wesnoth.delay(300)
 	end
 end
+
+---
+-- Check if a character is present that was created in a previous scenario
+--
+-- [check_for_character]
+--   ... Unit stats ...
+-- [/check_for_character]
+---
+function wml_actions.check_for_character(cfg)
+	if not wesnoth.eval_conditional { T.have_unit { side = 1, id = cfg.id, search_recall_list = true } } then
+		wesnoth.put_recall_unit(cfg.__parsed, 1)
+	end
+end
