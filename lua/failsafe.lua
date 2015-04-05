@@ -1,8 +1,6 @@
 -- Catches potentially game-breaking conditions and ends the game
 -- before it begins.
 
-_ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
-
 local function do_bug(msg, may_ignore)
 	wesnoth.wml_actions.bug { message = msg, should_report = false, may_ignore = may_ignore }
 end
