@@ -16,7 +16,7 @@ function nxrequire(script)
 end
 
 for _, script in ipairs {
-	'theme';
+	-- 'theme';
 	'hex';
 	'spawner';
 	'wml_tags';
