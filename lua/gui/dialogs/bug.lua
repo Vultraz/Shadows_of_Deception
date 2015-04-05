@@ -95,4 +95,9 @@ local dialog = {
 			}
 		}
 	}
-}	
+}
+
+return {
+	normal = dialog;
+	alert = alert_dialog;
+}

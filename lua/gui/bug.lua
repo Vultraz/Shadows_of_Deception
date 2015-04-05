@@ -24,11 +24,21 @@ function wml_actions.bug(cfg)
 		return
 	end
 
+	local report = cfg.should_report
 	local notice = cfg.message
 	local log_notice = notice
+	local may_ignore = cfg.may_ignore
 
-	if log_notice == nil or log_notice == "" then
+	if not log_notice or log_notice == "" then
 		log_notice = "inconsistency detected"
+	end
+
+	if report == nil then
+		report = true
+	end
+
+	if may_ignore == nil then
+		may_ignore = true
 	end
 
 	wesnoth.fire("wml_message", {
@@ -56,7 +66,10 @@ function wml_actions.bug(cfg)
 		-- #textdomain wesnoth-Shadows_of_Deception
 		_ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
 		local msg = _ "An inconsistency has been detected, and the scenario might not continue working as originally intended."
-		msg = msg .. "\n\n" .. _ "Please report this to the campaign maintainer!"
+
+		if report then
+			msg = msg .. "\n\n" .. _ "Please report this to the campaign maintainer!"
+		end
 
 		if notice ~= nil and notice ~= "" then
 			msg = msg .. "\n\n" .. _ "Message:"
@@ -82,13 +95,23 @@ function wml_actions.bug(cfg)
 		wesnoth.set_dialog_value(ok , "ok")
 		wesnoth.set_dialog_value(quit , "quit")
 
-		wesnoth.set_dialog_callback(show_details, "details")
+		if cond then
+			wesnoth.set_dialog_callback(show_details, "details")
+		else
+			wesnoth.set_dialog_active(false, "details")
+		end
+
+		if not may_ignore then
+			wesnoth.set_dialog_active(false, "ok")
+		end
 	end
 
-	if wesnoth.show_dialog(dialogs.alert_dialog, preshow, nil) == 2 then
+	local result = wesnoth.show_dialog(dialogs.alert, preshow, nil)
+
+	if result == 2 then
 		wesnoth.fire("endlevel", {
 			result = "defeat",
-			linger_mode = false
+			linger_mode = false,
 		})
 	end
 end
