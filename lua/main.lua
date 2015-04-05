@@ -27,6 +27,7 @@ for _, script in ipairs {
 	'gui/item_pickup';
 	'gui/spellcasting';
 	'gui/transient_message';
+	'failsafe';
 } do
 	nxrequire(script)
 end
