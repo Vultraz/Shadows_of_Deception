@@ -16,3 +16,7 @@ local v = wesnoth.compare_versions
 if v(ver, '<', '1.11.11') then
 	do_bug( _ "Shadows of Deception requires Wesnoth 1.11.11 or later.", false)
 end
+
+if v(ver, '>=', '1.13.0') then
+	do_bug( _ "Shadows of Deception is untested on Wesnoth 1.13 and may not function as expected! Please use version 1.12.0 or later.", false)
+end
