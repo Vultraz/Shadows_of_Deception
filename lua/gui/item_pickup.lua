@@ -14,6 +14,7 @@
 --     description= _ "translatable string"
 --     effect_type=use either "single" or "continuous"
 --     event=the name of the event to fire if you USE or TAKE the item
+--     must_take=yes/no
 --     [usable_by]
 --         ... SUF: The item will only be able to be used or taken if the primary
 --             unit matches this filter
@@ -61,6 +62,10 @@ function wml_actions.take_item(cfg)
 
 			wesnoth.set_dialog_active(false, "use_button")
 			wesnoth.set_dialog_active(false, "take_button")
+		end
+		
+		if cfg.must_take then
+			wesnoth.set_dialog_active(false, "leave_button")
 		end
 	end
 
