@@ -10,10 +10,10 @@ Version 0.5.3+dev
 * Scenarios
   * E1S0 - Descry
     * Prevent hex cursor from drawing during intro
-  * E1S2 - Dwarvish Trail
-    * Fixed several long-standing minor issues
   * E1S1 - Seer and Outlaw
     * Prevent hex cursor from drawing during interim text
+  * E1S2 - Dwarvish Trail
+    * Fixed several long-standing minor issues
   * E1S4 - Pursuit
     * Added cave ambiance
 
