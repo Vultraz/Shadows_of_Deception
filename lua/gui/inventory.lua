@@ -14,6 +14,11 @@ function wml_actions.show_inventory(cfg)
 	local var, inv_list_data, button, continue
 	local command_list = {}
 
+	-- Converts first character of a string to uppercase
+	local function first_to_upper(str)
+		return (tostring(str):gsub("^%l", string.upper))
+	end
+
 	-- Syncs weapon data with the table and sorts it
 	local function sync_weapons_to_items()
 		for i, attack in pairs(lp8.get_children(unit, 'attack')) do
@@ -22,7 +27,7 @@ function wml_actions.show_inventory(cfg)
 
 				table.insert(var, {"item", {
 					id = attack.name,
-					name = attack.description, -- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
+					name = first_to_upper(attack.description), -- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
 					image = attack.icon or string.format("attacks/%s.png", attack.name),
 					description = descrip,
 					effect_type = "continuous",
