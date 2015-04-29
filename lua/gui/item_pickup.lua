@@ -91,6 +91,9 @@ function wml_actions.take_item(cfg)
 		local loc_x = wesnoth.current.event_context.x1
 		local loc_y = wesnoth.current.event_context.y1
 
+		-- Remove the parent event for the item
+		wml_actions.event({ id = cfg.id .. "_pickup", remove = true })
+
 		wesnoth.fire_event(event, loc_x, loc_y)
 
 		items.remove(loc_x, loc_y)
