@@ -50,6 +50,8 @@ function wml_actions.take_item(cfg)
 
 		if cfg.effect_type == "continuous" then
 			wesnoth.set_dialog_value(_"Equip", "use_button")
+		elseif cfg.effect_type == "message" then
+			wesnoth.set_dialog_value(_"Examine", "use_button")
 		end
 
 		-- Disable the use button if necessary (the item cannot be uses on the specific loc or the wrong unit has it)
@@ -101,8 +103,12 @@ function wml_actions.take_item(cfg)
 			if cfg.effect_type == "continuous" then
 				set_item_vars('and activate item')
 			end
+
 			wml_actions.command(helper.get_child(cfg, "command"))
-			clean_up_item()
+
+			if cfg.effect_type ~= "message" then
+				clean_up_item()
+			end
 		end
 
 		if button == buttons.take then

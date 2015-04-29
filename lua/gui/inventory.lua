@@ -73,6 +73,8 @@ function wml_actions.show_inventory(cfg)
 			wesnoth.set_dialog_value(_"Unequip", "use_button")
 		elseif not item.active and item.effect_type == "continuous" then
 			wesnoth.set_dialog_value(_"Equip", "use_button")
+		elseif item.effect_type == "message" then
+			wesnoth.set_dialog_value(_"Examine", "use_button")
 		else
 			wesnoth.set_dialog_value(_"Use", "use_button")
 		end
@@ -151,7 +153,15 @@ function wml_actions.show_inventory(cfg)
 				item_var.active = true
 			end
 
-			table.insert(command_list,(helper.get_child(list_item, "command")))
+			local command = helper.get_child(list_item, "command")
+	
+			-- Message items are a special command case. They should be executed
+			-- immediately, since their effects should always be transient messages
+			if list_item.effect_type ~= "message" then
+				table.insert(command_list,(command))
+			else
+				wml_actions.command(command)
+			end
 
 		-- But if it was already active, therefore it was a continuous-use item
 		-- So just deactivate it
