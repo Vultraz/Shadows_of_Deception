@@ -41,7 +41,7 @@ return function(have_image, have_caption)
 								border_size = 5,
 								vertical_alignment = "top",
 								horizontal_alignment = "left",
-								T.label {
+								T.scroll_label {
 									id = "message",
 									definition = "wml_message",
 									wrap = true
