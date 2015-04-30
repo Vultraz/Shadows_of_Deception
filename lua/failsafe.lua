@@ -7,7 +7,7 @@ end
 
 
 if not lp8 then
-	do_bug( _ "8680’s Lua Pack (lp8) is missing or not installled, and is required for this campaign to run. Please install 8680’s Lua Pack from the add-ons server, or refer to the included readme.md file for additional options.", false)
+	do_bug( _ "8680’s Lua Pack (lp8) is missing or not installed, and is required for this campaign to run. Please install 8680’s Lua Pack from the add-ons server, or refer to the included readme.md file for additional options.", false)
 end
 
 local ver = wesnoth.game_config.version
