@@ -99,26 +99,28 @@ function wml_actions.take_item(cfg)
 		items.remove(loc_x, loc_y)
 	end
 
-	if not cfg.silent then
-		local button = wesnoth.show_dialog(dialog, item_preshow)
+	if cfg.silent then
+		set_item_vars()
 
-		if button == buttons.use or button == -1 then
-			if cfg.effect_type == "continuous" then
-				set_item_vars('and activate item')
-			end
+		return
+	end
 
-			wml_actions.command(helper.get_child(cfg, "command"))
+	local button = wesnoth.show_dialog(dialog, item_preshow)
 
-			if cfg.effect_type ~= "message" then
-				clean_up_item()
-			end
+	if button == buttons.use or button == -1 then
+		if cfg.effect_type == "continuous" then
+			set_item_vars('and activate item')
 		end
 
-		if button == buttons.take then
-			set_item_vars()
+		wml_actions.command(helper.get_child(cfg, "command"))
+
+		if cfg.effect_type ~= "message" then
 			clean_up_item()
 		end
-	else
+	end
+
+	if button == buttons.take then
 		set_item_vars()
+		clean_up_item()
 	end
 end
