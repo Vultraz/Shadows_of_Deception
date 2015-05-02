@@ -108,7 +108,7 @@ function wml_actions.bug(cfg)
 
 	local result = wesnoth.show_dialog(dialogs.alert, preshow, nil)
 
-	if result == 2 then
+	if result == 2 or not may_ignore then
 		wesnoth.fire("endlevel", {
 			result = "defeat",
 			linger_mode = false,
