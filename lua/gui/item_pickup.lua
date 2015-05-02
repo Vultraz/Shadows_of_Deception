@@ -37,7 +37,13 @@ local buttons = dialog.buttons
 dialog = dialog.dialog
 
 function wml_actions.take_item(cfg)
+	-- Parse the toplevel to substitute variables, then write the rest
+	-- of the config object as literal to preserve variables for later
+	-- access in the inventory
 	cfg = helper.shallow_parsed(cfg)
+	for subtag in lp8.subtags(cfg) do
+		subtag[2] = helper.literal(subtag[2])
+	end
 
 	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	local vars = helper.get_child(unit, "variables")
