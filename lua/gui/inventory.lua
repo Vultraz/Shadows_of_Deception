@@ -103,7 +103,7 @@ function wml_actions.show_inventory(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 	end
 
-	local function keepGoing()
+	local function keep_going()
 		return button == buttons.use or
 				button == buttons.give or (
 					continue and not (
@@ -212,7 +212,7 @@ function wml_actions.show_inventory(cfg)
 		button = next(inv_list_data)
 			and wesnoth.show_dialog(dialogs.normal, inventory_preshow)
 			or wesnoth.show_dialog(dialogs.empty)
-	until not keepGoing()
+	until not keep_going()
 
 	-- Resyncs the local lua tables with the actual unit
 	wesnoth.put_unit(unit)
