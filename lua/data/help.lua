@@ -4,7 +4,7 @@ return {
 	{ name = _ "General", text = _ [[
 Many elements of this campaign differ from standard Wesnoth. If you aren’t sure if I’ve implemented something differently, look here; this should explain.
  
-<b>Tips:</b>
+<big>Tips:</big>
 • Read the objectives — there may be special win conditions.
 • Don’t try to eradicate all enemies — they may be respawning.
 • Explore — there may be hidden areas.
@@ -14,7 +14,7 @@ Many elements of this campaign differ from standard Wesnoth. If you aren’t sur
 	{ name = _ "Spellcasting", text = _ [[
 Units with magical abilities (such as Elynia and Niryone) are able to cast spells. Each has a list of spells they have learned, accessible from the <b>Spells</b> right click menu.
  
-<b>To cast a spell:</b>
+<big>To cast a spell:</big>
 • Right click on any unit who has learned spells and select the <b>Spells</b> option.
 • Select a spell and click <b>Cast Spell</b>. This will create an overlay over any valid potential targets for that spell
 • Right click on any of these highlighted hexes and select the <b>Cast Spell: (spell name)</b> option.
