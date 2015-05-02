@@ -347,6 +347,10 @@ function wml_actions.learn_spell(cfg)
 	table.insert(var, {"spell", cfg})
 
 	wesnoth.put_unit(unit)
+
+	if not cfg.silent then
+		wesnoth.play_sound(cfg.sound or "magic-1.ogg")
+	end
 end
 
 ---
