@@ -60,18 +60,22 @@ function wml_actions.take_item(cfg)
 			wesnoth.set_dialog_value(_"Examine", "use_button")
 		end
 
-		-- Disable the use button if necessary (the item cannot be uses on the specific loc or the wrong unit has it)
-		wesnoth.set_dialog_active(wesnoth.eval_conditional (helper.get_child(cfg, "usable_if") or {}), "use_button")
+		-- Disable various buttons if the wrong person is attempting to pick up
+		-- the item, or if certain conditions have not been met
+		local usable_if = helper.get_child(cfg, "usable_if") or {}
+		local usable_by = helper.get_child(cfg, "usable_by")
 
-		local filter_block = helper.get_child(cfg, "usable_by")
+		if not wesnoth.eval_conditional(usable_if) then
+			wesnoth.set_dialog_active(false, "use_button")
+		end
 
-		if not wesnoth.eval_conditional { { "have_unit", filter_block } } then
-			wesnoth.set_dialog_value(filter_block.cannot_use_message, "cannot_use_warning")
+		if not wesnoth.eval_conditional { T.have_unit { usable_by } } then
+			wesnoth.set_dialog_value(usable_by.cannot_use_message, "cannot_use_warning")
 
 			wesnoth.set_dialog_active(false, "use_button")
 			wesnoth.set_dialog_active(false, "take_button")
 		end
-		
+
 		if cfg.must_take then
 			wesnoth.set_dialog_active(false, "leave_button")
 		end
