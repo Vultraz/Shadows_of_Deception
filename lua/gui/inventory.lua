@@ -203,7 +203,7 @@ function wml_actions.show_inventory(cfg)
 
 	repeat
 		-- Set variables inside the execution loop to make sure they stay up-to-date each cycle
-		unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
+		unit = wesnoth.get_units(cfg)[1].__cfg
 		var = helper.get_child(unit, "variables")
 		item_actions = nil
 
