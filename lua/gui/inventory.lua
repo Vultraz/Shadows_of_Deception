@@ -28,7 +28,7 @@ function wml_actions.show_inventory(cfg)
 					name = first_to_upper(attack.description), -- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
 					image = attack.icon or string.format("attacks/%s.png", attack.name),
 					description = descrip,
-					effect_type = "continuous",
+					effect_type = "equip",
 					active = true,
 					T.command { T.object { silent = true, duration = "forever",
 						{ 'effect', lp8.copyTable(attack, { apply_to = 'new_attack' }) }}
@@ -67,9 +67,9 @@ function wml_actions.show_inventory(cfg)
 	local function refresh_use_button_text(index)
 		local item = inv_list_data[index]
 
-		if item.active and item.effect_type == "continuous" then
+		if item.active and item.effect_type == "equip" then
 			wesnoth.set_dialog_value(_"Unequip", "use_button")
-		elseif not item.active and item.effect_type == "continuous" then
+		elseif not item.active and item.effect_type == "equip" then
 			wesnoth.set_dialog_value(_"Equip", "use_button")
 		elseif item.effect_type == "message" then
 			wesnoth.set_dialog_value(_"Examine", "use_button")
@@ -142,8 +142,8 @@ function wml_actions.show_inventory(cfg)
 				end
 			end
 
-			-- ... and if it's continuous-use, activate it
-			if list_item.effect_type == "continuous" then
+			-- ... and if it's equip-use, activate it
+			if list_item.effect_type == "equip" then
 				wesnoth.set_dialog_value(
 					list_item.image
 						.. "~BLIT(misc/active_item_indicator.png)",

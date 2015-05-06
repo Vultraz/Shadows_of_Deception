@@ -3,7 +3,7 @@
 ---
 -- This brings up a dialog when a unit moves to pick up an item.
 -- There are 3 choices:
--- * USE:   Apply the item's effect, and add to inventory if effect_type = continuous
+-- * USE:   Apply the item's effect, and add to inventory if effect_type = equip
 -- * TAKE:  Add item to inventory. No effect is applied
 -- * LEAVE: Do nothing
 --
@@ -12,7 +12,7 @@
 --     name= _ "string"
 --     image=path/to/image.png
 --     description= _ "translatable string"
---     effect_type=use either "single" or "continuous"
+--     effect_type=use either "single" or "equip"
 --     event=the name of the event to fire if you USE or TAKE the item
 --     must_take=yes/no
 --     [usable_by]
@@ -27,7 +27,7 @@
 --     [/command]
 --     [removal_command]
 --         ... Code to be executed if item is being unequipped.
---             Only applies if effect_type = continuous
+--             Only applies if effect_type = equip
 --     [/removal_command]
 -- [/take_item]
 ---
@@ -54,7 +54,7 @@ function wml_actions.take_item(cfg)
 		wesnoth.set_dialog_value ( cfg.image or "", "image_name" )
 		wesnoth.set_dialog_value ( cfg.description, "item_description" )
 
-		if cfg.effect_type == "continuous" then
+		if cfg.effect_type == "equip" then
 			wesnoth.set_dialog_value(_"Equip", "use_button")
 		elseif cfg.effect_type == "message" then
 			wesnoth.set_dialog_value(_"Examine", "use_button")
@@ -118,7 +118,7 @@ function wml_actions.take_item(cfg)
 	local button = wesnoth.show_dialog(dialog, item_preshow)
 
 	if button == buttons.use or button == -1 then
-		if cfg.effect_type == "continuous" then
+		if cfg.effect_type == "equip" then
 			set_item_vars('and activate item')
 		end
 
