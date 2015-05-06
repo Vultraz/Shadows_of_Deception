@@ -14,6 +14,7 @@ Version 0.5.3+dev
     * Prevent hex cursor from drawing during interim text
   * E1S2 - Dwarvish Trail
     * Fixed several long-standing minor issues
+    * Added water drip ambiance
   * E1S4 - Pursuit
     * Added cave ambiance
 
@@ -25,6 +26,8 @@ Version 0.5.3+dev
   * Improved Inventory interface
   * Display name of spellcaster or inventory user in the title of the
     respective dialogs
+  * Execute each item effect as you use them, instead of in a bunch once
+    the inventory closes
 
 * Graphics
   * Removed terrains: Shop
