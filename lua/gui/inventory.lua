@@ -6,13 +6,11 @@ local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dag
 
 -- This brings up the custom inventory control window
 function wml_actions.show_inventory(cfg)
-	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	local recipients = wesnoth.get_variable("adjacent_recipients") or nil
 	local selected_recipient = 1
 	local selected_row = 1
 	local page_count = 0
-	local var, inv_list_data, button, continue
-	local command_list = {}
+	local unit, var, inv_list_data, item_actions, button, continue
 
 	-- Converts first character of a string to uppercase
 	local function first_to_upper(str)
@@ -153,16 +151,7 @@ function wml_actions.show_inventory(cfg)
 				item_var.active = true
 			end
 
-			local command = helper.get_child(list_item, "command")
-	
-			-- Message items are a special command case. They should be executed
-			-- immediately, since their effects should always be transient messages
-			if list_item.effect_type ~= "message" then
-				table.insert(command_list,(command))
-			else
-				wml_actions.command(command)
-			end
-
+			item_actions = helper.get_child(list_item, "command")
 		-- But if it was already active, therefore it was a continuous-use item
 		-- So just deactivate it
 		else
@@ -171,7 +160,7 @@ function wml_actions.show_inventory(cfg)
 
 			item_var.active = false
 
-			table.insert(command_list,(helper.get_child(list_item, "removal_command")))
+			item_actions = helper.get_child(list_item, "removal_command")
 		end
 
 		refresh_use_button_text(i)
@@ -200,24 +189,32 @@ function wml_actions.show_inventory(cfg)
 		end
 	end
 
+	local function inventory_postshow()
+		-- Resync the local lua tables with the actual unit
+		wesnoth.lock_view(true)
+		wesnoth.put_unit(unit)
+
+		-- Execute item effects
+		wml_actions.command(item_actions)
+
+		wesnoth.delay(250)
+		wesnoth.lock_view(false)
+	end
+
 	repeat
-		-- Keep all tables and main variables up to date
+		-- Set variables inside the execution loop to make sure they stay up-to-date each cycle
+		unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 		var = helper.get_child(unit, "variables")
+		item_actions = nil
 
-		sync_weapons_to_items() -- Adds weapons to inv_list_data and sorts it alphabetically
+		sync_weapons_to_items() -- Adds weapons to inv_list_data
 
+		-- Sort items alphabetically
 		inv_list_data = lp8.get_children(var, "item")
 		table.sort(inv_list_data, function(a,b) return tostring(a.name) < tostring(b.name) end)
 
 		button = next(inv_list_data)
-			and wesnoth.show_dialog(dialogs.normal, inventory_preshow)
+			and wesnoth.show_dialog(dialogs.normal, inventory_preshow, inventory_postshow)
 			or wesnoth.show_dialog(dialogs.empty)
 	until not keep_going()
-
-	-- Resyncs the local lua tables with the actual unit
-	wesnoth.put_unit(unit)
-
-	for i = 1, #command_list do
-		wml_actions.command(command_list[i])
-	end
 end
