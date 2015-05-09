@@ -43,11 +43,15 @@ function wml_actions.show_inventory(cfg)
 		wesnoth.put_unit(unit)
 	end
 
+	local function active_overlay(image)
+		return string.format("%s%s", image, "~BLIT(misc/active_item_indicator.png)")
+	end
+
 	-- Prints item list
 	local function print_item_list()
 		for i, item in ipairs(inv_list_data) do
 			if item.active then
-				wesnoth.set_dialog_value(item.image .. "~BLIT(misc/active_item_indicator.png)", "inventory_list", i, "list_image")
+				wesnoth.set_dialog_value(active_overlay(item.image), "inventory_list", i, "list_image")
 			else
 				wesnoth.set_dialog_value(item.image, "inventory_list", i, "list_image")
 			end
@@ -147,7 +151,7 @@ function wml_actions.show_inventory(cfg)
 			if not list_item.active then
 				item_var.active = true
 
-				wesnoth.set_dialog_value(list_item.image .. "~BLIT(misc/active_item_indicator.png)", "inventory_list", i, "list_image")
+				wesnoth.set_dialog_value(active_overlay(list_item.image), "inventory_list", i, "list_image")
 			else
 				item_var.active = false
 
