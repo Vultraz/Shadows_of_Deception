@@ -44,7 +44,7 @@ function wml_actions.show_inventory(cfg)
 	end
 
 	local function active_overlay(image)
-		return string.format("%s%s", image, "~BLIT(misc/active_item_indicator.png)")
+		return image .. "~BLIT(misc/active_item_indicator.png)"
 	end
 
 	-- Prints item list
