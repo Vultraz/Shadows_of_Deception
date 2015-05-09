@@ -123,44 +123,43 @@ function wml_actions.show_inventory(cfg)
 		button = buttons.use
 		continue = true
 
-		-- If item is not active...
-		if not list_item.active then
-			-- ... and if it's single-use, decrease quantity by 1
-			if list_item.effect_type == "single" then
-				item_var.quantity = (list_item.quantity or 1) - 1
+		-- Message effect items don't have any special use commands
 
-				wesnoth.set_dialog_value(
-					list_item.quantity, "inventory_list", i, "list_quantity")
+		-- If it's single-use, decrease quantity by 1...
+		if list_item.effect_type == "single" then
+			item_var.quantity = (list_item.quantity or 1) - 1
 
-				-- Delete item if you now have none of it
-				if list_item.quantity == 0 then
-					lp8.remove_subtag(var, item_filter)
+			wesnoth.set_dialog_value(list_item.quantity, "inventory_list", i, "list_quantity")
 
-					if selected_row == page_count then
-						selected_row = selected_row - 1
-					end
+			-- ... and delete it if you now have none
+			if list_item.quantity == 0 then
+				lp8.remove_subtag(var, item_filter)
+
+				if selected_row == page_count then
+					selected_row = selected_row - 1
 				end
 			end
+		end
 
-			-- ... and if it's equip-use, activate it
-			if list_item.effect_type == "equip" then
-				wesnoth.set_dialog_value(
-					list_item.image
-						.. "~BLIT(misc/active_item_indicator.png)",
-					"inventory_list", i, "list_image")
+		-- If it's an equip item...
+		if list_item.effect_type == "equip" then
+			-- ... and is not active, activate it
+			if not list_item.active then
 				item_var.active = true
+
+				wesnoth.set_dialog_value(list_item.image .. "~BLIT(misc/active_item_indicator.png)", "inventory_list", i, "list_image")
+			else
+				item_var.active = false
+
+				wesnoth.set_dialog_value(list_item.image, "inventory_list", i, "list_image")
+
+				item_actions = helper.get_child(list_item, "removal_command")
 			end
+		end
 
+		-- item_actions can be set previously in a specific effect block 
+		if item_actions == nil then
 			item_actions = helper.get_child(list_item, "command")
-		-- But if it was already active, therefore it was a continuous-use item
-		-- So just deactivate it
-		else
-			wesnoth.set_dialog_value(
-				list_item.image, "inventory_list", i, "list_image")
-
-			item_var.active = false
-
-			item_actions = helper.get_child(list_item, "removal_command")
 		end
 
 		refresh_use_button_text(i)
