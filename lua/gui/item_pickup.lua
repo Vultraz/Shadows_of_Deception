@@ -12,9 +12,11 @@
 --     name= _ "string"
 --     image=path/to/image.png
 --     description= _ "translatable string"
---     effect_type=use either "single" or "equip"
+--     effect_type=one of "single", "equip", or "message"
 --     event=the name of the event to fire if you USE or TAKE the item
---     must_take=yes/no
+--     must_take=yes/no. If yes, the option to leave the item alone will be disabled
+--     silent=yes/no (default no). If yes, the item vars will be written directly
+--            to the unit, with no dialog prompt
 --     [usable_by]
 --         ... SUF: The item will only be able to be used or taken if the primary
 --             unit matches this filter
