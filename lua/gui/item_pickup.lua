@@ -65,6 +65,10 @@ function wml_actions.take_item(cfg)
 		local usable_if = helper.get_child(cfg, "usable_if") or {}
 		local usable_by = helper.get_child(cfg, "usable_by")
 
+		if cfg.must_take then
+			wesnoth.set_dialog_active(false, "leave_button")
+		end
+
 		if not wesnoth.eval_conditional(usable_if) then
 			wesnoth.set_dialog_active(false, "use_button")
 		end
@@ -74,10 +78,10 @@ function wml_actions.take_item(cfg)
 
 			wesnoth.set_dialog_active(false, "use_button")
 			wesnoth.set_dialog_active(false, "take_button")
-		end
 
-		if cfg.must_take then
-			wesnoth.set_dialog_active(false, "leave_button")
+			-- Allow this to override must_take. Not doing so for an item examined by the 
+			-- wrong person and must_take true would result in all three buttons disabled 
+			wesnoth.set_dialog_active(true, "leave_button")
 		end
 	end
 
