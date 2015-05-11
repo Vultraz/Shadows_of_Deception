@@ -63,7 +63,7 @@ function wml_actions.take_item(cfg)
 		-- Disable various buttons if the wrong person is attempting to pick up
 		-- the item, or if certain conditions have not been met
 		local usable_if = helper.get_child(cfg, "usable_if") or {}
-		local usable_by = helper.get_child(cfg, "usable_by")
+		local usable_by = helper.get_child(cfg, "usable_by") or {}
 
 		if cfg.must_take then
 			wesnoth.set_dialog_active(false, "leave_button")
