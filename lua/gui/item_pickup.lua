@@ -50,9 +50,9 @@ function wml_actions.take_item(cfg)
 
 	local function item_preshow()
 		-- Set all widget starting values
-		wesnoth.set_dialog_value ( cfg.name, "item_name" )
-		wesnoth.set_dialog_value ( cfg.image or "", "image_name" )
-		wesnoth.set_dialog_value ( cfg.description, "item_description" )
+		wesnoth.set_dialog_value(cfg.name, "item_name")
+		wesnoth.set_dialog_value(cfg.image or "", "image_name")
+		wesnoth.set_dialog_value(cfg.description, "item_description")
 
 		if cfg.effect_type == "equip" then
 			wesnoth.set_dialog_value(_"Equip", "use_button")
