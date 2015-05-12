@@ -2,7 +2,7 @@
 
 local dialogs = nxrequire "gui/dialogs/inv"
 local buttons = dialogs.buttons
-local valid_attacks = {axe = 1, ["battle axe"] = 1, bow = 1, broadsword = 1, dagger = 1, crossbow = 1, hammer = 1, javelin = 1, lance = 1, spear = 1, staff = 1}; 
+local invalid_attacks = {ensnare = 1, ["faerie fire"] = 1, fireball = 1, ["magic missile"] = 1, ["mystic fire"] = 1}; 
 
 -- This brings up the custom inventory control window
 function wml_actions.show_inventory(cfg)
@@ -20,7 +20,7 @@ function wml_actions.show_inventory(cfg)
 	-- Syncs weapon data with the table and sorts it
 	local function sync_weapons_to_items()
 		for i, attack in pairs(lp8.get_children(unit, 'attack')) do
-			if valid_attacks[attack.name] and not helper.get_child(var, "item", attack.name) then
+			if not invalid_attacks[attack.name] and not helper.get_child(var, "item", attack.name) then
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
 				local removal_id = "attack_" .. attack.name
 
