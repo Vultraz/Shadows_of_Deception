@@ -19,7 +19,7 @@ function wml_actions.show_inventory(cfg)
 
 	-- Syncs weapon data with the table and sorts it
 	local function sync_weapons_to_items()
-		for i, attack in pairs(lp8.get_children(unit, 'attack')) do
+		for attack in helper.child_range(unit, 'attack') do
 			if not invalid_attacks[attack.name] and not helper.get_child(var, "item", attack.name) then
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
 				local removal_id = "attack_" .. attack.name
