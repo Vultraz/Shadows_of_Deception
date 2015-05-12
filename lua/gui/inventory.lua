@@ -211,7 +211,7 @@ function wml_actions.show_inventory(cfg)
 		-- Execute item effects
 		wml_actions.command(item_actions)
 
-		wesnoth.delay(0)
+		wesnoth.delay(100)
 		wesnoth.lock_view(false)
 	end
 
