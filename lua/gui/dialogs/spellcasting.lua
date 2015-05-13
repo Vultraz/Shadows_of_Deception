@@ -124,6 +124,7 @@ local main_window = {
 							border = "all",
 							border_size = 5,
 							horizontal_grow = true,
+							vertical_alignment = "top",
 							spell_list
 						},
 						T.column {
