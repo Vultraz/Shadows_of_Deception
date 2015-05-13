@@ -19,7 +19,7 @@ function wml_actions.show_spell_list(cfg)
 
 			-- Sets notice if there are no valid targets
 			if not wesnoth.eval_conditional { {'have_location', helper.get_child(spell, 'target_filter')} } then
-				wesnoth.set_dialog_value(_"<span color='#ff0000'>No valid targets for this spell</span>",
+				wesnoth.set_dialog_value(_"<span color='#ff0000'>No valid targets for this spell.</span>",
 					"details_pages", i, "details_notice_validity")
 				wesnoth.set_dialog_markup(true,
 					"details_pages", i, "details_notice_validity")
@@ -33,7 +33,7 @@ function wml_actions.show_spell_list(cfg)
 					turnstext = _"turn remaining"
 				end
 
-				wesnoth.set_dialog_value(string.format("<span color='#ff0000'>%s\n(%i %s)</span>", _"This spell is cooling down", spell.cooldown_remaining, turnstext),
+				wesnoth.set_dialog_value(string.format("<span color='#ff0000'>%s\n(<small>%i %s</small>)</span>", _"This spell is cooling down.", spell.cooldown_remaining, turnstext),
 					"details_pages", i, "details_notice_cooling")
 				wesnoth.set_dialog_markup(true,
 					"details_pages", i, "details_notice_cooling")
