@@ -28,6 +28,8 @@ Version 0.5.3+dev
     respective dialogs
   * Execute each item effect as you use them, instead of in a bunch once
     the inventory closes
+  * Many general tweaks and improvements to the spellcasting, item pickup,
+    and inventory systems
 
 * Graphics
   * Removed terrains: Shop
