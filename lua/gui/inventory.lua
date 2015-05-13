@@ -78,7 +78,7 @@ function wml_actions.show_inventory(cfg)
 		end
 	end
 
-	-- Refreshes use button value
+	-- Refreshes use_button value
 	local function refresh_use_button_text(index)
 		local item = inv_list_data[index]
 
@@ -197,7 +197,7 @@ function wml_actions.show_inventory(cfg)
 		wesnoth.set_dialog_value(selected_row, "inventory_list")
 		select_from_inventory()
 
-		-- Disable Give button if there're no recipients
+		-- Disable Give button if there are no potential recipients
 		if not recipients then
 			wesnoth.set_dialog_active(false, "give_button")
 		end
@@ -211,6 +211,8 @@ function wml_actions.show_inventory(cfg)
 		-- Execute item effects
 		wml_actions.command(item_actions)
 
+		-- We need a delay here to allow for a redraw of the screen and sidebar
+		-- I have no idea why a delay allows that to happen
 		wesnoth.delay(100)
 		wesnoth.lock_view(false)
 	end
@@ -221,7 +223,7 @@ function wml_actions.show_inventory(cfg)
 		var = helper.get_child(unit, "variables")
 		item_actions = nil
 
-		sync_weapons_to_items() -- Adds weapons to inv_list_data
+		sync_weapons_to_items() -- Add valid weapons as [item]s
 
 		-- Sort items alphabetically
 		inv_list_data = lp8.get_children(var, "item")
