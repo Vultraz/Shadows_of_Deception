@@ -86,6 +86,9 @@ function wml_actions.show_spell_list(cfg)
 			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
 		end
 
+		-- Don't allow turn end mid-cast
+		wml_actions.disallow_end_turn {}
+
 		wml_actions.set_menu_item {
 			id = "spell_trigger",
 			description = _"Cast Spell: " .. spell.name,
@@ -99,7 +102,8 @@ function wml_actions.show_spell_list(cfg)
 				{"fire_event", {name = spell.id .. "_pre_event"}},
 				{"command", spell_effect},
 				{"fire_event", {name = spell.id .. "_post_event"}},
-				{"clear_variable", {name = "spell_target"}}
+				{"clear_variable", {name = "spell_target"}},
+				{"allow_end_turn", {}}
 			}
 		}}
 
