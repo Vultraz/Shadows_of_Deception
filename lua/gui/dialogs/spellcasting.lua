@@ -55,7 +55,6 @@ local spell_details_pages = T.multi_page {
 	id = "details_pages",
 	T.page_definition {
 		T.row {
-			grow_factor = 1,
 			T.column {
 				border = "all",
 				border_size = 5,
@@ -67,7 +66,6 @@ local spell_details_pages = T.multi_page {
 			}
 		},
 		T.row {
-			grow_factor = 1,
 			T.column {
 				border = "all",
 				border_size = 5,
@@ -80,7 +78,6 @@ local spell_details_pages = T.multi_page {
 			}
 		},
 		T.row {
-			grow_factor = 1,
 			T.column {
 				border = "all",
 				border_size = 5,
@@ -107,7 +104,6 @@ local main_window = {
 
 	T.grid {
 		T.row {
-			grow_factor = 1,
 			T.column {
 				border = "all",
 				border_size = 5,
@@ -120,7 +116,6 @@ local main_window = {
 			}
 		},
 		T.row {
-			grow_factor = 1,
 			T.column {
 				T.grid {
 					T.row {
@@ -142,7 +137,6 @@ local main_window = {
 			}
 		},
 		T.row {
-			grow_factor = 1,
 			T.column {
 				horizontal_alignment = "right",
 				T.grid {
@@ -186,7 +180,6 @@ local empty_spell_window = {
 
 	T.grid {
 		T.row {
-			grow_factor = 1,
 			T.column {
 				border = "all",
 				border_size = 5,
