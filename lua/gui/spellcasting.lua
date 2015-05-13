@@ -26,7 +26,7 @@ function wml_actions.show_spell_list(cfg)
 			end
 
 			-- Sets notice if the spell is still cooling
-			if spell.cooldown_remaining ~= 0 then
+			if spell.cooldown_remaining > 0 then
 				local turnstext = _"turns remaining"
 
 				if spell.cooldown_remaining == 1 then 
@@ -61,7 +61,7 @@ function wml_actions.show_spell_list(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 
 		-- Disables the Cast button if the spell is still in cooldown or there are no valid targets
-		if spell.cooldown_remaining ~= 0 or not wesnoth.eval_conditional { {'have_location', helper.get_child(spell, 'target_filter')} } then
+		if spell.cooldown_remaining > 0 or not wesnoth.eval_conditional { {'have_location', helper.get_child(spell, 'target_filter')} } then
 			wesnoth.set_dialog_active(false, "cast_button")
 		else
 			wesnoth.set_dialog_active(true, "cast_button")
