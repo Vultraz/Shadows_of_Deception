@@ -15,8 +15,11 @@ Version 0.5.3+dev
   * E1S2 - Dwarvish Trail
     * Fixed several long-standing minor issues
     * Added water drip ambiance
+    * Minor map tweaks to the enterence tunnel
   * E1S4 - Pursuit
     * Added cave ambiance
+  * E1S5.1 - Ambush in Wesmere
+    * Redrew map
 
 * Sound and Music
   * New ambient sounds effects for cave, dungeons, and drips
