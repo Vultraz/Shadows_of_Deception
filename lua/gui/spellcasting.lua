@@ -12,7 +12,6 @@ function wml_actions.show_spell_list(cfg)
 	-- Prints list of spells the current unit has learned
 	local function print_spell_list()
 		for i, spell in ipairs(spell_list_data) do
-
 			wesnoth.set_dialog_value(spell.image, "spell_list", i, "spell_image")
 			wesnoth.set_dialog_value(spell.name, "spell_list", i, "spell_name")
 			wesnoth.set_dialog_value(spell.description, "details_pages", i, "details_description")
@@ -69,8 +68,8 @@ function wml_actions.show_spell_list(cfg)
 	end
 
 	-- Applies the effect of the spell
-	-- Overlays are placed over every location that is a potential target for the spell
-	-- A menu item will show on all of these hexes. Using it triggers the spell
+	-- * Overlays are placed over every location that is a potential target for the spell
+	-- * A menu item will show on all of these hexes. Using it triggers the spell
 	local function cast_spell()
 		local i = wesnoth.get_dialog_value("spell_list")
 		local spell = spell_list_data[i]
@@ -79,7 +78,10 @@ function wml_actions.show_spell_list(cfg)
 
 		spell.cooldown_remaining = spell.cooldown_time or 0
 
-		-- Pass the SLF through tovconfig to make sure var substitution happens correctly
+		-- Substitute vars in the target filter. This is relevant so that auto-stored vars
+		-- such as $x1 and $y1 will have the values relative to the caster - ie, the unit 
+		-- for whom the spellcasting menu item was invoked. Otherwise, they evaluate to values
+		-- relative to the target - ie, the unit for whom the 'Cast Spell' menu was invoked
 		spell_slf = wesnoth.tovconfig(spell_slf)
 
 		for i, loc in pairs(wesnoth.get_locations(spell_slf)) do
@@ -104,8 +106,8 @@ function wml_actions.show_spell_list(cfg)
 				{"fire_event", {name = spell.id .. "_post_event"}},
 				{"clear_variable", {name = "spell_target"}},
 				{"allow_end_turn", {}}
-			}
-		}}
+			}}
+		}
 
 		wesnoth.put_unit(unit)
 	end
