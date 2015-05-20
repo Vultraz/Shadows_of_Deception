@@ -32,7 +32,7 @@ function wml_actions.show_inventory(cfg)
 					effect_type = "equip",
 					active = true,
 					T.command { 
-						T.object { silent = true, duration = "forever", removal_id = removal_id,
+						T.object { silent = true, duration = "forever", no_write = true, removal_id = removal_id,
 							{ 'effect', lp8.copyTable(attack, { apply_to = 'new_attack' }) }
 						},
 						T.remove_object { skip_effects = true,
@@ -40,7 +40,7 @@ function wml_actions.show_inventory(cfg)
 						}
 					},
 					T.removal_command { 
-						T.object { silent = true, duration = "forever", removal_id = removal_id,
+						T.object { silent = true, duration = "forever", no_write = true, removal_id = removal_id,
 							T.effect { apply_to = "remove_attacks", range = attack.range, name = attack.name }
 						},
 						T.remove_object { skip_effects = true,
