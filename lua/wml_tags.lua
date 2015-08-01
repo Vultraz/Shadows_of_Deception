@@ -162,10 +162,10 @@ end
 ---
 function wml_actions.clear_print()
 	wml_actions.print({
-		text = " ",
+		text = "",
 		duration = 1
 	})
-	
+
 	wesnoth.delay(20)
 
 	wml_actions.redraw({})
