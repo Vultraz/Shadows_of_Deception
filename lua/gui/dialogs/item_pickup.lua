@@ -14,7 +14,6 @@ local item_dialog = {
 	T.grid {
 		T.row {
 			T.column {
-				grow_factor = 1,
 				border = "all",
 				border_size = 5,
 				horizontal_alignment = "left",
@@ -26,18 +25,20 @@ local item_dialog = {
 		},
 		T.row {
 			T.column {
+				horizontal_grow = "true",
 				T.grid {
 					T.row {
 						T.column {
 							border = "all",
 							border_size = 5,
 							vertical_alignment = "center",
-							horizontal_alignment = "center",
+							horizontal_alignment = "left",
 							T.image {
 								id = "image_name"
 							}
 						},
 						T.column {
+							horizontal_alignment = "left",
 							T.grid {
 								T.row {
 									T.column {
@@ -67,7 +68,6 @@ local item_dialog = {
 			}
 		},
 		T.row {
-			grow_factor = 1,
 			T.column {
 				horizontal_alignment = "right",
 				T.grid {
