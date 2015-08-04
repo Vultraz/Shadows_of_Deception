@@ -2,6 +2,7 @@
 
 _ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
 wml_actions = wesnoth.wml_actions
+--wml_conditionals = wesnoth.wml_conditionals
 helper = wesnoth.require 'lua/helper.lua'
 items = wesnoth.require 'lua/wml/items.lua'
 T = helper.set_wml_tag_metatable {}
@@ -20,6 +21,7 @@ for _, script in ipairs {
 	'hex';
 	'spawner';
 	'wml_tags';
+	-- 'conditional_tags';
 	'gui/bug';
 	'gui/help';
 	'gui/inventory';
