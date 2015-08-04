@@ -63,40 +63,61 @@ function wml_actions.setup_gates(cfg)
 end
 
 ---
--- Installs mechanical "Gate" units on the given x,y coords using the given owner side.
--- If none are found, they will be placed on all *^Ngl\ and *^Ngl/ hexes instead.
+-- Removes an event barrier consisting of adjacent hexes matching
+-- a terrain type filter (usually *^Ngl\,*^Ngl/) on the specified location
+-- and highlights the affected locations for the player.
+--
+-- Additionally, if var_write is true, those locations 
+-- will also be written as WML variables.
 --
 -- [unlock_gates]
---     side=3
---     x,y=33,9
+--     x,y=<coordinates>
+--     var_wirte=<bool>
 -- [/unlock_gates]
 ---
 function wml_actions.unlock_gates(cfg)
-	local locs = {}
-
-	if cfg.x or cfg.y then
-		locs = wesnoth.get_locations {
-			x = cfg.x,
-			y = cfg.y,
-			{ "not", { { "filter", {} } } },
+	local gatex, gatey = serialize_loc_string({
+		x = cfg.x,
+		y = cfg.y,
+		radius = 6,
+		T.filter_radius {
+			terrain = "*^Ngl\\,*^Ngl/"
 		}
-	else
-		locs = wesnoth.get_locations {
-			terrain = "*^Ngl\\",
-			{ "or", { terrain = "*^Ngl/" } },
-			{ "not", { { "filter", {} } } },
-		}
-	end
+	})
 
-	for k, loc in ipairs(locs) do
-		wesnoth.put_unit(loc[1], loc[2], {
-			type = "Gate",
-			side = cfg.side,
-			id = string.format("__locked_gate_X%dY%d", loc[1], loc[2]),
-		})
+	wml_actions.remove_terrain_overlays({
+		x = gatex, 
+		y = gatey
+	})
 
-		wesnoth.scroll_to_tile(loc[1], loc[2])
-		wesnoth.play_sound("unlock-[1~3].ogg")
+	wml_actions.remove_shroud({
+		side = 1,
+		x = gatex, 
+		y = gatey
+	})
+
+	wml_actions.redraw({
+		side = 1
+	})
+
+	wesnoth.scroll_to_tile(cfg.x, cfg.y)
+
+	wml_actions.highlight_goal({
+		x = gatex, 
+		y = gatey
+	})
+
+	wesnoth.scroll_to_tile(wesnoth.current.event_context.x1, wesnoth.current.event_context.y1)
+
+	wml_actions.redraw {}
+
+	-- This is similar to the functionality of [simplify_location_filter]
+	-- TODO: consider whether I actually need this
+	local var_write = cfg.write or false
+
+	if var_write then
+		wesnoth.get_variable("temp_gate_locs.x", gatex)
+		wesnoth.get_variable("temp_gate_locs.y", gatey)
 	end
 end
 
