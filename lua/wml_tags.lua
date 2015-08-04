@@ -314,12 +314,9 @@ end
 --     variable="location"
 -- [/simplify_location_filter]
 ---
-function wml_actions.simplify_location_filter(cfg)
-	local var = cfg.variable or "location"
-	local locs = wesnoth.get_locations(cfg)
+function serialize_loc_string(slf)
+	local locs = wesnoth.get_locations(slf)
 	local xstr, ystr = "", ""
-
-	wesnoth.set_variable(var)
 
 	for i, loc in ipairs(locs) do
 		if i > 1 then
@@ -330,6 +327,16 @@ function wml_actions.simplify_location_filter(cfg)
 			ystr = string.format("%d", loc[2])
 		end
 	end
+
+	return xstr, ystr
+end
+
+function wml_actions.simplify_location_filter(cfg)
+	local var = cfg.variable or "location"
+
+	wesnoth.set_variable(var)
+
+	local xstr, ystr = serialize_loc_string(cfg)
 
 	wesnoth.set_variable(var .. ".x", xstr)
 	wesnoth.set_variable(var .. ".y", ystr)
