@@ -12,12 +12,18 @@ Many elements of this campaign differ from standard Wesnoth. If you aren’t sur
 <b>NOTE:</b> A game screen resolution of 800x600 or greater is recommended. Additionally, some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under Preferences → Display.]]
 	};
 	{ name = _ "Items", text = _ [[
-During your playthrough, you may encounter certain items you can pick up and add to characters’ inventories. To access a unit’s inventory, right click on them and select the <b>Inventory</b> option. You will be presented with a list of items that unit is carrying. Each character’s weapons, such as swords or staves, will be also be appear as items in the invetory.
+During your playthrough, you may encounter certain items you can pick up and add to characters’ inventories. To access a unit’s inventory, right click on them and select the <b>Inventory</b> option. You will be presented with a list of items that unit is carrying. Each character’s weapons, such as swords or staves, will be also be appear as items in their invetory.
  
-When you pick up an item from the map, you can do two things:
+When you pick up an item from the map, you can do three things:
  
-• <b>Use:</b> If the item is a single-use item such as a potion, you can immediately use it. If it’s an equippable item such as an amulet, this button will say “Equip” instead.
-• <b>Take:</b> Add the item to the relevant character’s inventory for later use.
+• <b>Use:</b> Depending on the type of item you pick up, this button does different things: <small>
+    • If the item is single-use, such as a potion, you can immediately use it. Its effect will be applied, and it <b>will not</b> be added to the character’s inventory.
+    • If the item is equippable, such as an amulet, this button will say “Equip”. Its effect will be applied, and it <b>will</b> be added to the character’s inventory.
+    • If the item is examinable, such as a book, this button will say “Examine”. Any appropriate messages will be shown, but the item <b>will not</b> be added added to the character’s inventory.</small>
+ 
+• <b>Take:</b> Add the item to the relevant character’s inventory for later use. The effect will <b>not</b> be applied.
+ 
+• <b>Leave:</b> Do nothing. The item will be left on the map to pick up at another time.
  
 Equippable items will henceforth appear in your inventory, even if you equip them immediately. They can be equipped or unequipped from there. Single-use items will also appear in your inventory, provided you did not use them when you picked them up.]]
 	};
