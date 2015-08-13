@@ -36,7 +36,7 @@ function wml_actions.show_inventory(cfg)
 							{ 'effect', lp8.copyTable(attack, { apply_to = 'new_attack' }) }
 						},
 						T.remove_object { skip_effects = true,
-							T.filter_wml { removal_id = "attack_" .. attack.name }
+							T.filter_wml { removal_id = removal_id }
 						}
 					},
 					T.removal_command { 
