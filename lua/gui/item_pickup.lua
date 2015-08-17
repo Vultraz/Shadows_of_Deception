@@ -49,6 +49,7 @@ function wml_actions.take_item(cfg)
 
 	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	local vars = helper.get_child(unit, "variables")
+	local must_take = cfg.must_take
 
 	local function item_preshow()
 		-- Set all widget starting values
@@ -67,7 +68,7 @@ function wml_actions.take_item(cfg)
 		local usable_if = helper.get_child(cfg, "usable_if") or {}
 		local usable_by = helper.get_child(cfg, "usable_by") or {}
 
-		if cfg.must_take then
+		if must_take then
 			wesnoth.set_dialog_active(false, "leave_button")
 		end
 
@@ -123,7 +124,15 @@ function wml_actions.take_item(cfg)
 		return
 	end
 
-	local button = wesnoth.show_dialog(dialog, item_preshow)
+	local button
+
+	-- Hack to disable Esc key escaping from the dialog if must_take is true
+	-- -2 is the value returned by a GUI2 dialog when exited with Esc
+	if must_take then
+		repeat button = wesnoth.show_dialog(dialog, item_preshow) until button ~= -2
+	else
+		button = wesnoth.show_dialog(dialog, item_preshow)
+	end
 
 	if button == buttons.use or button == -1 then
 		if cfg.effect_type == "equip" then
