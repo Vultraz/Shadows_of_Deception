@@ -21,10 +21,13 @@ Version 0.5.3+dev
     * Added cave ambiance
   * E1S5.1 - Ambush in Wesmere
     * Redrew map
+  * E1S6 - Awakening — Part 1
+    * Completely revamped map and scenario
 
 * Sound and Music
   * New ambient sounds effects for cave, dungeons, and drips
   * New sound effects for unlock
+  * Replaced thunder sound effects
 
 * Lua
   * Improved Inventory interface
@@ -37,6 +40,7 @@ Version 0.5.3+dev
 
 * Graphics
   * Removed terrains: Shop
+  * New terrains: Rough Overlay
   * New or updated unit graphics: Wanderer, Shadow Regent
   * New attack icon for Niryone's staff
 
@@ -46,6 +50,7 @@ Version 0.5.3+dev
 
 * Units
   * New units: Fire Wisp, Animated Rock, Rock Golem
+  * New generic descrption for the Northguard Deathblade
   * Balancing changes:
     * Wanderer: HP 45 -> 48
 
