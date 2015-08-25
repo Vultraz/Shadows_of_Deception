@@ -47,7 +47,14 @@ function wml_actions.take_item(cfg)
 		subtag[2] = helper.literal(subtag[2])
 	end
 
-	local unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
+	local unit
+
+	if cfg.unit then
+		unit = wesnoth.get_units({id = cfg.unit})[1].__cfg
+	else
+		unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
+	end
+
 	local vars = helper.get_child(unit, "variables")
 	local must_take = cfg.must_take
 
