@@ -45,14 +45,17 @@ end
 ---
 -- Removes an event barrier consisting of adjacent hexes matching
 -- a terrain type filter (usually *^Ngl\,*^Ngl/) on the specified location
--- and highlights the affected locations for the player.
+-- 
+-- If highlight is true, the affected locations will also be highlighted
+-- for the player
 --
--- Additionally, if var_write is true, those locations 
--- will also be written as WML variables.
+-- Additionally, if var_write is true, those locations will also be written
+-- as WML variables.
 --
 -- [unlock_gates]
 --     x,y=<coordinates>
---     var_wirte=<bool>
+--     var_wirte=<bool, def false>
+--     highlight=<bool, def false>
 -- [/unlock_gates]
 ---
 function wml_actions.unlock_gates(cfg)
@@ -80,16 +83,20 @@ function wml_actions.unlock_gates(cfg)
 		side = 1
 	})
 
-	wesnoth.scroll_to_tile(cfg.x, cfg.y)
+	local highlight = cfg.highlight or false
 
-	wml_actions.highlight_goal({
-		x = gatex, 
-		y = gatey
-	})
+	if highlight then
+		wesnoth.scroll_to_tile(cfg.x, cfg.y)
 
-	wesnoth.scroll_to_tile(wesnoth.current.event_context.x1, wesnoth.current.event_context.y1)
+		wml_actions.highlight_goal({
+			x = gatex, 
+			y = gatey
+		})
 
-	wml_actions.redraw {}
+		wesnoth.scroll_to_tile(wesnoth.current.event_context.x1, wesnoth.current.event_context.y1)
+
+		wml_actions.redraw {}
+	end
 
 	-- This is similar to the functionality of [simplify_location_filter]
 	-- TODO: consider whether I actually need this
