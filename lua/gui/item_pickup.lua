@@ -14,6 +14,8 @@
 --     description= _ "translatable string"
 --     effect_type=one of "single", "equip", or "message"
 --     event=the name of the event to fire if you USE or TAKE the item
+--     remove_event=the name of the evene to remove once the item is picked up
+--                  Defaults to 'id .. "_pickup"'
 --     must_take=yes/no. If yes, the option to leave the item alone will be disabled
 --     silent=yes/no (default no). If yes, the item vars will be written directly
 --            to the unit, with no dialog prompt
@@ -114,11 +116,13 @@ function wml_actions.take_item(cfg)
 
 	local function clean_up_item()
 		local event = cfg.event or cfg.id .. "_taken"
+		local event_to_remove = cfg.remove_event or cfg.id .. "_pickup"
+
 		local loc_x = wesnoth.current.event_context.x1
 		local loc_y = wesnoth.current.event_context.y1
 
 		-- Remove the parent event for the item
-		wml_actions.event({ id = cfg.id .. "_pickup", remove = true })
+		wml_actions.event({ id = event_to_remove, remove = true })
 
 		wesnoth.fire_event(event, loc_x, loc_y)
 
