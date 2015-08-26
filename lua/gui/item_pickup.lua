@@ -6,35 +6,47 @@
 -- * USE:   Apply the item's effect, and add to inventory if effect_type = equip
 -- * TAKE:  Add item to inventory. No effect is applied
 -- * LEAVE: Do nothing
---
--- [take_item]
---     id=must be unique
---     name= _ "string"
---     image=path/to/image.png
---     description= _ "translatable string"
---     effect_type=one of "single", "equip", or "message"
---     event=the name of the event to fire if you USE or TAKE the item
---     remove_event=the name of the evene to remove once the item is picked up
---                  Defaults to 'id .. "_pickup"'
---     must_take=yes/no. If yes, the option to leave the item alone will be disabled
---     silent=yes/no (default no). If yes, the item vars will be written directly
---            to the unit, with no dialog prompt
---     [usable_by]
---         ... SUF: The item will only be able to be used or taken if the primary
---             unit matches this filter
---     [/usable_by]
---     [usable_if]
---         ... The item will only be usable if this condition is matched ...
---     [/usable_if]
---     [command]
---         ... Code to execute when item is used
---     [/command]
---     [removal_command]
---         ... Code to be executed if item is being unequipped.
---             Only applies if effect_type = equip
---     [/removal_command]
--- [/take_item]
 ---
+
+-- The syntax for defining an item pikcup is as follows:
+
+--[[
+[take_item]
+    id:             Unique ID of the item
+    name:           Translatable string that will be displayed in the inventory
+    image:          Icon for the item
+    description:    Translatable string describing the item
+    effect_type:    One of "single", "equip", or "message"
+    event:          Name of the event to fire once you USE or TAKE the item
+                    Defaults to "id .. '_taken'"
+    remove_event:   Name of the event to remove once the item is picked up
+                    Defaults to "id .. '_pickup'"
+    must_take:      Bool (default no). If yes, the option to leave the item will be disabled
+    silent:         Bool (default no). If yes, the item vars will be written directly
+                    to the unit, with no dialog prompt
+    unit:           If specified, the item will be given to the unit with this ID,
+                    else, it is given to the unit at $x1, $y1
+
+    [usable_by]
+        ... SUF: The item will only be able to be used or taken if the primary
+            unit matches this filter
+    [/usable_by]
+
+    [usable_if]
+        ... The item will only be usable if this condition is matched ...
+    [/usable_if]
+
+    [command]
+        ... Code to execute when item is used
+    [/command]
+
+    [removal_command]
+        ... Code to be executed if item is being unequipped.
+            Only applies if effect_type = equip
+    [/removal_command]
+[/take_item]
+--]]
+
 
 local dialog = nxrequire "gui/dialogs/item_pickup"
 local buttons = dialog.buttons
