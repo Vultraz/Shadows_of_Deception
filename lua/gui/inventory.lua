@@ -31,6 +31,7 @@ function wml_actions.show_inventory(cfg)
 					description = descrip,
 					effect_type = "equip",
 					active = true,
+					quantity = 1,
 					T.command { 
 						T.object { silent = true, duration = "forever", no_write = true, removal_id = removal_id,
 							{ 'effect', lp8.copyTable(attack, { apply_to = 'new_attack' }) }
@@ -71,7 +72,7 @@ function wml_actions.show_inventory(cfg)
 			wesnoth.set_dialog_markup(true,                            "inventory_list", i, "list_name")
 
 			wesnoth.set_dialog_value(item.name, "details_pages", i, "details_name")
-			wesnoth.set_dialog_value(item.quantity or 1, "inventory_list", i, "list_quantity")
+			wesnoth.set_dialog_value(item.quantity, "inventory_list", i, "list_quantity")
 			wesnoth.set_dialog_value(item.description, "details_pages", i, "details_description")
 
 			page_count = i

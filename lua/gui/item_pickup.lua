@@ -16,6 +16,7 @@
     name:           Translatable string that will be displayed in the inventory
     image:          Icon for the item
     description:    Translatable string describing the item
+    quantity:       The number of copies of this item the unit will have
     effect_type:    One of "single", "equip", or "message"
     event:          Name of the event to fire once you USE or TAKE the item
                     Defaults to "id .. '_taken'"
@@ -113,13 +114,15 @@ function wml_actions.take_item(cfg)
 
 	local function set_item_vars(activate)
 		local item = helper.get_child(vars, "item", cfg.id)
+		local quantity = cfg.quantity or 1
 
 		if item then
-			item.quantity = (item.quantity or 0) + 1
+			item.quantity = item.quantity + quantity
 		else
 			if activate then
 				cfg.active = true
 			end
+			cfg.quantity = quantity
 			table.insert(vars, {"item", cfg})
 		end
 
