@@ -27,6 +27,8 @@
                     to the unit, with no dialog prompt
     unit:           If specified, the item will be given to the unit with this ID,
                     else, it is given to the unit at $x1, $y1
+    remove_image:   Bool (default yes). Whether to remove the item image from the map once
+                    it is acquired or not
 
     [usable_by]
         ... SUF: The item will only be able to be used or taken if the primary
@@ -141,7 +143,11 @@ function wml_actions.take_item(cfg)
 
 		wesnoth.fire_event(event, loc_x, loc_y)
 
-		items.remove(loc_x, loc_y)
+		local remove_image = cfg.remove_image or true
+
+		if remove_image then
+			items.remove(loc_x, loc_y)
+		end
 	end
 
 	if cfg.silent then
