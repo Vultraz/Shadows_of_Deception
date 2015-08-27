@@ -8,7 +8,7 @@ Version 0.5.3+dev
   * Added a help section about items
 
 * Scenarios
-  * The Bind spell on affects allies as well as enemies
+  * The Bind spell now affects allies as well as enemies
   * E1S0 - Descry
     * Prevent hex cursor from drawing during intro
   * E1S1 - Seer and Outlaw
@@ -19,6 +19,7 @@ Version 0.5.3+dev
     * Minor map tweaks to the entrance tunnel
   * E1S4 - Pursuit
     * Added cave ambiance
+    * Changed effect of Potion of Curious Taste
   * E1S5.1 - Ambush in Wesmere
     * Redrew map
   * E1S6 - Awakening — Part 1
