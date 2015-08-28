@@ -171,7 +171,7 @@ function wml_actions.take_item(cfg)
 			set_item_vars('and activate item')
 		end
 
-		wml_actions.command(helper.get_child(cfg, "command"))
+		wml_actions.command(helper.get_child(cfg, "command") or {})
 
 		if cfg.effect_type ~= "message" then
 			clean_up_item()
