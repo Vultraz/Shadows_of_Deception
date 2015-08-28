@@ -74,6 +74,7 @@ function wml_actions.take_item(cfg)
 
 	local vars = helper.get_child(unit, "variables")
 	local must_take = cfg.must_take
+	local effect_type = cfg.effect_type or helper.wml_error("[take_item] missing mandatory effect_type key")
 
 	local function item_preshow()
 		-- Set all widget starting values
@@ -81,15 +82,15 @@ function wml_actions.take_item(cfg)
 		wesnoth.set_dialog_value(cfg.image or "", "image_name")
 		wesnoth.set_dialog_value(cfg.description, "item_description")
 
-		if cfg.effect_type == "equip" then
+		if effect_type == "equip" then
 			wesnoth.set_dialog_value(_"Equip", "use_button")
-		elseif cfg.effect_type == "message" then
+		elseif effect_type == "message" then
 			wesnoth.set_dialog_value(_"Examine", "use_button")
 		end
 
 		-- For this case, the Use button doesn't get a different value,
 		-- and is disabled instead, since this item type has no effect
-		if cfg.effect_type == "mcguffin" then
+		if effect_type == "mcguffin" then
 			wesnoth.set_dialog_active(false, "use_button")
 		end
 
@@ -173,13 +174,13 @@ function wml_actions.take_item(cfg)
 	end
 
 	if button == buttons.use or button == -1 then
-		if cfg.effect_type == "equip" then
+		if effect_type == "equip" then
 			set_item_vars('and activate item')
 		end
 
 		wml_actions.command(helper.get_child(cfg, "command") or {})
 
-		if cfg.effect_type ~= "message" then
+		if effect_type ~= "message" then
 			clean_up_item()
 		end
 	end
