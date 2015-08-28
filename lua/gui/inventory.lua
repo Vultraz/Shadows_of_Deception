@@ -97,6 +97,11 @@ function wml_actions.show_inventory(cfg)
 			wesnoth.eval_conditional(
 				helper.get_child(item, "usable_if") or {}),
 			"use_button")
+
+		-- Override previous active toggle if it's a mcguffin 
+		if item.effect_type == "mcguffin" then
+			wesnoth.set_dialog_active(false, "use_button")
+		end
 	end
 
 	-- Sets values for the details panel widgets

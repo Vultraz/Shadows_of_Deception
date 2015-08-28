@@ -17,7 +17,7 @@
     image:          Icon for the item
     description:    Translatable string describing the item
     quantity:       The number of copies of this item the unit will have
-    effect_type:    One of "single", "equip", or "message"
+    effect_type:    One of "single", "equip", "message", or "mcguffin"
     event:          Name of the event to fire once you USE or TAKE the item
                     Defaults to "id .. '_taken'"
     remove_event:   Name of the event to remove once the item is picked up
@@ -85,6 +85,12 @@ function wml_actions.take_item(cfg)
 			wesnoth.set_dialog_value(_"Equip", "use_button")
 		elseif cfg.effect_type == "message" then
 			wesnoth.set_dialog_value(_"Examine", "use_button")
+		end
+
+		-- For this case, the Use button doesn't get a different value,
+		-- and is disabled instead, since this item type has no effect
+		if cfg.effect_type == "mcguffin" then
+			wesnoth.set_dialog_active(false, "use_button")
 		end
 
 		-- Disable various buttons if the wrong person is attempting to pick up
