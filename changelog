@@ -11,6 +11,7 @@ Version 0.5.3+dev
   * The Bind spell now affects allies as well as enemies
   * E1S0 - Descry
     * Prevent hex cursor from drawing during intro
+    * Rewrote intro
   * E1S1 - Seer and Outlaw
     * Prevent hex cursor from drawing during interim text
   * E1S2 - Dwarvish Trail
