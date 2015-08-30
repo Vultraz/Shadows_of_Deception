@@ -150,7 +150,11 @@ function wml_actions.take_item(cfg)
 
 		wesnoth.fire_event(event, loc_x, loc_y)
 
-		local remove_image = cfg.remove_image or true
+		local remove_image = cfg.remove_image
+
+		if remove_image == nil then
+			remove_image = true
+		end
 
 		if remove_image then
 			items.remove(loc_x, loc_y)
