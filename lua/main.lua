@@ -15,16 +15,20 @@ T = helper.set_wml_tag_metatable {}
 wml_actions      = wesnoth.wml_actions
 wml_conditionals = wesnoth.wml_conditionals or {} -- Table fallback for use in 1.12
 
+
 ---
 -- Main file loading logic
 ---
 
+-- Compatibility with old directory name. Remove once 1.12 support is dropped
+local basedir = "Shadows_of_Deception"
+
+if wesnoth.have_file("~add-ons/NX-RPG/_main.cfg") then
+	basedir = "NX-RPG"
+end
+
 function nxrequire(script)
-	if wesnoth.have_file( "~add-ons/Shadows_of_Deception/_main.cfg" ) then
-		return wesnoth.require('~add-ons/Shadows_of_Deception/lua/' .. script .. '.lua')
-	else
-		return wesnoth.require('~add-ons/NX-RPG/lua/' .. script .. '.lua')
-	end
+	return wesnoth.require('~add-ons/' .. basedir .. '/lua/' .. script .. '.lua')
 end
 
 for _, script in ipairs {
