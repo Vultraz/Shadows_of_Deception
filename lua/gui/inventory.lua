@@ -98,8 +98,8 @@ function wml_actions.show_inventory(cfg)
 				helper.get_child(item, "usable_if") or {}),
 			"use_button")
 
-		-- Override previous active toggle if it's a mcguffin 
-		if item.effect_type == "mcguffin" then
+		-- Override previous active toggle if it's a static 
+		if item.effect_type == "static" then
 			wesnoth.set_dialog_active(false, "use_button")
 		end
 	end

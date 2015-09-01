@@ -17,7 +17,7 @@
     image:          Icon for the item
     description:    Translatable string describing the item
     quantity:       The number of copies of this item the unit will have
-    effect_type:    One of "single", "equip", "message", or "mcguffin"
+    effect_type:    One of "single", "equip", "message", or "static"
     event:          Name of the event to fire once you USE or TAKE the item
                     Defaults to "id .. '_taken'"
     remove_event:   Name of the event to remove once the item is picked up
@@ -90,7 +90,7 @@ function wml_actions.take_item(cfg)
 
 		-- For this case, the Use button doesn't get a different value,
 		-- and is disabled instead, since this item type has no effect
-		if effect_type == "mcguffin" then
+		if effect_type == "static" then
 			wesnoth.set_dialog_active(false, "use_button")
 		end
 
