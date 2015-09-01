@@ -1,12 +1,23 @@
--- NX global configuration for Lua.
+---
+-- NX global Lua configuration
+---
 
+-- Textdomain
 _ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
-wml_actions = wesnoth.wml_actions
---wml_conditionals = wesnoth.wml_conditionals
-helper = wesnoth.require 'lua/helper.lua'
-items = wesnoth.require 'lua/wml/items.lua'
-T = helper.set_wml_tag_metatable {}
+
+-- Function aliases
+helper      = wesnoth.require 'lua/helper.lua'
+items       = wesnoth.require 'lua/wml/items.lua'
 --debug_utils = wesnoth.require '~add-ons/Wesnoth_Lua_Pack/debug_utils.lua'
+
+T = helper.set_wml_tag_metatable {}
+
+wml_actions      = wesnoth.wml_actions
+wml_conditionals = wesnoth.wml_conditionals or {} -- Table fallback for use in 1.12
+
+---
+-- Main file loading logic
+---
 
 function nxrequire(script)
 	if wesnoth.have_file( "~add-ons/Shadows_of_Deception/_main.cfg" ) then
@@ -17,11 +28,10 @@ function nxrequire(script)
 end
 
 for _, script in ipairs {
-	-- 'theme';
 	'hex';
 	'spawner';
 	'wml_tags';
-	-- 'conditional_tags';
+	'conditional_tags';
 	'gui/bug';
 	'gui/help';
 	'gui/inventory';
