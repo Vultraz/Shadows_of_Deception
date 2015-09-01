@@ -596,3 +596,30 @@ function wml_actions.check_for_character(cfg)
 		wesnoth.put_recall_unit(cfg.__parsed, 1)
 	end
 end
+
+---
+-- Applies a given list of AMLAs to a unit matching the given SUF.
+--
+-- [apply_amlas]
+--     ... SUF ...
+--     [advance]
+--         ... contents of the [advancement] tag ...
+--     [/advance]
+--     [advance]
+--         ... another AMLA ...
+--     [/advance]
+--     ...
+-- [/apply_amlas]
+---
+function wml_actions.apply_amlas(cfg)
+	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[apply_amlas]: Could not match any units!")
+
+	local amla_tag = "advance"
+	if wesnoth.compare_versions(wesnoth.game_config.version, '>', '1.13.1') then
+		amla_tag = "advancement"
+	end
+
+	for amla_cfg in helper.child_range(cfg, amla_tag) do
+		wesnoth.add_modification(u, amla_tag, amla_cfg)
+	end
+end
