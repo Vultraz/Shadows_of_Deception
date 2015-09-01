@@ -18,4 +18,6 @@ function wml_conditionals.have_item(cfg)
 			return true
 		end
 	end
+
+	return false
 end
