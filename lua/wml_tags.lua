@@ -623,3 +623,42 @@ function wml_actions.apply_amlas(cfg)
 		wesnoth.add_modification(u, amla_tag, amla_cfg)
 	end
 end
+
+---
+-- Removes an item from the specified character's inventory.
+-- If no SUF is provided, the item will be removed from all inventories -
+-- ie, all side 1 hero units
+--
+-- If remove_all is set to true, the item will be removed even if its quantity
+-- is greater than 1. If false (default), the quantity will be decreased by 1
+-- instead.
+--
+-- [remove_inventory_item]
+--     [filter]
+--         ... SUF ...
+--     [/filter]
+--     item=item id to remove
+--     remove_all=(bool, default false)
+-- [/remove_inventoru_item]
+---
+function wml_actions.remove_inventory_item(cfg)
+	local filter = helper.get_child(cfg, "filter") or { side = 1, role = "hero" }
+	local remove_all = cfg.remove_all or false
+
+	for i, u in ipairs(wesnoth.get_units(filter)) do
+		vars = helper.get_child(u.__cfg, "variables")
+
+		for item, i in helper.child_range(vars, "item") do
+			if item.id == cfg.item then
+				if item.quantity > 1 and not remove_all then
+					item.quantity = item.quantity - 1
+				else -- Remove all of this item
+					table.remove(vars, i)
+				end
+			end
+		end
+
+		u.variables.__cfg = vars
+		wesnoth.put_unit(u)
+	end
+end
