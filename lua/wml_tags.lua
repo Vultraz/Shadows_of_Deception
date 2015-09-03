@@ -662,3 +662,30 @@ function wml_actions.remove_inventory_item(cfg)
 		wesnoth.put_unit(u)
 	end
 end
+
+---
+-- Creates an array of the existing advancements a unit has
+--
+-- [store_amlas]
+--     ... SUF ...
+--     variable=optional WML array name
+-- [/store_amlas]
+---
+function wml_actions.store_amlas(cfg)
+	local unit = wesnoth.get_units(cfg)[1].__cfg
+	local mods = helper.get_child(unit, "modifications")
+
+	local var = cfg.variable or "advancements"
+
+	local amla_tag = "advance"
+	if wesnoth.compare_versions(wesnoth.game_config.version, '>', '1.13.1') then
+		amla_tag = "advancement"
+	end
+
+	local advancement_table = {}
+	for amla in helper.child_range(mods, amla_tag) do
+		table.insert(advancement_table, amla) 
+	end
+
+	helper.set_variable_array(var, advancement_table)
+end
