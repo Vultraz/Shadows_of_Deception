@@ -21,3 +21,35 @@ function wml_conditionals.have_item(cfg)
 
 	return false
 end
+
+---
+-- Checks every unit matching the SUF for an AMLA of the specified id.
+-- Returns true if a matching advancement is found to be already acquired.
+-- Note that this tag does *not* check advancement possibilities a unit has.
+--
+-- [have_amla]
+--     [filter]
+--         ... SUF ...
+--     [/filter]
+--     advancement=id
+-- [/have_amla]
+---
+function wml_conditionals.have_amla(cfg)
+	local filter = helper.get_child(cfg, "filter") or 
+		helper.wml_error "[have_amla] missing mandatory [filter] tag"
+
+	for i, u in ipairs(wesnoth.get_units(filter)) do
+		local mods = helper.get_child(u.__cfg, "modifications")
+
+		local amla_tag = "advance"
+		if wesnoth.compare_versions(wesnoth.game_config.version, '>', '1.13.1') then
+			amla_tag = "advancement"
+		end
+
+		for amla in helper.child_range(mods, amla_tag) do
+			if amla.id == cfg.advancement then return true end
+		end
+	end
+
+	return false
+end
