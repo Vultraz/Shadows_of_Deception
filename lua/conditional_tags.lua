@@ -1,12 +1,14 @@
 --#textdomain wesnoth-Shadows_of_Deception
 
 ---
--- Checks every unit matching the SUF's inventory for an certain item.
+-- Checks inventory of every unit matching the SUF for an certain item.
 -- Returns true if a matching item is found.
--- If no [filter] is found, the filter will be all side 1 hero units
+-- If no SUF is provided, all side 1 hero units will be checked.
 --
 -- [have_item]
---     [filter][/filter]
+--     [filter]
+--         ... SUF ...
+--     [/filter]
 --     item=id
 -- [/have_item]
 ---
