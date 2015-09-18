@@ -45,8 +45,8 @@ function wml_conditionals.have_amla(cfg)
 			amla_tag = "advancement"
 		end
 
-		for amla in helper.child_range(mods, amla_tag) do
-			if amla.id == cfg.advancement then return true end
+		if helper.get_child(mods, amla_tag, cfg.advancement) then
+			return true
 		end
 	end
 
