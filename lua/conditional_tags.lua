@@ -6,16 +6,18 @@
 -- If no SUF is provided, all side 1 hero units will be checked.
 --
 -- [have_item]
---     [filter]
---         ... SUF ...
---     [/filter]
+--     ... SUF ...
 --     item=id
 -- [/have_item]
 ---
 function wml_conditionals.have_item(cfg)
-	local filter = helper.get_child(cfg, "filter") or { side = 1, role = "hero" }
+	local units = wesnoth.get_units(cfg)
 
-	for i, u in ipairs(wesnoth.get_units(filter)) do
+	if not units then
+		units = wesnoth.get_units({ side = 1, role = "hero" })
+	end
+
+	for i, u in ipairs(units) do
 		if helper.get_child(u.variables.__cfg, "item", cfg.item) then
 			return true
 		end
@@ -30,17 +32,12 @@ end
 -- Note that this tag does *not* check advancement possibilities a unit has.
 --
 -- [have_amla]
---     [filter]
---         ... SUF ...
---     [/filter]
+--     ... SUF ...
 --     advancement=id
 -- [/have_amla]
 ---
 function wml_conditionals.have_amla(cfg)
-	local filter = helper.get_child(cfg, "filter") or 
-		helper.wml_error "[have_amla] missing mandatory [filter] tag"
-
-	for i, u in ipairs(wesnoth.get_units(filter)) do
+	for i, u in ipairs(wesnoth.get_units(cfg)) do
 		local mods = helper.get_child(u.__cfg, "modifications")
 
 		local amla_tag = "advance"
