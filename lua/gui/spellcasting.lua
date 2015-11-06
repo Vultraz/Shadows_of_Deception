@@ -80,8 +80,8 @@ function wml_actions.show_spell_list(cfg)
 		-- This usually shouldn't happen, but do it anyway to be safe
 		if wesnoth.get_variable("spell_target") then
 			wesnoth.fire("wml_message", {
-				logger = "error",
-				message = "[SoD] BUG: variable spell_target already exists!"
+				logger = "warning",
+				message = "[SoD] variable spell_target already exists"
 			})
 		end
 
