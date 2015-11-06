@@ -76,6 +76,15 @@ function wml_actions.show_spell_list(cfg)
 		local spell_slf = helper.get_child(spell, "target_filter")
 		local spell_effect = helper.get_child(spell, "spell_effect")
 
+		-- Catch any case where spell_target is an existing variable
+		-- This usually shouldn't happen, but do it anyway to be safe
+		if wesnoth.get_variable("spell_target") then
+			wesnoth.fire("wml_message", {
+				logger = "error",
+				message = "[SoD] BUG: variable spell_target already exists!"
+			})
+		end
+
 		spell.cooldown_remaining = spell.cooldown_time or 0
 
 		-- Substitute vars in the target filter. This is relevant so that auto-stored vars
