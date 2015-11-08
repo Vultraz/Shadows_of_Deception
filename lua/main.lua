@@ -16,7 +16,7 @@ wml_actions      = wesnoth.wml_actions
 wml_conditionals = wesnoth.wml_conditionals or {} -- Table fallback for use in 1.12
 
 ---
--- Global functions
+-- Global utility functions
 ---
 
 -- Log level aliases
