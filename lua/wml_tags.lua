@@ -360,10 +360,7 @@ function wml_actions.learn_spell(cfg)
 	local var = helper.get_child(unit, "variables")
 
 	if helper.get_child(var, "spell", cfg.id) then
-		wesnoth.fire("wml_message", {
-			logger = "error",
-			message = "[SoD] spell '" .. cfg.id .. "' already learned by " .. unit.name .. ""
-		})
+		log_message(L_ERR, ("spell '%s' already learned by %s"):format(cfg.id, unit.name))
 
 		return
 	end

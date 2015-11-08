@@ -109,10 +109,7 @@ function wml_actions.show_inventory(cfg)
 		local i = wesnoth.get_dialog_value("inventory_list")
 
 		if i > page_count or page_count == 0 then
-			wesnoth.fire("wml_message", {
-				logger = "error",
-				message = "[SoD] BUG: invalid inventory_list row number"
-			})
+			log_message(L_ERR, "BUG: invalid inventory_list row number")
 
 			return
 		end

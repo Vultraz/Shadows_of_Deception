@@ -15,6 +15,23 @@ T = helper.set_wml_tag_metatable {}
 wml_actions      = wesnoth.wml_actions
 wml_conditionals = wesnoth.wml_conditionals or {} -- Table fallback for use in 1.12
 
+---
+-- Global functions
+---
+
+-- Log level aliases
+L_ERR  = "error"
+L_WARN = "warning"
+L_INFO = "info"
+L_DBG  = "debug"
+
+-- Prints a wml message in the chat window to the specified logger
+function log_message(level, msg)
+	wml_actions.wml_message({
+		logger = level,
+		message = "[SoD] " .. msg
+	})
+end
 
 ---
 -- Main file loading logic

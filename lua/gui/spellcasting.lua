@@ -48,10 +48,7 @@ function wml_actions.show_spell_list(cfg)
 		local spell = spell_list_data[i]
 
 		if i > page_count or page_count == 0 then
-			wesnoth.fire("wml_message", {
-				logger = "error",
-				message = "[SoD] BUG: invalid spell_list row number"
-			})
+			log_message(L_ERR, "BUG: invalid spell_list row number")
 
 			return
 		end
@@ -79,10 +76,7 @@ function wml_actions.show_spell_list(cfg)
 		-- Catch any case where spell_target is an existing variable
 		-- This usually shouldn't happen, but do it anyway to be safe
 		if wesnoth.get_variable("spell_target") then
-			wesnoth.fire("wml_message", {
-				logger = "warning",
-				message = "[SoD] variable spell_target already exists"
-			})
+			log_message(L_WARN, "variable spell_target already exists")
 		end
 
 		spell.cooldown_remaining = spell.cooldown_time or 0

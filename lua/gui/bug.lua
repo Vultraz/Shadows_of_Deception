@@ -41,10 +41,7 @@ function wml_actions.bug(cfg)
 		may_ignore = true
 	end
 
-	wesnoth.fire("wml_message", {
-		logger = "error",
-		message = "[SoD] BUG: " .. log_notice
-	})
+	log_message(L_ERR, "BUG: " .. log_notice)
 
 	local function show_details()
 		local cap = _ "Details"

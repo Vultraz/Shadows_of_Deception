@@ -3,7 +3,7 @@
 ---
 
 local function dbg(msg)
-	wesnoth.fire("wml_message", { logger = "log", message = "[SoD] spawner.lua: " .. msg })
+	log_message(L_INFO, "spawner.lua: " .. msg)
 end
 
 ---
