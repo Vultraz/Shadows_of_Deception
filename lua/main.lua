@@ -45,7 +45,7 @@ if wesnoth.have_file("~add-ons/NX-RPG/_main.cfg") then
 end
 
 function nxrequire(script)
-	return wesnoth.require('~add-ons/' .. basedir .. '/lua/' .. script .. '.lua')
+	return wesnoth.require(('~add-ons/%s/lua/%s.lua'):format(basedir, script))
 end
 
 for _, script in ipairs {
