@@ -22,6 +22,8 @@ return function(have_image, have_caption)
 					}
 				},
 				T.column {
+					vertical_alignment = "top",
+					horizontal_alignment = "left",
 					T.grid {
 						T.row {
 							T.column {
