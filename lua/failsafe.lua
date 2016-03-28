@@ -1,8 +1,12 @@
 -- Catches potentially game-breaking conditions and ends the game
 -- before it begins.
 
+local maintainer_mode =
+	wesnoth.have_file("~add-ons/Shadows_of_Deception/maint-mode.cfg") or
+	wesnoth.have_file("~add-ons/NX-RPG/maint-mode.cfg")
+
 local function do_bug(msg, may_ignore)
-	wesnoth.wml_actions.bug { message = msg, should_report = false, may_ignore = may_ignore }
+	wesnoth.wml_actions.bug { message = msg, should_report = false, may_ignore = (maintainer_mode or may_ignore) }
 end
 
 
