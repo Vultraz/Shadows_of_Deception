@@ -12,7 +12,7 @@ Many elements of this campaign differ from standard Wesnoth. If you aren’t sur
 <b>NOTE:</b> A game screen resolution of 800x600 or greater is recommended. Additionally, some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under Preferences → Display.]]
 	};
 	{ name = _ "Items", text = _ [[
-During your playthrough, you may encounter certain items you can pick up and add to characters’ inventories. To access a unit’s inventory, right click on them and select the <b>Inventory</b> option. You will be presented with a list of items that unit is carrying. Each character’s weapons, such as swords or staves, will be also be appear as items in their invetory.
+During your playthrough, you may encounter certain items you can pick up and add to characters’ inventories. To access a unit’s inventory, right click on them and select the <b>Inventory</b> option. You will be presented with a list of items that unit is carrying. Each character’s weapons, such as swords or staves, will be also appear in their inventory.
 
 When you pick up an item from the map, you can do three things:
 
