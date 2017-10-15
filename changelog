@@ -44,6 +44,7 @@ Version 0.5.3+dev
 * Graphics
   * Removed terrains: Shop
   * New terrains: Rough Overlay
+  * Updated terrain graphics: Lamppost
   * New or updated unit graphics: Wanderer, Shadow Regent
   * New attack icon for Niryone's staff
 
@@ -53,7 +54,7 @@ Version 0.5.3+dev
 
 * Units
   * New units: Fire Wisp, Animated Rock, Rock Golem
-  * New generic descrptions: Northguard Deathblade, Northguard Silverbow
+  * New generic descriptions: Northguard Deathblade, Northguard Silverbow
   * Balancing changes:
     * Wanderer: HP 45 -> 42, XP 65 -> 40, Level 2 -> 1
     * Elvish Apprentice: HP 50 -> 38, XP 50 -> 40
