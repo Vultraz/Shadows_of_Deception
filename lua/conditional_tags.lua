@@ -40,12 +40,7 @@ function wml_conditionals.have_amla(cfg)
 	for i, u in ipairs(wesnoth.get_units(cfg)) do
 		local mods = helper.get_child(u.__cfg, "modifications")
 
-		local amla_tag = "advance"
-		if wesnoth.compare_versions(wesnoth.game_config.version, '>', '1.13.1') then
-			amla_tag = "advancement"
-		end
-
-		if helper.get_child(mods, amla_tag, cfg.advancement) then
+		if helper.get_child(mods, "advancement", cfg.advancement) then
 			return true
 		end
 	end
