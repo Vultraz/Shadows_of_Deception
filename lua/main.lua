@@ -37,15 +37,8 @@ end
 -- Main file loading logic
 ---
 
--- Compatibility with old directory name. Remove once 1.12 support is dropped
-local basedir = "Shadows_of_Deception"
-
-if wesnoth.have_file("~add-ons/NX-RPG/_main.cfg") then
-	basedir = "NX-RPG"
-end
-
 function nxrequire(script)
-	return wesnoth.require(('~add-ons/%s/lua/%s.lua'):format(basedir, script))
+	return wesnoth.require(('~add-ons/Shadows_of_Deception/lua/%s.lua'):format(script))
 end
 
 for _, script in ipairs {
