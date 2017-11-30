@@ -13,7 +13,7 @@ items       = wesnoth.require 'lua/wml/items.lua'
 T = helper.set_wml_tag_metatable {}
 
 wml_actions      = wesnoth.wml_actions
-wml_conditionals = wesnoth.wml_conditionals or {} -- Table fallback for use in 1.12
+wml_conditionals = wesnoth.wml_conditionals
 
 ---
 -- Global utility functions
