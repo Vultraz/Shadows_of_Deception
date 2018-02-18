@@ -5,7 +5,7 @@ Shadows of Deception
 [Battle for Wesnoth] [1].
 
 This campaign is an indirect prequel to *Invasion from the Unknown* and *After
-the Storm*, both created by [shadowm/shikadilord] [2].
+the Storm*, both created by [shadowm/shikadiqueen] [2].
 
 A shadow lengthens across the land; a faceless evil plots to overthrow the
 Empire. No one holds all the pieces. The fate of a kingdom rests in the hands of
@@ -25,7 +25,7 @@ especially on shrouded maps, or in places where enemies seem to respawn
 continuously.
 
 [1]: <https://www.wesnoth.org>
-[2]: <https://github.com/shikadilord>
+[2]: <https://github.com/shikadiqueen>
 
 Installing Shadows of Deception
 --------------------------------------------------------------------------------
