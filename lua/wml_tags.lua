@@ -28,8 +28,8 @@ function wml_actions.setup_gates(cfg)
 	local locs = wesnoth.get_locations {
 		-- include_borders is only valid on 1.13 or later
 		include_borders = false,
-		terrain = "*^Ng\\",
-		{ "or", { terrain = "*^Ng/" } },
+		terrain = "*^Pr\\",
+		{ "or", { terrain = "*^Pr/" } },
 		{ "not", { { "filter", {} } } },
 	}
 

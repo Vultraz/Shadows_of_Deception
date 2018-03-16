@@ -1,6 +1,3 @@
-border_size=1
-usage=map
-
 Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu^Zos, Xos^Zos, Urb^Zos, Rr^Zos, Rr^Zos, Urb^Zos, Xos^Zos, Xu^Zos, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xos^Zos, Urb^Zos, Rr^Zos, Rr^Zos, Urb^Zos, Xos^Zos, Xu^Zos, Xu, Xu, Xu, Xu, Xu, Uh^Uf, Xu, Xu, Uh^Uf, Uh^Uf, Xos, Xu
 Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xu, Xos, Urb, Rr, Rr, Urb, Xos, Xu, Xu, Xu, Uh^Uf, Uh^Uf, Uh, Uh^Uf, Uh^Uf, Xu, Urb^Es, Xos, Xos, Xu
@@ -12,8 +9,8 @@ Qxu^Zos, Urb^Zos, Urb^Zos, Urb^Zos, Urb^Zos, Xos^Zos, Xos^Zos, Xu^Zos, Xu, Xu, Q
 Xos^Zos, Qxu^Zos, Qxu^Zos, Urb^Zos, Ur^Ngl/, Urb^Ngl/, Urb, Xu, Cud^Ecf, Qxu, Qxu, Qxu, Qxu, Uu, Uu, Uh, Xu, Cud, Cud, Urb, Urb, Urb, Urb, Xos, Xos, Xos, Xu, Xu, Xu, Xu
 Xu^Zos, Xos^Zos, Xos^Zos, Urb^Ngl/, Urb, Ur, Ur, Urb, Urb, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Uu, Xu, Xu, Xos, Urb, Urb, Urb, Urb, Xos, Xos, Xu, Xu, Xu, Xu, Xu
 Xu, Xu^Zos, Xu, Xu, Cud^Ecf, Urb, Urb, Ur, Ur, Urb, Urb, Cud^Ecf, Qxu, Qxu, Qxu, Qxu, Qxu, Xu, Xos, Xos, Urb, Urb, Urb, Xos, Xos, Xu, Xu, Xu, Xu, Xu
-Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Urb, Urb, Ur, Ur, Urb, Urb, Qxu, Cud^Ecf, Qxu, Qxu, Xu, Xos, Xos, Urb^Ng\, Urb, Urb, Xos, Xos, Xu, Xu, Xu, Xu, Xu
-Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Cud^Ecf, Qxu, Urb, Urb, Ur, Ur, Urb, Urb, Qxu, Qxu, Xu, Xos, Urb, Urb, Urb^Ng\, Urb^Ng\, Xos, Xos, Xu, Xu, Xu, Xu, Xu
+Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Urb, Urb, Ur, Ur, Urb, Urb, Qxu, Cud^Ecf, Qxu, Qxu, Xu, Xos, Xos, Urb^Pr\, Urb, Urb, Xos, Xos, Xu, Xu, Xu, Xu, Xu
+Xu, Xu, Xu, Xu, Qxu, Qxu, Qxu, Cud^Ecf, Qxu, Urb, Urb, Ur, Ur, Urb, Urb, Qxu, Qxu, Xu, Xos, Urb, Urb, Urb^Pr\, Urb^Pr\, Xos, Xos, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Xu, Xu, Uh, Qxu, Qxu, Qxu, Qxu, Qxu, Cud^Ecf, Urb, Urb, Ur, Ur, Urb, Urb, Cud^Ecf, Urb, Urb, Urb, Urb, Xol, Xos, Qxu, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Xu, Xu, Xu, Uh, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Urb, Urb, Ur, Ur, Urb, Urb, Urb, Urb, Urb, Cud, Xol, Qxu, Xu, Xu, Xu, Xu, Xu
 Xu, Xu, Xu, Xu, Xu, Uh, Xu, Qxu, Uu, Qxu, Qxu, Qxu, Xu, Cud^Ecf, Urb, Urb, Urb, Ur, Ur, Urb, Urb, Urb, Urb, Cud, Qxu, Qxu, Xu, Xu, Xu, Xu
