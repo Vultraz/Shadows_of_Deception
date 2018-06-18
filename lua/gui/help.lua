@@ -3,7 +3,7 @@
 local dialog, data, page_count =
 	nxrequire 'gui/dialogs/help', nxrequire 'data/help'
 
-local prev_page = 1 
+local prev_page = 1
 
 local function select_topic()
 	local i = wesnoth.get_dialog_value("topic_list")

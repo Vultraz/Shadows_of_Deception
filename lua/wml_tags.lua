@@ -45,7 +45,7 @@ end
 ---
 -- Removes an event barrier consisting of adjacent hexes matching
 -- a terrain type filter (usually *^Ngl\,*^Ngl/) on the specified location
--- 
+--
 -- If highlight is true, the affected locations will also be highlighted
 -- for the player
 --
@@ -69,13 +69,13 @@ function wml_actions.unlock_gates(cfg)
 	})
 
 	wml_actions.remove_terrain_overlays({
-		x = gatex, 
+		x = gatex,
 		y = gatey
 	})
 
 	wml_actions.remove_shroud({
 		side = 1,
-		x = gatex, 
+		x = gatex,
 		y = gatey
 	})
 
@@ -89,7 +89,7 @@ function wml_actions.unlock_gates(cfg)
 		wesnoth.scroll_to_tile(cfg.x, cfg.y)
 
 		wml_actions.highlight_goal({
-			x = gatex, 
+			x = gatex,
 			y = gatey
 		})
 
@@ -111,7 +111,7 @@ end
 ---
 -- Displays text mid-screen for a specified time, then fades it out
 -- [interim_text]
---     title:         Title displayed  
+--     title:         Title displayed
 --     text:          Text displayed
 --     duration:      Duration of the text after fade-in and before fade-out animations, in milliseconds
 -- [/interim_text]
@@ -184,7 +184,7 @@ end
 -- it with silence afterwards.
 --
 -- It's not possible to determine at this time whether music
--- is enabled in the first place, so the fade out delay will 
+-- is enabled in the first place, so the fade out delay will
 -- always occur regardless of the user's preferences.
 --
 -- [fade_out_music]
@@ -690,7 +690,7 @@ function wml_actions.store_amlas(cfg)
 
 	local advancement_table = {}
 	for amla in helper.child_range(mods, amla_tag) do
-		table.insert(advancement_table, amla) 
+		table.insert(advancement_table, amla)
 	end
 
 	helper.set_variable_array(var, advancement_table)

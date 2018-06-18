@@ -28,7 +28,7 @@ function wml_actions.show_spell_list(cfg)
 			if spell.cooldown_remaining > 0 then
 				local turnstext = _"turns remaining"
 
-				if spell.cooldown_remaining == 1 then 
+				if spell.cooldown_remaining == 1 then
 					turnstext = _"turn remaining"
 				end
 
@@ -82,7 +82,7 @@ function wml_actions.show_spell_list(cfg)
 		spell.cooldown_remaining = spell.cooldown_time or 0
 
 		-- Substitute vars in the target filter. This is relevant so that auto-stored vars
-		-- such as $x1 and $y1 will have the values relative to the caster - ie, the unit 
+		-- such as $x1 and $y1 will have the values relative to the caster - ie, the unit
 		-- for whom the spellcasting menu item was invoked. Otherwise, they evaluate to values
 		-- relative to the target - ie, the unit for whom the 'Cast Spell' menu was invoked
 		spell_slf = wesnoth.tovconfig(spell_slf)
@@ -131,7 +131,7 @@ function wml_actions.show_spell_list(cfg)
 		wesnoth.show_dialog(dialogs.empty)
 	else
 		wesnoth.show_dialog(dialogs.normal, spellcast_preshow)
-	end 
+	end
 end
 
 -- Decreases the cooldown time for each spell every turn

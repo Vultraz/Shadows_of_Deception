@@ -115,8 +115,8 @@ function wml_actions.take_item(cfg)
 			wesnoth.set_dialog_active(false, "use_button")
 			wesnoth.set_dialog_active(false, "take_button")
 
-			-- Allow this to override must_take. Not doing so for an item examined by the 
-			-- wrong person and must_take true would result in all three buttons disabled 
+			-- Allow this to override must_take. Not doing so for an item examined by the
+			-- wrong person and must_take true would result in all three buttons disabled
 			wesnoth.set_dialog_active(true, "leave_button")
 		end
 	end

@@ -50,10 +50,10 @@ local alert_dialog = {
 				}
 			}
 		}
-		
+
 	}
 }
-		
+
 local dialog = {
 	maximum_width = 640,
 	maximum_height = 400,
