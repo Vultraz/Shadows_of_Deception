@@ -2,7 +2,7 @@
 
 local dialogs = nxrequire "gui/dialogs/inv"
 local buttons = dialogs.buttons
-local invalid_attacks = {ensnare = 1, ["faerie fire"] = 1, fireball = 1, ["magic missile"] = 1, ["mystic fire"] = 1}; 
+local invalid_attacks = {ensnare = 1, ["faerie fire"] = 1, fireball = 1, ["magic missile"] = 1, ["mystic fire"] = 1};
 
 -- This brings up the custom inventory control window
 function wml_actions.show_inventory(cfg)
@@ -22,7 +22,6 @@ function wml_actions.show_inventory(cfg)
 		for attack in helper.child_range(unit, 'attack') do
 			if not invalid_attacks[attack.name] and not helper.get_child(var, "item", attack.name) then
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
-				local removal_id = "attack_" .. attack.name
 
 				table.insert(var, {"item", {
 					id = attack.name,
@@ -32,20 +31,16 @@ function wml_actions.show_inventory(cfg)
 					effect_type = "equip",
 					active = true,
 					quantity = 1,
-					T.command { 
-						T.object { silent = true, duration = "forever", no_write = true, removal_id = removal_id,
+					T.command {
+						T.modify_unit {
+							T.filter { x = "$x1", y = "$y1" },
 							{ 'effect', lp8.copyTable(attack, { apply_to = 'new_attack' }) }
-						},
-						T.remove_object { skip_effects = true,
-							T.filter_wml { removal_id = removal_id }
 						}
 					},
-					T.removal_command { 
-						T.object { silent = true, duration = "forever", no_write = true, removal_id = removal_id,
+					T.removal_command {
+						T.modify_unit {
+							T.filter { x = "$x1", y = "$y1" },
 							T.effect { apply_to = "remove_attacks", range = attack.range, name = attack.name }
-						},
-						T.remove_object { skip_effects = true,
-							T.filter_wml { removal_id = removal_id }
 						}
 					}
 				} })
@@ -98,7 +93,7 @@ function wml_actions.show_inventory(cfg)
 				helper.get_child(item, "usable_if") or {}),
 			"use_button")
 
-		-- Override previous active toggle if it's a static 
+		-- Override previous active toggle if it's a static
 		if item.effect_type == "static" then
 			wesnoth.set_dialog_active(false, "use_button")
 		end
@@ -175,7 +170,7 @@ function wml_actions.show_inventory(cfg)
 			end
 		end
 
-		-- item_actions can be set previously in a specific effect block 
+		-- item_actions can be set previously in a specific effect block
 		if item_actions == nil then
 			item_actions = helper.get_child(list_item, "command")
 		end
