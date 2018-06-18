@@ -5,7 +5,7 @@ local buttons = dialogs.buttons
 
 function wml_actions.show_spell_list(cfg)
 	local unit = wesnoth.get_units(cfg)[1].__cfg
-	local var = helper.get_child(unit, "variables")
+	local var = wml.get_child(unit, "variables")
 	local spell_list_data = lp8.get_children(var, "spell")
 	local page_count
 
@@ -17,7 +17,7 @@ function wml_actions.show_spell_list(cfg)
 			wesnoth.set_dialog_value(spell.description, "details_pages", i, "details_description")
 
 			-- Sets notice if there are no valid targets
-			if not wesnoth.eval_conditional { {'have_location', helper.get_child(spell, 'target_filter')} } then
+			if not wesnoth.eval_conditional { {'have_location', wml.get_child(spell, 'target_filter')} } then
 				wesnoth.set_dialog_value(_"<span color='#ff0000'>No valid targets for this spell.</span>",
 					"details_pages", i, "details_notice_validity")
 				wesnoth.set_dialog_markup(true,
@@ -57,7 +57,7 @@ function wml_actions.show_spell_list(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 
 		-- Disables the Cast button if the spell is still in cooldown or there are no valid targets
-		if spell.cooldown_remaining > 0 or not wesnoth.eval_conditional { {'have_location', helper.get_child(spell, 'target_filter')} } then
+		if spell.cooldown_remaining > 0 or not wesnoth.eval_conditional { {'have_location', wml.get_child(spell, 'target_filter')} } then
 			wesnoth.set_dialog_active(false, "cast_button")
 		else
 			wesnoth.set_dialog_active(true, "cast_button")
@@ -70,12 +70,12 @@ function wml_actions.show_spell_list(cfg)
 	local function cast_spell()
 		local i = wesnoth.get_dialog_value("spell_list")
 		local spell = spell_list_data[i]
-		local spell_slf = helper.get_child(spell, "target_filter")
-		local spell_effect = helper.get_child(spell, "spell_effect")
+		local spell_slf = wml.get_child(spell, "target_filter")
+		local spell_effect = wml.get_child(spell, "spell_effect")
 
 		-- Catch any case where spell_target is an existing variable
 		-- This usually shouldn't happen, but do it anyway to be safe
-		if wesnoth.get_variable("spell_target") then
+		if vars.spell_target then
 			log_message(L_WARN, "variable spell_target already exists")
 		end
 
@@ -85,7 +85,7 @@ function wml_actions.show_spell_list(cfg)
 		-- such as $x1 and $y1 will have the values relative to the caster - ie, the unit
 		-- for whom the spellcasting menu item was invoked. Otherwise, they evaluate to values
 		-- relative to the target - ie, the unit for whom the 'Cast Spell' menu was invoked
-		spell_slf = wesnoth.tovconfig(spell_slf)
+		spell_slf = wml.tovconfig(spell_slf)
 
 		for i, loc in pairs(wesnoth.get_locations(spell_slf)) do
 			items.place_image(loc[1], loc[2], "misc/goal-highlight.png")
@@ -139,7 +139,7 @@ function decrease_cooldown_time()
 	for unit in lp8.values(wesnoth.get_units {id = 'Niryone, Elynia'}) do
 		unit = unit.__cfg
 
-		for spell in lp8.children(helper.get_child(unit, 'variables'), 'spell') do
+		for spell in lp8.children(wml.get_child(unit, 'variables'), 'spell') do
 			if spell.cooldown_remaining > 0 then
 				spell.cooldown_remaining = spell.cooldown_remaining - 1
 			end

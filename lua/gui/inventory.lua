@@ -6,7 +6,7 @@ local invalid_attacks = {ensnare = 1, ["faerie fire"] = 1, fireball = 1, ["magic
 
 -- This brings up the custom inventory control window
 function wml_actions.show_inventory(cfg)
-	local recipients = wesnoth.get_variable("adjacent_recipients") or nil
+	local recipients = vars.adjacent_recipients or nil
 	local selected_recipient = 1
 	local selected_row = 1
 	local page_count = 0
@@ -19,8 +19,8 @@ function wml_actions.show_inventory(cfg)
 
 	-- Syncs weapon data with the table and sorts it
 	local function sync_weapons_to_items()
-		for attack in helper.child_range(unit, 'attack') do
-			if not invalid_attacks[attack.name] and not helper.get_child(var, "item", attack.name) then
+		for attack in wml.child_range(unit, 'attack') do
+			if not invalid_attacks[attack.name] and not wml.get_child(var, "item", attack.name) then
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
 
 				table.insert(var, {"item", {
@@ -90,7 +90,7 @@ function wml_actions.show_inventory(cfg)
 
 		wesnoth.set_dialog_active(
 			wesnoth.eval_conditional(
-				helper.get_child(item, "usable_if") or {}),
+				wml.get_child(item, "usable_if") or {}),
 			"use_button")
 
 		-- Override previous active toggle if it's a static
@@ -166,13 +166,13 @@ function wml_actions.show_inventory(cfg)
 
 				wesnoth.set_dialog_value(list_item.image, "inventory_list", i, "list_image")
 
-				item_actions = helper.get_child(list_item, "removal_command")
+				item_actions = wml.get_child(list_item, "removal_command")
 			end
 		end
 
 		-- item_actions can be set previously in a specific effect block
 		if item_actions == nil then
-			item_actions = helper.get_child(list_item, "command")
+			item_actions = wml.get_child(list_item, "command")
 		end
 
 		refresh_use_button_text(i)
@@ -218,7 +218,7 @@ function wml_actions.show_inventory(cfg)
 	repeat
 		-- Set variables inside the execution loop to make sure they stay up-to-date each cycle
 		unit = wesnoth.get_units(cfg)[1].__cfg
-		var = helper.get_child(unit, "variables")
+		var = wml.get_child(unit, "variables")
 		item_actions = nil
 
 		sync_weapons_to_items() -- Add valid weapons as [item]s

@@ -59,9 +59,9 @@ function wml_actions.take_item(cfg)
 	-- Parse the toplevel to substitute variables, then write the rest
 	-- of the config object as literal to preserve variables for later
 	-- access in the inventory
-	cfg = helper.shallow_parsed(cfg)
+	cfg = wml.shallow_parsed(cfg)
 	for subtag in lp8.subtags(cfg) do
-		subtag[2] = helper.literal(subtag[2])
+		subtag[2] = wml.literal(subtag[2])
 	end
 
 	local unit
@@ -72,7 +72,7 @@ function wml_actions.take_item(cfg)
 		unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
 	end
 
-	local vars = helper.get_child(unit, "variables")
+	local vars = wml.get_child(unit, "variables")
 	local must_take = cfg.must_take
 	local effect_type = cfg.effect_type or helper.wml_error("[take_item] missing mandatory effect_type key")
 
@@ -96,8 +96,8 @@ function wml_actions.take_item(cfg)
 
 		-- Disable various buttons if the wrong person is attempting to pick up
 		-- the item, or if certain conditions have not been met
-		local usable_if = helper.get_child(cfg, "usable_if") or {}
-		local usable_by = helper.get_child(cfg, "usable_by") or {}
+		local usable_if = wml.get_child(cfg, "usable_if") or {}
+		local usable_by = wml.get_child(cfg, "usable_by") or {}
 
 		if must_take then
 			wesnoth.set_dialog_active(false, "leave_button")
@@ -122,7 +122,7 @@ function wml_actions.take_item(cfg)
 	end
 
 	local function set_item_vars(activate)
-		local item = helper.get_child(vars, "item", cfg.id)
+		local item = wml.get_child(vars, "item", cfg.id)
 		local quantity = cfg.quantity or 1
 
 		if item then
@@ -182,7 +182,7 @@ function wml_actions.take_item(cfg)
 			set_item_vars('and activate item')
 		end
 
-		wml_actions.command(helper.get_child(cfg, "command") or {})
+		wml_actions.command(wml.get_child(cfg, "command") or {})
 
 		if effect_type ~= "message" then
 			clean_up_item()

@@ -18,7 +18,7 @@ function wml_conditionals.have_item(cfg)
 	end
 
 	for i, u in ipairs(units) do
-		if helper.get_child(u.variables.__cfg, "item", cfg.item) then
+		if wml.get_child(u.variables.__cfg, "item", cfg.item) then
 			return true
 		end
 	end
@@ -38,9 +38,9 @@ end
 ---
 function wml_conditionals.have_amla(cfg)
 	for i, u in ipairs(wesnoth.get_units(cfg)) do
-		local mods = helper.get_child(u.__cfg, "modifications")
+		local mods = wml.get_child(u.__cfg, "modifications")
 
-		if helper.get_child(mods, "advancement", cfg.advancement) then
+		if wml.get_child(mods, "advancement", cfg.advancement) then
 			return true
 		end
 	end

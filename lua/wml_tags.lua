@@ -34,11 +34,11 @@ function wml_actions.setup_gates(cfg)
 	}
 
 	for k, loc in ipairs(locs) do
-		wesnoth.put_unit(loc[1], loc[2], {
+		wesnoth.put_unit({
 			type = "Gate",
 			side = cfg.side,
 			id = string.format("__gate_X%dY%d", loc[1], loc[2]),
-		})
+		}, loc[1], loc[2])
 	end
 end
 
@@ -103,8 +103,8 @@ function wml_actions.unlock_gates(cfg)
 	local var_write = cfg.write or false
 
 	if var_write then
-		wesnoth.get_variable("temp_gate_locs.x", gatex)
-		wesnoth.get_variable("temp_gate_locs.y", gatey)
+		vars_proxy.temp_gate_locs.x = gatex
+		vars_proxy.temp_gate_locs.y = gatey
 	end
 end
 
@@ -244,10 +244,10 @@ end
 do
 	local old, f, c = wml_actions.remove_object, {'filter',{}}
 	function wml_actions.remove_object(cfg)
-		if not helper.get_child(cfg, 'filter') then
+		if not wml.get_child(cfg, 'filter') then
 			c = wesnoth.current.event_context
 			f[2].x, f[2].y = c.x1, c.y1
-			cfg = helper.literal(cfg)
+			cfg = wml.literal(cfg)
 			cfg[#cfg+1] = f
 		end
 		old(cfg)
@@ -263,13 +263,13 @@ function wml_actions.deactivate_and_serialize_sides(cfg)
 	local variable = cfg.variable or "sides"
 	local array_index = 0
 
-	wesnoth.set_variable(variable, {})
+	vars[variable] = {}
 
 	for t, side_number in helper.get_sides(cfg) do
 		-- wesnoth.message("WML", string.format("store side %u", side_number))
 		local side_store = string.format("%s[%u]", variable, array_index)
 
-		wesnoth.set_variable(side_store, {})
+		vars[side_store] = {}
 
 		wesnoth.wml_actions.store_side {
 			variable = side_store, side = side_number
@@ -294,7 +294,7 @@ end
 function wml_actions.unserialize_and_activate_sides(cfg)
 	local variable = cfg.variable or helper.wml_error("[unserialize_and_activate_sides]: Missing variable!")
 
-	local data_set = helper.get_variable_array(variable)
+	local data_set = wml.array_access.get(variable)
 
 	for index, side_data in ipairs(data_set) do
 		wesnoth.wml_actions.modify_side {
@@ -302,7 +302,7 @@ function wml_actions.unserialize_and_activate_sides(cfg)
 			income = side_data.income, controller = side_data.controller, hidden = side_data.hidden
 		}
 
-		local units = helper.get_variable_array(variable .. string.format("[%u].units", index - 1))
+		local units = wml.array_access.get(variable .. string.format("[%u].units", index - 1))
 
 		for uindex, container in ipairs(units) do
 			wesnoth.wml_actions.unstore_unit {
@@ -342,24 +342,24 @@ end
 function wml_actions.simplify_location_filter(cfg)
 	local var = cfg.variable or "location"
 
-	wesnoth.set_variable(var)
+	vars[var] = nil
 
 	local xstr, ystr = serialize_loc_string(cfg)
 
-	wesnoth.set_variable(var .. ".x", xstr)
-	wesnoth.set_variable(var .. ".y", ystr)
+	vars[var .. ".x"] = xstr
+	vars[var .. ".y"] = ystr
 end
 
 ---
 -- Inserts the data for a spell into the unit's variable.spell table
 --
 function wml_actions.learn_spell(cfg)
-	cfg = helper.literal(cfg)
+	cfg = wml.literal(cfg)
 
 	local unit = wesnoth.get_units({id = cfg.unit})[1].__cfg
-	local var = helper.get_child(unit, "variables")
+	local var = wml.get_child(unit, "variables")
 
-	if helper.get_child(var, "spell", cfg.id) then
+	if wml.get_child(var, "spell", cfg.id) then
 		log_message(L_ERR, ("spell '%s' already learned by %s"):format(cfg.id, unit.name))
 
 		return
@@ -410,9 +410,9 @@ function wml_actions.count_units(cfg)
 	local varname = cfg.variable or "unit_count"
 
 	if not units then
-		wesnoth.set_variable(varname, 0)
+		vars[varname] = 0
 	else
-		wesnoth.set_variable(varname, #units)
+		vars[varname] = #units
 	end
 end
 
@@ -445,8 +445,8 @@ end
 -- [/store_direction]
 ---
 function wml_actions.store_direction(cfg)
-	local from_slf = helper.get_child(cfg, "from")
-	local to_slf = helper.get_child(cfg, "to")
+	local from_slf = wml.get_child(cfg, "from")
+	local to_slf = wml.get_child(cfg, "to")
 
 	local a = { x = cfg.from_x, y = cfg.from_y }
 	local b = { x = cfg.to_x  , y = cfg.to_y   }
@@ -467,12 +467,12 @@ function wml_actions.store_direction(cfg)
 	local variable = cfg.variable or "direction"
 
 	-- local facing = loc_relative_direction(b, a) or "sw"
-	-- wesnoth.set_variable(variable, facing)
+	-- vars[variable] = facing
 
 	if a.x < b.x then
-		wesnoth.set_variable(variable, "se")
+		vars[variable] = "se"
 	else
-		wesnoth.set_variable(variable, "sw")
+		vars[variable] = "sw"
 	end
 end
 
@@ -510,12 +510,12 @@ end
 -- [/set_facing]
 ---
 function wml_actions.set_facing(cfg)
-	local suf = helper.get_child(cfg, "filter") or
+	local suf = wml.get_child(cfg, "filter") or
 		helper.wml_error("[set_facing] Missing unit filter")
 
 	local facing = cfg.facing
-	local target_suf = helper.get_child(cfg, "filter_second")
-	local target_slf = helper.get_child(cfg, "filter_location")
+	local target_suf = wml.get_child(cfg, "filter_second")
+	local target_slf = wml.get_child(cfg, "filter_location")
 
 	local target_loc, target_u
 
@@ -575,7 +575,7 @@ end
 -- [/highlight_goal]
 ---
 function wml_actions.highlight_goal(cfg)
-	cfg = helper.literal(cfg)
+	cfg = wml.literal(cfg)
 
 	if not cfg.image then
 		cfg.image = "misc/goal-highlight.png"
@@ -625,7 +625,7 @@ function wml_actions.apply_amlas(cfg)
 		amla_tag = "advancement"
 	end
 
-	for amla_cfg in helper.child_range(cfg, amla_tag) do
+	for amla_cfg in wml.child_range(cfg, amla_tag) do
 		wesnoth.add_modification(u, amla_tag, amla_cfg)
 	end
 end
@@ -648,13 +648,13 @@ end
 -- [/remove_inventoru_item]
 ---
 function wml_actions.remove_inventory_item(cfg)
-	local filter = helper.get_child(cfg, "filter") or { side = 1, role = "hero" }
+	local filter = wml.get_child(cfg, "filter") or { side = 1, role = "hero" }
 	local remove_all = cfg.remove_all or false
 
 	for i, u in ipairs(wesnoth.get_units(filter)) do
-		vars = helper.get_child(u.__cfg, "variables")
+		vars = wml.get_child(u.__cfg, "variables")
 
-		for item, i in helper.child_range(vars, "item") do
+		for item, i in wml.child_range(vars, "item") do
 			if item.id == cfg.item then
 				if item.quantity > 1 and not remove_all then
 					item.quantity = item.quantity - 1
@@ -679,7 +679,7 @@ end
 ---
 function wml_actions.store_amlas(cfg)
 	local unit = wesnoth.get_units(cfg)[1].__cfg
-	local mods = helper.get_child(unit, "modifications")
+	local mods = wml.get_child(unit, "modifications")
 
 	local var = cfg.variable or "advancements"
 
@@ -689,9 +689,9 @@ function wml_actions.store_amlas(cfg)
 	end
 
 	local advancement_table = {}
-	for amla in helper.child_range(mods, amla_tag) do
+	for amla in wml.child_range(mods, amla_tag) do
 		table.insert(advancement_table, amla)
 	end
 
-	helper.set_variable_array(var, advancement_table)
+	wml.array_access.set(var, advancement_table)
 end

@@ -10,7 +10,9 @@ helper      = wesnoth.require 'lua/helper.lua'
 items       = wesnoth.require 'lua/wml/items.lua'
 --debug_utils = wesnoth.require '~add-ons/Wesnoth_Lua_Pack/debug_utils.lua'
 
-T = helper.set_wml_tag_metatable {}
+T          = wml.tag
+vars       = wml.variables
+vars_proxy = wml.variables_proxy -- TODO: better name
 
 wml_actions      = wesnoth.wml_actions
 wml_conditionals = wesnoth.wml_conditionals
