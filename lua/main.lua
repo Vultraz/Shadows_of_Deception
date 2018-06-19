@@ -13,6 +13,7 @@ items       = wesnoth.require 'lua/wml/items.lua'
 T          = wml.tag
 vars       = wml.variables
 vars_proxy = wml.variables_proxy -- TODO: better name
+arrays     = wml.array_access
 
 wml_actions      = wesnoth.wml_actions
 wml_conditionals = wesnoth.wml_conditionals

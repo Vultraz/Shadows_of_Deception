@@ -4,9 +4,8 @@ local dialogs = nxrequire "gui/dialogs/spellcasting"
 local buttons = dialogs.buttons
 
 function wml_actions.show_spell_list(cfg)
-	local unit = wesnoth.get_units(cfg)[1].__cfg
-	local var = wml.get_child(unit, "variables")
-	local spell_list_data = lp8.get_children(var, "spell")
+	local unit = wesnoth.get_units(cfg)[1]
+	local spell_list_data = arrays.get("spell", unit.variables)
 	local page_count
 
 	-- Prints list of spells the current unit has learned
@@ -112,7 +111,8 @@ function wml_actions.show_spell_list(cfg)
 			}}
 		}
 
-		wesnoth.put_unit(unit)
+		-- Write the current [spell] child back to the unit
+		unit.variables[string.format("spell[%d]", i - 1)] = spell
 	end
 
 	local function spellcast_preshow()
@@ -137,20 +137,20 @@ end
 -- Decreases the cooldown time for each spell every turn
 function decrease_cooldown_time()
 	for unit in lp8.values(wesnoth.get_units {id = 'Niryone, Elynia'}) do
-		unit = unit.__cfg
+		local spells = arrays.get('spell', unit.variables)
 
-		for spell in lp8.children(wml.get_child(unit, 'variables'), 'spell') do
+		for spell in lp8.values(spells) do
 			if spell.cooldown_remaining > 0 then
 				spell.cooldown_remaining = spell.cooldown_remaining - 1
 			end
 		end
 
-		wesnoth.put_unit(unit)
+		arrays.set('spell', spells, unit.variables)
 	end
 end
 
-wml_actions.event({
+wesnoth.add_event_handler {
 	name = "side 1 turn",
 	first_time_only = false,
 	{'lua', {code='decrease_cooldown_time()'}}
-})
+}
