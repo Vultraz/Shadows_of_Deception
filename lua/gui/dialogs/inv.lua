@@ -219,7 +219,7 @@ local empty_inv_window = {
 				vertical_alignment = "center",
 				horizontal_alignment = "center",
 				T.label {
-					label = _"Your inventory is empty.\n \nPerhaps you should look around for items that might be useful."
+					label = _"Your inventory is empty.\nPerhaps you should look around for items that might be useful."
 				}
 			}
 		}
