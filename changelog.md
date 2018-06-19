@@ -1,13 +1,12 @@
-===============================
 Shadows of Deception: Changelog
 ===============================
 
 Version 0.5.3+dev
 -----------------
-* General
+### General
   * Added a help section about items
 
-* Scenarios
+### Scenarios
   * The Bind spell now affects allies as well as enemies
   * E1S0 - Descry
     * Prevent hex cursor from drawing during intro
@@ -27,12 +26,12 @@ Version 0.5.3+dev
   * E1S6 - Awakening — Part 1
     * Completely revamped map and scenario
 
-* Sound and Music
+### Sound and Music
   * New ambient sounds effects for cave, dungeons, and drips
   * New sound effects for unlock
   * Replaced thunder sound effects
 
-* Lua
+### Lua
   * Improved Inventory interface
   * Display name of spellcaster or inventory user in the title of the
     respective dialogs
@@ -41,18 +40,18 @@ Version 0.5.3+dev
   * Many general tweaks and improvements to the spellcasting, item pickup,
     and inventory systems
 
-* Graphics
+### Graphics
   * Removed terrains: Shop
   * New terrains: Rough Overlay
   * Updated terrain graphics: Lamppost
   * New or updated unit graphics: Wanderer, Shadow Regent
   * New attack icon for Niryone's staff
 
-* User Interface
+### User Interface
   * Updated the Episode I campaign menu icon
   * Assigned a hotkey (i) for opening character's inventory
 
-* Units
+### Units
   * New units: Fire Wisp, Animated Rock, Rock Golem
   * New generic descriptions: Northguard Deathblade, Northguard Silverbow
   * Balancing changes:
@@ -64,7 +63,7 @@ Version 0.5.3+dev
 
 Version 0.5.3
 -------------
-* Scenarios
+### Scenarios
   * Rhaen has been renamed Dravar
   * Fixed a border case where Mind Controlled unit wouldn't be able to attack
   * Improved storytext for all playable scenarios
@@ -95,32 +94,32 @@ Version 0.5.3
   * E1S5.2 - Change of Plans
     * Improved presentation
 
-* Lua
+### Lua
   * Imported new lua-based spawner code from AtS
   * Renamed several custom WML tags for clarity
   * [take_item] no longer needs an 'event' key. The item id will be used in absentia
   * Fixed 'Cast: [spell]' menus showing up on invalid locations
 
-* Graphics
+### Graphics
   * Removed terrains: Dark Tiled Floor, Dark Castle, Dark Keep
   * New terrains: Lamppost
   * New or updated unit graphics: Northguard Nightshaft
   * Removed many unused images
 
-* Units
+### Units
   * Use human names for the Northguard
   * Fixed Northguard Silverbow advancing to itself
   * Added 'Northguard' prefix to all applicable units type names
   * Port balancing changes for the Leech from AtS
 
-* User interface
+### User interface
   * Custom terrain editor group name displayed as 'Shadows of Deception'
     instead of 'NX-RPG'
 
 
 Version 0.5.2
 -------------
-* Scenarios
+### Scenarios
   * E1S2 - Dwarvish Trail
     * Update Micro AI syntax for 1.11.8 and later
     * Allowed the Mind Control spell to restore full movement
@@ -132,27 +131,27 @@ Version 0.5.2
   * E1S5.2 - Change of Plans
     * Some dialog tweaks
 
-* Lua
+### Lua
   * Mitigated an issue with [fade_out_music] briefly playing a short burst
     of the previous track before the switch to a new one
 
-* Graphics
-  * New or updated unit graphics: Northguard Fighter, Northguard Warrior, 
+### Graphics
+  * New or updated unit graphics: Northguard Fighter, Northguard Warrior,
     Northguard Deathblade
   * Removed blank ellipse images. Units can now use ellipse=none
 
-* User interface
+### User interface
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
     later.
 
 
 Version 0.5.1
 -------------
-* General
+### General
   * Displayed the music pack's name as "SoD Music" as opposed to "NX-Music"
     in the campaign menu music note
 
-* Scenarios
+### Scenarios
   * E1S1 - Seer and Outlaw
     * Made side 2's leader passive
   * E1S3 - Gathering Storm
@@ -163,15 +162,15 @@ Version 0.5.1
       or not at all
     * Some aesthetic map tweaks
 
-* Lua
+### Lua
   * Fixed an accidental broken implementation of [store_direction]
-  * Prevent [hidden_unit] from clobbering clobbering existing 
+  * Prevent [hidden_unit] from clobbering clobbering existing
     on-map units (ported from AtS)
 
 
 Version 0.5.0
 -------------
-* General
+### General
   * Gave campaign a new official name: Shadows of Deception
   * Dropped support for 1.11.4 and below
   * Removed Nightmare difficulty
@@ -180,7 +179,7 @@ Version 0.5.0
   * Removed Character Development
   * Removed Norethial and Althugor
 
-* Scenarios
+### Scenarios
   * E1S0
     * New cutscene scenario
   * E1S1
@@ -200,20 +199,20 @@ Version 0.5.0
     * Improved dialog
     * Some balancing changes
 
-* Lua
+### Lua
   * Huge overhaul and bugfixing of lua code, both to the GUI and custom tags
   * Made use of many functions from 8680's lua pack
   * Added several new custom WML tags
   * New Spellcasting system
 
-* Sound and Music
+### Sound and Music
   * Added new track: "Lunar Cage" by AngeloB
   * Added new track: "Gathering Storm" by Blake Ewing (Ewing)
   * Added new track: "Ambuscade" by Mattias Westlund (West)
   * Added new track: "Through the Gates" by Mattias Westlund (West)
   * Added new track: "Frantic Sketch" by TreizeCouleurs
 
-* Graphics
+### Graphics
   * Fixed duplicate terrain IDs
   * Fixed bug where walls were drawn over gate corners (ported from AtS)
   * New or updated unit graphics: Villager
@@ -223,8 +222,8 @@ Version 0.5.0
     * New terrains: Carpet, City, City Arsenal, Earthy Rockbound Cave
     * Removed terrains: Campfire (mainline in 1.11), Glowing Dark Flagstone
 
-* Units
-  * New units: Caravan, Dwarvish Miner, Dwarvish Outcast, Elvish Spellbinder, 
+### Units
+  * New units: Caravan, Dwarvish Miner, Dwarvish Outcast, Elvish Spellbinder,
     Elvish Apprentice, Northguard Archer, Northguard Silverbow, Northguard Nightshaft,
     Northguard Direwolf, Shadow Regent, Wanderer
   * Minor balancing changes
@@ -233,7 +232,7 @@ Version 0.5.0
 
 Version 0.3.0
 -------------
-* Scenarios
+### Scenarios
   * E1S1
     * Fixed some incorrect event filters
     * Fixed wrong side positions (for sides 2 and 3)
@@ -246,7 +245,7 @@ Version 0.3.0
     * Fixed an 'unknown unit' error
     * Prevented the scenario from ending when all enemies are dead, but before the swarm
 
-* Lua
+### Lua
   * Fixed a bug where it was possible to infinitely pick up an item with the quantity
     addition acting up each time
   * Fixed [unlock_gates] using the wrong SUF for the catch-all locked gated filter
@@ -255,7 +254,7 @@ Version 0.3.0
       was adjacent
     * Completed help dialog and added 2 topic for it (so far)
 
-* Code
+### Code
   * Made locked gates actually remove when killed
   * Made game scroll to and float some text over locked gates when they get unlocked
   * Fixed a bug where error appear when a unit who hadn't picked up an item killed
@@ -270,7 +269,7 @@ Version 0.3.0
 
 Version 0.2.9
 -------------
-* Scenarios
+### Scenarios
   * E1S1
     * Redesigned the corridor at the beginning, plus some other misc map tweaks
     * Improved some dialog
@@ -280,7 +279,7 @@ Version 0.2.9
   * E1S2
     * Fixed a bug where the sound source didn't play
 
-* Lua
+### Lua
   * Fixed some translatability issues
   * Fixed an error in [check_inventory] that appeared every time you killed a unit
   * Allowed [check_inventory]'s filter to fallback to 'id = $unit.id' if no [filter] tag
@@ -288,7 +287,7 @@ Version 0.2.9
   * Allowed [check_inventory] to set the var 'has_(item)' and exit if no [then] tag
     is found
   * Fixed a bug that caused [add_status_icon] to fail when used
-  * Split [add_status_icon] into two functions: an internal lua function for access in lua 
+  * Split [add_status_icon] into two functions: an internal lua function for access in lua
     files and a wml_actions frontend for use in WML files
   * New WML tags: [setup_gates], [unlock_gates]. The former is a replacement for
     {DOOR_TILES_TO_UNITS}, the latter converts locked gates to regular gates
@@ -301,12 +300,12 @@ Version 0.2.9
     * Unlocked the new character development dialog. This replaces the old system, and
       has different class choices
 
-* Graphics
+### Graphics
   * Terrains
     * New or updated terrains: Fake Shroud, Locked Gate, Stone Floor
     * New terrain graphics macro: {TRANSITION_OVERLAY_L}
 
-* General code
+### General code
   * General macro updates and additions
   * Killed the {INITIATE_SCEN_VARS} stuff
   * Updated the gettext-helper file (mainline-strings.cfg)
@@ -316,13 +315,13 @@ Version 0.2.9
 
 Version 0.2.8a
 --------------
-* Music
+### Music
   * Changed the name of the music pack addon to 'NX-Music' for consistency
 
 
 Version 0.2.8
 -----------------
-* Scenarios
+### Scenarios
   * P1S1 - Awakening:
     * Some misc fixes and balancing
     * Updated map
@@ -330,7 +329,7 @@ Version 0.2.8
   * P1S2 - Unknown Land
     * New scenario
 
-* General Code
+### General Code
   * General macro updates
   * Added a maintainer mode
   * Made wmllint run (almost) clean on the add-on
@@ -342,7 +341,7 @@ Version 0.2.8
     * Made {SHOP_LABELS} work
     * Added base for quests
 
-* Lua
+### Lua
   * Worked some bugs out of the [check_for_character] function
   * New WML tags: [check_inventory], [add_status_icon]
   * GUI
@@ -350,10 +349,10 @@ Version 0.2.8
     * Added new character development dialog (still locked)
     * Added new nx help dialog (still needs help topics)
 
-* Sound Effects
+### Sound Effects
   * Added gate hit and die/fall sounds
 
-* Music
+### Music
   * Moved the music to a separate addon, NX_Music, for faster upload and download times.
     The addon is an optional dependency. This makes it easier for people with slower
     internet speeds to download this campaign. All changelog entries related to music
@@ -364,7 +363,7 @@ Version 0.2.8
     * Zhaytee Tragedy (from TEG)
     * Land of Adventure (from ABI)
 
-* Graphics
+### Graphics
   * Fixed ugly border around impassible mountains when rain is in use
   * Updated the custom TOD images for the rainy schedule
   * Made rainy schedule use a slightly darker lighting than the normal schedule
@@ -376,15 +375,15 @@ Version 0.2.8
     * Made Dark Castles transition nicely with other terrains
     * Fixed bug where Volcanic Abyss terrain didn't display correctly
   * Units
-    * Added unit image for Gates. This fixes an "Image not found" error that appeared 
+    * Added unit image for Gates. This fixes an "Image not found" error that appeared
       when the were selected.
     * New or updated unit graphics: Leech, Skeleton Rider, Bone Knight, and Death Baron,
       Northguard Fighter, Northguard Warrior, Northguard Deathblade, Northguard Archer,
       Northguard Silverbow
 
-* Units
+### Units
   * Made Rhyan a trapper
-  * New units: Leech, Skeleton Rider, Bone Knight, and Death Baron, (from IftU) 
+  * New units: Leech, Skeleton Rider, Bone Knight, and Death Baron, (from IftU)
     Northguard Fighter, Northguard Warrior, Northguard Deathblade (custom)
 
 
