@@ -31,7 +31,7 @@ function wml_actions.show_spell_list(cfg)
 					turnstext = _"turn remaining"
 				end
 
-				wesnoth.set_dialog_value(string.format("<span color='#ff0000'>%s\n(<small>%i %s</small>)</span>", _"This spell is cooling down.", spell.cooldown_remaining, turnstext),
+				wesnoth.set_dialog_value(string.format("<span color='#ff0000'>%s\n(<small>%i %s</small>)</span>", _"This spell is on cooldown.", spell.cooldown_remaining, turnstext),
 					"details_pages", i, "details_notice_cooling")
 				wesnoth.set_dialog_markup(true,
 					"details_pages", i, "details_notice_cooling")
