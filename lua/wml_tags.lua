@@ -647,7 +647,7 @@ function wml_actions.remove_inventory_item(cfg)
 	local remove_all = cfg.remove_all or false
 
 	for i, u in ipairs(wesnoth.get_units(filter)) do
-		local items = arrays.get("item". u.variables)
+		local items = arrays.get("item", u.variables)
 
 		for i, item in ipairs(items) do
 			if item.id == cfg.item then
