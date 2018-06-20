@@ -107,7 +107,7 @@ function wml_actions.take_item(cfg)
 			wesnoth.set_dialog_active(false, "use_button")
 		end
 
-		if not wesnoth.eval_conditional { { "have_unit", lp8.copyTable(usable_by, { x,y = "$x1,$y1" }) } } then
+		if not wesnoth.eval_conditional { { "have_unit", lp8.copyTable(usable_by, { x = "$x1", y = "$y1" }) } } then
 			local cannot_use_message = tostring(usable_by.cannot_use_message or "This unit cannot use this item.")
 
 			wesnoth.set_dialog_value(cannot_use_message, "cannot_use_warning")
