@@ -356,20 +356,19 @@ end
 function wml_actions.learn_spell(cfg)
 	cfg = wml.literal(cfg)
 
-	local unit = wesnoth.get_units({id = cfg.unit})[1].__cfg
-	local var = wml.get_child(unit, "variables")
+	local unit = wesnoth.get_units({id = cfg.unit})[1]
+	local spells = arrays.get("spell", unit.variables)
 
-	if wml.get_child(var, "spell", cfg.id) then
-		log_message(L_ERR, ("spell '%s' already learned by %s"):format(cfg.id, unit.name))
-
-		return
+	for i, item in ipairs(spells) do
+		if item.id == cfg.id then
+			log_message(L_ERR, ("spell '%s' already learned by %s"):format(cfg.id, unit.name))
+			return
+		end
 	end
 
 	cfg.cooldown_remaining = 0
 
-	table.insert(var, {"spell", cfg})
-
-	wesnoth.put_unit(unit)
+	unit.variables[string.format("spell[%d]", #spells)] = cfg
 
 	if not cfg.silent then
 		wesnoth.play_sound(cfg.sound or "magic-1.ogg")
