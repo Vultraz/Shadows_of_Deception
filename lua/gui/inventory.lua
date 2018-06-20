@@ -10,20 +10,31 @@ function wml_actions.show_inventory(cfg)
 	local selected_recipient = 1
 	local selected_row = 1
 	local page_count = 0
-	local unit, var, inv_list_data, item_actions, button, continue
+	local unit = wesnoth.get_units(cfg)[1]
+	local inv_list_data = {}
+	local item_actions, button, continue
 
 	-- Converts first character of a string to uppercase
 	local function first_to_upper(str)
 		return (tostring(str):gsub("^%l", string.upper))
 	end
 
+	-- Checks if we have an item with the given ID
+	local function has_item(id)
+		for i, item in ipairs(inv_list_data) do
+			if item.id == id then return true end
+		end
+
+		return false
+	end
+
 	-- Syncs weapon data with the table and sorts it
 	local function sync_weapons_to_items()
-		for attack in wml.child_range(unit, 'attack') do
-			if not invalid_attacks[attack.name] and not wml.get_child(var, "item", attack.name) then
+		for attack in wml.child_range(unit.__cfg, 'attack') do
+			if not invalid_attacks[attack.name] and not has_item(attack.name) then
 				local descrip = string.format("%s - %s %s", attack.damage, attack.number, attack.type)
 
-				table.insert(var, {"item", {
+				table.insert(inv_list_data, {
 					id = attack.name,
 					name = first_to_upper(attack.description), -- [attack] doesn't have dedicated id keys, and the description is more like a name anyway
 					image = attack.icon or string.format("attacks/%s.png", attack.name),
@@ -43,11 +54,9 @@ function wml_actions.show_inventory(cfg)
 							T.effect { apply_to = "remove_attacks", range = attack.range, name = attack.name }
 						}
 					}
-				} })
+				})
 			end
 		end
-
-		wesnoth.put_unit(unit)
 	end
 
 	local function active_overlay(image)
@@ -127,11 +136,7 @@ function wml_actions.show_inventory(cfg)
 	-- Handles using an item
 	local function use_item()
 		local i = wesnoth.get_dialog_value("inventory_list")
-		local list_item = inv_list_data[i]
-		local function item_filter(tag)
-			return tag[1] == 'item' and tag[2].id == list_item.id
-		end
-		local item_var = lp8.get_child(var, item_filter)
+		local item = inv_list_data[i]
 
 		button = buttons.use
 		continue = true
@@ -139,14 +144,14 @@ function wml_actions.show_inventory(cfg)
 		-- Message effect items don't have any special use commands
 
 		-- If it's single-use, decrease quantity by 1...
-		if list_item.effect_type == "single" then
-			item_var.quantity = (list_item.quantity or 1) - 1
+		if item.effect_type == "single" then
+			item.quantity = (item.quantity or 1) - 1
 
-			wesnoth.set_dialog_value(list_item.quantity, "inventory_list", i, "list_quantity")
+			wesnoth.set_dialog_value(item.quantity, "inventory_list", i, "list_quantity")
 
 			-- ... and delete it if you now have none
-			if list_item.quantity == 0 then
-				lp8.remove_subtag(var, item_filter)
+			if item.quantity == 0 then
+				table.remove(inv_list_data, i);
 
 				if selected_row == page_count then
 					selected_row = selected_row - 1
@@ -155,24 +160,24 @@ function wml_actions.show_inventory(cfg)
 		end
 
 		-- If it's an equip item...
-		if list_item.effect_type == "equip" then
+		if item.effect_type == "equip" then
 			-- ... and is not active, activate it
-			if not list_item.active then
-				item_var.active = true
+			if not item.active then
+				item.active = true
 
-				wesnoth.set_dialog_value(active_overlay(list_item.image), "inventory_list", i, "list_image")
+				wesnoth.set_dialog_value(active_overlay(item.image), "inventory_list", i, "list_image")
 			else
-				item_var.active = false
+				item.active = false
 
-				wesnoth.set_dialog_value(list_item.image, "inventory_list", i, "list_image")
+				wesnoth.set_dialog_value(item.image, "inventory_list", i, "list_image")
 
-				item_actions = wml.get_child(list_item, "removal_command")
+				item_actions = wml.get_child(item, "removal_command")
 			end
 		end
 
 		-- item_actions can be set previously in a specific effect block
 		if item_actions == nil then
-			item_actions = wml.get_child(list_item, "command")
+			item_actions = wml.get_child(item, "command")
 		end
 
 		refresh_use_button_text(i)
@@ -183,7 +188,7 @@ function wml_actions.show_inventory(cfg)
 
 	local function inventory_preshow()
 		wesnoth.set_dialog_value("Inventory — " .. unit.name, "title")
-		wesnoth.set_dialog_value(unit.image .. "~RC(magenta>red)", "unit_image")
+		wesnoth.set_dialog_value(unit.__cfg.image .. "~RC(magenta>red)", "unit_image")
 
 		wesnoth.set_dialog_callback(select_from_inventory, "inventory_list")
 		wesnoth.set_dialog_callback(use_item, "use_button")
@@ -202,9 +207,10 @@ function wml_actions.show_inventory(cfg)
 	end
 
 	local function inventory_postshow()
-		-- Resync the local lua tables with the actual unit
 		wesnoth.lock_view(true)
-		wesnoth.put_unit(unit)
+
+		-- Resync the local lua table with the unit variables
+		arrays.set("item", inv_list_data, unit.variables)
 
 		-- Execute item effects
 		wml_actions.command(item_actions)
@@ -217,18 +223,19 @@ function wml_actions.show_inventory(cfg)
 
 	repeat
 		-- Set variables inside the execution loop to make sure they stay up-to-date each cycle
-		unit = wesnoth.get_units(cfg)[1].__cfg
-		var = wml.get_child(unit, "variables")
+		inv_list_data = arrays.get("item", unit.variables)
 		item_actions = nil
 
-		sync_weapons_to_items() -- Add valid weapons as [item]s
+		-- Add valid weapons as [item]s
+		sync_weapons_to_items()
 
 		-- Sort items alphabetically
-		inv_list_data = lp8.get_children(var, "item")
 		table.sort(inv_list_data, function(a,b) return tostring(a.name) < tostring(b.name) end)
 
-		button = next(inv_list_data)
-			and wesnoth.show_dialog(dialogs.normal, inventory_preshow, inventory_postshow)
-			or wesnoth.show_dialog(dialogs.empty)
+		if not next(inv_list_data) then
+			button = wesnoth.show_dialog(dialogs.empty)
+		else
+			button = wesnoth.show_dialog(dialogs.normal, inventory_preshow, inventory_postshow)
+		end
 	until not keep_going()
 end
