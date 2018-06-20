@@ -67,12 +67,11 @@ function wml_actions.take_item(cfg)
 	local unit
 
 	if cfg.unit then
-		unit = wesnoth.get_units({id = cfg.unit})[1].__cfg
+		unit = wesnoth.get_units({id = cfg.unit})[1]
 	else
-		unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1].__cfg
+		unit = wesnoth.get_units({x = wesnoth.current.event_context.x1, y = wesnoth.current.event_context.y1})[1]
 	end
 
-	local vars = wml.get_child(unit, "variables")
 	local must_take = cfg.must_take
 	local effect_type = cfg.effect_type or helper.wml_error("[take_item] missing mandatory effect_type key")
 
@@ -122,20 +121,30 @@ function wml_actions.take_item(cfg)
 	end
 
 	local function set_item_vars(activate)
-		local item = wml.get_child(vars, "item", cfg.id)
-		local quantity = cfg.quantity or 1
+		local items = arrays.get("item", unit.variables)
 
-		if item then
-			item.quantity = item.quantity + quantity
-		else
-			if activate then
-				cfg.active = true
-			end
-			cfg.quantity = quantity
-			table.insert(vars, {"item", cfg})
+		if not cfg.quantity then
+			cfg.quantity = 1
 		end
 
-		wesnoth.put_unit(unit)
+		-- If we already have an item with the given ID, bump its qualitity
+		for i, item in ipairs(items) do
+			if item.id == cfg.id then
+				item.quantity = item.quantity + cfg.quantity
+
+				-- We only need to write this one item's config back
+				unit.variables[string.format("item[%d]", i - 1)] = item
+				return
+			end
+		end
+
+		-- We didn't have the item. Add it
+		if activate then
+			cfg.active = true
+		end
+
+		-- Write the new item directly to unit.variables since we don't need it locally
+		unit.variables[string.format("item[%d]", #items)] = cfg
 	end
 
 	local function clean_up_item()
