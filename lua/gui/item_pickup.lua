@@ -39,14 +39,14 @@
         ... The item will only be usable if this condition is matched ...
     [/usable_if]
 
-    [command]
+    [on_use]
         ... Code to execute when item is used
-    [/command]
+    [/on_use]
 
-    [removal_command]
+    [on_remove]
         ... Code to be executed if item is being unequipped.
             Only applies if effect_type = equip
-    [/removal_command]
+    [/on_remove]
 [/take_item]
 --]]
 
@@ -182,7 +182,7 @@ function wml_actions.take_item(cfg)
 			set_item_vars('and activate item')
 		end
 
-		wml_actions.command(wml.get_child(cfg, "command") or {})
+		wml_actions.command(wml.get_child(cfg, "on_use") or {})
 
 		if effect_type ~= "message" then
 			clean_up_item()

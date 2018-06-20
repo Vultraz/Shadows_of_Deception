@@ -42,13 +42,13 @@ function wml_actions.show_inventory(cfg)
 					effect_type = "equip",
 					active = true,
 					quantity = 1,
-					T.command {
+					T.on_use {
 						T.modify_unit {
 							T.filter { x = "$x1", y = "$y1" },
 							{ 'effect', lp8.copyTable(attack, { apply_to = 'new_attack' }) }
 						}
 					},
-					T.removal_command {
+					T.on_remove {
 						T.modify_unit {
 							T.filter { x = "$x1", y = "$y1" },
 							T.effect { apply_to = "remove_attacks", range = attack.range, name = attack.name }
@@ -171,13 +171,13 @@ function wml_actions.show_inventory(cfg)
 
 				wesnoth.set_dialog_value(item.image, "inventory_list", i, "list_image")
 
-				item_actions = wml.get_child(item, "removal_command")
+				item_actions = wml.get_child(item, "on_remove")
 			end
 		end
 
 		-- item_actions can be set previously in a specific effect block
 		if item_actions == nil then
-			item_actions = wml.get_child(item, "command")
+			item_actions = wml.get_child(item, "on_use")
 		end
 
 		refresh_use_button_text(i)
