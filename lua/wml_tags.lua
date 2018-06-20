@@ -294,7 +294,7 @@ end
 function wml_actions.unserialize_and_activate_sides(cfg)
 	local variable = cfg.variable or helper.wml_error("[unserialize_and_activate_sides]: Missing variable!")
 
-	local data_set = wml.array_access.get(variable)
+	local data_set = arrays.get(variable)
 
 	for index, side_data in ipairs(data_set) do
 		wesnoth.wml_actions.modify_side {
@@ -302,7 +302,7 @@ function wml_actions.unserialize_and_activate_sides(cfg)
 			income = side_data.income, controller = side_data.controller, hidden = side_data.hidden
 		}
 
-		local units = wml.array_access.get(variable .. string.format("[%u].units", index - 1))
+		local units = arrays.get(variable .. string.format("[%u].units", index - 1))
 
 		for uindex, container in ipairs(units) do
 			wesnoth.wml_actions.unstore_unit {
@@ -682,5 +682,5 @@ function wml_actions.store_amlas(cfg)
 		table.insert(advancement_table, amla)
 	end
 
-	wml.array_access.set(var, advancement_table)
+	arrays.set(var, advancement_table)
 end
