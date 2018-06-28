@@ -136,10 +136,10 @@ end
 
 -- Decreases the cooldown time for each spell every turn
 function decrease_cooldown_time()
-	for unit in lp8.values(wesnoth.get_units {id = 'Niryone, Elynia'}) do
+	for i, unit in ipairs(wesnoth.get_units {id = 'Niryone, Elynia'}) do
 		local spells = arrays.get('spell', unit.variables)
 
-		for spell in lp8.values(spells) do
+		for i, spell in ipairs(spells) do
 			if spell.cooldown_remaining > 0 then
 				spell.cooldown_remaining = spell.cooldown_remaining - 1
 			end
