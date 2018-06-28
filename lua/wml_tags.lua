@@ -597,7 +597,7 @@ end
 -- [/check_for_character]
 ---
 function wml_actions.check_for_character(cfg)
-	if not wesnoth.eval_conditional { T.have_unit { side = 1, id = cfg.id, search_recall_list = true } } then
+	if not wml_conditionals.have_unit { side = 1, id = cfg.id, search_recall_list = true } then
 		wesnoth.put_recall_unit(cfg.__parsed, 1)
 	end
 end

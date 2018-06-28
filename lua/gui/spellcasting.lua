@@ -16,7 +16,7 @@ function wml_actions.show_spell_list(cfg)
 			wesnoth.set_dialog_value(spell.description, "details_pages", i, "details_description")
 
 			-- Sets notice if there are no valid targets
-			if not wesnoth.eval_conditional { {'have_location', wml.get_child(spell, 'target_filter')} } then
+			if not wml_conditionals.have_location(wml.get_child(spell, 'target_filter')) then
 				wesnoth.set_dialog_value(_"<span color='#ff0000'>No valid targets for this spell.</span>",
 					"details_pages", i, "details_notice_validity")
 				wesnoth.set_dialog_markup(true,
@@ -56,7 +56,7 @@ function wml_actions.show_spell_list(cfg)
 		wesnoth.set_dialog_value(i, "details_pages")
 
 		-- Disables the Cast button if the spell is still in cooldown or there are no valid targets
-		if spell.cooldown_remaining > 0 or not wesnoth.eval_conditional { {'have_location', wml.get_child(spell, 'target_filter')} } then
+		if spell.cooldown_remaining > 0 or not wml_conditionals.have_location(wml.get_child(spell, 'target_filter')) then
 			wesnoth.set_dialog_active(false, "cast_button")
 		else
 			wesnoth.set_dialog_active(true, "cast_button")
