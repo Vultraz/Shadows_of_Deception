@@ -135,7 +135,7 @@ function wml_actions.show_spell_list(cfg)
 end
 
 -- Decreases the cooldown time for each spell every turn
-function decrease_cooldown_time()
+on_event("side 1 turn", function()
 	for i, unit in ipairs(wesnoth.get_units {id = 'Niryone, Elynia'}) do
 		local spells = arrays.get('spell', unit.variables)
 
@@ -147,10 +147,4 @@ function decrease_cooldown_time()
 
 		arrays.set('spell', spells, unit.variables)
 	end
-end
-
-wesnoth.add_event_handler {
-	name = "side 1 turn",
-	first_time_only = false,
-	{'lua', {code='decrease_cooldown_time()'}}
-}
+end)

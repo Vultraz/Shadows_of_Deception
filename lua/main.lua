@@ -8,6 +8,7 @@ _ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
 -- Function aliases
 helper      = wesnoth.require 'lua/helper.lua'
 items       = wesnoth.require 'lua/wml/items.lua'
+on_event    = wesnoth.require 'lua/on_event.lua'
 --debug_utils = wesnoth.require '~add-ons/Wesnoth_Lua_Pack/debug_utils.lua'
 
 T          = wml.tag
