@@ -48,7 +48,7 @@ function wml_actions.bug(cfg)
 		local msg = _ "The following WML condition was unexpectedly reached:"
 
 		-- #textdomain wesnoth
-		_ = wesnoth.textdomain "wesnoth"
+		local _ = wesnoth.textdomain "wesnoth"
 		local ok = _ "Close"
 
 		wesnoth.show_dialog(dialogs.dialog, function()
@@ -61,7 +61,7 @@ function wml_actions.bug(cfg)
 
 	local function preshow()
 		-- #textdomain wesnoth-Shadows_of_Deception
-		_ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
+		local _ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
 		local msg = _ "An inconsistency has been detected, and the scenario might not continue working as originally intended."
 
 		if report then
@@ -79,12 +79,12 @@ function wml_actions.bug(cfg)
 		local det = _ "Details"
 
 		-- #textdomain wesnoth
-		_ = wesnoth.textdomain "wesnoth"
+		local _ = wesnoth.textdomain "wesnoth"
 		local ok = _ "Continue"
 		local quit = _ "Quit"
 
 		-- #textdomain wesnoth-Shadows_of_Deception
-		_ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
+		local _ = wesnoth.textdomain "wesnoth-Shadows_of_Deception"
 
 		wesnoth.set_dialog_value(cap, "title")
 		wesnoth.set_dialog_value(msg, "message")

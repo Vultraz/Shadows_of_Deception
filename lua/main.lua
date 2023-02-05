@@ -3,7 +3,7 @@
 ---
 
 -- Textdomain
-_ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
+local _ = wesnoth.textdomain 'wesnoth-Shadows_of_Deception'
 
 -- Function aliases
 helper      = wesnoth.require 'lua/helper.lua'
