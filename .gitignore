@@ -1,5 +1,6 @@
 
 *~*
+*.cfg-bak
 *.swp
 *.pbl
 *.map.cfg
