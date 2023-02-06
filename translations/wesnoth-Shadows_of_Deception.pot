@@ -1,0 +1,3752 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2023-02-05 22:12 UTC\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. [about]
+#: Shadows_of_Deception/about.cfg:10
+msgid "Creator and Lead Designer"
+msgstr ""
+
+#. [about]
+#: Shadows_of_Deception/about.cfg:17
+msgid "Campaign Maintenance"
+msgstr ""
+
+#. [about]
+#: Shadows_of_Deception/about.cfg:31
+msgid "Coding Assistants"
+msgstr ""
+
+#. [about]
+#: Shadows_of_Deception/about.cfg:69
+msgid "Graphics"
+msgstr ""
+
+#. [about]
+#: Shadows_of_Deception/about.cfg:103
+msgid "Music and Sound"
+msgstr ""
+
+#. [about]
+#: Shadows_of_Deception/about.cfg:119
+msgid "Additional thanks to"
+msgstr ""
+
+#. [entry]
+#: Shadows_of_Deception/about.cfg:130
+msgid "You, for playing this campaign"
+msgstr ""
+
+#. [entry]
+#: Shadows_of_Deception/about.cfg:133
+msgid "Anyone else I forgot to mention"
+msgstr ""
+
+#: Shadows_of_Deception/config.cfg:34
+msgid "Music pack “<i>SoD Music</i>” is <b>not</b> installed! Only standard music will be played."
+msgstr ""
+
+#: Shadows_of_Deception/config.cfg:45
+msgid "for Wesnoth 1.14 (v1.14.0 or later)"
+msgstr ""
+
+#: Shadows_of_Deception/config.cfg:54
+msgid "Version"
+msgstr ""
+
+#: Shadows_of_Deception/config.cfg:55
+msgid "Feedback and bug reports:"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:5
+msgid "SoD"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:6
+msgid "Shadows of Deception"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:7
+msgid "Episode I: Deceit"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:18
+msgid "A shadow lengthens across the land; a faceless evil plots to overthrow the Empire. No one holds all the pieces. The fate of a kingdom rests in the hands of a despairing few, but will they be able to tell friend from foe?"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:20
+msgid "(Intermediate level, 6 of 12 scenarios complete)"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:22
+msgid "difficulty_menu^Apprentice"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:22
+msgid "Easy"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:23
+msgid "difficulty_menu^Wanderer"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:23
+msgid "Normal"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:24
+msgid "difficulty_menu^Spellbinder"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#: Shadows_of_Deception/episode1/menu.cfg:24
+msgid "Hard"
+msgstr ""
+
+#. [campaign]: id=Shadows_of_Deception_I
+#. [endlevel]
+#: Shadows_of_Deception/episode1/menu.cfg:26
+#: Shadows_of_Deception/macros/scenario-utils.cfg:26
+msgid "To be continued..."
+msgstr ""
+
+#. [scenario]: id=00_Descry
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:5
+msgid "Descry"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:25
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:57
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:27
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:179
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:33
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:27
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:26
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:22
+msgid "team_name^Niryone"
+msgstr ""
+
+#. [side]
+#. [side]: type=General, id=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:51
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:105
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:163
+msgid "team_name^Townsmen"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:56
+msgid "Roddy"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:57
+msgid "Mal"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:58
+msgid "Elin"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:59
+msgid "Esprewyn"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:60
+msgid "Derak"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:66
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:29
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:53
+#: Shadows_of_Deception/episode1/scenarios/08_01_Reunion.cfg:28
+msgid "team_name^Rhyan"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:109
+msgid ""
+"<i>“Sometimes the most familiar face hides more than meets the eye.” </i>\n"
+"<small>— Unknown</small>"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:130
+msgid "I’m getting worried; what’s taking Rhyan so long?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:135
+msgid "One night’s absence is not that unusual; he’s done it before."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:140
+msgid "I know, I know. But I feel uneasy. He wouldn’t let me examine him after that bandit attack. Not that he can’t handle himself, I mean."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:145
+msgid "I admit they were more determined than the usual lot we come across, Irdya curse them. I cannot think what prompted their boldness."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:150
+msgid "They took us unprepared; I could have dealt with them."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:155
+msgid "Could you? Even the most experienced of warriors would have trouble if outnumbered and surrounded on all sides. You seem unusually reckless recently, Elynia."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:160
+msgid "I suppose you’re right. Though, granted, you have more skill than I."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:165
+msgid "(<i>smiles</i>) True enough. But you have potential to reach my level of skill, and perhaps surpass it. You are already powerful for your age; most elvish children are not so adept."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:174
+msgid "The leader of the attack said something strange before he fled. <i>“We thought you were some of them! The impostors!”</i>"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:183
+msgid "Hm... I know not to what he could be referring, but whatever it is, it will probably mean trouble for someone."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:210
+msgid "The two elves’ companion appeared, clutching an empty bag under his arm."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:215
+msgid "Rhyan! Where were you?"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:220
+msgid "(<i>shrug</i>) Busy."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:225
+msgid "Well, at least you’re back —"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:231
+msgid "Elynia’s voice faltered as she noticed the large gash on her friend’s arm."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:242
+msgid "Your arm! Here…"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:305
+msgid "AHH! What —"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:311
+msgid "Elynia stared as the human screamed and clutched his arm, the healing magic burning a black swath across his skin. Her mentor looked on with narrowed eyes."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:316
+msgid "You — you — that was black magic!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:325
+msgid "What abomination are you! You are not he whose face you wear, for no living being would react so."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:330
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:386
+msgid "(<i>silence</i>)"
+msgstr ""
+
+#. [unit]: type=Deathblade, id=Rhyan
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:364
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:309
+#: Shadows_of_Deception/episode1/utils/characters.cfg:21
+#: Shadows_of_Deception/episode1/utils/characters.cfg:35
+msgid "Rhyan"
+msgstr ""
+
+#. [message]: speaker=Esprewyn
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:376
+msgid "What sorcery is this!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:381
+msgid "Last chance. Who are you and what do you want?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:391
+msgid "So be it."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:423
+msgid "Something’s definitely not right, here. There may be truth in that rabble’s words after all, and I fully intend to discover what. And we must find Rhyan. He was our - my - responsibility."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/00_Descry.cfg:428
+msgid "(<i>shakily</i>) A- Agreed. I- We need to find him! At once! Now! How could we have let this happen!"
+msgstr ""
+
+#. [scenario]: id=01_Seer_and_Outlaw
+#. [part]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:5
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:39
+msgid "Seer and Outlaw"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:123
+msgid "Revalyn"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:131
+msgid "Faramor"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:139
+msgid "Asurya"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:148
+msgid "Lerion"
+msgstr ""
+
+#. [side]: type=General, id=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:168
+msgid "Lord Myris"
+msgstr ""
+
+#. [side]: type=General, id=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:190
+msgid "Malana"
+msgstr ""
+
+#. [side]: type=General, id=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:199
+msgid "Famiror"
+msgstr ""
+
+#. [side]: type=General, id=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:207
+msgid "Elyroddryn"
+msgstr ""
+
+#. [side]: type=General, id=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:215
+msgid "Ayana"
+msgstr ""
+
+#. [side]: type=Ranger, id=Karaul
+#. [side]: type=Rogue, id=Varyloryn
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:231
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:291
+msgid "team_name^Outlaws"
+msgstr ""
+
+#. [side]: type=Ranger, id=Karaul
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:236
+msgid "Karaul"
+msgstr ""
+
+#. [side]: type=Ranger, id=Karaul
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:259
+msgid "Javeryn"
+msgstr ""
+
+#. [side]: type=Ranger, id=Karaul
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:267
+msgid "Wellow"
+msgstr ""
+
+#. [side]: type=Ranger, id=Karaul
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:275
+msgid "Celimeor"
+msgstr ""
+
+#. [side]: type=Rogue, id=Varyloryn
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:296
+msgid "Varyloryn"
+msgstr ""
+
+#. [side]: type=Rogue, id=Varyloryn
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:319
+msgid "Remory"
+msgstr ""
+
+#. [side]: type=Rogue, id=Varyloryn
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:327
+msgid "Moorin"
+msgstr ""
+
+#. [side]: type=Rogue, id=Varyloryn
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:335
+msgid "Kalash"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:347
+msgid "Training Arena"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:352
+msgid "Elensefar Keep"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:357
+msgid "Val Magal"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:362
+msgid "Port Road"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:367
+msgid "Elen Avenue"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:372
+msgid "Haldric Park"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:426
+msgid "Here we are. But it looks like someone else got here first...."
+msgstr ""
+
+#. [message]: speaker=Aryon
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:437
+msgid "Niryone! It’s been long since I’ve seen you! What brings you here now? How’s Niolinde?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:442
+msgid "I came to ask your help on an important matter, but it looks as if you have your hands full already."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:473
+msgid "Dear gods...."
+msgstr ""
+
+#. [message]: speaker=Aryon
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:479
+msgid "Indeed. A host of outlaws with aid from the thieves’ guild has breached the city and are assaulting the main keep! Er, perhaps you can aid us and save the chit-chat for later? Probably should shut myself up, then, that is."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:484
+msgid "(<i>grinning</i>) Agreed. To both counts."
+msgstr ""
+
+#. [message]: speaker=Aryon
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:489
+msgid "Oh, never mind, never mind. Let’s go!"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:514
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:346
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:389
+msgid "Defeat all enemy leaders"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:516
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:343
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:386
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:352
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:681
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:778
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:230
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:307
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:586
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:277
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:348
+msgid "Death of Niryone"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:517
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:344
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:387
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:353
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:682
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:779
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:231
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:308
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:587
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:278
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:349
+msgid "Death of Elynia"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:518
+msgid "Death of Aryon"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:519
+msgid "Death of Lord Myris"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:521
+msgid "Niryone has a Bind spell that you may find useful"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:522
+msgid "City Areas and Arsenals will heal your units, but provide no income"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:523
+msgid "In this scenario, income is capped at +8 for all sides"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:524
+msgid "You will not be able to recruit human units after this scenario"
+msgstr ""
+
+#. [unit]: type=Huntsman, id=Eloryn
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:537
+msgid "Eloryn"
+msgstr ""
+
+#. [message]: speaker=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:553
+msgid "A thousand curses, reinforcements!"
+msgstr ""
+
+#. [message]: speaker=Aryon
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:566
+msgid "Oh, this will never do."
+msgstr ""
+
+#. [message]: speaker=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:603
+msgid "They’re breaching the keep!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:617
+msgid "Pretty fountain. I could rest here if I weren’t in the middle of a battle. (<i>sigh</i>)"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:629
+msgid "Ugh... Niryone... goodbye..."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:650
+msgid "Without me, Elensefar will fall!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:671
+msgid "Bloody hell! Curse you all! My forces will avenge me!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:686
+msgid "You accursed elves! I... (<i>ugh</i>) will not... be broken... so easily..."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:692
+msgid "You accursed people! I... (<i>ugh</i>) will not... be broken... so easily..."
+msgstr ""
+
+#. [message]: id=Varyloryn
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:706
+msgid "Fall back! This is hopeless!"
+msgstr ""
+
+#. [message]: speaker=Aryon
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:721
+msgid "At last! They’re retreating!"
+msgstr ""
+
+#. [message]: speaker=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:734
+msgid "Finally, they’re gone. Thank you for your help."
+msgstr ""
+
+#. [interim_text]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:818
+msgid "Some time later, the four leaders met at the keep"
+msgstr ""
+
+#. [message]: speaker=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:854
+msgid "Again, thank you for your help. I don’t know what prompted such an attack, but hopefully we can drive them back as needed if they return now that their main force is broken."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:859
+msgid "Hopefully. But the main reason I came here was to meet with Aryon. Perhaps I could talk to him alone momentarily?"
+msgstr ""
+
+#. [message]: speaker=Lord Myris
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:864
+msgid "Certainly, certainly."
+msgstr ""
+
+#. [message]: speaker=Aryon
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:884
+msgid "You came because of the matter with your apprentice’s friend. I’m afraid I do not know anything, but I may be able to provide some advice."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:889
+msgid "Do you know where he is?!"
+msgstr ""
+
+#. [message]: speaker=Aryon
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:894
+msgid "No, but I believe I can tell you who can. Head north, to Eloria, and meet with the dwarves there. I sense they have some valuable information. And, if I may... I’d advise haste."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#. [message]
+#: Shadows_of_Deception/episode1/scenarios/01_Seer_and_Outlaw.cfg:903
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1005
+msgid "Very well."
+msgstr ""
+
+#. [scenario]: id=02_Dwarvish_Trail
+#. [part]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:5
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:53
+msgid "Dwarvish Trail"
+msgstr ""
+
+#. [side]: type=Dwarvish Runesmith, id=Anathryis, role=hero
+#. [side]: type=Dwarvish Pathfinder, id=Dalen
+#. [side]
+#. [side]: type=Dwarvish Explorer, id=Glamatsil
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:43
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:77
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:99
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:67
+msgid "team_name^Dwarves"
+msgstr ""
+
+#. [side]: type=Dwarvish Runesmith, id=Anathryis, role=hero
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:50
+#: Shadows_of_Deception/episode1/utils/characters.cfg:65
+msgid "Anathryis"
+msgstr ""
+
+#. [side]: type=Dwarvish Pathfinder, id=Dalen
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:82
+msgid "Dalen"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:108
+msgid "Durvak"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:109
+msgid "Gimlor"
+msgstr ""
+
+#. [side]: type=Draug, id=Mal Ranchor
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:118
+msgid "team_name^Undead"
+msgstr ""
+
+#. [side]: type=Draug, id=Mal Ranchor
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:123
+msgid "Mal Ranchor"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:162
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:114
+msgid "team_name^Cave Creatures"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:190
+msgid "Mineshaft"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:322
+msgid "I hope Aryon was right, and the dwarves can help us."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:327
+msgid "So do I, but it has been several years since I met with them, and never this particular clan."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:332
+msgid "What was the occasion before? Have you met the Lord of Knalga?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:337
+msgid "Yes... when I was much younger. Niolinde, Aryon, and I... well, this is a story for another time. (<i>chuckles</i>)"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:341
+msgid "Enter the caves"
+msgstr ""
+
+#. [scenario]: id=02_Dwarvish_Trail
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:358
+msgid "Defeat Mal Ranchor"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:380
+msgid "Mine and return three loads of materials to Dalen"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:380
+msgid "($loads_mined mined, $loads_delivered delivered)"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:384
+msgid "Fewer than three miners alive"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:384
+msgid "($remaining_miners remaining)"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:388
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:354
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:683
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:780
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:232
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:309
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:588
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:279
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:350
+msgid "Death of Anathryis"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:389
+msgid "Death of Dalen"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:393
+msgid "You can mine materials on any of the twelve hexes immediately adjacent to the mineshaft"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:394
+msgid "You will need to protect the miners for one turn while they mine. During that time, they will not be able to move or attack."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:446
+msgid "What? Elves? In our tunnels? What be yer business here!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:451
+msgid "We’re here to see the leader of your clan. Aryon of Elensefar told us you could help."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:456
+msgid "How do we know yer legit?"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:462
+msgid "Niryone reached into her pack and took out a small token, which she proceeded to toss to the dwarf."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:467
+msgid "I see... very well, then. However, the bridge to the main caverns is broken, and SOMEONE cannot agree what to do."
+msgstr ""
+
+#. [message]: speaker=Dalen
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:473
+msgid "Hey! Cut it out! I don't see you doing much, either!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:479
+msgid "(<i>rolls eyes</i>) As I was sayin’, the bridge is broken. There’s a small mineshaft north-west of here, but we usually avoid it ever since an accident killed some of our kin. They say they have returned to slaughter any dwarf who comes near the place. But perhaps with your help, we can collect enough materials to fix the bridge. Then you can meet with the council."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:484
+msgid "(<i>sigh</i>) Another task. I guess we must do it...."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:489
+msgid "Indeed."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:494
+msgid "I’ll help ye out."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:532
+msgid "Valenry"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:534
+msgid "Aigdrsil"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:535
+msgid "Dulalis"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:536
+msgid "Aldrlos"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:538
+msgid "Gerin"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:550
+msgid "We’ll need te’ go to the mineshaft, gather the materials, and return them to Dalen. And we have only a few miners; the rest were on the other side of the bridge when it collapsed. Don’t let them die, or it’ll be gods know how long before we get the bridge repaired."
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:576
+msgid "You can no longer recruit most human units, but may recruit dwarves instead. Additionally, you gained $temp_gold_amount gold."
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:623
+msgid "Deliver loads here"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:633
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:620
+msgid "An old section of wall slides away."
+msgstr ""
+
+#. [message]: speaker=Dalen
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:642
+msgid "The shaft is directly west. However, I believe there are some items we may find useful to the north."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:662
+msgid "There’s the shaft. Let’s get to work!"
+msgstr ""
+
+#. [floating_text]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:708
+msgid "<span color='#e1e119'>Mining</span>"
+msgstr ""
+
+#. [floating_text]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:736
+msgid "<span color='#00ff00'>Mining Complete</span>"
+msgstr ""
+
+#. [floating_text]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:784
+msgid "<span color='#00ff00'>Load delivered</span>"
+msgstr ""
+
+#. [message]: speaker=Dalen
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:870
+msgid "That’s enough! Let’s get te’ repairing that bridge!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:875
+msgid "Aye!"
+msgstr ""
+
+#. [interim_text]
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:903
+msgid "Repairs continue..."
+msgstr ""
+
+#. [message]: speaker=Dalen
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:947
+msgid "The bridge is repaired!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:952
+msgid "Indeed it is! Now we can see the—"
+msgstr ""
+
+#. [unit]: id=Lord Agran
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:967
+msgid "Lord Agran"
+msgstr ""
+
+#. [message]: speaker=Lord Agran
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:974
+msgid "I see you got to the repairs. (<i>chuckles</i>) Well done, well done. And elves, as Aryon said we should expect. Welcome to our caverns!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:979
+msgid "Thank you, Lord Agran. It was in fact Aryon who sent us. He said you would be able to help us with a little... problem."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:985
+msgid "The two elves related the events that had happened so far while Agran stood thoughtfully and listened."
+msgstr ""
+
+#. [message]: speaker=Lord Agran
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:994
+msgid "Leave us, please."
+msgstr ""
+
+#. [message]: speaker=Lord Agran
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1023
+msgid "I am aware of which ye speak. Rumors of strange dealings amongst the humans have been coming in fer months now. People going missing or suddenly acting strangely, or more frequent bandit raids. Nothing has affected us dwarves directly, as far as I can tell, and I hope it stays that way! Why, Knalga just opened three new trade routes! The last thing we need is sabotage or... something else. But I’m not surprised ye haven’t heard of this, if ye’ve been traveling recently."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1028
+msgid "In our case at least, it’s more than just rumor. Can you tell us anything else?"
+msgstr ""
+
+#. [message]: speaker=Lord Agran
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1033
+msgid "Aye, that would seem to be so. I don’t know of anyone behind this, but I do have some information that may be of help: For the past two months, our scouts have reported a human caravan repeatedly traveling north toward the Heart Mountains, carrying cargo unknown. It always takes the same route, and always somehow manage to elude any close scrutiny, but we did occasionally note a strange group of masked humans in accompaniment. I can’t tell ye much else, but it might be wise to look into this. Ye should be able to intercept them not far east of Wesmere, if my latest reports are correct."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1038
+msgid "They could have Rhyan!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1043
+msgid "(<i>puzzled</i>) Perhaps... It’s a slim chance, but it’s our only lead; we had better pursue it. Thank you for your help."
+msgstr ""
+
+#. [message]: speaker=Lord Agran
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1048
+msgid "It’s no trouble. The least I could do for ye for yer help with repairing that bridge."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1053
+msgid "I’d like to go with ye elves, if I may. I owe ye for yer help."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1058
+msgid "Your help would be welcome, Anathryis."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1082
+msgid "Blast it! It seems the undead do roam here after all! We should give them eternal rest, if we can."
+msgstr ""
+
+#. [message]: speaker=Mal Ranchor
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1106
+msgid "So, the dwarves finally venture to see their handiwork. And they bring the wose-born with them? Hah!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1113
+msgid "Ranchor... We meet again."
+msgstr ""
+
+#. [message]: speaker=Mal Ranchor
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1118
+msgid "YOU?!! YOU DARE COME HERE! You, who ran as I called for help! You accursed dwarf! You left us to die! Die, beneath the crushing blackness of ash and rock!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1127
+msgid "I’m sorry, Ranchor, but we could not help... And now you deserve a peace you have been denied."
+msgstr ""
+
+#. [take_item]: id=dt_spear # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1146
+msgid "Spear"
+msgstr ""
+
+#. [take_item]: id=dt_spear # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1148
+msgid "New attack: Spear 7 - 3 Melee Pierce"
+msgstr ""
+
+#. [take_item]: id=spellgem_mindcontrol # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1191
+msgid "Spellgem"
+msgstr ""
+
+#. [take_item]: id=spellgem_mindcontrol # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1193
+msgid "This gem will allow a unit to learn the Mind Control spell, which enables its caster to gain control of a non-loyal or non-leader enemy unit for one turn."
+msgstr ""
+
+#. [usable_by]: id=Niryone,Elynia
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1198
+msgid "Only hero units learned in magic may acquire this spell."
+msgstr ""
+
+#. [learn_spell]: id=mindcontrol # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1204
+msgid "Mind Control"
+msgstr ""
+
+#. [learn_spell]: id=mindcontrol # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1206
+msgid "Allow its caster to gain control of a non-loyal or non-leader enemy unit for one turn."
+msgstr ""
+
+#. [take_item]: id=defring # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1283
+msgid "Ring of Defense"
+msgstr ""
+
+#. [take_item]: id=defring # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1285
+msgid "This ring will give its bearer +5% defense on all terrains."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1318
+msgid "We no longer have enough miners to gather materials! Now we’ll rot here!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1334
+msgid "No! You accursed elves, look at what trusting you has done!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1346
+msgid "This was a mistake...."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1360
+msgid "(<i>ugh</i>) Help... me...."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1372
+msgid "He’s dead, and now the bridge will never be repaired!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1386
+msgid "But... my revenge is not complete! You have not paid the price for your betrayal!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1391
+msgid "Go now, and be at peace. I don’t hold you to blame. Please, forgive me."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1400
+msgid "I... thank you... brother...."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1419
+msgid "The draug seems to have dropped something."
+msgstr ""
+
+#. [message]: speaker=Dalen
+#: Shadows_of_Deception/episode1/scenarios/02_Dwarvish_Trail.cfg:1442
+msgid "Curses! A cave-in! Now how will we get to the bridge!?"
+msgstr ""
+
+#. [scenario]: id=03_Gathering_Storm
+#. [part]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:5
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:63
+msgid "Gathering Storm"
+msgstr ""
+
+#. [side]
+#. [side]: type=Grand Marshal
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:49
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:43
+msgid "team_name^Escort"
+msgstr ""
+
+#. [side]: type=Orcish Slayer, id=Belrok
+#. [side]: type=Orcish Sovereign, id=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:116
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:60
+msgid "team_name^Orcs"
+msgstr ""
+
+#. [side]: type=Orcish Slayer, id=Belrok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:120
+msgid "Belrok"
+msgstr ""
+
+#. [side]: type=Orcish Slayer, id=Belrok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:135
+msgid "Maklath"
+msgstr ""
+
+#. [side]: type=Orcish Slayer, id=Belrok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:136
+msgid "Daloth"
+msgstr ""
+
+#. [side]: type=Orcish Slayer, id=Belrok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:138
+msgid "Gaglin"
+msgstr ""
+
+#. [side]: type=Orcish Slayer, id=Belrok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:139
+msgid "Arcror"
+msgstr ""
+
+#. [side]: type=Orcish Slayer, id=Belrok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:141
+msgid "Swlish"
+msgstr ""
+
+#. [side]
+#. [side]: type=Orcish Warlord, id=Rarok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:150
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:115
+msgid "team_name^Enemies"
+msgstr ""
+
+#. [side]: type=Spectre, id=Delenethor
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:175
+msgid "team_name^Delenethor"
+msgstr ""
+
+#. [side]: type=Spectre, id=Delenethor
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:179
+msgid "Delenethor"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:271
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:276
+msgid "You cannot even hope to capture me!"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:272
+msgid "A mere annoyance."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:273
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:277
+msgid "You certainly are persistent, I’ll give you that."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:274
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:278
+msgid "Screw this mission! I’m looking out for myself."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:325
+msgid "If our information is correct, we should be able to intercept the caravan somewhere along this road. No doubt they have allies along the route, though; we must be careful."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:330
+msgid "What happens if we don’t reach them in time?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:335
+msgid "I don’t know. All these events can’t be mere coincidence. Evidence to the contrary is overwhelming, but I’m at a loss as to what the connection might be. This is the best lead we have so far. We mustn’t let it slip through our fingers."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:340
+msgid "Then we’d better not, for the sake of Rhyan and whomever else may be prey to this plot. I hope he’s safe..."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:345
+msgid "(<i>smiles</i>) Let’s get moving, then. We don’t want their leader dead, though. I’ll bind him."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:349
+msgid "Cut off the messenger and the transport"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:351
+msgid "Transport reaches the top edge of the map)"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:358
+msgid "You may have to use Niryone’s binding spell on the messenger multiple times"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:375
+msgid "The hands of the signpost are unreadable."
+msgstr ""
+
+#. [message]: speaker=Delenethor
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:413
+msgid "So, we meet again! Now I will finally have my revenge and spread the cold touch of death upon you, and my family may finally rest!"
+msgstr ""
+
+#. [message]: speaker=Rhaldir
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:418
+msgid "Delenethor. This is becoming increasingly trite. Why do you even bother?"
+msgstr ""
+
+#. [message]: speaker=Delenethor
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:437
+msgid "I will not rest until the blood of you and your allies stains the ground red as the setting sun! And you, sorceress -"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:443
+msgid "The shade paused, slowly turning to face the elves."
+msgstr ""
+
+#. [message]: speaker=Delenethor
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:454
+msgid "... Niryone?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:459
+msgid "By the Lords of Light... What foul sorcery disturbs your rest, old friend?"
+msgstr ""
+
+#. [message]: speaker=Delenethor
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:464
+msgid "It matters not, Lady. I have dealt with that necromancer long ago. Only one thing remains to anchor me to Irdya."
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:469
+msgid "Dammit, more distractions. Remind me to demand a pay raise."
+msgstr ""
+
+#. [message]: speaker=Belrok
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:474
+msgid "Ah ha! The human pays me well, but you have offered no such tribute. I think I’ll just join these obliging spirits of death in reducing you to a similar state, masked ones."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:480
+msgid "This is madness! And who is this spectre! How does he know you?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:485
+msgid "(<i>sighing</i>) Another story for another time... I wish the past didn’t have this habit of always creeping up on one."
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:518
+msgid "It is no use, fools! I have protected both myself and the transport with a magical shield the likes of which you shall not pierce with your mundane weaponry!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:523
+msgid "(<i>muttering</i>) But you can still be bound...."
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:567
+msgid "(<i>surprised</i>) AH! Well, well, well, this will be fun!"
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:651
+msgid "This looks good."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:670
+msgid "We need to go after him!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:675
+msgid "Wait! Let’s examine the transport first. With him gone, we should be able to get at it, and if those tunnels are the ones I think they are, he’s not going anywhere fast."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:679
+msgid "Capture the now-unprotected transport"
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:712
+msgid "Foolish elves. Forward!"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:717
+msgid "No! They have escaped!"
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:736
+msgid "What that—?! It’s Lord Myris! From Elensefar!"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:741
+msgid "But we saw him! How can he be here, now? Unless, the one with whom we spoke was also an impostor, just like Rhyan..."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:746
+msgid "It appears so. This is the second individual whom we have found to have an impersonator in his place. We need to capture that messenger, now! Let’s go! And Anathryis, can you send a few of your fighters with Myris, take him... somewhere. Just try not to let word reach Elensefar."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:751
+msgid "Aye, that I can do."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:768
+msgid "Pursue Dravar with Niryone or Elynia"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:770
+msgid "Kill Belrok"
+msgstr ""
+
+#. [message]: speaker=Rhaldir
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:818
+msgid "(<i>softly</i>) Ah, you optimistic fools. Some day it will be the death of you. This is not over by far, but I am not fool enough to fight a losing battle. I will be... elsewhere."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:839
+msgid "Where did that creep go?"
+msgstr ""
+
+#. [message]: speaker=Delenethor
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:860
+msgid "So, the coward flees! No matter, I will drag you all into undeath with me instead!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:884
+msgid "The dagger of death has found my heart..."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:899
+msgid "That’s the last of him. Through the trapdoor!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/03_Gathering_Storm.cfg:926
+msgid "The cold.... Damn the cold...."
+msgstr ""
+
+#. [scenario]: id=04_Pursuit
+#. [part]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:5
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:72
+msgid "Pursuit"
+msgstr ""
+
+#. [side]: type=Troll Warrior, id=Barag
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:77
+msgid "team_name^Trolls"
+msgstr ""
+
+#. [side]: type=Troll Warrior, id=Barag
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:83
+msgid "Barag"
+msgstr ""
+
+#. [unit]: type=Troll Shaman, id=Garag
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:97
+msgid "Garag"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:213
+msgid "I know these tunnels. In years past they were known as “Thieves’ Alley”. Popular place among less than reputable characters, though a cave-in at the northern entrance eventually rendered it almost useless; it seems that human doesn’t know that."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#. 'te' means 'to'
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:219
+msgid "Probably infested by bats, leeches, scorpions, and the whole lot by now. Trolls too, most likely. But this enemy is cunning, I don’t trust any of that te’ slow him down."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:224
+msgid "Great..."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:228
+msgid "Pursue Dravar"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:236
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:313
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:593
+msgid "Explore carefully; there might be hidden treasure"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:249
+msgid ""
+"Thieves’ Alley\n"
+"\n"
+"Konrad was here"
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:280
+msgid "That troll is guarding the passage forward, and it doesn’t look like he’s going to move."
+msgstr ""
+
+#. [message]: speaker=Garag
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:285
+msgid "YOU SHALL NOT PASS!"
+msgstr ""
+
+#. [message]: speaker=Barag
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:291
+msgid "Ah, it is the filthy elvses he warned us about! Garag! Do not let them past! This gold is very pleasing to me!"
+msgstr ""
+
+#. [message]: speaker=Garag
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:296
+msgid "I just said that, idiot!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:301
+msgid "(<i>grimly</i>) It appears he has bribed these trolls to keep us at bay. Very well, if they won’t move, we shall have to take them out."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:305
+msgid "Defeat the troll guard"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:329
+msgid "We may move ahead!"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:372
+msgid "What the-"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:389
+msgid "As the cavern was plunged into darkness, the remaining trolls fled."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:396
+msgid "Voice from the dark"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:398
+msgid "You may capture me, but rest assured it will not be without a fight! You have been most entertaining, but you aren’t the only one with fancy tricks up your sleeve, elf. Just wait and see..."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:537
+msgid "By the gods, what has he done!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:543
+msgid "(<i>troubled</i>) He appears to have replicated himself. Multiple times."
+msgstr ""
+
+#. [message]: speaker=doppelganger_2
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:549
+msgid "Impressed? Hah! Of course, you would say it futile, but we shall see. Perhaps it is you who engage in futile endeavors, not I. You are so blind, and it will cost you dearly."
+msgstr ""
+
+#. [message]: speaker=doppelganger_1
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:555
+msgid "Though in the end, it won’t matter. That damned fool of a King cannot stop us and neither can you! But I am curious, you are an elf, a member of the Council... what cause have you to be invested in our little scheme?"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:560
+msgid "I will find my friend, you madman!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:565
+msgid "There’s nowhere else to go! Just give us the answers we want and you may walk out of here with your life."
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:570
+msgid "I am not so easily won! Though how do you even know..."
+msgstr ""
+
+#. [message]: speaker=doppelganger_1
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:575
+msgid "...which of me is real?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:580
+msgid "Then you leave us no choice, sorcerer. We will strike every shade down until naught one but you remain!"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:584
+msgid "Defeat the real Dravar"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:592
+msgid "Dravar does not need to be bound this scenario"
+msgstr ""
+
+#. [take_item]: id=valthur_journal_v1 # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:636
+msgid "Tattered Journal Vol. 1"
+msgstr ""
+
+#. [take_item]: id=valthur_journal_v1 # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:638
+msgid "An old journal with a strange insignia on the cover. It’s filled with worn and brittle paper, and doesn’t appear to have been opened for ages."
+msgstr ""
+
+#. [transient_message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:643
+msgid "Journal of Arch Mage Valthur, 611 YW"
+msgstr ""
+
+#. [transient_message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:645
+msgid ""
+"<i>My dreams continue to trouble me. I don’t know even what the subject of these visions appears to be, but it’s harrowing, and I hope these are not a potent of things to come.\n"
+"\n"
+"I see a blasted landscape, burnt beneath the fiery gaze of two suns. Sand swirls underfoot as I walk... and walk... and walk. Towering ruins jut out from the ground like giant teeth, the only evidence life ever existed in this dead land. \n"
+"\n"
+"I look up and see the end of the desert, a cool, lush forest, familiar yet alien, drawing me forward. And I see it erupt in flames amidst a clash of blades and rivers of blood, seeping from the burning branches, the cackling of fire drowned by screams, so many screams....\n"
+"\n"
+"Then it fades, and in the distance, I see two figures silhouetted against the searing sky. I see the light glisten off her red hair as she turns and pulls him close, and as their shadows entwine, a burst of warm light fills my sight before I wake from my slumber.</i>\n"
+"\n"
+"The rest of the journal is rotted with age and unreadable."
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:671
+msgid "Treasure Chest"
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:673
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1416
+msgid "Empty!"
+msgstr ""
+
+#. [take_item]: id=tasty_potion # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:692
+msgid "Potion of Curious Taste"
+msgstr ""
+
+#. [take_item]: id=tasty_potion # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:694
+msgid "A curiously delicious concoction, effect unknown."
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:725
+msgid "You found a pile of gold pieces. They appear to number around 70."
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:739
+msgid "Agh! So you find me at last. Well done! Perhaps I underestimated you."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:746
+msgid "Tell us NOW! Who sent you and your transport, and where were you going? We know Myris in Elensefar is an impostor, and I cannot help but notice you display a surprising aptitude for replicates."
+msgstr ""
+
+#. [message]: speaker=Dravar
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:751
+msgid "You think <i>I</i> am behind this? Or you think this is the work of some invader or lich? Hah.. All of you, so secure in your hierarchy... Humans, elves, you will ALL see once he... once he... "
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:757
+msgid "The human doubled over and coughed violently, drops of red splattering the cave floor."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:762
+msgid "Who. Is. HE?!"
+msgstr ""
+
+#. [message]: speaker=Dravar
+#. the full word is 'Mizenwyn', the name of the male antagonist
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:769
+msgid "(<i>panting</i>) ... Mizen... wyn..."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:775
+msgid "Gasping in pain from the blast of energy, Dravar suddenly cast a rueful grin at the elves. Before their eyes, he vanished."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:795
+msgid "Where... where did he go? And if he could escape, why did he... why did he tell us anything at all?"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:800
+msgid "I don’t know..."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:809
+msgid "We must meet with the Ka’lian. Immediately. For once I think they will take an interest in my news."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:824
+msgid "For someone they speak of as so intelligent, you really lack perception."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:837
+msgid "Tick tock, tick tock, elf. You chose wrongly."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/04_Pursuit.cfg:849
+msgid "Nasty elvses kill Barag! (<i>Ugh....</i>)"
+msgstr ""
+
+#. [scenario]: id=05_01_Ambush_in_Wesmere
+#. [part]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:5
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:90
+msgid "Ambush in Wesmere"
+msgstr ""
+
+#. [side]: type=Elvish Marshal, id=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:40
+msgid "team_name^Elves"
+msgstr ""
+
+#. [side]: type=Elvish Marshal, id=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:45
+msgid "Earin"
+msgstr ""
+
+#. [side]: type=Orcish Sovereign, id=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:65
+msgid "Vagrur"
+msgstr ""
+
+#. [side]: type=Northguard Nightshaft, id=Feraylore
+#. [side]: type=Northguard Warrior
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:87
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:119
+msgid "team_name^Northguard"
+msgstr ""
+
+#. [side]: type=Northguard Nightshaft, id=Feraylore
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:92
+msgid "Feraylore"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:148
+msgid "team_name^Direwolves"
+msgstr ""
+
+#. [label]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:171
+msgid "Elvish Outpost"
+msgstr ""
+
+#. [message]: speaker=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:216
+msgid "Filthy elves.... Leave us alone! More of you wose-born idiots spring from the trees every minute! We want nothing to do with you!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:227
+msgid "Orcs?! In Wesmere! If I were not in a hurry, I would deal with you myself."
+msgstr ""
+
+#. [message]: speaker=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:232
+msgid "We swear, we shall not bother you, as long as you keep your pretty swords away from us!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:241
+msgid "...I will hold you to that."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:248
+msgid "(<i>muttering</i>) I don’t trust this at all."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:253
+msgid "Well, in any case, we’re almost there. Just a quick jaunt through the woods. Ah, the sight of the earth and trees!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:258
+msgid "I hope all goes well... I don’t trust another ‘incident’ not to happen, either from those masked freaks, or these orcs. And Elynia.... how are you holding up?"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:263
+msgid "Pretty well. Let’s move, shall we?"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:275
+msgid "Reach the Elvish outpost with Niryone"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:283
+msgid "HINT: the orcs may prove useful later, if you honor your agreement"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:342
+msgid "Defeat all Direwolves"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:342
+msgid "($remaining_wolves remaining)"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:344
+msgid "Flee to the signpost in the northwest (with any unit)"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:351
+msgid "Death of Earin"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:355
+msgid "You might find it advantageous not to flee"
+msgstr ""
+
+#. [message]: speaker=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:372
+msgid "Ah, Niryone! It has been a while —"
+msgstr ""
+
+#. [message]: speaker=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:413
+msgid "We’re under attack!"
+msgstr ""
+
+#. [message]: speaker=Feraylore
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:418
+msgid "You don’t say, puny elf."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:423
+msgid "You people <i>again</i>?"
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:428
+msgid "Who <i>are</i> you! You keep following us!"
+msgstr ""
+
+#. [message]: speaker=Vaenyn
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:433
+msgid "Well, well, well. How naive you are for someone who sticks their head in a place it does not belong."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:438
+msgid "I will personally smash you and your fancy headgear into the dirt and hurl it so far it lands on the northern ice plains. ATTACK!"
+msgstr ""
+
+#. [message]: speaker=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:447
+msgid "You kept your word, surprisingly enough. In return, we will assist you against these invaders!"
+msgstr ""
+
+#. [message]: speaker=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:452
+msgid "Orcs, fighting with elves?! The Ka’lian will have our heads!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:457
+msgid "You forget, Earin, I too am a member of the Ka’lian, and I say we will likely be at a severe disadvantage here without their help; we are outnumbered!"
+msgstr ""
+
+#. [message]: speaker=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:468
+msgid "You broke your word, you lying scum, and now you will get no help from us!"
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:533
+msgid "You gained $temp_gold_amount gold."
+msgstr ""
+
+#. [message]: speaker=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:552
+msgid "Who are these creatures..."
+msgstr ""
+
+#. [message]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:560
+msgid "Humans, by the looks of it, but not of a sort we have run into before."
+msgstr ""
+
+#. [message]: speaker=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:565
+msgid "No matter, we cannot let them sack Wesmere!"
+msgstr ""
+
+#. [message]: speaker=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:583
+msgid "We asked to be left alone, and you would not. Now we shall kill you! Attack!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:598
+msgid "They’re too many! We must flee!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:614
+msgid "No... I... cannot...."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:626
+msgid "Without him, we cannot hold off the invaders! It is lost..."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:641
+msgid "Gablahgaghag..."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:646
+msgid "Excuse me?"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:658
+msgid "I won’t go so easily as that..."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:679
+msgid "Blast it, she’s escaped!"
+msgstr ""
+
+#. [message]
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:688
+msgid "Their leaders are gone, but these wolves still plague us!"
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:703
+msgid "Meanwhile, I found something interesting in their encampment: plans for this very interesting armor their wolves seem to wear! Oh, I can have fun with this!"
+msgstr ""
+
+#. [message]: speaker=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:708
+msgid "How... nice."
+msgstr ""
+
+#. [message]: speaker=Anathryis
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:723
+msgid "(<i>gleefully</i>) Chop chop chop."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:749
+msgid "In any case, we must make it to the Ka’lian, now!"
+msgstr ""
+
+#. [message]: speaker=Vagrur
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:776
+msgid "You helped us, elves, surprising of your kind. As repayment, some of my more experienced troops will come with you. And, if the day may come when you find our help is needed, do not hesitate to ask."
+msgstr ""
+
+#. [message]: speaker=Earin
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:781
+msgid "But my lady—"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_01_Ambush_in_Wesmere.cfg:786
+msgid "Thank you, Vagrur. It is appreciated."
+msgstr ""
+
+#. [scenario]: id=05_02_Change_of_Plans
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:5
+msgid "Change of Plans"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:41
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:56
+msgid "team_name^Council"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:71
+msgid "team_name^Mizenwyn"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:118
+msgid "Greetings, Niolinde, Elorandas. Glad you could make it on such short notice."
+msgstr ""
+
+#. [message]: speaker=Niolinde
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:123
+msgid "And what would be so important that you have to call an emergency meeting, now of all times, especially after you’ve been away for months with that apprentice of yours?"
+msgstr ""
+
+#. [message]: speaker=Elorandas
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:128
+msgid "Quiet, Niolinde, I’m sure she had a reason."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:134
+msgid "Indeed. I have discovered something... troubling. We intercepted a human caravan just north of the Ford, heading for an unknown location in the Heart Mountains. They carried with them an unconscious Lord Myris of Elensefar - an individual we had previously met, conscious and well, at a time in which the caravan would already have been well underway. I feel it is likely he has been impersonated by some form of undead creature, just as another human, a traveling companion of ours, was. I destroyed that particular doppelganger, but the real person is yet to be found."
+msgstr ""
+
+#. [message]: speaker=Niolinde
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:139
+msgid "So one human turns into a foul spawn of black magic and another ends up an unconscious mess. And you come running to <i>us</i>? Surely you can deal with such matters yourself, Niryone."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:147
+msgid "(<i>angrily</i>) It’s more than that! The human we captured had powers of dark magic. Not unusual, but noteworthy. He revealed his origin to be Sharaford, near Lake Aelin. So we have a human from a border town transporting an unconscious lord across these lands while an impostor holds his place, so soon after one of our own companions was impersonated himself! And to make matters worse, we were ambushed by masked men and a pack of gigantic wolves near one of the eastern outposts and had to abandon it. Now tell me you find nothing suspicious in all this!"
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:153
+msgid "(<i>angrily</i>) It’s more than that! The human we captured had powers of dark magic. Not unusual, but noteworthy. He revealed his origin to be Sharaford, near Lake Aelin. So we have a human from a border town transporting an unconscious lord across these lands while an impostor holds his place, so soon after one of our own companions was impersonated himself! And to make matters worse, we were ambushed by masked men and a pack of gigantic wolves near one of the eastern outposts and only barely drove them off. Now tell me you find nothing suspicious in all this!"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:161
+msgid "There was silence for a few seconds."
+msgstr ""
+
+#. [message]: speaker=Elorandas
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:170
+msgid "I agree something is going on. But you cannot name anyone behind this, and to my eyes it poses no threat to us elves. We already have our hands full with the necromancer whose thugs are sacking and burning southern Aethenwood."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:175
+msgid "Niolinde, what do you think?"
+msgstr ""
+
+#. [message]: speaker=Niolinde
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:180
+msgid "I think you’re wasting your time. It is probably some political intrigue amongst the humans, in which we have absolutely no interest. So if you want to waste your time “<i>investigating</i>”, go ahead. Just don’t expect help until you can prove it a real issue to us."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:185
+msgid "(<i>grits teeth</i>) Oh, shut up, Niolinde."
+msgstr ""
+
+#. [interim_text]
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:248
+msgid "Meanwhile..."
+msgstr ""
+
+#. [message]: speaker=Vaenyn
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:263
+msgid "I have disturbing news. It seems a certain... elf has been prying into our affairs. My sources report she and that pretty apprentice of hers are headed north as we speak. And that incompetent fool Dravar has vanished. I don’t believe I need remind you what he was transporting. I think... I’m afraid she may prove to be an inconvenience."
+msgstr ""
+
+#. [message]: speaker=Mizenwyn
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:268
+msgid "Hm... now that won’t do, will it...."
+msgstr ""
+
+#. [message]: speaker=Vaenyn
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:273
+msgid "What do you propose?"
+msgstr ""
+
+#. [message]: speaker=Mizenwyn
+#: Shadows_of_Deception/episode1/scenarios/05_02_Change_of_Plans.cfg:278
+msgid "Leave it to me. I think it’s time for a little change of plans...."
+msgstr ""
+
+#. [scenario]: id=06_Awakening_part_1, role=hero
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:7
+msgid "Awakening — Part 1"
+msgstr ""
+
+#. [side]: type=Deathblade, id=Revekel
+#. [side]: type=Saurian Flanker, id=Yerar
+#. [side]: type=Northguard Warrior, id=Sylla
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:59
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:91
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:124
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:163
+msgid "team_name^Guards"
+msgstr ""
+
+#. [side]: type=Deathblade, id=Revekel
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:63
+msgid "Revekel"
+msgstr ""
+
+#. [side]: type=Saurian Flanker, id=Yerar
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:95
+msgid "Yerar"
+msgstr ""
+
+#. [side]: type=Saurian Flanker, id=Yerar
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:106
+msgid "Bar"
+msgstr ""
+
+#. [side]: type=Northguard Warrior, id=Sylla
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:128
+msgid "Sylla"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:149
+msgid "team_name^Creatures"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:329
+msgid "My head hurts. A lot."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:335
+msgid "The last I remember is watching the gentle play of sunlight through the trees outside camp, before someone — or something — crept behind and knocked me out cold."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:341
+msgid ""
+"Swirling images assail the back of my eyelids as I struggle to find some sort of mental purchase in the mists of unconsciousness.\n"
+"\n"
+"How long had I been out?"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:349
+msgid "And then..."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:369
+msgid "Ah, there you are. I was starting to wonder whether you got knocked over the head just a <i>little</i> too hard."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:378
+msgid "(<i>groan</i>) Well, sorry to disappoint you... whoever you are. Where are we?"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:383
+msgid "You got chucked in here a few hours ago. At least, I think it’s been hours. Could be days. Or longer? Bottom line, you’ve been out a while."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:392
+msgid "How... how did I get here?"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:397
+msgid "(<i>eyebrows raised</i>) You’re asking me?"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:403
+msgid "Well... ugghh..."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:412
+msgid "I’m not going to lie, you really look like death."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:418
+msgid "The rogue took a dusty vial from a pouch by her side, and approached."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:425
+msgid "Here, take this. I saved it, but you look like you could use it more."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:442
+msgid "For a moment, Rhyan swayed, then fell to the floor in a faint."
+msgstr ""
+
+#. [interim_text]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:483
+msgid "Time passes..."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:505
+msgid "Rhyan groaned and stood up, looking over at the girl now standing in the corner of the dark cell."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:510
+msgid "Thanks for that. I own you one..."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:515
+msgid "Ella."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:520
+msgid "You know, you do look slightly familiar... Have we met? Granted, it would be a strange coincidence if that were true."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:525
+msgid "Considering you’ve still failed to mention your name, where you’re from, or even what you were doing before being bludgeoned, I wouldn’t know. And even if we had, I don’t recognize you at all."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:530
+msgid "The name’s Rhyan —"
+msgstr ""
+
+#. [unit]: type=Skeleton, id=guard1, role=initial_guard
+#. [unit]: type=Revenant, id=guard2, role=initial_guard
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:553
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:570
+msgid "Guard"
+msgstr ""
+
+#. [message]: speaker=guard1
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:579
+msgid "Come with us, both of you!"
+msgstr ""
+
+#. [message]: speaker=guard2
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:584
+msgid "(<i>cackle cackle</i>)"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:635
+msgid "What on Irdya is that thing!"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:640
+msgid "I’ll explain later. Can we focus on the more pressing matter right now?"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:645
+msgid "Right, right."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:659
+msgid "Overpower the guards"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:661
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:753
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1870
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:2003
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:308
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:391
+msgid "Death of Rhyan"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:662
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:754
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1871
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:2004
+msgid "Death of Ella"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:672
+msgid "(<i>eyebrow raised</i>) Nice hat."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:677
+msgid "Why, thank you. Little squashed, but it’s none the worse for wear. Or being sat on."
+msgstr ""
+
+#. [message]: speaker=$remaining_guard.id
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:708
+msgid "This will require reinforcements!"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:727
+msgid "Seems he dropped something."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:745
+msgid "Now to find a way out of here. I don’t suppose these boneheads left the back door conveniently open."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:751
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:306
+msgid "Explore"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:755
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1872
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:2005
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:309
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:392
+msgid "Death of Galamor"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:761
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1878
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:2011
+msgid "There may be other prisoners"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:762
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1879
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:2012
+msgid "Elementals will not be able to explore as thoroughly as Rhyan and Ella"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:772
+msgid "Perhaps now you could tell me how you summoned that pile of walking rocks from thin air?"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:778
+msgid "It’s not a big deal. Just something I can do. And it’s not from thin air. I found if you really focus on something simple, like the earth, you can just... see how bits of it fit together and... bam! Won’t deny they come quite in handy in my, ah, line of work."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:787
+msgid "Honestly, you don’t look one bit magically adept. No offense. I just wouldn’t have pegged you as a mage at first sight."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:792
+msgid "(<i>smiling</i>) None taken. I’m a girl of many talents, after all."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:797
+msgid "Hopefully those talents include finding ways out of dungeons. I’m freezing."
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:801
+msgid "You can now summon Elementals on any vacant hex around Ella. However, you cannot control more than six at a time."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:815
+msgid "So tell me, what were you doing before you got thrown in here?"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:820
+msgid "Mostly just traveling around to various places. I was with this girl, Elynia, and her mentor. Why?"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:829
+msgid "And?"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:834
+msgid "And what? Why don’t you tell me what you were doing?"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:839
+msgid "My only guess is that I tried to, ah, repossess something that someone wasn’t keen to have repossessed. And then I ended up here."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:844
+msgid "(<i>eyebrow raised</i>) To the point."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:849
+msgid "I pride myself on it. Now, my turn to ask a question. How does the son of a noble find himself an exciting life of journeying instead of, oh, I don’t know, a job guarding some boring village?"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:854
+msgid "It’s a <i>very</i> long story, and not one I’d prefer to go into. Anyhow, I thought you didn’t know me."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:859
+msgid "Relax. It’s pretty obvious you’re not of my ilk. You dress way too well."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:864
+msgid "Please, like you never “repossessed” any equatable garb in your time."
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:869
+msgid "(<i>grinning</i>) Touché, touché."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:894
+msgid "Locked. We’ll need to find the key."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:900
+msgid "Let’s see if this key fits."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:917
+msgid "Looks like the exit is this way, but it’s certainly locked up tight. Maybe we can find the keys around here somewhere."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:939
+msgid "There’s nothing down here and I’m just getting wet. Why did I think a swim was a good idea?"
+msgstr ""
+
+#. [message]: speaker=Yerar
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:962
+msgid "Where do you think you’re going, little human?"
+msgstr ""
+
+#. [message]: speaker=Bar
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:967
+msgid "Hehehe boss ah we gonna bash dem into de floor?"
+msgstr ""
+
+#. [message]: speaker=Yerar
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:973
+msgid "Ssssilence, Bar, there will be no bashing! They are ueslessss bashed."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:978
+msgid "Since you’re being so helpful, perhaps you care to tell us what we’re doing locked away in this dungeon?"
+msgstr ""
+
+#. [message]: speaker=Yerar
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:984
+msgid "None of your businesssss! Now, take them and return them to their cells! And make sure they can’t escape this time. It would reflect badly on us if we let prissssoners walk out the front door."
+msgstr ""
+
+#. [message]: speaker=Bar
+#. 'ogre' is supposed to be a play on words of 'over'
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:990
+msgid "Hehehe... this gonna be fun! It’s ogre now!"
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1007
+msgid "What’s the point in attacking me? I am already dead. I cannot die again, but unfortunately for you, <i>you</i> can."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1020
+msgid "No! You cannot escape! I will not allow it!"
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1038
+msgid "Oh great, giant rats. Just what we need on top of everything else. I hope they don’t —"
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1047
+msgid "— bite..."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1078
+msgid "Aaaaagghhhh... Slain by prisoners... What a way to go."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1095
+msgid "Ahh, ale! That’s the stuff. These people may be inhospitable but they do have taste."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1105
+msgid "Huh. A barrel full of ale. Well, I do prefer whiskey myself."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1161
+msgid "Treasure Vaults."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1167
+msgid "Ooo, definitely something good down here."
+msgstr ""
+
+#. [message]: speaker=Guardian_Banebow
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1215
+msgid "Speak the word of passage."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1224
+msgid "Crap."
+msgstr ""
+
+#. [message]: speaker=Guardian_Draug
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1230
+msgid "That is not the word of passage. Die!"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1256
+msgid "Nothing happens."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1289
+msgid "Now what could be hiding behind here, I wonder?"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1335
+msgid "A wall slides away."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1384
+msgid "I wonder what that did."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1401
+msgid "Whoever that was, they most definitely got a door to the face."
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1414
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1514
+msgid "Box"
+msgstr ""
+
+#. [message]: speaker=Ella
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1439
+msgid "Seems the elementals cannot knock that gate over. Strange."
+msgstr ""
+
+#. [message]: speaker=Galamor
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1484
+msgid "And who are ye? Some other fiend here to torture me? Well yer not gonna do it, ye’ hear?"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1489
+msgid "We’re not here to torture you; we’re trying to find a way out of this forsaken dark dungeon."
+msgstr ""
+
+#. [message]: speaker=Galamor
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1494
+msgid "Oh. Eh, in that case, mind if I join ye? This cell is so damp there be mushrooms growing."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1499
+msgid "I don’t see why not."
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1516
+msgid "Empty except for some bales of straw."
+msgstr ""
+
+#. [message]: speaker=unit
+#. the word 'interesting' gets split between this and the next message
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1535
+msgid "This looks in —"
+msgstr ""
+
+#. [message]: speaker=$unit.id
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1562
+msgid "— teresting... Ooo look, shiny box!"
+msgstr ""
+
+#. [take_item]: id=Ella_potion # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1583
+msgid "Arcane Salve"
+msgstr ""
+
+#. [take_item]: id=Ella_potion # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1586
+msgid "This draught will partially heal the drinker, as well as imbibing their weapons with arcane energy until the end of the current scenario."
+msgstr ""
+
+#. [take_item]: id=regen_amulet # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1626
+msgid "Amulet of Regeneration"
+msgstr ""
+
+#. [take_item]: id=regen_amulet # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1628
+msgid "This amulet will allow its wearer to heal 8 HP per turn."
+msgstr ""
+
+#. [take_item]: id=valthur_journal_v2 # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1679
+msgid "Tattered Journal Vol. 2"
+msgstr ""
+
+#. [take_item]: id=valthur_journal_v2 # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1681
+msgid "Another old journal. It seems to be part of a set."
+msgstr ""
+
+#. [transient_message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1686
+msgid "Journal of Arch Mage Valthur, 612 YW"
+msgstr ""
+
+#. [transient_message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1689
+msgid ""
+"<i>Last week, I spoke to Namara on the matter of these dreams that have plagued me these past months. He could sadly offer no assistance. Not that I expected any. Thankfully they visit my sleep less, but when they do...\n"
+"\n"
+"I used to see a forest in flames. Now I once again see the bleak expanse of sand, stretching to the horizon with no end in sight. The ruins of fallen glories once again surround me. There, beneath a towering pillar of stone, stands a woman. The sun reflects off her blazing red hair, ger tattered gray cloak billowing in a non-existent wind.\n"
+"\n"
+"Then the sky seems to warp and bend, imploding into visions of a massive tree, stretching so high it seems to consume the entire heavens. The figure before me turns her head, and I see the glint of metal, as if of some monstrosity born of flesh and steel. A burst of cold light stretches outward from every point in the sky, filling my vision as I awaken, shaking but thankfully safe in my tower.\n"
+"\n"
+"One of these days I should see if Jerahl has any more of that soothing potato stew.</i>\n"
+"\n"
+"The rest of the journal is torn away."
+msgstr ""
+
+#. [case]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1727
+msgid "You approach the odd blue orb on the floor and pick it up. Its surface is smooth and unblemished, and a strange blue and black mist swirls under the thin glass surface. For some reason, it makes you feel peaceful. You turn it over in your hands, wondering if you should take it with you. Abruptly, a flash of black light snakes across the surface, twisting into a black oculus that gazes back from the murky depths; you drop the orb. On second though, better leave it alone."
+msgstr ""
+
+#. [case]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1733
+msgid "No, seriously. You should leave this alone."
+msgstr ""
+
+#. [case]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1739
+msgid "Your persistence regarding this little glass ball is astounding. Fine, since you seem to keen to pick it up, go ahead. But it really does do absolutely nothing. And is clearly dangerous."
+msgstr ""
+
+#. [take_item]: id=e1s6_blue_orb # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1743
+msgid "Decorative Blue Orb"
+msgstr ""
+
+#. [take_item]: id=e1s6_blue_orb # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1745
+msgid "A round glass ball that really doesn’t do anything but look decorative."
+msgstr ""
+
+#. [take_item]: id=e1s6_crystal_shard # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1781
+msgid "Crystal Shard"
+msgstr ""
+
+#. [take_item]: id=e1s6_crystal_shard # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1783
+msgid "Light lances off the sharp edges of a shattered shard of crystal. Its surface is adorned with minute scratches, and it seems to hum with an intense internal energy."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1798
+msgid "I don’t know what this is, but it certainly must be important to be hidden all the way up here. I’ll hang onto it for later; who knows, it might come in handy."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1843
+msgid "A small golden key tumbles to the floor."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1859
+msgid "A rust-encased key tumbles to the floor."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1864
+msgid "That thing is too rusty to unlock anything. I hope there’s a spare somewhere."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1868
+msgid "Find a spare key"
+msgstr ""
+
+#. [take_item]: id=A_key # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1902
+msgid "Inner Gate Key"
+msgstr ""
+
+#. [take_item]: id=A_key # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1904
+msgid "A large important-looking key. An inscription on the side reads “Inner Gate”."
+msgstr ""
+
+#. [take_item]: id=B_key # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1935
+msgid "Exit Key A"
+msgstr ""
+
+#. [take_item]: id=B_key # wmllint: ignore
+#. [take_item]: id=C_key # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1937
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1985
+msgid "A battered metal key. It appears to be one of a set."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1947
+msgid "Perhaps this one goes to the exit."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1978
+msgid "This looks promising."
+msgstr ""
+
+#. [take_item]: id=C_key # wmllint: ignore
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:1983
+msgid "Exit Key B"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:2001
+msgid "Escape"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/06_Awakening_part_1.cfg:2029
+msgid "Let’s get out of here!"
+msgstr ""
+
+#. [scenario]: id=07_Frozen_Tears
+#. [part]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:5
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:114
+msgid "Frozen Tears"
+msgstr ""
+
+#. [side]: type=Dwarvish Explorer, id=Glamatsil
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:71
+msgid "Glamatsil"
+msgstr ""
+
+#. [side]: type=Great Mage, id=Ela
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:81
+msgid "team_name^Humans"
+msgstr ""
+
+#. [side]: type=Great Mage, id=Ela
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:85
+msgid "Ela"
+msgstr ""
+
+#. [side]: type=Orcish Warlord, id=Rarok
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:121
+msgid "Rarok"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:142
+msgid "team_name^Invaders"
+msgstr ""
+
+#. [side]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:151
+msgid "team_name^Swarm"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:260
+msgid "The lack of opposition so far troubles me... Nevertheless, we’re out. But what now? We have no reinforcements and no map, and what is this smog?"
+msgstr ""
+
+#. [message]: speaker=Galamor
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:269
+msgid "You could use this."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:275
+msgid "Galamor pulled a small, ornate pendant out of his tattered robe and tossed it casually to Rhyan."
+msgstr ""
+
+#. [message]: speaker=Galamor
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:281
+msgid "I found it in my travels before I was brought to this accursed place. As far as I know, it once belonged to a necromancer to call forth his legions of undead. The poor man was too inept to do it himself, so he relied on this little amulet. And though I am no fan of the dark arts meself, if that is true, we cannot afford to be picky!"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:286
+msgid "You want us to become no better than those whose art is despised by every civilized race across the great continent? You want us to raise the dead from their graves to do our bidding?"
+msgstr ""
+
+#. [message]: speaker=Galamor
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:291
+msgid "Look, human, it is either that, or take our chances against whoever is waiting for us. Your call."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:300
+msgid "Very well... but I am not holding on to this for a moment longer than necessary!"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:322
+msgid "Soft Voice"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:324
+msgid "<i>Show them</i>"
+msgstr ""
+
+#. [message]: speaker=Ela
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:337
+msgid "(<i>surprised</i>) Oh, look what we have here! This is unexpected, I think. Isn’t it unexpected?"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:342
+msgid "I told you this was way too easy...."
+msgstr ""
+
+#. [message]: speaker=Galamor
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:347
+msgid "So you’re the thrice-accursed scum who locked us up, eh? Prepare te taste cold steel, you bastards!"
+msgstr ""
+
+#. [message]: speaker=Ela
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:352
+msgid "My apologies, little dwarf, but we cannot let you leave so easily. Rarok!"
+msgstr ""
+
+#. [message]: speaker=Rarok
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:358
+msgid "Atch, deal with them yourself! I have my own little ‘annoyance’ on my hands. Another one of those accursed dwarves again!"
+msgstr ""
+
+#. [message]: speaker=Glamatsil
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:363
+msgid "Shut yer over-sized pie-hole you stinkin’ orc. You broke our agreement to not send your stinkin’ forces into our cities!"
+msgstr ""
+
+#. [message]: speaker=Rarok
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:368
+msgid "Gahhahaha! That was fun, wasn’t it! This little magic totem has been most useful!"
+msgstr ""
+
+#. [message]: speaker=Galamor
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:373
+msgid "A magic totem...? Ah, perhaps... if the stories are true, an old human mage once lived in this valley. He built a magical portal that could send him anywhere, but after his death, no one could figure out how to make it work. If it is indeed functional once more, perhaps we have just found our escape route!"
+msgstr ""
+
+#. [message]: speaker=Ela
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:378
+msgid "Who do you think got it working again? Unfortunately those dwarves’ warding runes didn’t do it much good when that <i>idiot</i> decided to send a pack of wolves into their main hall at dinner! So it’s unstable at the moment, but of course, feel free to use it, just don’t blame me when your head is trapped in the Void. I’m sure we’ll find a decorative use for the rest of your corpse."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:383
+msgid "We’ll take the risk. Onwards! And later, remind me to ask you about your interesting knowledge of magic..."
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:387
+msgid "Reach the transporter with Rhyan or Galamor"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:393
+msgid "Death of Glamatsil"
+msgstr ""
+
+#. [event]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:397
+msgid "Beware bats"
+msgstr ""
+
+#. [message]: speaker=Ela
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:499
+msgid "Ahahaha! Did you really think I was gone for good? Wrong! You see, I was never really here. Or alive, even. We have this little trick - but I say too much, do I not?"
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:516
+msgid "Bats???"
+msgstr ""
+
+#. [message]: speaker=Glamatsil
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:521
+msgid "Aye. Recently, we’ve seen them coming out of their caves even during the day, bombarding us and eating anything they can find. They’ve become a virtual swarm!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:533
+msgid "Ack...(<i>gasp</i>) No... the portal!"
+msgstr ""
+
+#. [message]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:545
+msgid "Without help, we cannot stand!"
+msgstr ""
+
+#. [message]
+#: Shadows_of_Deception/episode1/scenarios/07_Frozen_Tears.cfg:573
+msgid "No! You cannot kill me! I am... I am an orc! You think this hole in my chest will stop me? No! I... I... I feel dizzy..."
+msgstr ""
+
+#. [scenario]: id=08_01_Reunion
+#. [part]
+#: Shadows_of_Deception/episode1/scenarios/08_01_Reunion.cfg:5
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:126
+msgid "Reunion"
+msgstr ""
+
+#: Shadows_of_Deception/episode1/utils/characters.cfg:5
+msgid "Elynia"
+msgstr ""
+
+#: Shadows_of_Deception/episode1/utils/characters.cfg:50
+msgid "Galamor"
+msgstr ""
+
+#: Shadows_of_Deception/episode1/utils/characters.cfg:80
+msgid "Ella"
+msgstr ""
+
+#: Shadows_of_Deception/episode1/utils/characters.cfg:95
+msgid "Dravar"
+msgstr ""
+
+#: Shadows_of_Deception/episode1/utils/characters.cfg:109
+msgid "Vaenyn"
+msgstr ""
+
+#: Shadows_of_Deception/episode1/utils/characters.cfg:122
+msgid "Rhaldir"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:24
+msgid "Good bye, Niryone... and thank you."
+msgstr ""
+
+#. [message]: speaker=Niryone
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:29
+msgid "No! Elynia, no!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:38
+msgid "Find him, Elynia. Discover the truth... for me."
+msgstr ""
+
+#. [message]: speaker=Elynia
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:43
+msgid "(<i>sobbing</i>) I cannot continue without her!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:52
+msgid "I was a fool to follow you!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:61
+msgid "I have failed..."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:70
+msgid "Look what I get for staying with you..."
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:75
+msgid "No! Ella!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:84
+msgid "Augh... I should never have left my cell!"
+msgstr ""
+
+#. [message]: speaker=Rhyan
+#: Shadows_of_Deception/episode1/utils/deaths.cfg:89
+msgid "If I cannot even keep him alive, what is to be said for me?"
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:19
+msgid "Around 1046 YW, many events which would later lead to the consolidation of Wesnoth as the dominant empire on the Great Continent of Irdya began to take place. For many years after the defeat of human and elvish forces at the hands of Black-Eye Kapou’e’, the Great Continent rested beneath a blanket of relative tranquility. Except for the occasional skirmish, the elvish, human, dwarvish, and orcish kingdoms were at peace. But it was not to last. Though none then knew, this was the beginning of the final age of Wesnoth. Its domain would expand one last time, before its definitive end in the fiery cataclysm that would mark the dawn of the Golden Age of Irdya."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:23
+msgid "In 1063 YW, a new king, Konrad III, acceded to the throne of Wesnoth. For several years, the peace that had endured for the past century had been shattering. Merchant caravans were hijacked, orcs and dwarves battled, outlying towns were sacked and burned. The new king inherited a land throughout which seeds of disaster were sown rife, and, inexperienced as he was, could do naught to quash their blossoming. Unrest spread across the continent. Trade evaporated. To the northeast, Lintanir burned in the fires of civil war. On the fringes of the Wesnothian empire, and even in the heartland, local lords ruled their fiefdoms as nations unto themselves, heeding not the edicts of the crown."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:27
+msgid "My name is Elynia-Thanadria, apprentice and adopted daughter of the Great Sorceress Niryone, of the Ka’lian in Wesmere. She taught me many things, and raised me as her own since my mother died. She was a great sorceress, skilled in the arts of faerie magic, and helped me greatly in my training. Though we traveled a good deal, nothing of very much importance happened during my early years. That all changed with the events that were about to occur, events which I will now relate. Hear now, my story."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:31
+msgid ""
+"“Gone. My friend was gone, kidnapped, taken I knew not where, and the creature that had been in his place blasted apart by Niryone’s spell.\n"
+"\n"
+"We had become good friends in the preceding months. Though he was not an elf, he had shown quite an aptitude for archery almost on par with our own archers. We made quite a team, the three of us, traveling, hunting, fighting. I liked him. More than that, I owed him. He had saved me when I had, foolishly, let my guard down and allowed myself to be cornered by a pack of wolves. I would have been torn apart if not for his help.\n"
+"\n"
+"And now, when he needed my help in return, I wasn’t there."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:40
+msgid "I knew Niryone was more troubled than she had let on. That was how she was — cool and calm in the face of danger, always dispatching whatever threat she faced cleanly and appearing none the worse for it later. But now the immediate threat was gone, and we were left with no clues to follow and no idea what course of action to take. On her advice, we quickly resupplied and hurried west, to Elensefar, to see a seer she knew. But when we got there, we found something unexpected."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:49
+msgid "Once, as we passed the western coast, I sat with Rhyan and watched the waves of the Great Ocean break upon the sand. It was unusually peaceful. Every elf knew the tales of the first human king, Haldric, making landfall with his forces from lands far to the west, bringing with them the orcish menace that would prove no small annoyance to the elves over the centuries. Rhyan knew the story, too; he was quite well versed in history. He was not a peasant, as I learned later, but son to the lord of a small town north of the Bay of Pearls. Niryone wasn’t exactly surprised."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:54
+msgid "He never was exactly open about his past, but I gathered enough that his kidnapping now makes no sense. To whom could he be that important? Were they after his family? Or us? Me? Countless theories swirled around my mind, each more unlikely than the last. All we could do was act, and so we did. After driving back the outlaw incursion, we followed Aryon’s advice and crossed the Great River, traveling north to meet with the dwarves. Lord Myris lent us a few horses and men, and we made good time. I hoped the dwarves would indeed have some part of this puzzle. If not, well, I would just have to find Rhyan some other way."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:64
+msgid "We hurried south and then southeast, hoping the dwarvish scouts’ information was correct. The words of both Aryon and the dwarves didn’t seem to surprise Niryone. She had sensed a gathering storm and would not give up until she had followed it to the source. She was like that, sometimes; just another quirk of her character, and indeed it seemed as if there might be something bigger at work after all. The bandit leader’s words might be taken by some to mean this extended further than we know. The evidence formed a trail, leading, at this point, halfway across the kingdom. Hopefully we will find the next clue if we catch up to the party before they get too far north."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:80
+msgid "The messenger was gone, and we had rescued Lord Myris. Anathryis managed to wake him, and he agreed to travel with a few of the dwarves back to Elensefar in secret to keep an eye on the situation. Though he could not remember much that could be of help, his captor had revealed something that did, and now we had an actual lead — but a lead on what?"
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:84
+msgid ""
+"I can’t help but notice Niryone appears even more troubled; she’s spoken to me little in days. Every night she sits, brooding and silent, staring at the stars. I wonder what her own theories on the matter are; mine continue to lack any semblance of logic or cohesion. An official of importance is impersonated, yet no hostile action seems to have come of it. Another person, my friend, is also taken. Outlaws invade Elensefar, seemingly with knowledge of the impostor before we had any inkling ourselves. And we helped drive them back. Perhaps Rhaldir was right. We are blind.\n"
+"\n"
+"But to be honest, in the pages of this journal? My concern is what this means for Rhyan. Whatever fate they had planned for Myris could already have been his own. Let whoever is pulling the strings succeed with their schemes, just give me back my friend..."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:91
+msgid "We should arrive in Wesmere tomorrow, barring any more “distractions”. Hopefully, the Ka’lian will be of some help; they usually aren’t. The path the human had intended to take seems to be an obvious and convincing lead, but will they listen? Niryone sits on the council herself; I do not know the others, but I have heard her speak of at least one of them in a manner that suggests she likely knows the story of Niryone’s broken wings."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:99
+msgid "Awakening — Part I"
+msgstr ""
+
+#. [part]
+#. In this scenario, the POV character changes from Elynia (female) to Rhyan (male), and continues into the next scenario
+#. However, this specific bit of storytext is in the narrative case
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:102
+msgid "Elsewhere..."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:110
+msgid "We cautiously emerged from the underground complex into a bleak expanse of white and silence. A frigid wind tore through the rocks and peaks dotted around the landscape. In front of us, the ground sloped downwards to join an icy river in the valley below. I thought I recognized it, but it was impossible to be sure, from that distance at least. As the wind howled softly, refreshing after the dark and dank of the dungeon, the silence once again struck me; it was quiet — too quiet."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:116
+msgid ""
+"Beside me, Ella pursed her lips and said nothing, small tongues of flames leaping between her fingers to send small trickles of steam drifting skyward in the frigid air. Honestly, she was a mystery to me. Funny, steadfast, and certainly skilled at her art. She reminded me a lot of Elynia if I thought about it.\n"
+"\n"
+"Elynia... I hope she’s alive. Is her absence here a sign to be glad of or not? But I jump to conclusions; there’s no reason whomever took me would kidnap her as well... is there?"
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:134
+msgid "Descent"
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:142
+msgid "Awakening — Part II"
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:150
+msgid "Glyn’s Forest"
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/episode1/utils/storytext.cfg:158
+msgid "A Final Confrontation"
+msgstr ""
+
+#. [lua]: preshow
+#: Shadows_of_Deception/lua/gui/bug.lua:65
+msgid "An inconsistency has been detected, and the scenario might not continue working as originally intended."
+msgstr ""
+
+#. [lua]: preshow
+#: Shadows_of_Deception/lua/gui/bug.lua:68
+msgid "Please report this to the campaign maintainer!"
+msgstr ""
+
+#. [lua]: preshow
+#: Shadows_of_Deception/lua/gui/bug.lua:72
+msgid "Message:"
+msgstr ""
+
+#. [lua]: preshow
+#: Shadows_of_Deception/lua/gui/bug.lua:78
+msgid "Error"
+msgstr ""
+
+#. [lua]: preshow
+#: Shadows_of_Deception/lua/gui/bug.lua:79
+msgid "Details"
+msgstr ""
+
+#. [advancement]: id=amla_elynia_e1_spell_thorns
+#: Shadows_of_Deception/macros/amla.cfg:96
+msgid "Learn spell: Thorns ‹Max XP +20%›"
+msgstr ""
+
+#. [learn_spell]: id=e1_thorns
+#: Shadows_of_Deception/macros/amla.cfg:108
+msgid "Thorns"
+msgstr ""
+
+#. [learn_spell]: id=e1_thorns
+#: Shadows_of_Deception/macros/amla.cfg:110
+msgid "Unleashes a barrage of thorns at an enemy, slowing them."
+msgstr ""
+
+#. [advancement]: id=amla_elynia_e1_dexterity
+#: Shadows_of_Deception/macros/amla.cfg:161
+msgid "Dexterity: ranged damage +1 ‹Max XP +20%›"
+msgstr ""
+
+#: Shadows_of_Deception/macros/character_defines.cfg:8
+msgid "Niryone"
+msgstr ""
+
+#: Shadows_of_Deception/macros/character_defines.cfg:24
+msgid "Niolinde"
+msgstr ""
+
+#: Shadows_of_Deception/macros/character_defines.cfg:39
+msgid "Elorandas"
+msgstr ""
+
+#: Shadows_of_Deception/macros/character_defines.cfg:53
+msgid "Aryon"
+msgstr ""
+
+#: Shadows_of_Deception/macros/character_defines.cfg:67
+msgid "Mizenwyn"
+msgstr ""
+
+#. [take_item]: id=healing_potion # wmllint: ignore
+#: Shadows_of_Deception/macros/items.cfg:53
+msgid "Philtre of Health"
+msgstr ""
+
+#. [take_item]: id=healing_potion # wmllint: ignore
+#: Shadows_of_Deception/macros/items.cfg:56
+msgid "This draught restores the drinker’s vitality, fully healing them and curing them of poison."
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/macros/items.cfg:97
+msgid "Chest with gold"
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/macros/items.cfg:99
+msgid " gold found."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/macros/items.cfg:167
+msgid "Door unlocked."
+msgstr ""
+
+#. [objective]: condition=win
+#: Shadows_of_Deception/macros/objective-utils.cfg:12
+msgid "Resist until the end of turns"
+msgstr ""
+
+#. [set_menu_item]: id=campaign_help
+#: Shadows_of_Deception/macros/rpg-utils.cfg:6
+msgid "Campaign Help"
+msgstr ""
+
+#. [set_menu_item]: id=campaign_inventory
+#: Shadows_of_Deception/macros/rpg-utils.cfg:15
+msgid "Inventory"
+msgstr ""
+
+#. [set_menu_item]: id=campaign_spellcasting
+#: Shadows_of_Deception/macros/rpg-utils.cfg:34
+msgid "Spells"
+msgstr ""
+
+#. [learn_spell]: id=bind
+#: Shadows_of_Deception/macros/rpg-utils.cfg:61
+msgid "Bind"
+msgstr ""
+
+#. [learn_spell]: id=bind
+#: Shadows_of_Deception/macros/rpg-utils.cfg:63
+msgid "Prevents the target unit from moving or attacking for one turn."
+msgstr ""
+
+#. [take_item]: id=rhyan_hat
+#: Shadows_of_Deception/macros/rpg-utils.cfg:97
+msgid "Stylish Headgear"
+msgstr ""
+
+#. [take_item]: id=rhyan_hat
+#: Shadows_of_Deception/macros/rpg-utils.cfg:99
+msgid "An elegant piece of stylish and fashionable headgear."
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/macros/scenario-utils.cfg:11
+msgid "Work in progress!"
+msgstr ""
+
+#. [part]
+#: Shadows_of_Deception/macros/scenario-utils.cfg:14
+msgid ""
+"This campaign is a work in progress, and you have just completed the last playable scenario. The next scenario is not available in this version, but you can play it in a future release if you keep this start-of-scenario saved game. For now, this is the end of the campaign.\n"
+"\n"
+"All feedback is welcome in the forum thread here: &lt;http://r.wesnoth.org/t35544&gt;.\n"
+"\n"
+"    — <i>The author</i>"
+msgstr ""
+
+#. [message]: speaker=narrator
+#. [unit_type]: id=Gate, race=mechanical
+#: Shadows_of_Deception/macros/scenario-utils.cfg:121
+#: Shadows_of_Deception/units/mechanical/Gate.cfg:5
+msgid "Gate"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Shadows_of_Deception/macros/scenario-utils.cfg:123
+msgid "This gate is locked."
+msgstr ""
+
+#. [time]: id=indoors_darker
+#: Shadows_of_Deception/macros/schedules.cfg:6
+msgid "Dungeon"
+msgstr ""
+
+#. [time]: id=dawn_rain
+#: Shadows_of_Deception/macros/schedules.cfg:16
+msgid "Rainy Dawn"
+msgstr ""
+
+#. [time]: id=morning_rain
+#: Shadows_of_Deception/macros/schedules.cfg:26
+msgid "Rainy Morning"
+msgstr ""
+
+#. [time]: id=afternoon_rain
+#: Shadows_of_Deception/macros/schedules.cfg:36
+msgid "Rainy Afternoon"
+msgstr ""
+
+#. [time]: id=dusk_rain
+#: Shadows_of_Deception/macros/schedules.cfg:46
+msgid "Rainy Dusk"
+msgstr ""
+
+#. [time]: id=first_watch_rain
+#: Shadows_of_Deception/macros/schedules.cfg:56
+msgid "Rainy First Watch"
+msgstr ""
+
+#. [time]: id=second_watch_rain
+#: Shadows_of_Deception/macros/schedules.cfg:66
+msgid "Rainy Second Watch"
+msgstr ""
+
+#: Shadows_of_Deception/macros/storytext-global.cfg:16
+msgid "Warning!"
+msgstr ""
+
+#: Shadows_of_Deception/macros/storytext-global.cfg:21
+msgid ""
+"Some scenarios of this campaign work significantly different from normal Wesnoth gameplay. It is especially important to pay close attention to the mission objectives and not necessarily try to kill every single enemy, especially on shrouded maps, or in places where enemies seem to respawn continuously.\n"
+"\n"
+"Also, this campaign incorporates many unique RPG elements. If get stuck, you can always read the <i>Campaign Help</i> option in the right-click menu."
+msgstr ""
+
+#: Shadows_of_Deception/macros/storytext-global.cfg:26
+msgid "A game screen resolution of <b>800x600 or greater</b> is recommended. Some sequences make use of floating labels, halos, and standing unit animations, so you might want to make sure these options are enabled under <b>Preferences</b> → <b>Display</b>."
+msgstr ""
+
+#. [trait]: id=spirit
+#: Shadows_of_Deception/macros/traits.cfg:8
+msgid "spirit"
+msgstr ""
+
+#. [trait]: id=spirit
+#: Shadows_of_Deception/macros/traits.cfg:9
+msgid "female^spirit"
+msgstr ""
+
+#. [trait]: id=spirit
+#: Shadows_of_Deception/macros/traits.cfg:10
+msgid "Immune to drain, poison, and plague"
+msgstr ""
+
+#. [set_menu_item]: id=wmi_summon_elemental
+#: Shadows_of_Deception/macros/unit-utils.cfg:100
+msgid "Summon Elemental"
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/macros/unit-utils.cfg:136
+msgid "You cannot summon an elemental on an impassable location!"
+msgstr ""
+
+#. [transient_message]
+#: Shadows_of_Deception/macros/unit-utils.cfg:147
+msgid "You cannot control more than six Elementals at once!"
+msgstr ""
+
+#. [editor_group]: id=wesnoth-UMC-Shadows_Of_Deception
+#: Shadows_of_Deception/terrain.cfg:5
+msgid "Shadows of Deception (custom terrains)"
+msgstr ""
+
+#. [terrain_type]: id=gate_locked_se
+#: Shadows_of_Deception/terrain.cfg:13
+msgid "Locked Gate (se)"
+msgstr ""
+
+#. [terrain_type]: id=gate_locked_sw
+#: Shadows_of_Deception/terrain.cfg:24
+msgid "Locked Gate (sw)"
+msgstr ""
+
+#. [terrain_type]: id=abyss-volcanic
+#: Shadows_of_Deception/terrain.cfg:35
+msgid "Volcanic Abyss"
+msgstr ""
+
+#. [terrain_type]: id=earthy_rocky_cave
+#: Shadows_of_Deception/terrain.cfg:59
+msgid "Earthy Rockbound Cave"
+msgstr ""
+
+#. [terrain_type]: id=residential
+#: Shadows_of_Deception/terrain.cfg:71
+msgid "City Area"
+msgstr ""
+
+#. [terrain_type]: id=residential-village
+#: Shadows_of_Deception/terrain.cfg:82
+msgid "Arsenal"
+msgstr ""
+
+#. [terrain_type]: id=lamp
+#: Shadows_of_Deception/terrain.cfg:93
+msgid "Lamppost"
+msgstr ""
+
+#. [terrain_type]: id=overlay-rough
+#: Shadows_of_Deception/terrain.cfg:103
+msgid "Rough Overlay"
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Miner, race=dwarf
+#: Shadows_of_Deception/units/dwarves/Miner.cfg:5
+msgid "Dwarvish Miner"
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Miner, race=dwarf
+#: Shadows_of_Deception/units/dwarves/Miner.cfg:18
+msgid "Dwarvish miners are the grunt workers of Dwarvish society. They take the precious ores out of the ground, but do not ever take part in the crafting of weapons or artifacts."
+msgstr ""
+
+#. [attack]: type=pierce
+#: Shadows_of_Deception/units/dwarves/Miner.cfg:24
+msgid "pick"
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Outcast, race=dwarf
+#: Shadows_of_Deception/units/dwarves/Outcast.cfg:5
+msgid "Dwarvish Outcast"
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Outcast, race=dwarf
+#: Shadows_of_Deception/units/dwarves/Outcast.cfg:18
+msgid "The dwarven society can be, at times, a harsh one. Those members who cannot, or will not, contribute to the mining and crafting of ores and materials will sometimes be banished from their clans. Though this is not a very common occurrence, those who are banished usually wander the lands, finding work where they can. It is said that more than one case of materials vanishing from camps can be attributed to these dwarves."
+msgstr ""
+
+#. [unit_type]: id=Elvish Apprentice, race=elf
+#: Shadows_of_Deception/units/elves/Apprentice.cfg:5
+msgid "female^Elvish Apprentice"
+msgstr ""
+
+#. [unit_type]: id=Elvish Apprentice, race=elf
+#: Shadows_of_Deception/units/elves/Apprentice.cfg:21
+msgid "Young elves who wish to learn the ways of magic may become apprentices, traveling and learning with a more experiences sorcerer or sorceress. Their skills can vary greatly, but are still more than capable of defending themselves, and can sometimes leave quite a mark on their foes."
+msgstr ""
+
+#. [attack]: type=fire
+#: Shadows_of_Deception/units/elves/Apprentice.cfg:37
+msgid "mystic fire"
+msgstr ""
+
+#. [unit_type]: id=Elvish Spellbinder, race=elf
+#: Shadows_of_Deception/units/elves/Spellbinder.cfg:5
+msgid "female^Elvish Spellbinder"
+msgstr ""
+
+#. [unit_type]: id=Elvish Spellbinder, race=elf
+#: Shadows_of_Deception/units/elves/Spellbinder.cfg:20
+msgid "FIXME"
+msgstr ""
+
+#. [race]: id=northguard
+#: Shadows_of_Deception/units/humans.cfg:5
+#: Shadows_of_Deception/units/humans.cfg:7
+msgid "race^Northguard"
+msgstr ""
+
+#. [race]: id=northguard
+#: Shadows_of_Deception/units/humans.cfg:6
+msgid "race+female^Northguard"
+msgstr ""
+
+#. [race]: id=northguard
+#: Shadows_of_Deception/units/humans.cfg:8
+msgid "Little is known of the mysterious group of humans known as the Northguard. Hailing from the cold northern reaches, they mostly keep to themselves, though they have been known to act as mercenaries on occasion. Their most unusual feature is the strange animal masks they wear, but though is a mystery as to why, the mere sight of such intimidating visages will most often strike terror into the hearts of any foe. Whatever their motives, they remain formidable opponents, as any who have encountered them can surely attest."
+msgstr ""
+
+#. [unit_type]: id=Northguard Archer, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Archer.cfg:5
+msgid "Northguard Archer"
+msgstr ""
+
+#. [unit_type]: id=Northguard Archer, race=northguard
+#. [unit_type]: id=Northguard Fighter, race=northguard
+#. [unit_type]: id=Northguard Nightshaft, race=northguard
+#. [unit_type]: id=Northguard Warrior, race=northguard
+#. [unit_type]: id=Shadow Regent, race=human
+#. [unit_type]: id=Villager, race=human
+#. [unit_type]: id=Wanderer, race=human
+#: Shadows_of_Deception/units/humans/Northguard_Archer.cfg:17
+#: Shadows_of_Deception/units/humans/Northguard_Fighter.cfg:17
+#: Shadows_of_Deception/units/humans/Northguard_Nightshaft.cfg:18
+#: Shadows_of_Deception/units/humans/Northguard_Warrior.cfg:17
+#: Shadows_of_Deception/units/humans/Shadow_Regent.cfg:18
+#: Shadows_of_Deception/units/humans/Villager.cfg:18
+#: Shadows_of_Deception/units/humans/Woodsman_Wanderer.cfg:63
+msgid "TODO"
+msgstr ""
+
+#. [attack]: type=pierce
+#: Shadows_of_Deception/units/humans/Northguard_Archer.cfg:22
+msgid "weapon^shortbow"
+msgstr ""
+
+#. [unit_type]: id=Northguard Deathblade, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Deathblade.cfg:5
+msgid "Northguard Deathblade"
+msgstr ""
+
+#. [unit_type]: id=Northguard Deathblade, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Deathblade.cfg:19
+msgid "Those Northguard known as Deathblades are brutes of men, wielding massive blades that more resemble giant cleavers than swords. Despite this, they are more than muscle and sinew; their leadership skills are unmatched, and their cry is more than enough to inspire their fellows to victory."
+msgstr ""
+
+#. [attack]: type=blade
+#: Shadows_of_Deception/units/humans/Northguard_Deathblade.cfg:25
+msgid "weapon^deathblade"
+msgstr ""
+
+#. [unit_type]: id=Northguard Fighter, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Fighter.cfg:5
+msgid "Northguard Fighter"
+msgstr ""
+
+#. [attack]: type=blade
+#: Shadows_of_Deception/units/humans/Northguard_Fighter.cfg:22
+msgid "weapon^short sword"
+msgstr ""
+
+#. [unit_type]: id=Northguard Nightshaft, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Nightshaft.cfg:5
+msgid "Northguard Nightshaft"
+msgstr ""
+
+#. [attack]: type=pierce
+#: Shadows_of_Deception/units/humans/Northguard_Nightshaft.cfg:23
+#: Shadows_of_Deception/units/humans/Northguard_Silverbow.cfg:23
+msgid "weapon^bow"
+msgstr ""
+
+#. [attack]: type=blade
+#: Shadows_of_Deception/units/humans/Northguard_Nightshaft.cfg:33
+#: Shadows_of_Deception/units/humans/Northguard_Silverbow.cfg:33
+msgid "weapon^sword"
+msgstr ""
+
+#. [unit_type]: id=Northguard Silverbow, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Silverbow.cfg:5
+msgid "Northguard Silverbow"
+msgstr ""
+
+#. [unit_type]: id=Northguard Silverbow, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Silverbow.cfg:18
+msgid "Wielding both bow and blade in tandem, these “Silverbows” are known for being fleet of foot and hard to catch. It is said their arrows are tipped with a silver of unknown temper, but they certainly deliver a razor-sharp cut."
+msgstr ""
+
+#. [unit_type]: id=Northguard Warrior, race=northguard
+#: Shadows_of_Deception/units/humans/Northguard_Warrior.cfg:5
+msgid "Northguard Warrior"
+msgstr ""
+
+#. [attack]: type=blade
+#: Shadows_of_Deception/units/humans/Northguard_Warrior.cfg:22
+msgid "weapon^twin swords"
+msgstr ""
+
+#. [unit_type]: id=Shadow Regent, race=human
+#: Shadows_of_Deception/units/humans/Shadow_Regent.cfg:5
+msgid "Shadow Regent"
+msgstr ""
+
+#. [attack]: type=impact
+#: Shadows_of_Deception/units/humans/Shadow_Regent.cfg:23
+msgid "broadsword"
+msgstr ""
+
+#. [attack]: type=cold
+#: Shadows_of_Deception/units/humans/Shadow_Regent.cfg:32
+msgid "chill wave"
+msgstr ""
+
+#. [attack]: type=arcane
+#: Shadows_of_Deception/units/humans/Shadow_Regent.cfg:44
+msgid "shadow wave"
+msgstr ""
+
+#. [unit_type]: id=Villager, race=human
+#: Shadows_of_Deception/units/humans/Villager.cfg:5
+msgid "Villager"
+msgstr ""
+
+#. [unit_type]: id=Wanderer, race=human
+#: Shadows_of_Deception/units/humans/Woodsman_Wanderer.cfg:50
+msgid "Wanderer"
+msgstr ""
+
+#. [unit_type]: id=Caravan, race=mechanical
+#: Shadows_of_Deception/units/mechanical/Caravan.cfg:5
+msgid "Caravan"
+msgstr ""
+
+#. [unit_type]: id=Caravan, race=mechanical
+#: Shadows_of_Deception/units/mechanical/Caravan.cfg:18
+msgid "Caravans are used to carry gold or supplies long distances. Because of the immense weight of the cargo this caravan carries, it moves very slowly."
+msgstr ""
+
+#. [attack]: type=impact
+#: Shadows_of_Deception/units/mechanical/Caravan.cfg:24
+msgid "run down"
+msgstr ""
+
+#. [unit_type]: id=Gate, race=mechanical
+#: Shadows_of_Deception/units/mechanical/Gate.cfg:18
+msgid "The gate will open only to those who are allied with its owners, unless struck down by their enemies first."
+msgstr ""
+
+#. [unit_type]: id=Leech, race=monster
+#: Shadows_of_Deception/units/monsters/Leech.cfg:5
+msgid "Leech"
+msgstr ""
+
+#. [unit_type]: id=Leech, race=monster
+#: Shadows_of_Deception/units/monsters/Leech.cfg:45
+msgid ""
+"Leeches are universally known for their common diet, the warm blood of various bigger creatures. However, this is exactly why they are often used for medicinal purposes.\n"
+"\n"
+"Although not directly related, the same name is applied to groups of strange worms attached to the ground, found under caves, who are not a great danger as they cannot move around to search for prey. Instead, they await unwary victims who get close enough for them to be able to trap them in their deadly tentacles and then swallow their blood, which increases their strength and heals their wounds.\n"
+"\n"
+"It is fortunate that they have not developed legs; otherwise, they would be an almost unstoppable menace to explorers and dwellers of the caves they inhabit."
+msgstr ""
+
+#. [attack]: type=pierce
+#: Shadows_of_Deception/units/monsters/Leech.cfg:59
+msgid "drainer"
+msgstr ""
+
+#. [unit_type]: id=Northguard Direwolf, race=wolf
+#: Shadows_of_Deception/units/monsters/Northguard_Direwolf.cfg:5
+msgid "Northguard Direwolf"
+msgstr ""
+
+#. [unit_type]: id=Northguard Direwolf, race=wolf
+#: Shadows_of_Deception/units/monsters/Northguard_Direwolf.cfg:24
+msgid "Wolves are aggressive animals that hunt in packs. Although weak individually, a wolf pack can kill even the strongest man in minutes."
+msgstr ""
+
+#. [attack]: type=blade
+#: Shadows_of_Deception/units/monsters/Northguard_Direwolf.cfg:30
+msgid "fangs"
+msgstr ""
+
+#. [attack]: type=cold
+#: Shadows_of_Deception/units/monsters/Northguard_Direwolf.cfg:40
+msgid "arctic blast"
+msgstr ""
+
+#. [race]: id=spirit
+#: Shadows_of_Deception/units/spirits.cfg:5
+msgid "race^Spirit"
+msgstr ""
+
+#. [race]: id=spirit
+#: Shadows_of_Deception/units/spirits.cfg:6
+msgid "race+female^Spirit"
+msgstr ""
+
+#. [race]: id=spirit
+#: Shadows_of_Deception/units/spirits.cfg:7
+msgid "race^Spirits"
+msgstr ""
+
+#. [race]: id=spirit
+#: Shadows_of_Deception/units/spirits.cfg:8
+msgid "The summoning of elemental constructs is one of the oldest forms of magic known, as well as the rarest in modern times. Although elemental spirits are often bound to serve a powerful sorcerer, freely roaming beings of this kind are not completely unheard of throughout history."
+msgstr ""
+
+#. [unit_type]: id=Animated Rock, race=spirit
+#: Shadows_of_Deception/units/spirits/Rock_Animated.cfg:5
+msgid "Animated Rock"
+msgstr ""
+
+#. [unit_type]: id=Animated Rock, race=spirit
+#: Shadows_of_Deception/units/spirits/Rock_Animated.cfg:18
+msgid "These slow and weak creatures are made of hard, solid rock. Hardly a threat in small numbers, they are some of the most basic elementals that can be summoned by initiates."
+msgstr ""
+
+#. [unit_type]: id=Rock Golem, race=spirit
+#: Shadows_of_Deception/units/spirits/Rock_Golem.cfg:5
+msgid "Rock Golem"
+msgstr ""
+
+#. [unit_type]: id=Rock Golem, race=spirit
+#: Shadows_of_Deception/units/spirits/Rock_Golem.cfg:19
+msgid "Heavy and clumsy, Rock Golems are often conjured by powerful sorcerers to work as servants and inexpensive guardians of their domains. Although their strength is not especially impressive, they can surely present a challenge to ill-equipped adversaries — in particular those who rely on skeletal minions."
+msgstr ""
+
+#. [unit_type]: id=Death Baron, race=undead
+#: Shadows_of_Deception/units/undead/Skele_Death_Baron.cfg:5
+msgid "Death Baron"
+msgstr ""
+
+#. [unit_type]: id=Death Baron, race=undead
+#: Shadows_of_Deception/units/undead/Skele_Death_Baron.cfg:38
+msgid "Sometimes the mightiest warriors and generals, cursed with hate and angst, come back to this world as Death Knights. Death Barons serve them whilst accruing enough unholy power to advance to the level of their masters. In the process, they pick up a good deal of the Knight’s skills, including the ability to easily and effectively command underlings."
+msgstr ""
+
+#. [unit_type]: id=Bone Knight, race=undead
+#: Shadows_of_Deception/units/undead/Skeleton_Knight.cfg:5
+msgid "Bone Knight"
+msgstr ""
+
+#. [unit_type]: id=Bone Knight, race=undead
+#: Shadows_of_Deception/units/undead/Skeleton_Knight.cfg:25
+msgid "The horsemen with the most experienced rose quickly through the ranks, only to find death that much closer. They gained significant knowledge in weaponry and tactics, even being able to carry a crossbow in addition to their axes. These riders now wander the world, doing the bidding of their dark masters that summoned this to fight once again. Their strength remains great, and, in death as in life, novice units should not attempt to do battle with one alone."
+msgstr ""
+
+#. [attack]: type=impact
+#: Shadows_of_Deception/units/undead/Skeleton_Knight.cfg:44
+msgid "trample"
+msgstr ""
+
+#. [unit_type]: id=Skeleton Rider, race=undead
+#: Shadows_of_Deception/units/undead/Skeleton_Rider.cfg:5
+msgid "Skeleton Rider"
+msgstr ""
+
+#. [unit_type]: id=Skeleton Rider, race=undead
+#: Shadows_of_Deception/units/undead/Skeleton_Rider.cfg:25
+msgid "These mounted skeletons were once great warriors thundering across the plains. In life, they had not yet acquired the skill and strength of the more experienced of their ranks, but they were equal in terms of speed; they could dash into battle as fast as those more experienced. This is still apparent even now, trapped in unlife as they are to spread fear and destruction. Novice fighters should have no problem fighting these, but need remember the speed of the skeletal mounts."
+msgstr ""
+
