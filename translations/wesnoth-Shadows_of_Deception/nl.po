@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-02-05 22:12 UTC\n"
+"POT-Creation-Date: 2023-02-06 03:42 UTC\n"
 "PO-Revision-Date: 2013-05-13 15:02+0100\n"
 "Last-Translator: l <l@l.nl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgid ""
 msgstr ""
 
 #: Shadows_of_Deception/config.cfg:45
-msgid "for Wesnoth 1.14 (v1.14.0 or later)"
+msgid "for Wesnoth 1.16 (v1.16.0 or later)"
 msgstr ""
 
 #: Shadows_of_Deception/config.cfg:54
