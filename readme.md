@@ -32,7 +32,7 @@ Installing Shadows of Deception
 
 Requirements:
 
- * *The Batttle For Wesnoth* version 1.14 or later.
+ * *The Batttle For Wesnoth* version 1.16 or later.
  * *8680’s Lua Pack*, a resource pack containing several functions made use of
    by SoD. Refer to the *Installing lp8* section below for instructions on
    installing the pack.

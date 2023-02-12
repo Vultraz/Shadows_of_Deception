@@ -17,10 +17,10 @@ end
 local ver = wesnoth.game_config.version
 local v = wesnoth.compare_versions
 
-if v(ver, '<', '1.14.0') then
-	do_bug( _ "Shadows of Deception requires Wesnoth 1.14.0 or later. Please update your Wesnoth installation.", false)
+if v(ver, '<', '1.16.0') then
+	do_bug( _ "Shadows of Deception requires Wesnoth 1.16.0 or later. Please update your Wesnoth installation.", false)
 end
 
-if v(ver, '>=', '1.15.0') then
-	do_bug( _ "Shadows of Deception is untested on Wesnoth 1.15 and may not function as expected! Please use version 1.14.0 or later.", false)
+if v(ver, '>=', '1.17.0') then
+	do_bug( _ "Shadows of Deception is untested on Wesnoth 1.17 and may not function as expected! Please use version 1.16.0 or later.", false)
 end
